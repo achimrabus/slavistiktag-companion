@@ -1,0 +1,163 @@
+// Logik-Tests für die DOM-freien Module. Ausführen: node tests/logic.test.mjs
+import assert from "node:assert/strict";
+import { normalize, matchesQuery, filterSessions, formatOf } from "../js/search.js";
+import { icsFor } from "../js/ics.js";
+import { nowInfo } from "../js/now.js";
+import { buildModel, naturalRooms } from "../js/data.js";
+import { minutes, dateLabel, isoDay } from "../js/util.js";
+
+let n = 0;
+const t = (name, fn) => { fn(); n++; console.log("  ok", name); };
+
+// ---------- search
+t("normalize faltet Diakritika", () => {
+  assert.equal(normalize("Kovács übermäßig"), "kovacs ubermassig");
+});
+t("normalize: Cyrillica konsistent (Query matcht Text)", () => {
+  assert.equal(normalize("Київ"), normalize("київ"));
+  assert.equal(matchesQuery(normalize("Der Connector в том числе"), "в том числе"), true);
+  assert.equal(normalize("Daten київ").includes("к"), true);
+});
+t("matchesQuery UND-Verknüpfung", () => {
+  assert.equal(matchesQuery("polnisch herkunft russisch", "polnisch russisch"), true);
+  assert.equal(matchesQuery("polnisch herkunft", "polnisch russisch"), false);
+});
+t("matchesQuery Bindestrich-Toleranz", () => {
+  assert.equal(matchesQuery(normalize("Herkunftssprachlicher Unterricht"), "herkunfts"), true);
+});
+
+const S = (over = {}) => ({
+  id: "x", day: "2026-10-01", start: "09:00", end: "09:30",
+  room: "SR 114", venue: "CZS3", track: "SW", type: "talk",
+  panel_id: "p1", speakers: ["A Person"], title: "Ein Titel", ...over,
+});
+const sessions = [
+  S(),
+  S({ id: "b", day: "2026-10-02", track: "LKW", title: "Kino in Sarajevo", room: "HS 6" }),
+  S({ id: "c", type: "break", title: "Mittagspause", room: null, track: null, start: "13:00", end: "14:00" }),
+  S({ id: "d", track: "SW+DID", title: "Didaktik des Ukrainischen" }),
+];
+for (const s of sessions) s._search = normalize(s.title);
+
+t("filter: Suche nach Titel", () => {
+  assert.deepEqual(filterSessions(sessions, { q: "kino" }).map((s) => s.id), ["b"]);
+});
+t("filter: Tag", () => {
+  assert.deepEqual(filterSessions(sessions, { day: "2026-10-02" }).map((s) => s.id), ["b"]);
+});
+t("filter: ohne day = alle Tage (Suche global)", () => {
+  assert.deepEqual(filterSessions(sessions, { q: "kino" }).map((s) => s.id), ["b"]);
+  assert.deepEqual(filterSessions(sessions, { q: "didaktik" }).map((s) => s.id), ["d"]);
+  assert.deepEqual(filterSessions(sessions, {}).length, 4);
+});
+t("filter: Track-OR", () => {
+  assert.deepEqual(filterSessions(sessions, { tracks: ["DID"] }).map((s) => s.id), ["d"]);
+  assert.deepEqual(filterSessions(sessions, { tracks: ["SW", "LKW"] }).map((s) => s.id).sort().join(","), "b,d,x");
+});
+t("filter: Format pause", () => {
+  assert.deepEqual(filterSessions(sessions, { formats: ["pause"] }).map((s) => s.id), ["c"]);
+});
+t("formatOf: SEK-Code → sektion", () => {
+  assert.equal(formatOf({ type: "talk", panel_code: "SEK_SW_01" }), "sektion");
+});
+
+// ---------- ics
+t("ICS enthält VTIMEZONE und korrekte DTSTART", () => {
+  const ics = icsFor([{ day: "2026-10-01", start: "09:00", end: "09:30", title: "Vortrag; mit, Kommas", room: "SR 114" }]);
+  assert.ok(ics.includes("DTSTART;TZID=Europe/Berlin:20261001T090000"));
+  assert.ok(ics.includes("DTEND;TZID=Europe/Berlin:20261001T093000"));
+  assert.ok(ics.includes("SUMMARY:Vortrag\\; mit\\, Kommas"));
+  assert.ok(ics.includes("BEGIN:VTIMEZONE"));
+});
+t("ICS foldet lange Zeilen", () => {
+  const ics = icsFor([{ day: "2026-10-01", start: "09:00", end: "09:30", title: "x".repeat(300) }]);
+  for (const line of ics.split("\r\n")) assert.ok(line.length <= 75, `Zeile zu lang: ${line.length}`);
+});
+
+// ---------- now
+const model = {
+  conference: { start: "2026-09-30", end: "2026-10-03" },
+  byDay: {
+    "2026-10-01": [
+      S({ id: "m1", start: "09:00", end: "09:30" }),
+      S({ id: "m2", start: "09:30", end: "10:00" }),
+      S({ id: "m3", start: "11:30", end: "13:00" }),
+    ],
+  },
+};
+t("now: laufende Session", () => {
+  const info = nowInfo(model, new Date("2026-10-01T09:45:00"));
+  assert.equal(info.status, "session");
+  assert.equal(info.current.id, "m2");
+  const info2 = nowInfo(model, new Date("2026-10-01T09:10:00"));
+  assert.equal(info2.current.id, "m1");
+});
+t("now: Pause zwischen Slots", () => {
+  const info = nowInfo(model, new Date("2026-10-01T11:05:00"));
+  assert.equal(info.status, "break");
+  assert.equal(info.next.id, "m3");
+});
+t("now: vor der Tagung", () => {
+  const info = nowInfo(model, new Date("2026-09-15T10:00:00"));
+  assert.equal(info.status, "before");
+});
+t("now: nach der Tagung", () => {
+  const info = nowInfo(model, new Date("2026-10-05T10:00:00"));
+  assert.equal(info.status, "after");
+});
+
+// ---------- data merge
+const program = {
+  meta: { stats: {} },
+  blocks: [{ day: "2026-10-01", day_label: "Donnerstag, 01.10.", start: "09:00", end: "11:00", track: "SW", rooms: ["SR 114"] }],
+  panels: [{ id: "p1", code: "SEK_SW_01", title: "Historische Ostslavistik", chair: "I. Podtergera", room: "SR 207", day: "2026-10-01", block_start: "09:00", track: "SW" }],
+  sessions: [
+    S(),
+    { id: "e1", day: "2026-10-01", start: "16:00", end: "17:30", room: null, track: null, panel_id: null, speakers: [], title: "Podiumsdiskussion: Test", type: "talk" },
+  ],
+  events: [{ day: "2026-10-01", start: "18:00", end: "19:30", title: "Konzert des ukrainischen Chors (Aula, UHG)" }],
+};
+const content = {
+  conference: { start: "2026-09-30", end: "2026-10-03" },
+  room_venue: { SR: "CZS3", HS: "CZS3", MMZ: "MMZ" },
+  venues: { CZS3: { name: "CZS3" }, UHG: { name: "UHG" }, MMZ: { name: "MMZ" }, HaM: {} },
+  podiums: [{ day: "2026-10-01", start: "16:00", end: "17:30", title: "Podiumsdiskussion: Test (CZS 3, HS 2)", body: "…", people: "…" }],
+  special: [{ day: "2026-10-01", start: "11:30", end: "13:00", room: "SR 222", title: "Book presentation" }],
+  accompanying: [{ day: "2026-09-30", start: "18:00", title: "Eröffnung" }],
+};
+t("buildModel: Venue-Zuordnung", () => {
+  const m = buildModel(program, content);
+  assert.equal(m.sessions[0].venue, "CZS3");
+  assert.equal(m.sessions[0].panel_code, "SEK_SW_01");
+  assert.equal(m.sessions[0].chair, "I. Podtergera");
+});
+t("buildModel: Podium aus content dedupliziert PDF-Event nicht fälschlich", () => {
+  const m = buildModel(program, content);
+  const podiums = m.events.filter((e) => e.type === "podium");
+  // PDF-Event ist 'Konzert' (kein Podium) + content-Podium → genau 1 Podium
+  assert.equal(podiums.length, 1);
+});
+t("buildModel: Events nach Tag/Zeit sortiert", () => {
+  const m = buildModel(program, content);
+  const key = (e) => (e.day || "") + " " + (e.start || "99");
+  const times = m.events.map(key);
+  assert.deepEqual(times, [...times].sort());
+});
+t("naturalRooms sortiert numerisch", () => {
+  assert.deepEqual(
+    naturalRooms(["SR 209", "SR 114", "HS 8", "SR 113", "HS 6", "MMZ 220"]),
+    ["HS 6", "HS 8", "MMZ 220", "SR 113", "SR 114", "SR 209"]);
+});
+
+// ---------- util
+t("minutes", () => {
+  assert.equal(minutes("09:30"), 570);
+});
+t("isoDay", () => {
+  assert.equal(isoDay(new Date(2026, 9, 1, 7, 30)), "2026-10-01");
+});
+t("dateLabel", () => {
+  assert.equal(dateLabel("2026-10-01"), "Donnerstag, 01.10.");
+});
+
+console.log(`\n${n} Tests bestanden.`);

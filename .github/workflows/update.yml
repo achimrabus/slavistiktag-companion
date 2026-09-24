@@ -1,0 +1,95 @@
+name: Programm-Update prüfen
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: program-update
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhängigkeiten
+        run: pip install pdfplumber
+
+      - name: PDF laden und Hash vergleichen
+        id: check
+        run: |
+          set -euo pipefail
+          URL="https://www.gw.uni-jena.de/phifakmedia/195800/vortraege.pdf"
+          curl -sSL --retry 3 -o /tmp/vortraege.pdf "$URL"
+          NEW_SHA=$(sha256sum /tmp/vortraege.pdf | cut -d' ' -f1)
+          OLD_SHA=$(python -c "import json; print(json.load(open('data/program.json', encoding='utf-8'))['meta']['source_sha256'])")
+          echo "new_sha=$NEW_SHA" >> "$GITHUB_OUTPUT"
+          echo "old_sha=$OLD_SHA" >> "$GITHUB_OUTPUT"
+          if [ "$NEW_SHA" = "$OLD_SHA" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "PDF unverändert (sha256 $NEW_SHA)"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "PDF geändert: $OLD_SHA -> $NEW_SHA"
+          fi
+
+      - name: Neues PDF archivieren und parsen
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          STAND=$(date +%F)
+          DEST="tools/source/vortraege_${STAND}.pdf"
+          cp /tmp/vortraege.pdf "$DEST"
+          python tools/parse_program.py "$DEST" -o data/program.json
+
+      - name: Validierung (Gate)
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          python - <<'EOF'
+          import json, sys
+          p = json.load(open("data/program.json", encoding="utf-8"))
+          sessions = p.get("sessions", [])
+          panels = p.get("panels", [])
+          talks = [s for s in sessions if s.get("type") == "talk"]
+          blocks = p.get("blocks", [])
+          problems = []
+          if len(talks) < 250: problems.append(f"nur {len(talks)} Vorträge (Mindestanzahl 250)")
+          if len(panels) < 80: problems.append(f"nur {len(panels)} Panels (Mindestanzahl 80)")
+          if not blocks: problems.append("keine Zeitblöcke erkannt")
+          for s in sessions:
+              if not s.get("day") or not s.get("start"):
+                  problems.append(f"Session ohne Tag/Zeit: {s.get('id')}")
+                  break
+          if problems:
+              print("VALIDIERUNG FEHLGESCHLAGEN – kein Deploy:")
+              for pr in problems: print(" -", pr)
+              sys.exit(1)
+          print(f"Validierung OK: {len(talks)} Vorträge, {len(panels)} Panels, {len(blocks)} Blöcke")
+          print("Warnings:", json.dumps(p.get("meta", {}).get("warnings", []), ensure_ascii=False))
+          EOF
+
+      - name: Commit und Push (löst Pages-Neubau aus)
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/program.json tools/source/
+          git commit -m "Programm-Update: PDF-Stand $(date +%F) (sha256 ${NEW_SHA:0:8})" \
+                     -m "Quelle: $URL · vorher: ${OLD_SHA:0:8}"
+          git push
+        env:
+          NEW_SHA: ${{ steps.check.outputs.new_sha }}
+          OLD_SHA: ${{ steps.check.outputs.old_sha }}
+          URL: https://www.gw.uni-jena.de/phifakmedia/195800/vortraege.pdf

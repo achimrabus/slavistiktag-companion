@@ -1,9 +1,11 @@
-// service worker: Shell stale-while-revalidate, Daten network-first mit Fallback
+// service worker: Shell stale-while-revalidate (aktualisiert sich selbst,
+// kein VERSION-Bump nötig), Daten network-first mit Cache-Fallback
 const CACHE = "slavtag26-companion";
 const SHELL = [
   "./", "index.html", "css/style.css",
   "js/app.js", "js/util.js", "js/data.js", "js/mining.js", "js/lexicon.js",
-  "js/views/topics.js",
+  "js/search.js", "js/favorites.js", "js/ics.js", "js/now.js",
+  "js/views/dashboard.js", "js/views/program.js", "js/views/mine.js", "js/views/info.js", "js/views/drawer.js", "js/views/topics.js",
   "manifest.json", "icons/icon.svg",
 ];
 
@@ -24,11 +26,10 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
-  if (e.request.method !== "GET") return;
+  if (e.request.method !== "GET" || url.origin !== location.origin) return;
 
-  // Live-Daten: immer netzfirst, Cache als Fallback
-  if (url.origin !== location.origin) {
-    if (!url.href.includes("program.json")) return;
+  const isData = url.pathname.includes("/data/");
+  if (isData) {
     e.respondWith(
       fetch(e.request)
         .then((res) => {
@@ -43,7 +44,7 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  // Shell: sofort aus dem Cache, parallel im Hintergrund aktualisieren
+  // Shell: sofort aus dem Cache antworten, parallel im Hintergrund aktualisieren
   e.respondWith(
     caches.match(e.request).then((hit) => {
       const refresh = fetch(e.request)

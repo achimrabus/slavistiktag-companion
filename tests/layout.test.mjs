@@ -67,14 +67,21 @@ for (const vp of VIEWPORTS) {
   page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
 
   console.log(`\n=== ${vp.name} ===`);
-  await page.goto(BASE + "#/themen");
-  await page.waitForSelector("#app .cluster-card");
-  await page.waitForTimeout(250);
+  await page.goto(BASE + "#/heute");
+  await page.waitForSelector("#app .card");
 
-  await t(`${vp.name}: Themen-Kompass ohne Überlauf`, async () => {
+  await t(`${vp.name}: Dashboard ohne Überlauf`, async () => {
     assert.deepEqual(await overflowIssues(page), []);
   });
   await t(`${vp.name}: keine JS-Fehler`, () => assert.deepEqual(errors, []));
+
+  // Themen-Kompass
+  await page.goto(BASE + "#/themen");
+  await page.waitForSelector("#app .cluster-card");
+  await page.waitForTimeout(250);
+  await t(`${vp.name}: Themen-Kompass ohne Überlauf`, async () => {
+    assert.deepEqual(await overflowIssues(page), []);
+  });
 
   // Cluster-Detail
   const tagId = await page.getAttribute("#app .cluster-card", "data-tag");
@@ -82,6 +89,15 @@ for (const vp of VIEWPORTS) {
   await page.waitForSelector("#app .cluster-item");
   await page.waitForTimeout(250);
   await t(`${vp.name}: Cluster-Detail ohne Überlauf`, async () => {
+    assert.deepEqual(await overflowIssues(page), []);
+  });
+
+  // Programm
+  await page.goto(BASE + "#/programm");
+  await page.waitForSelector("#app .results");
+  await page.waitForTimeout(250);
+
+  await t(`${vp.name}: Programm-Liste ohne Überlauf`, async () => {
     assert.deepEqual(await overflowIssues(page), []);
   });
 

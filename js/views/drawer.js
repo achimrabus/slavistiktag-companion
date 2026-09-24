@@ -1,0 +1,110 @@
+// views/drawer.js – Detailansicht für Sessions und Events
+import { h, dateLabel, timeRange } from "../util.js";
+import { favs } from "../favorites.js";
+import { icsFor, downloadIcs } from "../ics.js";
+import { minutes } from "../util.js";
+
+export function openDrawer(ctx, id) {
+  const model = ctx.model;
+  const session = model.sessions.find((s) => s.id === id);
+  const event = !session ? model.events.find((e) => e.id === id) : null;
+  const backdrop = h("div", { class: "drawer-backdrop", onclick: close });
+  const drawer = h("aside", { class: "drawer", role: "dialog", "aria-label": "Details" });
+
+  function close() {
+    backdrop.remove();
+    drawer.remove();
+  }
+  function onKey(e) {
+    if (e.key === "Escape") close();
+  }
+  document.addEventListener("keydown", onKey);
+
+  if (session) {
+    drawer.append(sessionBody(ctx, session, close));
+  } else if (event) {
+    drawer.append(eventBody(event, close));
+  } else {
+    drawer.append(h("p", { text: "Nicht gefunden." }, ), closeBtn(close));
+  }
+  document.body.append(backdrop, drawer);
+  drawer.querySelector("button")?.focus();
+}
+
+function closeBtn(close) {
+  return h("button", { class: "btn ghost drawer-close", onclick: close, "aria-label": "Schließen", text: "✕" });
+}
+
+function favBtn(ctx, session) {
+  const active = favs.has(session.id);
+  const btn = h("button", { class: `btn ${active ? "" : "ghost"}`, text: active ? "★ Gemerkt" : "☆ Merken" });
+  btn.addEventListener("click", () => {
+    const on = favs.toggle(session.id);
+    btn.className = `btn ${on ? "" : "ghost"}`;
+    btn.textContent = on ? "★ Gemerkt" : "☆ Merken";
+    ctx.refreshFavIndicators?.();
+  });
+  return btn;
+}
+
+function icsBtn(session) {
+  return h("button", {
+    class: "btn ghost",
+    text: "⤓ Kalender (.ics)",
+    onclick: () => downloadIcs("slavistiktag-vortrag.ics",
+      icsFor([{ day: session.day, start: session.start, end: session.end, title: session.title, room: session.room || "" }])),
+  });
+}
+
+function sessionBody(ctx, s, close) {
+  const panelTalks = s.panel_id
+    ? ctx.model.byDay[s.day].filter((x) => x.panel_id === s.panel_id && x.type === "talk")
+    : [];
+  const parallel = ctx.model.byDay[s.day]
+    .filter((x) => x.type === "talk" && x.day === s.day && x.start === s.start && x.id !== s.id);
+
+  const out = h("div", { class: "drawer-body" },
+    closeBtn(close),
+    h("p", { class: "kicker", text: `${dateLabel(s.day)} · ${timeRange(s.start, s.end)}` }),
+    h("h2", { text: s.title }),
+    h("p", { class: "speakers", text: s.speakers?.join(", ") || "" }),
+    h("p", { class: "meta" },
+      h("span", { class: "pill room", text: s.room || "" }), " ",
+      s.venue ? h("span", { class: "pill", text: ctx.model.content.venues[s.venue]?.short || s.venue }) : null),
+    s.panel_title
+      ? h("p", { class: "panel-ref" },
+          "Im Rahmen von: ",
+          s.panel_code ? h("span", { class: "pill code", text: s.panel_code }) : null, " ",
+          h("strong", { text: s.panel_title }),
+          s.chair ? h("span", { class: "meta", text: ` · Chair: ${s.chair}` }) : null)
+      : null,
+    h("div", { class: "btn-row" }, favBtn(ctx, s), icsBtn(s)),
+    panelTalks.length > 1
+      ? h("section", {},
+          h("h3", { text: `Im Panel (${panelTalks.length} Vorträge)` }),
+          h("ul", { class: "mini-list" },
+            panelTalks.map((x) => h("li", {},
+              h("a", { href: "#", onclick: (e) => { e.preventDefault(); ctx.openSession(x.id); } },
+                `${x.start} – ${x.speakers.join(", ")}: ${x.title}`)))))
+      : null,
+    parallel.length
+      ? h("section", {},
+          h("h3", { text: "Parallel zur gleichen Zeit" }),
+          h("ul", { class: "mini-list" },
+            parallel.slice(0, 8).map((x) => h("li", {},
+              h("a", { href: "#", onclick: (e) => { e.preventDefault(); ctx.openSession(x.id); } },
+                `${x.room} · ${x.speakers.join(", ")}: ${x.title}`)))))
+      : null);
+  return out;
+}
+
+function eventBody(e, close) {
+  return h("div", { class: "drawer-body" },
+    closeBtn(close),
+    h("p", { class: "kicker", text: `${dateLabel(e.day)}${e.start ? ` · ${timeRange(e.start, e.end)}` : ""}` }),
+    h("h2", { text: e.title }),
+    e.room ? h("p", {}, h("span", { class: "pill room", text: e.room })) : null,
+    e.body ? h("p", { class: "body", text: e.body }) : null,
+    e.people ? h("p", { class: "meta", text: e.people }) : null,
+    e.note ? h("p", { class: "note", text: e.note }) : null);
+}

@@ -1,7 +1,7 @@
 // Mining-Tests: Logik + echte Daten. node tests/mining.test.mjs
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { tagsFor, detectLanguage, tokenize, tfidf, clusterSessions, tagStats, normText } from "../js/mining.js";
+import { tagsFor, detectLanguage, tfidf, clusterSessions, tagStats } from "../js/mining.js";
 import { TAGS } from "../js/lexicon.js";
 
 let n = 0;

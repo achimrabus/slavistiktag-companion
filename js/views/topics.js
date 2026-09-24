@@ -1,20 +1,20 @@
-// views/topics.js – Cluster-Ansicht: Themen-Kompass
-import { h, dateLabel, shortDate } from "../util.js";
+// views/topics.js – Themen-Kompass: Cluster-Übersicht + Cluster-Detail
+import { h, dateLabel } from "../util.js";
 import { TAGS, TAG_BY_ID } from "../lexicon.js";
-import { clusterSessions, tagStats, languageStats, tfidf } from "../mining.js";
+import { tagStats, languageStats } from "../mining.js";
 
 const LANG_LABEL = { de: "Deutsch", en: "Englisch", ru: "Russisch", uk: "Ukrainisch", cs: "Tschechisch", pl: "Polnisch", sk: "Slowakisch" };
 
 export function renderTopics(model, ctx, params) {
   const wrap = h("div", { class: "view view-topics" });
-  const sessions = model.program.sessions.filter((s) => s.type === "talk");
+  const sessions = model.sessions.filter((s) => s.type === "talk");
   const stats = tagStats(sessions);
 
   wrap.append(h("div", { class: "topics-intro" },
     h("h1", { text: "Themen-Kompass" }),
     h("p", { class: "dim", text:
       `${sessions.length} Vorträge, automatisch nach 27 Themenfeldern gruppiert ` +
-      `(Keyword-Matching über Titel und Sprecher, Stand: ${model.program.meta.stand || model.program.meta.source_file}). ` +
+      `(Keyword-Matching über Titel und Sprecher). ` +
       "Klick auf ein Cluster zeigt die Vorträge." })));
 
   const groups = {};
@@ -71,26 +71,26 @@ export function renderCluster(model, ctx, params, tagId) {
   wrap.append(
     h("a", { class: "back-link", href: "#/themen", text: "← Themen-Kompass" }),
     h("h1", { text: tag.label }),
-    h("p", { class: "dim", text: `${cluster.length} Vorträge, nach Tagen gruppiert. Klick öffnet den Vortrag in der Programm-App.` }));
+    h("p", { class: "dim", text: `${cluster.length} Vorträge, nach Tagen gruppiert. Klick öffnet den Vortrag im Drawer.` }));
 
   for (const day of days) {
     wrap.append(h("h2", { class: "group-head", text: dateLabel(day) }));
     const list = h("div", { class: "cluster-list" });
     for (const s of byDay[day].sort((a, b) => (a.start || "").localeCompare(b.start || ""))) {
-      list.append(clusterItem(model, s));
+      list.append(clusterItem(ctx, s));
     }
     wrap.append(list);
   }
   return wrap;
 }
 
-function clusterItem(model, s) {
-  const deepLink = `https://achimrabus.github.io/slavistiktag-2026-programm-app/#/programm?q=${encodeURIComponent(s.title.slice(0, 80))}&day=${s.day}`;
-  return h("a", {
-    class: "card cluster-item",
-    href: deepLink,
-    target: "_blank",
-    rel: "noopener",
+function clusterItem(ctx, s) {
+  return h("article", {
+    class: `card cluster-item track-${(s.discipline || "x").toLowerCase()}`,
+    "data-id": s.id,
+    onclick: () => ctx.openSession(s.id),
+    tabindex: "0",
+    role: "button",
   },
     h("div", { class: "item-top" },
       h("span", { class: "time", text: `${s.start}–${s.end}` }),

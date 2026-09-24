@@ -1,48 +1,69 @@
-# Slavistiktag 2026 · Themen-Kompass (Companion)
+# Slavistiktag 2026 – Programm-App mit Themen-Kompass
 
-Data-Mining-Ansicht („Feature 5“ aus dem Projektplan) zum Programm des
-15. Deutschen Slavistiktags 2026 in Jena (30.09.–03.10.2026).
-Eigenständige PWA-ähnliche Single-Page-App, bewusst **getrennt** von der
-Programm-App (`slavistiktag-2026-programm-app`).
+Inoffizielle App zum 15. Deutschen Slavistiktag 2026 in Jena (30.09.–03.10.2026).
+Eine Anwendung, zwei Ebenen:
 
-## Was sie tut
+- **Programm** – alle Vorträge, Panels, Podien und Rahmenveranstaltungen mit
+  Volltextsuche (global über alle Tage), Filtern (Tag, Raum, Zeit, Panel,
+  Disziplin, Format), Favoriten (★, localStorage), ICS-Export, „Jetzt läuft“-
+  Ansicht und Detail-Drawer pro Vortrag.
+- **Themen-Kompass** (Data Mining) – alle Vorträge automatisch nach 27
+  Themenfeldern gruppiert (kuratiertes Keyword-Lexikon über Titel und
+  Sprechernamen), mit charakteristischen Begriffen (TF-IDF) und heuristischer
+  Sprachverteilung pro Cluster. Kein ML-Backend, alles im Browser.
 
-- **Auto-Tagging** aller Vortragstitel über ein kuratiertes Keyword-Lexikon
-  (Sprachen/Länder, Themen: Krieg, Erinnerung, Identität, Korpora, KI,
-  Didaktik, Ökologie, Exil, Popkultur, Translation, Utopie …).
-- **Cluster-Ansicht**: Vorträge nach generierten Themen gruppiert, mit
-  charakteristischen Begriffen (TF-IDF über die Titel) und heuristischer
-  Sprachverteilung pro Cluster.
-- **Deep-Links in die Programm-App**: jede Karte verlinkt direkt zum
-  Vortrag in der Programm-App (Volltextsuche-Deep-Link).
+Vanilla JS, kein Framework, kein Build-Step. Statisch auf GitHub Pages.
 
 ## Datenfluss
 
 ```
-Uni Jena (vortraege.pdf) ──parse──▶ Programm-App: data/program.json
-                                          │ (GitHub Pages, CORS offen)
-                                          ▼
-Companion lädt live: https://achimrabus.github.io/slavistiktag-2026-programm-app/data/program.json
-                                          │ bei Fehlschlag
-                                          ▼
-                        lokaler Snapshot data/program.json (Fallback)
+Uni Jena (vortraege.pdf)
+   │  GitHub Action update.yml (Cron alle 6 h): SHA-256-Vergleich,
+   │  bei Änderung: Parser → Validierungs-Gate → Commit → Pages-Neubau
+   ▼
+data/program.json  (generiert, committed)
+data/content.json  (kuratiert: Podien, Rahmenprogramm, Venues, Eröffnung)
+   │
+   ▼
+App (buildModel beim Laden: Venues, Panels, Suche, Mining-Tags, Cluster)
 ```
 
-Das Mining läuft komplett **client-seitig** (Vanilla JS, kein Framework,
-kein Build-Step, kein ML-Backend). Aktualisiert sich `program.json` in der
-Programm-App (Auto-Update-Workflow), sieht der Companion die neuen Daten
-beim nächsten Laden — kein eigenes Parsing nötig.
+Validierung schlägt fehl → kein Commit, alte Daten bleiben online, die Action
+scheitert sichtbar.
+
+## Struktur
+
+```
+repo/
+├── index.html                SPA, Hash-Routing (#/heute, /programm, /mein, /themen, /info)
+├── css/style.css
+├── js/
+│   ├── app.js                Router, State, Boot
+│   ├── data.js               Laden + Verschmelzen + Mining-Pass
+│   ├── lexicon.js            Kuratiertes Keyword-Lexikon (27 Themenfelder)
+│   ├── mining.js             Tagging, Sprachheuristik, TF-IDF, Clustering
+│   ├── search.js             Normalisierung, Filterung, Hervorhebung
+│   ├── favorites.js, ics.js, now.js, util.js
+│   └── views/                dashboard, program, mine, info, drawer, topics
+├── data/                     program.json (generiert) + content.json (kuratiert)
+├── tools/parse_program.py    PDF→JSON (pdfplumber, lokal/CI)
+├── tools/verify_lexicon.mjs  Lexikon gegen echte Titel verifizieren
+├── tests/                    mining, logic, realdata, smoke (jsdom), layout (Playwright)
+└── .github/workflows/        deploy.yml (Pages) + update.yml (Cron 6 h)
+```
 
 ## Entwicklung / Tests
 
 ```
 npm install
-npm run test        # Mining-Logik, jsdom-Smoke, Layout (Playwright)
+npm run test        # 5 Suiten: Mining-Logik, Filter/ICS/Now, echte Daten, jsdom-Smoke, Layout
+npm run parse       # PDF neu parsen (tools/source/*.pdf → data/program.json)
 python -m http.server 8000   # lokal ansehen
 ```
 
 Der Sprachdetektor ist eine **Heuristik** (Funktionswörter Deutsch/Englisch,
-kyrillische Buchstaben für Russisch/Ukrainisch, Diakritika für Polnisch/
-Tschechisch) — Ergebnisse sind Hinweise, keine Klassifikation.
+kyrillische Spezialzeichen für Russisch/Ukrainisch, Diakritika für Polnisch/
+Tschechisch) – Zuordnungen sind Hinweise, keine Klassifikation. 76 % der
+Vorträge lassen sich zuordnen; Multi-Label ist gewollt.
 
 Lizenz: MIT (siehe LICENSE). App: Achim Rabus.

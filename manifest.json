@@ -1,8 +1,8 @@
 {
-  "name": "Slavistiktag 2026 – Themen-Kompass",
-  "short_name": "SlavTag 26 · Themen",
-  "description": "Data-Mining-Ansicht zum Programm des 15. Deutschen Slavistiktags 2026 in Jena",
-  "start_url": "./index.html#/themen",
+  "name": "Slavistiktag 2026 – Programm & Themen",
+  "short_name": "SlavTag 26",
+  "description": "Inoffizielle App zum 15. Deutschen Slavistiktag 2026 in Jena: Programm mit Suche, Filter, Favoriten, ICS – plus Themen-Kompass (Data Mining)",
+  "start_url": "./index.html#/heute",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0f1220",
