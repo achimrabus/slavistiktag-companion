@@ -4,7 +4,7 @@ const CACHE = "slavtag26-companion";
 const SHELL = [
   "./", "index.html", "css/style.css",
   "js/app.js", "js/util.js", "js/data.js", "js/mining.js", "js/lexicon.js",
-  "js/search.js", "js/favorites.js", "js/ics.js", "js/now.js",
+  "js/search.js", "js/favorites.js", "js/ics.js", "js/now.js", "js/rooms.js",
   "js/views/dashboard.js", "js/views/program.js", "js/views/mine.js", "js/views/info.js", "js/views/drawer.js", "js/views/topics.js",
   "manifest.json", "icons/icon.svg",
 ];
