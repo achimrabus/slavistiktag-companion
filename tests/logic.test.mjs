@@ -213,6 +213,29 @@ t("isRunningNow: laufender Vortrag ja, davor/danach nein, außerhalb der Tagung 
   assert.equal(isRunningNow(_model, s, new Date("2026-09-20T14:10:00")), false);
 });
 
+// ---------- Feature 4: Sprecher-Index (Nachname-first)
+import { nameParts, splitPeople, buildSpeakerIndex } from "../js/views/speakers.js";
+t("nameParts: Nachname, Vorname", () => {
+  assert.equal(nameParts("Barbara Sonnenhauser").display, "Sonnenhauser, Barbara");
+  assert.equal(nameParts("Jakub M. Zygalski").display, "Zygalski, Jakub M.");
+});
+t("nameParts: Klammern-Zusatz bleibt erhalten", () => {
+  assert.equal(nameParts("Liudmyla Mobius (Pidkuimukha)").display, "Mobius, Liudmyla (Pidkuimukha)");
+  assert.equal(nameParts("Liudmyla Mobius (Pidkuimukha)").sortKey, "mobius, liudmyla");
+});
+t("splitPeople: Mehrpersonen-Feld wird gesplittet, Namen nicht", () => {
+  assert.deepEqual(splitPeople("Arkady Kruglov, Tim-Robin Rösler-Bartsch"),
+    ["Arkady Kruglov", "Tim-Robin Rösler-Bartsch"]);
+  assert.deepEqual(splitPeople("Barbara Sonnenhauser"), ["Barbara Sonnenhauser"]);
+});
+t("Sprecher-Index: sortiert nach Nachname (erste 5 alphabetisch)", () => {
+  const idx = buildSpeakerIndex(_model);
+  assert.ok(idx.length >= 300, `nur ${idx.length} Einträge`);
+  const keys = idx.map((p) => p.sortKey);
+  assert.deepEqual(keys.slice(0, 5), [...keys.slice(0, 5)].sort((a, b) => a.localeCompare(b, "de")));
+  assert.ok(idx[0].display.includes(","), "Anzeige im Format Nachname, Vorname");
+});
+
 await Promise.allSettled(pending);
 console.log(`\n${n} Tests bestanden.`);
 process.exit(failed ? 1 : 0);
