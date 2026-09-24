@@ -106,6 +106,15 @@ t("Drawer öffnet mit Panel-Kontext", () => {
   assert.ok(d.querySelector("h2").textContent.length > 5);
   assert.ok(d.querySelector(".btn-row"));
 });
+t("Drawer: Raum-Deep-Link auf OSM + Gebäude-Zeile", () => {
+  const d = document.querySelector(".drawer");
+  const a = d.querySelector("a.pill.room");
+  assert.ok(a, "kein Raum-Link im Drawer");
+  assert.ok(a.getAttribute("href").includes("openstreetmap.org"));
+  assert.ok(a.getAttribute("href").startsWith("https://"));
+  assert.ok(a.getAttribute("rel").includes("noopener"));
+  assert.ok(d.querySelector(".room-where").textContent.includes("Carl-Zeiß-Straße 3"));
+});
 document.querySelector(".drawer-backdrop").click();
 await waitFor(() => !document.querySelector(".drawer"));
 

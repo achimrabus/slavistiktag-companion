@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node tests/mining.test.mjs && node tests/logic.test.mjs && node tests/realdata.test.mjs && node tests/smoke.test.mjs && node tests/layout.test.mjs"
+    "test": "node tests/mining.test.mjs && node tests/logic.test.mjs && node tests/realdata.test.mjs && node tests/rooms.test.mjs && node tests/smoke.test.mjs && node tests/layout.test.mjs"
   },
   "keywords": [],
   "author": "Achim Rabus",

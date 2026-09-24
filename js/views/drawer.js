@@ -3,6 +3,7 @@ import { h, dateLabel, timeRange } from "../util.js";
 import { favs } from "../favorites.js";
 import { icsFor, downloadIcs } from "../ics.js";
 import { minutes } from "../util.js";
+import { roomLink, roomWhere } from "../rooms.js";
 
 export function openDrawer(ctx, id) {
   const model = ctx.model;
@@ -69,8 +70,9 @@ function sessionBody(ctx, s, close) {
     h("h2", { text: s.title }),
     h("p", { class: "speakers", text: s.speakers?.join(", ") || "" }),
     h("p", { class: "meta" },
-      h("span", { class: "pill room", text: s.room || "" }), " ",
-      s.venue ? h("span", { class: "pill", text: ctx.model.content.venues[s.venue]?.short || s.venue }) : null),
+      roomLink(s.room), " ",
+      s.venue ? h("span", { class: "pill", text: ctx.model.content.venues[s.venue]?.short || s.venue }) : null,
+      s.room ? roomWhere(s.room) : null),
     s.panel_title
       ? h("p", { class: "panel-ref" },
           "Im Rahmen von: ",
@@ -103,7 +105,7 @@ function eventBody(e, close) {
     closeBtn(close),
     h("p", { class: "kicker", text: `${dateLabel(e.day)}${e.start ? ` · ${timeRange(e.start, e.end)}` : ""}` }),
     h("h2", { text: e.title }),
-    e.room ? h("p", {}, h("span", { class: "pill room", text: e.room })) : null,
+    e.room ? h("p", { class: "meta" }, roomLink(e.room), " ", roomWhere(e.room)) : null,
     e.body ? h("p", { class: "body", text: e.body }) : null,
     e.people ? h("p", { class: "meta", text: e.people }) : null,
     e.note ? h("p", { class: "note", text: e.note }) : null);

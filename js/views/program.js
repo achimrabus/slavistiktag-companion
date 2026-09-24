@@ -2,6 +2,7 @@
 import { h, dateLabel, timeRange, debounce, minutes } from "../util.js";
 import { filterSessions, highlight } from "../search.js";
 import { favs } from "../favorites.js";
+import { roomLink } from "../rooms.js";
 
 const TRACK_LABELS = { DID: "Fachdidaktik", SW: "Sprachwissenschaft", LKW: "Literatur-/Kulturwiss." };
 const FORMAT_LABELS = {
@@ -250,7 +251,9 @@ function gridView(model, ctx, state, day, sessions, events) {
   });
 
   g.append(h("div", { class: "grid-head corner", text: "Zeit" }));
-  for (const r of rooms) g.append(h("div", { class: "grid-head", text: r }));
+  for (const r of rooms) {
+    g.append(h("div", { class: "grid-head" }, r ? roomLink(r) : h("span", { text: r })));
+  }
 
   const byStart = {};
   for (const s of sessions) (byStart[s.start] ||= []).push(s);
@@ -370,6 +373,7 @@ export function sessionCard(model, ctx, s, state) {
     h("div", { class: "card-title", html: titleHtml || undefined, text: titleHtml ? undefined : s.title }),
     s.speakers?.length ? h("div", { class: "card-speakers", text: s.speakers.join(", ") }) : null,
     s.panel_code ? h("span", { class: "pill code", text: s.panel_code }) : null,
+    s.room ? roomLink(s.room) : null,
     s.panel_title && !s.panel_code ? h("div", { class: "card-panel", text: s.panel_title }) : null);
 }
 
@@ -386,6 +390,6 @@ export function eventCard(model, ctx, e) {
       h("span", { class: "time", text: timeRange(e.start, e.end) || "ganztägig" }),
       typeLabel ? h("span", { class: "pill", text: typeLabel }) : null),
     h("div", { class: "card-title", text: e.title }),
-    e.room ? h("span", { class: "pill room", text: e.room }) : null,
+    e.room ? roomLink(e.room) : null,
     e.note ? h("div", { class: "card-panel", text: e.note }) : null);
 }
