@@ -32,10 +32,20 @@ t("Alle Einträge: building + address + lat/lon", () => {
   }
 });
 
-// 3. SR 223 ist dem UHG zugeordnet (nicht CZS 3)
-t("SR 223 → UHG (Fürstengraben 1)", () => {
-  assert.equal(roomMeta("SR 223").building, "UHG");
-  assert.equal(roomMeta("SR 223").address, "Fürstengraben 1");
+// 3. SR 223 ist dem CZS 3 zugeordnet (amtlich: Innen-Nr. 2.023; es gibt einen
+//    zweiten SR 223 im UHG – Namensvetter; das Tagungs-PDF sagt „CZS, SR 223“)
+t("SR 223 → CZS 3, 2. OG (Friedolin 2.023)", () => {
+  assert.equal(roomMeta("SR 223").building, "CZS 3");
+  assert.equal(roomMeta("SR 223").inner, "2.023");
+  assert.equal(roomMeta("SR 223").floor, "2. OG");
+});
+
+// 3b. HS 6–8 liegen im 1. OG (Friedolin: 1012/1006/1007)
+t("HS 6–8 im 1. OG (amtliche Innen-Nummern)", () => {
+  for (const [name, inner] of [["HS 6", "1012"], ["HS 7", "1006"], ["HS 8", "1007"]]) {
+    assert.equal(roomMeta(name).floor, "1. OG", name);
+    assert.equal(roomMeta(name).inner, inner, name);
+  }
 });
 
 // 4. MMZ 220 → Ernst-Abbe-Platz 8
@@ -57,6 +67,17 @@ t("Koordinaten im Jena-Zentrum (50.92–50.93 / 11.58)", () => {
     assert.ok(m.lat > 50.92 && m.lat < 50.93, `lat ${m.lat}`);
     assert.ok(m.lon > 11.57 && m.lon < 11.60, `lon ${m.lon}`);
   }
+});
+
+// 7. Etagen-Streifen: CZS 3, 2. OG hat 9 Tagungsräume, aktueller hervorgehoben
+t("Floor-Strip: Etage korrekt gruppiert, aktueller Raum markiert", async () => {
+  const { roomFloorStrip } = await import("../js/rooms.js");
+  const { h } = await import("../js/util.js");
+  // h() braucht DOM – nur Strukturprüfung über die Datenquelle
+  const { ROOMS } = await import("../js/rooms.js");
+  const siblings = Object.entries(ROOMS).filter(([n, x]) => x.building === "CZS 3" && x.floor === "2. OG");
+  assert.equal(siblings.length, 9);
+  assert.ok(siblings.some(([n]) => n === "SR 223"));
 });
 
 console.log(`\n${n} Raum-Tests bestanden.`);

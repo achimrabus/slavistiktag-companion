@@ -113,7 +113,10 @@ t("Drawer: Raum-Deep-Link auf OSM + Gebäude-Zeile", () => {
   assert.ok(a.getAttribute("href").includes("openstreetmap.org"));
   assert.ok(a.getAttribute("href").startsWith("https://"));
   assert.ok(a.getAttribute("rel").includes("noopener"));
-  assert.ok(d.querySelector(".room-where").textContent.includes("Carl-Zeiß-Straße 3"));
+  assert.ok(d.querySelector(".room-where").textContent.includes("CZS 3"),
+    d.querySelector(".room-where")?.textContent);
+  assert.ok(d.querySelector(".floor-strip"), "kein Etagen-Streifen im Drawer");
+  assert.ok(d.querySelector(".floor-strip .floor-room.current"), "aktueller Raum nicht markiert");
 });
 document.querySelector(".drawer-backdrop").click();
 await waitFor(() => !document.querySelector(".drawer"));

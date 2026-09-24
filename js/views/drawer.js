@@ -3,7 +3,7 @@ import { h, dateLabel, timeRange } from "../util.js";
 import { favs } from "../favorites.js";
 import { icsFor, downloadIcs } from "../ics.js";
 import { minutes } from "../util.js";
-import { roomLink, roomWhere } from "../rooms.js";
+import { roomLink, roomWhere, roomFloorStrip } from "../rooms.js";
 
 export function openDrawer(ctx, id) {
   const model = ctx.model;
@@ -73,6 +73,7 @@ function sessionBody(ctx, s, close) {
       roomLink(s.room), " ",
       s.venue ? h("span", { class: "pill", text: ctx.model.content.venues[s.venue]?.short || s.venue }) : null,
       s.room ? roomWhere(s.room) : null),
+    s.room ? roomFloorStrip(s.room) : null,
     s.panel_title
       ? h("p", { class: "panel-ref" },
           "Im Rahmen von: ",
@@ -106,6 +107,7 @@ function eventBody(e, close) {
     h("p", { class: "kicker", text: `${dateLabel(e.day)}${e.start ? ` · ${timeRange(e.start, e.end)}` : ""}` }),
     h("h2", { text: e.title }),
     e.room ? h("p", { class: "meta" }, roomLink(e.room), " ", roomWhere(e.room)) : null,
+    e.room ? roomFloorStrip(e.room) : null,
     e.body ? h("p", { class: "body", text: e.body }) : null,
     e.people ? h("p", { class: "meta", text: e.people }) : null,
     e.note ? h("p", { class: "note", text: e.note }) : null);

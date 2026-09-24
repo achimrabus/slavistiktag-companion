@@ -158,6 +158,12 @@ a.pill.room { text-decoration: none; }
 a.pill.room:hover { background: color-mix(in srgb, var(--accent) 30%, transparent); }
 .room-where { color: var(--dim); font-size: 0.82rem; margin-left: 0.35rem; }
 .grid-head a.pill.room { padding: 0.1rem 0.5rem; }
+.floor-strip { margin: 0.6rem 0 0.2rem; padding: 0.55rem 0.7rem; border: 1px solid var(--border); border-radius: 8px; background: color-mix(in srgb, var(--accent) 4%, transparent); }
+.floor-head { margin: 0 0 0.4rem; font-size: 0.85rem; }
+.floor-head .dim { color: var(--dim); font-weight: 400; }
+.floor-rooms { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.pill.floor-room { background: transparent; border: 1px solid var(--border); color: var(--dim); }
+.pill.floor-room.current { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 700; }
 .pill.code { background: color-mix(in srgb, var(--accent2) 13%, transparent); color: var(--accent2); font-family: ui-monospace, monospace; }
 
 mark { background: var(--warn); color: var(--bg); border-radius: 3px; padding: 0 2px; }
