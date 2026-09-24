@@ -1,0 +1,5779 @@
+{
+ "meta": {
+  "source_file": "vortraege_2026-08-18.pdf",
+  "source_sha256": "010fe2070f4935b6cd072177c5495290c8aa539cd75227fee399a29b7f96f44e",
+  "generated_at": "2026-09-24T08:34:52",
+  "pages": 26,
+  "program_pages": 22,
+  "stats": {
+   "sessions": 308,
+   "breaks": 7,
+   "panels": 99,
+   "footer_events": 8
+  },
+  "warnings": []
+ },
+ "blocks": [
+  {
+   "day": "2026-10-01",
+   "day_label": "Donnerstag, 01.10.",
+   "start": "09:00",
+   "end": "11:00",
+   "track": "SW+DID",
+   "pages": [
+    5
+   ],
+   "rooms": [
+    "HS 8",
+    "SR 114",
+    "SR 121",
+    "SR 208",
+    "SR 206",
+    "SR 207"
+   ]
+  },
+  {
+   "day": "2026-10-01",
+   "day_label": "Donnerstag, 01.10.",
+   "start": "09:00",
+   "end": "11:00",
+   "track": "LKW",
+   "pages": [
+    8,
+    9
+   ],
+   "rooms": [
+    "SR 124",
+    "HS 6",
+    "SR 209",
+    "SR 223",
+    "SR 224",
+    "SR 125",
+    "HS 7",
+    "SR 226"
+   ]
+  },
+  {
+   "day": "2026-10-01",
+   "day_label": "Donnerstag, 01.10.",
+   "start": "11:30",
+   "end": "13:00",
+   "track": "SW+DID",
+   "pages": [
+    6
+   ],
+   "rooms": [
+    "SR 113",
+    "SR 206",
+    "SR 207",
+    "SR 114",
+    "SR 121",
+    "SR 208",
+    "HS 8"
+   ]
+  },
+  {
+   "day": "2026-10-01",
+   "day_label": "Donnerstag, 01.10.",
+   "start": "11:30",
+   "end": "13:00",
+   "track": "LKW",
+   "pages": [
+    10,
+    11
+   ],
+   "rooms": [
+    "SR 224",
+    "SR 223",
+    "SR 221",
+    "SR 209",
+    "MMZ 220",
+    "HS 6",
+    "HS 7",
+    "SR 125"
+   ]
+  },
+  {
+   "day": "2026-10-01",
+   "day_label": "Donnerstag, 01.10.",
+   "start": "14:00",
+   "end": "15:30",
+   "track": "SW+DID",
+   "pages": [
+    7
+   ],
+   "rooms": [
+    "SR 206",
+    "SR 114",
+    "SR 207",
+    "SR 113",
+    "HS 8",
+    "SR 208"
+   ]
+  },
+  {
+   "day": "2026-10-01",
+   "day_label": "Donnerstag, 01.10.",
+   "start": "14:00",
+   "end": "15:30",
+   "track": "LKW",
+   "pages": [
+    12
+   ],
+   "rooms": [
+    "HS 6",
+    "SR 125",
+    "SR 224",
+    "SR 209",
+    "HS 7"
+   ]
+  },
+  {
+   "day": "2026-10-02",
+   "day_label": "Freitag, 02.10.",
+   "start": "09:00",
+   "end": "11:00",
+   "track": "SW+DID",
+   "pages": [
+    13,
+    14
+   ],
+   "rooms": [
+    "SR 114",
+    "HS 8",
+    "SR 121",
+    "SR 113",
+    "SR 208",
+    "SR 207",
+    "SR 206"
+   ]
+  },
+  {
+   "day": "2026-10-02",
+   "day_label": "Freitag, 02.10.",
+   "start": "09:00",
+   "end": "11:00",
+   "track": "LKW",
+   "pages": [
+    19,
+    20
+   ],
+   "rooms": [
+    "SR 223",
+    "SR 224",
+    "SR 226",
+    "SR 222",
+    "SR 221",
+    "SR 209",
+    "HS 7",
+    "SR 125",
+    "HS 6",
+    "SR 124"
+   ]
+  },
+  {
+   "day": "2026-10-02",
+   "day_label": "Freitag, 02.10.",
+   "start": "11:30",
+   "end": "13:00",
+   "track": "SW+DID",
+   "pages": [
+    15,
+    16
+   ],
+   "rooms": [
+    "SR 121",
+    "HS 8",
+    "SR 113",
+    "SR 114",
+    "SR 207",
+    "SR 206",
+    "SR 208"
+   ]
+  },
+  {
+   "day": "2026-10-02",
+   "day_label": "Freitag, 02.10.",
+   "start": "11:30",
+   "end": "13:00",
+   "track": "LKW",
+   "pages": [
+    21,
+    22
+   ],
+   "rooms": [
+    "SR 222",
+    "SR 224",
+    "SR 223",
+    "SR 226",
+    "SR 221",
+    "SR 209",
+    "HS 6",
+    "SR 125",
+    "HS 7",
+    "SR 127",
+    "SR 124"
+   ]
+  },
+  {
+   "day": "2026-10-02",
+   "day_label": "Freitag, 02.10.",
+   "start": "14:00",
+   "end": "15:30",
+   "track": "SW+DID",
+   "pages": [
+    17,
+    18
+   ],
+   "rooms": [
+    "SR 206",
+    "SR 207",
+    "SR 114",
+    "SR 113",
+    "SR 125",
+    "SR 208",
+    "SR 121",
+    "HS 8"
+   ]
+  },
+  {
+   "day": "2026-10-02",
+   "day_label": "Freitag, 02.10.",
+   "start": "14:00",
+   "end": "15:30",
+   "track": "LKW",
+   "pages": [
+    23,
+    24
+   ],
+   "rooms": [
+    "SR 221",
+    "SR 223",
+    "SR 222",
+    "SR 209",
+    "SR 224",
+    "SR 127",
+    "HS 7",
+    "SR 124"
+   ]
+  },
+  {
+   "day": "2026-10-03",
+   "day_label": "Samstag, 03.10.",
+   "start": "09:00",
+   "end": "11:00",
+   "track": "SW",
+   "pages": [
+    25
+   ],
+   "rooms": [
+    "SR 206",
+    "SR 207",
+    "SR 114"
+   ]
+  },
+  {
+   "day": "2026-10-03",
+   "day_label": "Samstag, 03.10.",
+   "start": "09:00",
+   "end": "11:00",
+   "track": "LKW+DID",
+   "pages": [
+    26
+   ],
+   "rooms": [
+    "SR 221",
+    "SR 209",
+    "SR 124",
+    "HS 8",
+    "SR 222"
+   ]
+  }
+ ],
+ "panels": [
+  {
+   "id": "2026-10-01|09:00|fremdsprachendidaktik slavischer sprachen",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Fremdsprachendidaktik slavischer Sprachen",
+   "chair": null,
+   "room": "HS 8",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|09:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Quantitative und qualitative Methoden in der Forschung zu slavischen Heritage Languages in Deutschland",
+   "chair": null,
+   "room": "SR 114",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|09:00|sprache und krieg",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Sprache und Krieg",
+   "chair": null,
+   "room": "SR 121",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|09:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Korpus- und experimentelle Ansätze zu südslavischen Sprachen",
+   "chair": null,
+   "room": "SR 206",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|09:00|zukunft der übersetzung(swissenschaft) in linguistik und didaktik",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Zukunft der Übersetzung(swissenschaft) in Linguistik und Didaktik",
+   "chair": null,
+   "room": "SR 207",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|09:00|wie schreibt man im 21. jahrhundert eine literaturgeschichte?",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Wie schreibt man im 21. Jahrhundert eine Literaturgeschichte?",
+   "chair": null,
+   "room": "HS 6",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Slavic Game Studies: Das digitale Spiel als Zukunftsmedium",
+   "chair": null,
+   "room": "HS 7",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|dezentrierte russophonie. sprache, macht und intersektionale gegenposition in (post)sozialistischen und transnationalen kontexten",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Dezentrierte Russophonie. Sprache, Macht und intersektionale Gegenposition in (post)sozialistischen und transnationalen Kontexten",
+   "chair": null,
+   "room": "SR 124",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|changing aesthetic paradigms: literature and political economy in the long nineteenth century",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Changing Aesthetic Paradigms: Literature and Political Economy in the Long Nineteenth Century",
+   "chair": null,
+   "room": "SR 125",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Stars, Rebellen, Außenseiter. Umstrittene Vorbilder in osteuropäischen Populärkultur",
+   "chair": null,
+   "room": "SR 209",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|gastajbarteri",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "gastajbarteri",
+   "chair": null,
+   "room": "SR 223",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|restoring kinship? literarische rohstoffnarrative des 20. und 21. jahrhunderts",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Restoring Kinship? Literarische Rohstoffnarrative des 20. und 21. Jahrhunderts",
+   "chair": null,
+   "room": "SR 224",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|from the dusk of habsburg monarchy to the fall of democratic czechoslovakia. women authors as public intellectuals (1890s-1930s)",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": null,
+   "title": "From the Dusk of Habsburg Monarchy to the Fall of Democratic Czechoslovakia. Women Authors as Public Intellectuals (1890s-1930s)",
+   "chair": null,
+   "room": "SR 226",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|09:00|SEK_SW_01",
+   "day": "2026-10-01",
+   "block_start": "09:00",
+   "code": "SEK_SW_01",
+   "title": "Historische Ostslavistik - Grammatik und Syntax",
+   "chair": "Irina Podtergera",
+   "room": "SR 208",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|11:30|fremdsprachendid aktik slavischer sprachen",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Fremdsprachendid aktik slavischer Sprachen",
+   "chair": null,
+   "room": "HS 8",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|11:30|wiederstand, protest und krieg: sprachliche konfigurationen und diskursive (re-)artikulation in den transformationsgesellschaften mittel- und osteuropas",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Wiederstand, Protest und Krieg: Sprachliche Konfigurationen und diskursive (Re-)Artikulation in den Transformationsgesellschaften Mittel- und Osteuropas",
+   "chair": null,
+   "room": "SR 113",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|11:30|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Quantitative und qualitative Methoden in der Forschung zu slavischen Heritage Languages in Deutschland",
+   "chair": null,
+   "room": "SR 114",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|11:30|sprache und krieg",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Sprache und Krieg",
+   "chair": null,
+   "room": "SR 121",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|11:30|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Korpus- und experimentelle Ansätze zu südslavischen Sprachen",
+   "chair": null,
+   "room": "SR 206",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|11:30|zum habitus von intellektuellen im 21. jahrhundert: slavistische perspektiven",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Zum Habitus von Intellektuellen im 21. Jahrhundert: Slavistische Perspektiven",
+   "chair": null,
+   "room": "HS 6",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|slavic game studies: das digitale spiel als zukunftsmedium",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Slavic Game Studies: Das digitale Spiel als Zukunftsmedium",
+   "chair": null,
+   "room": "HS 7",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|das polnische kino der moralischen unruhe intermedial",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Das polnische Kino der moralischen Unruhe intermedial",
+   "chair": null,
+   "room": "MMZ 220",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|helden unserer zeit? die darstellung von dissidenz in osteuropäischen kulturen nach 1989",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Helden unserer Zeit? Die Darstellung von Dissidenz in osteuropäischen Kulturen nach 1989",
+   "chair": null,
+   "room": "SR 125",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Stars, Rebellen, Außenseiter. Umstrittene Vorbilder in osteuropäischen Populärkultur",
+   "chair": null,
+   "room": "SR 209",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|gastajbarteri",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "gastajbarteri",
+   "chair": null,
+   "room": "SR 223",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|ökologien der zukunft in der gegenwartsliteratur",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Ökologien der Zukunft in der Gegenwartsliteratur",
+   "chair": null,
+   "room": "SR 224",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|SEK_LKW_07",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": "SEK_LKW_07",
+   "title": "Imperiale und nationale Narrative in literarischen Gedenkfeiern",
+   "chair": "Eliane Fitzé",
+   "room": "SR 221",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|11:30|SEK_SW_02",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": "SEK_SW_02",
+   "title": "Historische Lexikographie: Das Polikarpov-Lexikon",
+   "chair": "Swetlana Mengel",
+   "room": "SR 208",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|11:30|SEK_SW_17",
+   "day": "2026-10-01",
+   "block_start": "11:30",
+   "code": "SEK_SW_17",
+   "title": "Sprachliche Bedeutung und Interpretation",
+   "chair": "Martina Rybová",
+   "room": "SR 207",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|14:00|fremdsprachendidaktik slavischer sprachen",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Fremdsprachendidaktik slavischer Sprachen",
+   "chair": null,
+   "room": "HS 8",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|14:00|wiederstand, protest und krieg: sprachliche konfigurationen und diskursive (re-)artikulation in den transformationsgesellschaft en mittel- und osteuropas",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Wiederstand, Protest und Krieg: Sprachliche Konfigurationen und diskursive (Re-)Artikulation in den Transformationsgesellschaft en Mittel- und Osteuropas",
+   "chair": null,
+   "room": "SR 113",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|14:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Quantitative und qualitative Methoden in der Forschung zu slavischen Heritage Languages in Deutschland",
+   "chair": null,
+   "room": "SR 114",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|14:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Korpus- und experimentelle Ansätze zu südslavischen Sprachen",
+   "chair": null,
+   "room": "SR 206",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|14:00|zum habitus von intellektuellen im 21. jahrhundert: slavistische perspektiven",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Zum Habitus von Intellektuellen im 21. Jahrhundert: Slavistische Perspektiven",
+   "chair": null,
+   "room": "HS 6",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|14:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Slavic Game Studies: Das digitale Spiel als Zukunftsmedium",
+   "chair": null,
+   "room": "HS 7",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|14:00|helden unserer zeit? die darstellung von dissidenz in osteuropäischen kulturen nach 1989",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Helden unserer Zeit? Die Darstellung von Dissidenz in osteuropäischen Kulturen nach 1989",
+   "chair": null,
+   "room": "SR 125",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|14:00|machtdiskurs und performativität: deutsch- und russischsprachige literatur und kunst im vergleich",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Machtdiskurs und Performativität: Deutsch- und russischsprachige Literatur und Kunst im Vergleich",
+   "chair": null,
+   "room": "SR 209",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|14:00|SEK_LKW_14",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": "SEK_LKW_14",
+   "title": "Neue(re) utopische Diskurse",
+   "chair": "Annelie Bachmaier",
+   "room": "SR 224",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-01|14:00|SEK_SW_03",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": "SEK_SW_03",
+   "title": "Kirchenslavisch, Ruthenisch und historische Textkulturen",
+   "chair": "Malinka Pila",
+   "room": "SR 208",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-01|14:00|SEK_SW_18",
+   "day": "2026-10-01",
+   "block_start": "14:00",
+   "code": "SEK_SW_18",
+   "title": "Allgemeine Linguistik: Pragmatik, Sprachvergleich und Metapher",
+   "chair": "Arkady Kruglov, Tim-Robin Rösler-Bartsch",
+   "room": "SR 207",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|09:00|didaktik der herkunftssprachen",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Didaktik der Herkunftssprachen",
+   "chair": null,
+   "room": "HS 8",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|09:00|new linguistic approaches to ukrainian: language contact and contrast",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "New Linguistic Approaches to Ukrainian: Language Contact and Contrast",
+   "chair": null,
+   "room": "SR 113",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|09:00|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Minderheitssprachen und kulturelle Vielfalt in Südosteuropa: Dokumentation, Dynamiken und Perspektiven",
+   "chair": null,
+   "room": "SR 114",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|09:00|niedersorbisch im aufbruch: chancen und perspektiven für die zukunft",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Niedersorbisch im Aufbruch: Chancen und Perspektiven für die Zukunft",
+   "chair": null,
+   "room": "SR 121",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|09:00|kinderliteratur - bildung - politik: wie kinderbücher zukunft mitgestalten: die formung junger staatsbürger*innen",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Kinderliteratur - Bildung - Politik: Wie Kinderbücher Zukunft mitgestalten: Die Formung junger Staatsbürger*innen",
+   "chair": null,
+   "room": "HS 6",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|praktiken des dokumentarischen in theatertexten",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Praktiken des Dokumentarischen in Theatertexten",
+   "chair": null,
+   "room": "HS 7",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|die philosophische kultur in der sowjetzeit. neue forschungsansätze",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Die philosophische Kultur in der Sowjetzeit. Neue Forschungsansätze",
+   "chair": null,
+   "room": "SR 124",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|engagement im wandel: formen, narrative und akteur:innen (am beispiel der ostslavia)",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Engagement im Wandel: Formen, Narrative und Akteur:innen (am Beispiel der Ostslavia)",
+   "chair": "Elisa Mucciarelli",
+   "room": "SR 125",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|slawische exilliteratur: aktualität und neue perspektiven (slavic literatures in exile: topicality and new perspectives)",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Slawische Exilliteratur: Aktualität und neue Perspektiven (Slavic Literatures in Exile: Topicality and New Perspectives)",
+   "chair": null,
+   "room": "SR 223",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_LKW_01a",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_LKW_01a",
+   "title": "Slavische Literaturen in Umbruchzeiten",
+   "chair": "Elena Glökler",
+   "room": "SR 209",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_LKW_04",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_LKW_04",
+   "title": "Kulturkontexte im slawischen Mittelalter und Frühneuzeit",
+   "chair": "Thomas Skowronek",
+   "room": "SR 221",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_LKW_06",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_LKW_06",
+   "title": "Populärkultur und Medien",
+   "chair": "Nataliia Sorokina",
+   "room": "SR 222",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_LKW_08a",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_LKW_08a",
+   "title": "Osteuropäisches Kino im Laufe der Zeit",
+   "chair": "Konstanty Kuzma",
+   "room": "SR 226",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_LKW_15",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_LKW_15",
+   "title": "Intellektuelle Traditionen",
+   "chair": "Tatiana Kudriavtseva",
+   "room": "SR 224",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_SW_04",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_SW_04",
+   "title": "Historische Variation und Sprachwandel im Slavischen",
+   "chair": "Thomas Daiber",
+   "room": "SR 208",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_SW_13",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_SW_13",
+   "title": "Korpuslinguistik, Variation und Gebrauchsmuster",
+   "chair": "Małgorzata Szajbel-Keck",
+   "room": "SR 206",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|09:00|SEK_SW_19",
+   "day": "2026-10-02",
+   "block_start": "09:00",
+   "code": "SEK_SW_19",
+   "title": "Syntax, Argumentstruktur und grammatische Relationen",
+   "chair": "Ljudmila Geist",
+   "room": "SR 207",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|11:30|fremdsprachendidaktik slavischer sprachen",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Fremdsprachendidaktik slavischer Sprachen",
+   "chair": null,
+   "room": "HS 8",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|11:30|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Minderheitssprachen und kulturelle Vielfalt in Südosteuropa: Dokumentation, Dynamiken und Perspektiven",
+   "chair": null,
+   "room": "SR 114",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|11:30|kinderliteratur - bildung – politik: wie kinderbücher zukunft mitgestalten: wertevermittlung in kommunikation und erinnerung",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Kinderliteratur - Bildung – Politik: Wie Kinderbücher Zukunft mitgestalten: Wertevermittlung in Kommunikation und Erinnerung",
+   "chair": null,
+   "room": "HS 6",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|migration in film: theory, history, an academic practics",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Migration in Film: Theory, History, an Academic Practics",
+   "chair": null,
+   "room": "SR 124",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|buch- und mediengeschichte in der frühen neuzeit: methodologische neuorientierung des slavistik",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Buch- und Mediengeschichte in der Frühen Neuzeit: Methodologische Neuorientierung des Slavistik",
+   "chair": null,
+   "room": "SR 125",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|die gegenwärtige protestkultur in serbien im spiegel widerständiger praktiken und politischer ästhetiken",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Die gegenwärtige Protestkultur in Serbien im Spiegel widerständiger Praktiken und politischer Ästhetiken",
+   "chair": null,
+   "room": "SR 222",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|narrating the past, evading the future? silence, memory, and responsibility",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Narrating the Past, Evading the Future? Silence, Memory, and Responsibility",
+   "chair": null,
+   "room": "SR 223",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|future margins: changing forces in the study of (post)yugoslav cinema",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": null,
+   "title": "Future Margins: Changing Forces in the Study of (Post)Yugoslav Cinema",
+   "chair": null,
+   "room": "SR 224",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_LKW_01b",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_LKW_01b",
+   "title": "Slavische Literaturen in Umbruchzeiten",
+   "chair": "Jakub M. Zygalski",
+   "room": "SR 209",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_LKW_03a",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_LKW_03a",
+   "title": "Narrative von Erinnerung, Trauma und Zeugenschaft",
+   "chair": "Patrik Valouch",
+   "room": "SR 221",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_LKW_08b",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_LKW_08b",
+   "title": "Osteuropäisches Kino im Laufe der Zeit",
+   "chair": "Marianna Leonova",
+   "room": "SR 226",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_LKW_11a",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_LKW_11a",
+   "title": "Dekolonisierung und postkoloniale Diskurse in Osteuropa",
+   "chair": "Jens Herlth",
+   "room": "HS 7",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_LKW_13a",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_LKW_13a",
+   "title": "Postsowjetisches Russland und seine Kriege",
+   "chair": "Oleksandr Chertenko",
+   "room": "SR 127",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_SW_05",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_SW_05",
+   "title": "Historische Schriftkulturen und Sprachwandel",
+   "chair": "Roman Fisun",
+   "room": "SR 208",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_SW_08",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_SW_08",
+   "title": "Ukrainisch - Sprachgebrauch, Identität und Mehrsprachigkeit",
+   "chair": "Nadiya Kiss",
+   "room": "SR 113",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_SW_14",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_SW_14",
+   "title": "Digitale Methoden, KI und Normforschung",
+   "chair": "Karolina Wieserová",
+   "room": "SR 206",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_SW_20",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_SW_20",
+   "title": "Nominale Kategorien, Numerus und Referenz",
+   "chair": "Jadranka Gvozdanovic",
+   "room": "SR 207",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|11:30|SEK_SW_23",
+   "day": "2026-10-02",
+   "block_start": "11:30",
+   "code": "SEK_SW_23",
+   "title": "Sorbisch: Sprachstruktur, Sprachkontakt und Sichtbarkeit",
+   "chair": "Florian Wandl",
+   "room": "SR 121",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|didaktikworkshop",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Didaktikworkshop",
+   "chair": null,
+   "room": "HS 8",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|future margins: changing forces in the study of (post)yugoslav cinema",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": null,
+   "title": "Future Margins: Changing Forces in the Study of (Post)Yugoslav Cinema",
+   "chair": null,
+   "room": "SR 224",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_DID_02",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_DID_02",
+   "title": "Ukrainische Sprache im Unterricht",
+   "chair": null,
+   "room": "SR 125",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_LKW_03b",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_LKW_03b",
+   "title": "Narrative von Erinnerung, Trauma und Zeugenschaft",
+   "chair": "Ricarda Fait",
+   "room": "SR 221",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_LKW_05",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_LKW_05",
+   "title": "Wege des (Ver)Schweigens",
+   "chair": "Christoph Garstka",
+   "room": "SR 223",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_LKW_09",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_LKW_09",
+   "title": "Volkskultur und nationale Diskurse im 19. Jahrhundert",
+   "chair": "Barbara Sonnenhauser",
+   "room": "SR 222",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_LKW_10",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_LKW_10",
+   "title": "Reiseliteratur",
+   "chair": "Nadine Menzel",
+   "room": "SR 124",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_LKW_11b",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_LKW_11b",
+   "title": "Dekolonisierung und postkoloniale Diskurse in Osteuropa",
+   "chair": "Jens Herlth",
+   "room": "HS 7",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_LKW_12",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_LKW_12",
+   "title": "Alternative Lebensweisen",
+   "chair": "Ana Marija Spasojevic",
+   "room": "SR 209",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_LKW_13b",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_LKW_13b",
+   "title": "Postsowjetisches Russland und seine Kriege",
+   "chair": "Ulrike Goldschweer",
+   "room": "SR 127",
+   "track": "LKW"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_SW_06",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_SW_06",
+   "title": "Religion, Mission und religiöse Sprachformen",
+   "chair": "Savva Mikheev",
+   "room": "SR 208",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_SW_07",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_SW_07",
+   "title": "Ukrainisch - Variation, Morphologie und Sprachwande l",
+   "chair": "Yevheniia Lytvyshko",
+   "room": "SR 113",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_SW_10",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_SW_10",
+   "title": "Minderheitensprachen, Sprachkontakt und Varietäten",
+   "chair": "Thomas Menzel",
+   "room": "SR 114",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_SW_11",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_SW_11",
+   "title": "Soziolinguistik, Spracheinstellungen und Wahrnehmung",
+   "chair": "Claudia Radünzel",
+   "room": "SR 121",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_SW_15",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_SW_15",
+   "title": "Korpusbasierte Diskurs- und Sprachanalyse",
+   "chair": "Uliana Pressacco",
+   "room": "SR 206",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-02|14:00|SEK_SW_21",
+   "day": "2026-10-02",
+   "block_start": "14:00",
+   "code": "SEK_SW_21",
+   "title": "Phonetik, Semantik und allgemeine Kategorien",
+   "chair": "Hermann Fegert",
+   "room": "SR 207",
+   "track": "SW+DID"
+  },
+  {
+   "id": "2026-10-03|09:00|die poetik des bewusstseins: reflexives denken und kognitives experiment in der spätsowjetischen literatur und philosophie",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Die Poetik des Bewusstseins: Reflexives Denken und kognitives Experiment in der spätsowjetischen Literatur und Philosophie",
+   "chair": null,
+   "room": "SR 124",
+   "track": "LKW+DID"
+  },
+  {
+   "id": "2026-10-03|09:00|das grauen (vor) der heimkehr: jiddische, ukrainische, belarussische, russische versionen und visionen",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Das Grauen (vor) der Heimkehr: Jiddische, ukrainische, belarussische, russische Versionen und Visionen",
+   "chair": null,
+   "room": "SR 209",
+   "track": "LKW+DID"
+  },
+  {
+   "id": "2026-10-03|09:00|jenseits der nationalphilologien? perspektiven der slavistischen literaturwissenschaft",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": null,
+   "title": "Jenseits der Nationalphilologien? Perspektiven der slavistischen Literaturwissenschaft",
+   "chair": null,
+   "room": "SR 222",
+   "track": "LKW+DID"
+  },
+  {
+   "id": "2026-10-03|09:00|SEK_DID_01",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": "SEK_DID_01",
+   "title": "Sprachunterricht: einige praktische Aspekte",
+   "chair": null,
+   "room": "HS 8",
+   "track": "LKW+DID"
+  },
+  {
+   "id": "2026-10-03|09:00|SEK_LKW_02",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": "SEK_LKW_02",
+   "title": "Literatur als Medium gesellschaftlicher Wahrnehmung und Deutung",
+   "chair": "Nicolas Dreyer",
+   "room": "SR 221",
+   "track": "LKW+DID"
+  },
+  {
+   "id": "2026-10-03|09:00|SEK_SW_12",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": "SEK_SW_12",
+   "title": "Mehrsprachigkeit, Sprachbiografien und Identität",
+   "chair": "Grzegorz Lisek",
+   "room": "SR 114",
+   "track": "SW"
+  },
+  {
+   "id": "2026-10-03|09:00|SEK_SW_16",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": "SEK_SW_16",
+   "title": "Diskurs, Norm und gesellschaftliche Sprache",
+   "chair": "Olav Mueller-Reichau",
+   "room": "SR 206",
+   "track": "SW"
+  },
+  {
+   "id": "2026-10-03|09:00|SEK_SW_22",
+   "day": "2026-10-03",
+   "block_start": "09:00",
+   "code": "SEK_SW_22",
+   "title": "Allgemeine Grammatik und Verbsemantik",
+   "chair": "Elena Graf",
+   "room": "SR 207",
+   "track": "SW"
+  }
+ ],
+ "sessions": [
+  {
+   "id": "2026-10-01-09:00-HS8-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Albina Bibilashvili"
+   ],
+   "title": "Analytisches Lesen im Russischunterricht: Kulturvermittlung durch handlungsorientierte Lernformen – Beispiele aus der Praxis",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS8-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Gerta Monakhova",
+    "Olga Burdakova",
+    "Ekaterina Konakova",
+    "Tatiana Miroshkina"
+   ],
+   "title": "Russischlernen in Europa: Eine Exkursion nach Narva zwischen Sprachpraxis, regionalgeschichtlicher Erkundung und einer sicheren Alternative zur Russlandreise",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS8-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Maria Vlasova"
+   ],
+   "title": "Zwischen Tradition und nachhaltiger Bildung im Fremdsprachenunterricht: Zur Bedeutung von interkultureller Kompetenz im Russischunterricht",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS8-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Daria Grecko"
+   ],
+   "title": "Sprechpraxis fördern, Lernmotivation stärken: Ein studentischer Konversationsklub im universitären Russischunterricht",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR114-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Bernard Brehmer",
+    "Ramona Teresa Plitt"
+   ],
+   "title": "Polnisch als Herkunftssprache in Deutschland – Einblicke aus einer soziolinguistischen Survey-Studie (Polski.Kompass)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR114-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Stefan Heck",
+    "Tanja Anstatt"
+   ],
+   "title": "Herkunftssprachlicher Unterricht Polnisch in Nordrhein-Westfalen: Motivationen, Erfahrungen und Wünsche von Jugendlichen und Eltern. Eine qualitative Interview-Studie",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR114-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Chingiz Poletaev",
+    "Tatjana Kurbangulova",
+    "Olia Blacher"
+   ],
+   "title": "Intergenerational transformation of linguistic, national and cultural identity of Russian-speaking families in Germany",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR121-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|sprache und krieg",
+   "speakers": [
+    "Holger Kuße"
+   ],
+   "title": "Von Bedrohung bis Prestige. Eine Typologie der Kriegsargumente",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR121-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|sprache und krieg",
+   "speakers": [
+    "Riccardo Nicolosi"
+   ],
+   "title": "Putins Kriegsrhetorik",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR121-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|sprache und krieg",
+   "speakers": [
+    "Daniel Weiss"
+   ],
+   "title": "Donald Trumps zweite Amtszeit als Herausforderung für die Kreml-Propaganda\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR121-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|sprache und krieg",
+   "speakers": [
+    "Monika Wingender"
+   ],
+   "title": "Dekommunisierung und Derussifizierung in der Ukraine – Sprachideologien und Linguistic Landscaping",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR206-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Ivan Šimko",
+    "Stefan Savić"
+   ],
+   "title": "Productivity of Verbal Stems in OCS and Gothic",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR206-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Ilia Afanasev",
+    "Ivan Petrov"
+   ],
+   "title": "Implementing LLMs for creating a parallel corpus/dictionary system for Old and Middle Bulgarian religious texts",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR206-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Nikolay Hakimov"
+   ],
+   "title": "Intuitionen zur Silbenstruktur im Kroatischen: Sonorität oder Legalität?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR207-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|zukunft der übersetzung(swissenschaft) in linguistik und didaktik",
+   "speakers": [
+    "Katrin Bente Karl"
+   ],
+   "title": "Form und Funktion literarischer Neologismen in der Übersetzung: Eine vergleichende Analyse von Seminar-, Expertinnen- und KI-Auswertungen am Beispiel der Cyberiada Stanisław Lems",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR207-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|zukunft der übersetzung(swissenschaft) in linguistik und didaktik",
+   "speakers": [
+    "Christina Clasmeier"
+   ],
+   "title": "Aspekt übersetzen: Wiederholte Ereignisse in tschechischen Originaltexten und Übersetzungen aus dem Russischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR207-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|zukunft der übersetzung(swissenschaft) in linguistik und didaktik",
+   "speakers": [
+    "Maria Eisen"
+   ],
+   "title": "Einbürgerung und Verfremdung in der Translation: Begründung und Anwendung",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR207-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|zukunft der übersetzung(swissenschaft) in linguistik und didaktik",
+   "speakers": [
+    "Ewa Krauss"
+   ],
+   "title": "Translationsorientierter Polnischunterricht an der Hochschule",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR208-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|SEK_SW_01",
+   "speakers": [
+    "Swetlana Mengel"
+   ],
+   "title": "Zur Sprache und zum Inhalt einer in Kiewer Höhlenkloster 1705 gedruckten \"Grammatik\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR208-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|SEK_SW_01",
+   "speakers": [
+    "Aleksej Tikhonov"
+   ],
+   "title": "Führen alle Wege zu Lomonosov? Nullsubjekte und stylometrische Ansätze in russischen Grammatikeinleitungen des 18. Jahrhunderts",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR208-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|SEK_SW_01",
+   "speakers": [
+    "Nele Focke"
+   ],
+   "title": "Aspektuelle Funktionen im Altostslavischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR208-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|09:00|SEK_SW_01",
+   "speakers": [
+    "Dmitri Sitchinava"
+   ],
+   "title": "Multiple wh-Clusters in Early East Slavic",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS6-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|wie schreibt man im 21. jahrhundert eine literaturgeschichte?",
+   "speakers": [
+    "Ulrich Schmid"
+   ],
+   "title": "Wie schreibt man im 21. Jahnhundert eine Literaturgeschichte?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS6-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|wie schreibt man im 21. jahrhundert eine literaturgeschichte?",
+   "speakers": [
+    "Karoline Thaidigsmann"
+   ],
+   "title": "Wie schreibt man im 21. Jahrhundert eine Literaturgeschichte? Das Beispiel polnische Gegenwartsliteratur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS6-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|wie schreibt man im 21. jahrhundert eine literaturgeschichte?",
+   "speakers": [
+    "Anna Artwinska"
+   ],
+   "title": "Zur Funktion von Literaturgeschichte in literaturwissenschaftlicher Praxis",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS7-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Gernot Howanitz"
+   ],
+   "title": "Warum Slawistik in den Game Studies theoretisch nicht aufgeht – und trotzdem gebraucht wird",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS7-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Yvonne Pörzgen"
+   ],
+   "title": "50 Shades of Grey? Der Umgang mit der sozialistischen Vergangenheit in Computerspielen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS7-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Mikael Evdokimov"
+   ],
+   "title": "Digitale Spiele als Medien ludischer Geschichtsübersetzung im Südkaukasus",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-HS7-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Valentin Peschanskyi"
+   ],
+   "title": "Personale Authentizität als Ressource: Das Ineinandergreifen von Narration und Gameplay in The Alters.",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR124-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|dezentrierte russophonie. sprache, macht und intersektionale gegenposition in (post)sozialistischen und transnationalen kontexten",
+   "speakers": [
+    "Miriam Finkelstein"
+   ],
+   "title": "Zwischen Kritik und Utopie. Revisionen des Russischen in deutscher Post-Ost Literatur nach 2022",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR124-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|dezentrierte russophonie. sprache, macht und intersektionale gegenposition in (post)sozialistischen und transnationalen kontexten",
+   "speakers": [
+    "Alexander Wöll"
+   ],
+   "title": "Russophonie ohne Russophonie: Intersektionalität, sprachliche Maskierung und queere Positionierungen bei Ahatanhel Krymsky und Viktor Petrov (V. Domontovyč)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR124-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|dezentrierte russophonie. sprache, macht und intersektionale gegenposition in (post)sozialistischen und transnationalen kontexten",
+   "speakers": [
+    "Yaraslava Ananka"
+   ],
+   "title": "Comedy of Emergency: Mehr- und Metalingualität im osteuropäischen Kriegs- und Exil- Stand-up",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR124-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|dezentrierte russophonie. sprache, macht und intersektionale gegenposition in (post)sozialistischen und transnationalen kontexten",
+   "speakers": [
+    "Mirja Lecke"
+   ],
+   "title": "Was bedeutet der Zerfall der Sowjetunion? Romane über den Südkaukasus suchen nach Antworten",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR125-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|changing aesthetic paradigms: literature and political economy in the long nineteenth century",
+   "speakers": [
+    "Lina Steiner"
+   ],
+   "title": "Agriculture and Social Reform: Tolstoy’s Approach to Poverty Alleviation",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR125-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|changing aesthetic paradigms: literature and political economy in the long nineteenth century",
+   "speakers": [
+    "Alexander Dmitriev"
+   ],
+   "title": "Another Solovyov: Marxism in Literary Criticism at the Beginning of the 20th Century",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR125-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|changing aesthetic paradigms: literature and political economy in the long nineteenth century",
+   "speakers": [
+    "Anastassia Kostrioukova"
+   ],
+   "title": "Modeling the Post-Reform Social and Economic Transition: Gleb Uspensky's Early Ocherks",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR125-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|changing aesthetic paradigms: literature and political economy in the long nineteenth century",
+   "speakers": [
+    "Natalia Borisova"
+   ],
+   "title": "Liberation for what? Economic Subjectivity and Female Agency in Eliza Orzeszkowa’s Fiction",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR209-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "speakers": [
+    "Nina Weller"
+   ],
+   "title": "„Wie die Kosaken…“ Reaktivierung und Neuschreibung eines Mythos in der ukrainischen Populärkultur (1970er–2020er Jahre)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR209-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "speakers": [
+    "Anja Burghardt"
+   ],
+   "title": "Vorbilder und Abweichler in der Zeitschrift „Ogonëk“ in der späten Sowjetunion",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR209-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "speakers": [
+    "Ulyana Veryna"
+   ],
+   "title": "Nameless Stars and Star Names: A New Wave of Pseudonymity and Anonymity in Belarusian Literature after 2020",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR209-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "speakers": [
+    "Olha Korniienko"
+   ],
+   "title": "Staging Ukraine: Stars, Misfits, and Contested Role Models through Eurovision Costume and Performance",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR223-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|gastajbarteri",
+   "speakers": [
+    "Davor Beganovic"
+   ],
+   "title": "Flüchten oder Ankommen. Zur Gestaltung der Migrationshintergründe bei Saša Stanišić und Feridun Zaimoğlu.",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR223-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|gastajbarteri",
+   "speakers": [
+    "Cristina Beretta"
+   ],
+   "title": "Professor:innen als gastarbajter? (Literatur)Professor:innen im Exil",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR223-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|gastajbarteri",
+   "speakers": [
+    "Miranda Jakisa"
+   ],
+   "title": "gastarbajteri der Literatur: „Proletarisierung“ und postmigrantisches Schreiben",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR224-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|restoring kinship? literarische rohstoffnarrative des 20. und 21. jahrhunderts",
+   "speakers": [
+    "Yvonne Zivkovic"
+   ],
+   "title": "Zwischen ökologischer und sozialer Gerechtigkeit. Anti-extraktivistische jugoslawische Narrative in Đorđe Andrijević Kuns und Jovan Popovićs Krvavo Zlato (Blutiges Gold, 1936)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR224-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|restoring kinship? literarische rohstoffnarrative des 20. und 21. jahrhunderts",
+   "speakers": [
+    "Clemens Guenther"
+   ],
+   "title": "Ein Strahl länger als ein Leben. Ausstrahlungen der Atomwaffentests in der kasachischen Gegenwartsliteratur.",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR224-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|restoring kinship? literarische rohstoffnarrative des 20. und 21. jahrhunderts",
+   "speakers": [
+    "Alina Strzempa"
+   ],
+   "title": "Materie im Krieg: Donbas’ neueste Kohlenarrative",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR224-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|restoring kinship? literarische rohstoffnarrative des 20. und 21. jahrhunderts",
+   "speakers": [
+    "Anna Seidel"
+   ],
+   "title": "Wenn Erdöl atmet: Nicht-menschliche Agentialität in galizischen Erdölnarrativen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR226-10:00",
+   "day": "2026-10-01",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|from the dusk of habsburg monarchy to the fall of democratic czechoslovakia. women authors as public intellectuals (1890s-1930s)",
+   "speakers": [
+    "Jana Marková"
+   ],
+   "title": "Texte als Performanzen des kulturellen Liberalismus – Beiträge von Marie Pujmanová in der Wochenzeitschrift Přítomnost",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR226-09:00",
+   "day": "2026-10-01",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|from the dusk of habsburg monarchy to the fall of democratic czechoslovakia. women authors as public intellectuals (1890s-1930s)",
+   "speakers": [
+    "Galina Babak"
+   ],
+   "title": "Writing as Social Action: Nataliia Kobrynska and Feminist Public Discourse in Late Nineteenth-Century Galicia",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR226-09:30",
+   "day": "2026-10-01",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|from the dusk of habsburg monarchy to the fall of democratic czechoslovakia. women authors as public intellectuals (1890s-1930s)",
+   "speakers": [
+    "Magdalena Bystrzak"
+   ],
+   "title": "Writing Modern Culture: Zlata Dančová as a Woman Critic",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-09:00-SR226-10:30",
+   "day": "2026-10-01",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-01|09:00|from the dusk of habsburg monarchy to the fall of democratic czechoslovakia. women authors as public intellectuals (1890s-1930s)",
+   "speakers": [
+    "Eva Palkovičová"
+   ],
+   "title": "Slowakische (Nicht)Feministinnen schreiben eine Frauenzeitschrift (Dennica 1898-1914)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS8-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|fremdsprachendid aktik slavischer sprachen",
+   "speakers": [
+    "Katrin Schlund"
+   ],
+   "title": "Gestisch-haptische Phonetik und L2-Spracherwerb",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS8-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|fremdsprachendid aktik slavischer sprachen",
+   "speakers": [
+    "Pavlo Popov"
+   ],
+   "title": "Bewegungsverben im Russischen - Aus der sprachdidaktischen und linguistischen Perspektiven",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS8-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|fremdsprachendid aktik slavischer sprachen",
+   "speakers": [
+    "Natallia Funt"
+   ],
+   "title": "Die Notwendigkeit der Niveauzuordnung für russische Phrasem-Konstruktionen im RaF-Unterricht",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR113-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|wiederstand, protest und krieg: sprachliche konfigurationen und diskursive (re-)artikulation in den transformationsgesellschaften mittel- und osteuropas",
+   "speakers": [
+    "Ewelina Woźniak-Wrzesińska"
+   ],
+   "title": "Vom Karton zum Hashtag: Lexikalisierung und Rekontextualisierung von Slogans des Gesamtpolnischen Frauenstreiks [OSK] (2020/21) im digitalen Protestdiskurs",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR113-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|wiederstand, protest und krieg: sprachliche konfigurationen und diskursive (re-)artikulation in den transformationsgesellschaften mittel- und osteuropas",
+   "speakers": [
+    "Anna Jouravel"
+   ],
+   "title": "Ermächtigung als Sprachhandlung. Zur Aussonderung einer diskurspragmatischen Grundoperation in den Protestplakaten der serbischen Studierendenproteste 2024-26.",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR113-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|wiederstand, protest und krieg: sprachliche konfigurationen und diskursive (re-)artikulation in den transformationsgesellschaften mittel- und osteuropas",
+   "speakers": [
+    "Regina Guzaerova"
+   ],
+   "title": "Language, Ethics, and Belonging: Media Framing of Political Correctness in Russian-Language Public Discourse",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR114-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Agnieszka Zawadzka",
+    "Tanja Anstatt"
+   ],
+   "title": "Elicited Imitation und Verbalaspekt in Heritage Languages",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR114-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Lydia Mattick",
+    "Lenka Scholze"
+   ],
+   "title": "Virilität in der obersorbischen Umgangssprache und im Polnischen in Deutschland – Ergebnisse eines Reformulierungsexperiments",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR114-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Anastasiia Teniaeva"
+   ],
+   "title": "Der Verbalaspekt bei deutschrussischen Bilingualen aus drei Generationen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR121-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|sprache und krieg",
+   "speakers": [
+    "Jan Patrick Zeller",
+    "Tetiana Kuznietsova"
+   ],
+   "title": "Sprachenpolitik im Krieg: die Meso-Ebene",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR206-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Sandra Birzer"
+   ],
+   "title": "Parameter zur Bestimmung des Integrationsgrads entlehnter Suffixe in der Slavia",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR206-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Zrinka Kolakovic",
+    "Ines Carovic",
+    "Marion Krause"
+   ],
+   "title": "Clitic placement, weight of clitic host, and prosodic boundaries: Evidence from an experimental production study in Croatian",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR206-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Alexander Krasovitsky",
+    "Matthew Baerman",
+    "Corbett Greville",
+    "Masha Kyuseva",
+    "Maxim Makartsev"
+   ],
+   "title": "Loss of tense in South Slavic: A dialectometrical corpus-based approach",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR207-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|SEK_SW_17",
+   "speakers": [
+    "Julia Golbek"
+   ],
+   "title": "Leżać na wątrobie und serdce ne ležit. Zur Analyse von konzeptuellen Metaphern in Somatismen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR207-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|SEK_SW_17",
+   "speakers": [
+    "Karolina Zuchewicz"
+   ],
+   "title": "Die typisch untypischen Einbettungsmuster im Polnischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR208-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|SEK_SW_02",
+   "speakers": [
+    "Pavel Petrukhin"
+   ],
+   "title": "„Kirchenslavismen“ und „Russismen“ im dreisprachigen Lexikon von Fedor Polikarpov",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR208-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|SEK_SW_02",
+   "speakers": [
+    "Irina Podtergera",
+    "Erik Perov"
+   ],
+   "title": "Vom Wörterbucheintrag zur Datenbank: Linguistische Struktur und TEI/XML-Modellierung des Leksikon trejazyčnyj von Fedor Polikarpov (Moskau 1704)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR208-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|11:30|SEK_SW_02",
+   "speakers": [
+    "Maksim Gavrilkov"
+   ],
+   "title": "Variae lectiones im \"Leksikon trejazyčnyj\" von Fedor Polikarpov und ihre Implementierung in TEI/XML-Struktur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS6-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|zum habitus von intellektuellen im 21. jahrhundert: slavistische perspektiven",
+   "speakers": [
+    "Anna Artwinska"
+   ],
+   "title": "Politische Verantwortung, Gender und intellektuelle Öffentlichkeit: Maria Janion und Joanna Tokarska-Bakir als kritische Stimmen im Polen des 20. und 21. Jahrhunderts",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS6-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|zum habitus von intellektuellen im 21. jahrhundert: slavistische perspektiven",
+   "speakers": [
+    "Matteo Colombi"
+   ],
+   "title": "Der schräge Schriftsteller-Politiker und der Starphilosoph. Václav Havel und Slavoj Žižek als ostmitteleuropäische Intellektuelle.",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS6-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|zum habitus von intellektuellen im 21. jahrhundert: slavistische perspektiven",
+   "speakers": [
+    "Heinrich Kirschbaum"
+   ],
+   "title": "Soziale Syntax und Zukunftsbricolage. Belarussische Selbstverortungen nach 2020",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS7-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Aleksandr Veselov"
+   ],
+   "title": "Anemoia and the Gamification of (Post-)Soviet Everyday Practices in Contemporary Russian Video Games",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-HS7-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Oleksandr Zabirko"
+   ],
+   "title": "Auftrag Überleben: Osteuropäische Räume in digitalen Kriegsspielen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-MMZ220-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "MMZ 220",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|das polnische kino der moralischen unruhe intermedial",
+   "speakers": [
+    "Jens Herlth"
+   ],
+   "title": "„Erstes, zweites Programm… alles werde ich schauen!“ Fernsehen im Kino der moralischen U nruhe",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-MMZ220-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "MMZ 220",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|das polnische kino der moralischen unruhe intermedial",
+   "speakers": [
+    "Christian Zehnder"
+   ],
+   "title": "Von der Arbeit zum Charisma. Kijowski, Wajda und die Allegorie des Dirigenten",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-MMZ220-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "MMZ 220",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|das polnische kino der moralischen unruhe intermedial",
+   "speakers": [
+    "Michał Mrugalski"
+   ],
+   "title": "Traum und Enttäuschung in Agnieszka Hollands \"Gorączka\" und im Kino der m oralischen Unruhe",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR125-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|helden unserer zeit? die darstellung von dissidenz in osteuropäischen kulturen nach 1989",
+   "speakers": [
+    "Bob Muilwijk"
+   ],
+   "title": "Nach dem Spiel ist vor dem Spiel. Dissidenz im postsozialistischen Polen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR125-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|helden unserer zeit? die darstellung von dissidenz in osteuropäischen kulturen nach 1989",
+   "speakers": [
+    "Peter Deutschmann"
+   ],
+   "title": "Medienhelden unserer Zeit? – zu Darstellungen von tschechischen DissidentInnen nach 1989",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR125-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|helden unserer zeit? die darstellung von dissidenz in osteuropäischen kulturen nach 1989",
+   "speakers": [
+    "Lucie Antošíková"
+   ],
+   "title": "Vom Dissens zur Freiheit. Heldinnen in der tschechischen Literatur des 20. Jahrhunderts",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR209-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "speakers": [
+    "Wiktoria Janecko"
+   ],
+   "title": "In der Suche nach einem 'positiven Mythos': Anna Walentynowicz als ambivalente Ikone der „Solidarność“-Bewegung",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR209-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "speakers": [
+    "Stephan Krause"
+   ],
+   "title": "»›Jetzt oder nie!« Oder: Wessen Star ist Sándor Petőfi?«",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR209-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|stars, rebellen, außenseiter. umstrittene vorbilder in osteuropäischen populärkultur",
+   "speakers": [
+    "Manuel Ghilarducci"
+   ],
+   "title": "Riffs für den Helden? Heroisierungen von Stepan Bandera im ukrainischen Black- und Pagan-Metal",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR221-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|SEK_LKW_07",
+   "speakers": [
+    "Holt Meyer"
+   ],
+   "title": "Pskovskaja Pravda,11. Juni und Sovetskaja Belorossija, 05. Juni und L’vovskaja pravda 04. Juni 1949: Puškin zum 150. Geburtstag spätstalinistisch-imperial (nicht) gelesen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR221-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|SEK_LKW_07",
+   "speakers": [
+    "Сhristoph Garstka"
+   ],
+   "title": "Antideutsche Tendenzen in den Feiern zum 100. Todestag Lomonosovs 1865 und deutsche Reaktionen darauf",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR223-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|gastajbarteri",
+   "speakers": [
+    "Željana Tunić"
+   ],
+   "title": "Figur des \"Gastarbeiters\" im Künstler:innenprojekt \"Gastarbeiter 2.0 – Arbeit Means Rad\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR223-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|gastajbarteri",
+   "speakers": [
+    "Andrea Zink"
+   ],
+   "title": "Arbeit im Text über Gastarbeit: Alem Grabovac’ Autofiktion",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR223-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|gastajbarteri",
+   "speakers": [
+    "Adna Ruhotina"
+   ],
+   "title": "Poetische Gegenarchive der ‚zweiten Generation‘ im schweizerischpostjugoslawischen Diskursraum.",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR224-12:00",
+   "day": "2026-10-01",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|ökologien der zukunft in der gegenwartsliteratur",
+   "speakers": [
+    "Iris Bauer"
+   ],
+   "title": "Posthumane Metamorphosen. Von Maschinen-, Tier- und Pflanzenmenschen in Olga Tokarczuks Erzählband \"Opowiadania bizarne\" (2018) >",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR224-11:30",
+   "day": "2026-10-01",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|ökologien der zukunft in der gegenwartsliteratur",
+   "speakers": [
+    "Philipp Kohl"
+   ],
+   "title": "Tschechische Prosa des Anthropozäns seit 2020",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-11:30-SR224-12:30",
+   "day": "2026-10-01",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|11:30|ökologien der zukunft in der gegenwartsliteratur",
+   "speakers": [
+    "Mariya Donska"
+   ],
+   "title": "„Zukunft ist schwarze Erde“: Zukunftsentwürfe in der ukrainischen Gegenwartslyrik",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-HS8-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Ivana Lederer"
+   ],
+   "title": "Der Hybrid– Unterricht der Zukunft",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-HS8-15:00",
+   "day": "2026-10-01",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Ivana Bulić"
+   ],
+   "title": "Sprachtrennung im Herkunftssprachenunterricht: Eine Fallstudie zu Bosnisch, Kroatisch und Serbisch in der Steiermark (Österreich)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-HS8-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Milica Sabo"
+   ],
+   "title": "Konstruktionen und Chunks im Kroatischen (im BKMS): Zwischen Musterhaftigkeit und Produktivität",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR113-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|wiederstand, protest und krieg: sprachliche konfigurationen und diskursive (re-)artikulation in den transformationsgesellschaft en mittel- und osteuropas",
+   "speakers": [
+    "Aleksej Tikhonov"
+   ],
+   "title": "Sprachen im ostslawischen Rap nach Russlands Vollinvasion in die Ukraine 2022",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR113-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|wiederstand, protest und krieg: sprachliche konfigurationen und diskursive (re-)artikulation in den transformationsgesellschaft en mittel- und osteuropas",
+   "speakers": [
+    "Mara Katarzyna Prenner"
+   ],
+   "title": "Zwischen Sprache, Orthographie, Alphabet und Opposition: Protestpraxis im belarusischen digitalen und künstlerischen Raum",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR114-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Tatjana Kurbangulova"
+   ],
+   "title": "Negation in Alltagskommunikation: Methodische Herausforderungen und Analyseperspektiven in longitudinalen Daten zum russisch-deutschen bilingualen Erstspracherwerb",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR114-15:00",
+   "day": "2026-10-01",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Natascha Knjasew"
+   ],
+   "title": "Psycholinguistische Verarbeitung von morphosyntaktischen Transfererscheinungen bei Herkunftssprecher*innen des Russischen: Die Kodierung des Instruments",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR114-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|quantitative und qualitative methoden in der forschung zu slavischen heritage languages in deutschland",
+   "speakers": [
+    "Olia Blacher"
+   ],
+   "title": "Wörter ernten: Lexikalische Kategorisierung bei russischsprachigen Herkunftssprecher*innen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR206-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Oliver Winistörfer",
+    "Anastasia Escher",
+    "Ana Golaboska"
+   ],
+   "title": "Differential Place Marking in Macedonian - why empirical and corpus-linguistic approaches matter in Macedonian dialectology",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR206-15:00",
+   "day": "2026-10-01",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Elias Monsef Bounatirou"
+   ],
+   "title": "Computergestützte Textkollation und kroatische Sprachgeschichte des 20. Jahrhunderts: Visualisierung und Filterung von Kollationsdaten zur Erforschung von Sprach- und Textgeschichte",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR206-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|korpus- und experimentelle ansätze zu südslavischen sprachen",
+   "speakers": [
+    "Maxim Makartsev",
+    "Björn Wiemer"
+   ],
+   "title": "Mikro-Variation der Futurmarkierung in štokavischen territorialen Dialekten",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR207-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|SEK_SW_18",
+   "speakers": [
+    "Svetlana Sokolova",
+    "Anastasia Makarova"
+   ],
+   "title": "Pragmatik durch Konstruktionen lehren: Diskursfunktionen russischer Indefinitpronomen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR207-15:00",
+   "day": "2026-10-01",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|SEK_SW_18",
+   "speakers": [
+    "Yannic Weber"
+   ],
+   "title": "Überlegungen zu einer Methodologie des Sprachvergleichs",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR207-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|SEK_SW_18",
+   "speakers": [
+    "Olga Bikkulova"
+   ],
+   "title": "Turning the Lens: The Pragmatics of the Connector в том числе (“including”) in Russian Media",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR208-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|SEK_SW_03",
+   "speakers": [
+    "Vladimir Neumann"
+   ],
+   "title": "Lexikographische Zugänge zur Textgenese der ruthenischen Hystorija (Kutein 1637)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR208-15:00",
+   "day": "2026-10-01",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|SEK_SW_03",
+   "speakers": [
+    "Alexander Grishchenko"
+   ],
+   "title": "The Slavic-Jewish contacts in Ruthenia as a source of the “Library of Judaizers”",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR208-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-01|14:00|SEK_SW_03",
+   "speakers": [
+    "Thomas Daiber"
+   ],
+   "title": "Der Konnektor еже im Kirchenslavischen. Am Material der Dioptra des Philippos Monotropos",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-HS6-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|zum habitus von intellektuellen im 21. jahrhundert: slavistische perspektiven",
+   "speakers": [
+    "Franziska Davies"
+   ],
+   "title": "Die Wissenschaftlerin als public intellectual in Zeiten des Kriegs",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-HS6-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|zum habitus von intellektuellen im 21. jahrhundert: slavistische perspektiven",
+   "speakers": [
+    "Alfred Gall"
+   ],
+   "title": "Kritik an Wertfreiheit: Kritische Theorie und die jugoslawische Praxis-Gruppe",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-HS7-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Thomas Skowronek"
+   ],
+   "title": "Oikomediale Unheimlichkeit. Zur Medienspezifik des Hauses in Computerspielen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-HS7-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|slavic game studies: das digitale spiel als zukunftsmedium",
+   "speakers": [
+    "Mateusz Kurkowski"
+   ],
+   "title": "The contemporary image of the Polish-Lithuanian Commonwealth in computer games based on selected cases",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR125-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|helden unserer zeit? die darstellung von dissidenz in osteuropäischen kulturen nach 1989",
+   "speakers": [
+    "Zornitza Kazalarska"
+   ],
+   "title": "Die Latenz der slowakischen Dissidenz: M. M. Šimečka und D. Tatarka unterwegs durch die Slowakei",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR125-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|helden unserer zeit? die darstellung von dissidenz in osteuropäischen kulturen nach 1989",
+   "speakers": [
+    "Alessandro Achilli"
+   ],
+   "title": "Heroische Dichterbiographien in der Ukraine seit 2014: Vasyl' Stus in literarischen und medialen Bildern",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR209-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|machtdiskurs und performativität: deutsch- und russischsprachige literatur und kunst im vergleich",
+   "speakers": [
+    "Nadezda Grigoryeva"
+   ],
+   "title": "Auf der Suche nach der absoluten Souveränität: Aktionskunst als Heldentat in russisch- und deutschsprachigen Kontexten",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR209-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|machtdiskurs und performativität: deutsch- und russischsprachige literatur und kunst im vergleich",
+   "speakers": [
+    "Sabine Hänsgen"
+   ],
+   "title": "Zur Kritik der Sprache totalitärer Macht: Konkrete Poesie – West/Ost",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR209-15:00",
+   "day": "2026-10-01",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|machtdiskurs und performativität: deutsch- und russischsprachige literatur und kunst im vergleich",
+   "speakers": [
+    "Mariia Siedelberg"
+   ],
+   "title": "Machtrepräsentation und Gewaltdiskurs. Komparatistische Textanalyse: Vladimir Sorokins „Ein Monat in Dachau“ und Elfriede Jelineks „FaustIn and Out. Sekundärdrama zu ‚Urfaust‘“",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR224-14:30",
+   "day": "2026-10-01",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|SEK_LKW_14",
+   "speakers": [
+    "Julia Mjasnikow"
+   ],
+   "title": "Zukunftsentwürfe der russischen Linken – Eine Utopie oder materialistische Gesetzmäßigkeit",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR224-14:00",
+   "day": "2026-10-01",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|SEK_LKW_14",
+   "speakers": [
+    "Olena Tiaglova"
+   ],
+   "title": "Narrating the Nonhuman: Plant Agency in Contemporary Russian Dystopia",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-14:00-SR224-15:00",
+   "day": "2026-10-01",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-01|14:00|SEK_LKW_14",
+   "speakers": [
+    "Monika Bednarczuk"
+   ],
+   "title": "Polnische Autor:innen und das Paranormale in Zeiten des Kommunismus: Personen, Themen und Strategien",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS8-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|didaktik der herkunftssprachen",
+   "speakers": [
+    "Maria Sulimova"
+   ],
+   "title": "Didaktische Ansätze und Entwicklung der Schreibkompetenz im Herkunftssprachenunterricht Russisch",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS8-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|didaktik der herkunftssprachen",
+   "speakers": [
+    "Grit Mehlhorn",
+    "Maria Sulimova"
+   ],
+   "title": "Blackbox herkunftssprachlicher Unterricht? Wege zu einer empirisch fundierten Herkunftssprachendidaktik",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS8-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|didaktik der herkunftssprachen",
+   "speakers": [
+    "Olga Stojanović Fréchette"
+   ],
+   "title": "Elektronische Kommunikation und digitale Texte im Erwerb der Lese- und Schreibkompetenz bei Herkunftssprechern: didaktische Perspektive",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS8-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|didaktik der herkunftssprachen",
+   "speakers": [
+    "Elena Tchernega Meinert",
+    "Anna Wolfauer"
+   ],
+   "title": "COIL als Ressource im hochschulischen Russischunterricht (eine Fallstudie)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR113-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|new linguistic approaches to ukrainian: language contact and contrast",
+   "speakers": [
+    "Achim Rabus"
+   ],
+   "title": "Ukrainisch-russische gemischte Rede in Postkarten sowjetukrainischer Zwangsarbeiter*innen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR113-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|new linguistic approaches to ukrainian: language contact and contrast",
+   "speakers": [
+    "Tatiana Perevozchikova"
+   ],
+   "title": "The second accusative in Ukrainian: a micro-diachronic view on its frequency and productivity in cross-Slavic comparison",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR113-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|new linguistic approaches to ukrainian: language contact and contrast",
+   "speakers": [
+    "Nataliia Oberste-Berghaus"
+   ],
+   "title": "Kognatenkompetenz im Ukrainischen: eine deutsch-ukrainische Perspektive",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR113-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|new linguistic approaches to ukrainian: language contact and contrast",
+   "speakers": [
+    "Inna Stupak"
+   ],
+   "title": "Typological Divergence in Case and Negation: A Distributional Comparison of Russian and Ukrainian",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR114-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "speakers": [
+    "Marija Mandić"
+   ],
+   "title": "Minority languages in education in Serbia: Challenges and perspectives",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR114-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "speakers": [
+    "Christoph Giesel"
+   ],
+   "title": "Perspektiven der Kontakt- und Kooperationsforschung: islamwissenschaftliche, turkologische und albanologische Aspekte in der Slawistik",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR114-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "speakers": [
+    "Thede Kahl"
+   ],
+   "title": "Von der mündlichen Überlieferung zum ethnolinguistischen Korpus: (Slawo-) Makedonische Folklore im Raum Giannitsa (Griechenland)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR114-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "speakers": [
+    "Gergana Börger"
+   ],
+   "title": "Zur Herausbildung einer bessarabisch-bulgarischen Literaturtradition",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR121-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|niedersorbisch im aufbruch: chancen und perspektiven für die zukunft",
+   "speakers": [
+    "Anastasija Kostiučenko-Kessler"
+   ],
+   "title": "Niedersorbisch heute: wissenschaftliche Perspektiven auf Sprachrevitalisierung und aktuelle Entwicklungen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR121-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|niedersorbisch im aufbruch: chancen und perspektiven für die zukunft",
+   "speakers": [
+    "Simon Blum",
+    "Evan Bleakly"
+   ],
+   "title": "Die (Un)Sichtbarkeit des Sorbischen in der Linguistic Landscape der Niederlausitz",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR121-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|niedersorbisch im aufbruch: chancen und perspektiven für die zukunft",
+   "speakers": [
+    "Měto Nowak"
+   ],
+   "title": "Herausforderung Zukunft: SROKA als Ansatz einer Sprachplanung für das Niedersorbische",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR121-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|niedersorbisch im aufbruch: chancen und perspektiven für die zukunft",
+   "speakers": [
+    "Julija Běrinkowa"
+   ],
+   "title": "Vitalität des Niedersorbischen: Bedrohung oder Energie?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR206-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_13",
+   "speakers": [
+    "Irenäus Kulik"
+   ],
+   "title": "Wackernagel und Register: Positionelle Variation tschechischer Klitika im Nebensatz",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR206-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_13",
+   "speakers": [
+    "Elena Graf"
+   ],
+   "title": "Diskursmarker auf der Basis von verba dicendi in den ostslavischen Sprachen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR206-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_13",
+   "speakers": [
+    "Karolina Wieserová"
+   ],
+   "title": "Variation in Norm und Gebrauch von Schwimmstilbezeichnungen im Tschechischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR206-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_13",
+   "speakers": [
+    "Gerd Hentschel"
+   ],
+   "title": "\"Widza ta lampa?\" Zur Flexionsmorphologie des gesprochenen Schlesischen der Gegenwart.",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR207-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_19",
+   "speakers": [
+    "Kirill Kozhanov",
+    "Ilja Seržant",
+    "Eleni Bužarovska"
+   ],
+   "title": "Evolution of differential object marking in Macedonian dialects",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR207-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_19",
+   "speakers": [
+    "Uwe Junghanns",
+    "Ljudmila Geist"
+   ],
+   "title": "Klärung von Besitzverhältnissen: Komplexe Possessoren",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR207-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_19",
+   "speakers": [
+    "Edyta Jurkiewicz-Rohrbacher",
+    "Jerzy Gaszewski"
+   ],
+   "title": "Wie viele Fazilitive hat das Polnische?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR208-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_04",
+   "speakers": [
+    "Imke Mendoza"
+   ],
+   "title": "Standardisierungsprozesse im Polnischen während der Zeit der Teilungen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR208-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_04",
+   "speakers": [
+    "Anastasia Polivanova"
+   ],
+   "title": "Das Akzentsystem des Übersetzungssammelbands von Epifanij Slavineckij (1665) im Kontext der Geschichte der russischen Betonung\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR208-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_04",
+   "speakers": [
+    "Malinka Pila"
+   ],
+   "title": "Die Differenzierung des Lokativs im Slavischen zwischen innerem Wandel und Sprachkontakt",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR208-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|09:00|SEK_SW_04",
+   "speakers": [
+    "Robert Dittmann"
+   ],
+   "title": "Possessive Reflexives in the Unity of the Brethren between 1525 and 1575",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS6-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|kinderliteratur - bildung - politik: wie kinderbücher zukunft mitgestalten: die formung junger staatsbürger*innen",
+   "speakers": [
+    "Birgitte Beck Pristed"
+   ],
+   "title": "Religiöser Widerstand in ukrainischen Kinderbüchern: Das himmlische Nachleben des Antonow-Transportflugzeugs An-225 „Mrija“",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS6-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|kinderliteratur - bildung - politik: wie kinderbücher zukunft mitgestalten: die formung junger staatsbürger*innen",
+   "speakers": [
+    "Nina Frieß"
+   ],
+   "title": "Alte Wurzeln, neue Wurzeln. Wie belarusische Kinderliteratur im Exil einen Beitrag zur Formung neuer Staatsbürger*innen leistet",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS6-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|kinderliteratur - bildung - politik: wie kinderbücher zukunft mitgestalten: die formung junger staatsbürger*innen",
+   "speakers": [
+    "Anne Hultsch"
+   ],
+   "title": "„Das Brot schmeckt zu Hause am besten“. Politisch-patriotische Bildung in slowakischen Kinderbüchern",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS6-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|kinderliteratur - bildung - politik: wie kinderbücher zukunft mitgestalten: die formung junger staatsbürger*innen",
+   "speakers": [
+    "Svetlana Efimova"
+   ],
+   "title": "Geschichten von Mut und Resilienz: Politische Subjektivität in zeitgenössischen ukrainischen und belarusischen Kindermärchen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS7-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|praktiken des dokumentarischen in theatertexten",
+   "speakers": [
+    "Lydia Nagel"
+   ],
+   "title": "Sprachliche Variation in aktuellen ukrainischen Dokumentartheatertexten",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS7-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|praktiken des dokumentarischen in theatertexten",
+   "speakers": [
+    "Tatiana Klepikova"
+   ],
+   "title": "Montage als Sensibilität von den Rändern? Zur Ästhetik des queer-feministischen Dokumentartheaters in Russland",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS7-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|praktiken des dokumentarischen in theatertexten",
+   "speakers": [
+    "Anja Tippner"
+   ],
+   "title": "Anklage und Zeugenschaft: Dokumentarisches Justiztheater im teatr.doc",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-HS7-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|praktiken des dokumentarischen in theatertexten",
+   "speakers": [
+    "Anna Hodel"
+   ],
+   "title": "Archiv, Affekt, Aufführung: Dokumentarische Verfahren im spätpostjugoslawischen Theater",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR124-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|die philosophische kultur in der sowjetzeit. neue forschungsansätze",
+   "speakers": [
+    "Maxim Demin"
+   ],
+   "title": "Teaching Soviet Thought: Dialectical and Historical Materialism as a Discipline",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR124-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|die philosophische kultur in der sowjetzeit. neue forschungsansätze",
+   "speakers": [
+    "Andrey Oleynikov"
+   ],
+   "title": "The Praxis-Oriented Philosophy in Mikhail Gefter",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR124-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|die philosophische kultur in der sowjetzeit. neue forschungsansätze",
+   "speakers": [
+    "Nikolaj Plotnikov"
+   ],
+   "title": "Philosophische Debatten in der Sowjetunion: Argumentative Muster, ideologische Funktion, typische Merkmale",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR124-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|die philosophische kultur in der sowjetzeit. neue forschungsansätze",
+   "speakers": [
+    "Mariia Menshikova"
+   ],
+   "title": "Cyberspeak: universelle Sprache der sowjetischen Wissenschaft (auf Beispiel der Logik und Literaturwissenschaft)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR125-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|engagement im wandel: formen, narrative und akteur:innen (am beispiel der ostslavia)",
+   "speakers": [
+    "Fabian Erlenmeier"
+   ],
+   "title": "Von der sowjetischen Utopie zur putinschen Telekratie: Die Poetik des Fernsehens auf der Bühne des russischen Theaters",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR125-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|engagement im wandel: formen, narrative und akteur:innen (am beispiel der ostslavia)",
+   "speakers": [
+    "Nadine Menzel"
+   ],
+   "title": "Schreiben in Krieg und Anthropozän. Yevgenia Belorusets‘ Цикл лекций о современной жизни животных (Über das moderne Leben der Tiere, 2021) als Beispiel engagierter Literatur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR125-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|engagement im wandel: formen, narrative und akteur:innen (am beispiel der ostslavia)",
+   "speakers": [
+    "Iryna Kovalenko"
+   ],
+   "title": "Praktiken künstlerischer Intervention in der ukrainischen Revolution der Würde (2013/14)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR209-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_01a",
+   "speakers": [
+    "Claudia Dathe"
+   ],
+   "title": "Mychajl Semenkos Lyrik in den Umbruchjahren 1917– 1919",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR209-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_01a",
+   "speakers": [
+    "Carolina Siebert"
+   ],
+   "title": "Die Rezeption der belgischen Moderne in der tschechischen Literaturzeitschrift Moderní revue (1894-1925)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR209-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_01a",
+   "speakers": [
+    "Oksana Pashko"
+   ],
+   "title": "The Reception of German Expressionism in Ukraine in the 1920s",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR209-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_01a",
+   "speakers": [
+    "Dalibor Dobiáš"
+   ],
+   "title": "Non ero, ergo sum. R. M. Rilke als Prätext bei Jiří Gruša und Joseph Brodsky",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR221-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_04",
+   "speakers": [
+    "Barbara Sonnenhauser",
+    "Paul Widmer"
+   ],
+   "title": "Altostslavische Dichtung im Kontext",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR221-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_04",
+   "speakers": [
+    "Simeon Dekker"
+   ],
+   "title": "Die Rezeption einer polnischen polemischen Schrift im Moskau der 1640er Jahre: Der Fall des Kasjan Sakowicz",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR221-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_04",
+   "speakers": [
+    "Dimiter Peev"
+   ],
+   "title": "Der (Proto)Illyrismus und der Ostbalkan",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR222-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_06",
+   "speakers": [
+    "Anna Gerasimova"
+   ],
+   "title": "Popular Genres as Future Scripts: Reader Practices in Russian-Language Digital Publics",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR222-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_06",
+   "speakers": [
+    "Michael Düring"
+   ],
+   "title": "Puppen blicken in die Zukunft: Zum prophetischen Potential der satirischen Fernsehserie Kukly (1994-2002)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR222-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_06",
+   "speakers": [
+    "Oleksandra Didukh"
+   ],
+   "title": "Decolonizing Popular Language Knowledge about Ukrainian: Analysis of the Facebook Materials",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR222-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_06",
+   "speakers": [
+    "Dina Nazarenko"
+   ],
+   "title": "Videoart in der postsowjetischen künstlerischen Praxis – zwischen Innovation und Kulturkritik",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR223-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|slawische exilliteratur: aktualität und neue perspektiven (slavic literatures in exile: topicality and new perspectives)",
+   "speakers": [
+    "Urh Ferlez"
+   ],
+   "title": "Slovenian Literature in Argentina after the Second World War: From Damnation to Digitalization",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR223-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|slawische exilliteratur: aktualität und neue perspektiven (slavic literatures in exile: topicality and new perspectives)",
+   "speakers": [
+    "Dagmar Gramshammer-Hohl"
+   ],
+   "title": "Erzählte Heimkehr aus dem Exil: Heimwehtexte im Vergleich",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR223-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|slawische exilliteratur: aktualität und neue perspektiven (slavic literatures in exile: topicality and new perspectives)",
+   "speakers": [
+    "Maria-Anna Gushchina"
+   ],
+   "title": "Tamizdat 2.0: Contemporary Russian Publishing in Exile",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR223-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|slawische exilliteratur: aktualität und neue perspektiven (slavic literatures in exile: topicality and new perspectives)",
+   "speakers": [
+    "Eva Hausbacher"
+   ],
+   "title": "Zirkus, Garten, Zoo: Über „andere Räume“ in der neueren Exilliteratur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR224-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_15",
+   "speakers": [
+    "Fabian Trau"
+   ],
+   "title": "Das Drama des Fragens. Mäeutik und Formkrise im polnischen Drama um 1900",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR224-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_15",
+   "speakers": [
+    "Alexande Svirin"
+   ],
+   "title": "Konstanter Terminus, wandelndes Konzept: Christiansens „Differenzqualität“ im russischen Formalismus",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR224-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_15",
+   "speakers": [
+    "Stefan Walter Schmidt"
+   ],
+   "title": "Katastrophe ohne Erlösung. Landschaft, Geschichte und epistemische Sackgassen bei Fedor Tjutčev und Taras Ševčenko",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR224-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_15",
+   "speakers": [
+    "Alina Avanesian"
+   ],
+   "title": "The Shpetian Circle in the Work on the Encyclopedia of GAKhN",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR226-09:00",
+   "day": "2026-10-02",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_08a",
+   "speakers": [
+    "Oleksii Isakov"
+   ],
+   "title": "Ukrainisches Poetisches Kino der 1960er Jahre als nationale Neo-Avantgarde am Beispiel von „Schatten vergessener Ahnen“ / „Tini zabutych predkiv“ (1964) von Serhij Paradžanov",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR226-10:30",
+   "day": "2026-10-02",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_08a",
+   "speakers": [
+    "Christian Voss"
+   ],
+   "title": "Die Serialisierung Ex-Jugoslawiens. Film und Fernsehen auf dem Westbalkan heute",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR226-09:30",
+   "day": "2026-10-02",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_08a",
+   "speakers": [
+    "Marianna Leonova"
+   ],
+   "title": "„Eingefangene Zeit“. Raum-Zeit-Struktur in Stanislaw Lems Roman „Solaris“ und Andrej Tarkovskijs gleichnamigem Film",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-09:00-SR226-10:00",
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-02|09:00|SEK_LKW_08a",
+   "speakers": [
+    "Katja Freise"
+   ],
+   "title": "„Sie denken, der Sohn eines Mörders ist besser dran als der Sohn eines Opfers?“ – Trauma und Identitätsfindung in Martin Šulíks Filmen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS8-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Jule Böhmer"
+   ],
+   "title": "Was und wie denken Russischlehrer:innen über ihren Unterricht. Ergebnisse einer Q-Studie zum Russischunterricht im 21. Jh. und daraus resultierende Implikationen für die Fort- und Weiterbildung",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS8-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Natalia Schwarzl"
+   ],
+   "title": "Lernen durch Gestalten: Ein Gamification-Projekt als Weg zur Professionalisierung zukünftiger Russischlehrkräfte",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS8-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|fremdsprachendidaktik slavischer sprachen",
+   "speakers": [
+    "Uliana Retzlaff"
+   ],
+   "title": "Science-Fiction im Russischunterricht: Entwicklung und Erprobung eines Unterrichtsmoduls für bilinguale Jugendliche",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR113-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_08",
+   "speakers": [
+    "Nadiya Kiss"
+   ],
+   "title": "“In 2022 it became clear what language to learn”. Motivation of German speakers to learn Ukrainian",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR113-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_08",
+   "speakers": [
+    "Yevheniia Lytvyshko"
+   ],
+   "title": "Zwischen Dorf und Stadt: Sprach- und Identitätskonflikte eines Suržyk-Sprechers",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR113-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_08",
+   "speakers": [
+    "Magdalena Kaltseis"
+   ],
+   "title": "“I consider myself a native speaker of Russian. But is it fair or not?”: Identity and belonging as key factors in the ‘native speaker’ concept of Russian and Ukrainian",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR114-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "speakers": [
+    "Martin Henzelmann"
+   ],
+   "title": "Bulgarische Sprach- und Kulturpflege in Transnistrien",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR114-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|minderheitssprachen und kulturelle vielfalt in südosteuropa: dokumentation, dynamiken und perspektiven",
+   "speakers": [
+    "Azra Hodžić-Kadić"
+   ],
+   "title": "Sprache und Identität der Bosniaken in Ungarn",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR121-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_23",
+   "speakers": [
+    "India Biró"
+   ],
+   "title": "Die Linguistische Landschaft eines niedersorbischen Dorfes: Sichtbar gemachte Zweisprachigkeit oder parallele kulturelle Sphäre?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR121-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_23",
+   "speakers": [
+    "Thomas Menzel"
+   ],
+   "title": "Aktuelle lexikografische Ansätze für die Beschreibung der Lehnwörter des Sorbischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR121-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_23",
+   "speakers": [
+    "Lenka Scholze"
+   ],
+   "title": "Funktionen des Präfixes po- im Obersorbischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR206-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_14",
+   "speakers": [
+    "Uliana Pressacco"
+   ],
+   "title": "Norm, Variation und KI: Sprachliche Zweifelsfälle und Normorientierung in (ost-)slawischen Sprachen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR206-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_14",
+   "speakers": [
+    "Elena Hamidy"
+   ],
+   "title": "Können LLMs effektiv Poesie erkennen? Qualitätsunterschiede im Vergleich lokaler, kostenfreier und kostenpflichtiger Modelle erkennen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR206-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_14",
+   "speakers": [
+    "Tatsiana Nazaranka"
+   ],
+   "title": "From Algorithms to Norms: AI and Language Standardization in Belarusian",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR207-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_20",
+   "speakers": [
+    "Ljudmila Geist"
+   ],
+   "title": "Nicht-individuierbare Pluralitäten im Russischen und Deutschen: empirische Untersuchung und formale Beschreibung",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR207-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_20",
+   "speakers": [
+    "Arkady Kruglov",
+    "Nikolay Hakimov"
+   ],
+   "title": "Distributiver Numerus im Russischen: Zwischen der Syntax und dem Lexikon",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR207-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_20",
+   "speakers": [
+    "Olav Mueller-Reichau"
+   ],
+   "title": "Tragen artreferierende Singular-NPn keine Numerusinformation?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR208-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_05",
+   "speakers": [
+    "Nicole Hockmann"
+   ],
+   "title": "Schreiben, wie man spricht oder sprechen, wie man schreibt? Eine Analyse des Schriftsystems der Novgoroder Birkenrindentexte",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR208-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_05",
+   "speakers": [
+    "Savva Mikheev"
+   ],
+   "title": "Revising the Graffiti of Saint Sophia of Kiev: New Readings Based on Digital Documentation",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR208-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|11:30|SEK_SW_05",
+   "speakers": [
+    "Liudmila Radchankava"
+   ],
+   "title": "Genese und Etablierung komplexer Präpositionen im Russischen. Eine diachrone korpusbasierte Analyse",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS6-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|kinderliteratur - bildung – politik: wie kinderbücher zukunft mitgestalten: wertevermittlung in kommunikation und erinnerung",
+   "speakers": [
+    "Tamara Bučková",
+    "Aneta Bučková"
+   ],
+   "title": "Petr Sís: „Nicky und Vera“",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS6-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|kinderliteratur - bildung – politik: wie kinderbücher zukunft mitgestalten: wertevermittlung in kommunikation und erinnerung",
+   "speakers": [
+    "Katja Kobolt"
+   ],
+   "title": "Kinderliteratur (über den Krieg) und Erinnerung: Die Perspektive der sozialen Reproduktion",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS6-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "HS 6",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|kinderliteratur - bildung – politik: wie kinderbücher zukunft mitgestalten: wertevermittlung in kommunikation und erinnerung",
+   "speakers": [
+    "Eva Kowollik",
+    "Tijana Matijević"
+   ],
+   "title": "Dulce et utile? Die postjugoslawische (feministische) Jugendliteratur zwischen Ästhetik und Pragmatik",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS7-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_11a",
+   "speakers": [
+    "Galyna Spodarets"
+   ],
+   "title": "„Cancel Culture“ postkolonial? Zur semantischen Transformation und epistemischen Reartikulation eines umkämpften Begriffs",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS7-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_11a",
+   "speakers": [
+    "Gesine Drews-Sylla"
+   ],
+   "title": "Zemfira in Montana: koloniale Freiheitsmetaphoriken von \"Cygany\" bis \"Yellowstone\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-HS7-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_11a",
+   "speakers": [
+    "Agata Czaja"
+   ],
+   "title": "Methodologische Aspekte der postkolonialen Analyse der Pariser Vorlesungen von Adam Mickiewicz",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR124-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|migration in film: theory, history, an academic practics",
+   "speakers": [
+    "Innokentij Urupin"
+   ],
+   "title": "Art and creativity in filmic plots on migration: Russian and international context",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR124-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|migration in film: theory, history, an academic practics",
+   "speakers": [
+    "Maria Pasholok-Korolkova"
+   ],
+   "title": "Un hiver russe (2026)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR124-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|migration in film: theory, history, an academic practics",
+   "speakers": [
+    "Maria Zhukova"
+   ],
+   "title": "„Glüglichland“: Filming Migrant Children in a Slavic Studies Seminar",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR125-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|buch- und mediengeschichte in der frühen neuzeit: methodologische neuorientierung des slavistik",
+   "speakers": [
+    "Joanna Milewska-Kozłowska"
+   ],
+   "title": "Preußische Leserinnen: gedruckte Dedikationen an Frauen aus Königlich- und Herzoglich-Preußen im 16.Jahrhundert",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR125-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|buch- und mediengeschichte in der frühen neuzeit: methodologische neuorientierung des slavistik",
+   "speakers": [
+    "Krystyna Wierzbicka-Trwoga"
+   ],
+   "title": "Die Identifizierung der Vorlage der polnischen Übersetzung von \"Kaiser Octavianus\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR125-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 125",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|buch- und mediengeschichte in der frühen neuzeit: methodologische neuorientierung des slavistik",
+   "speakers": [
+    "Wojciech Kordyzon"
+   ],
+   "title": "Kontinuität der Paratexte: Eine langfristige Strategie der Leserbindung bei Jan Seklucjan in Königsberg (1544–1568)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR127-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 127",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_13a",
+   "speakers": [
+    "Elisa Mucciarelli"
+   ],
+   "title": "‘Ya ne khochu pachkat’sya o ego krov’!’: Remembering the War in Abkhazia in Russophone Fiction since 2008",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR127-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 127",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_13a",
+   "speakers": [
+    "Ulrike Goldschweer"
+   ],
+   "title": "Kriegsruinen im Schatten konventionalisierter Lost-Places-Ästhetiken: Dokumentation, Ästhetisierung, Banalisierung?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR127-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 127",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_13a",
+   "speakers": [
+    "Rebecca Krug"
+   ],
+   "title": "Gewaltraum Tschetschenien – Die Anti-Kriegserzählungen von Arkadij Babčenko",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR209-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_01b",
+   "speakers": [
+    "Elena Glökler"
+   ],
+   "title": "Figurationen der Entmenschlichung im Werk von Saša Filipenko",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR209-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_01b",
+   "speakers": [
+    "Michael Kuhn",
+    "Maria Larina"
+   ],
+   "title": "Poetik der Autofiktion-Trilogie von Oksana Vasjakina „Die Wunde“, „Die Steppe“ und „Die Rose“: Schlüsselmotive",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR209-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_01b",
+   "speakers": [
+    "Natallia Pazniak"
+   ],
+   "title": "Die Instrumentalisierung von Trasjanka in der belarusischen Gegenwartsliteratur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR221-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_03a",
+   "speakers": [
+    "Gudrun Heidemann"
+   ],
+   "title": "Shoah-Erinnern mit Zukunftswissen in polnischen Geschichtscomics",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR221-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_03a",
+   "speakers": [
+    "Ricarda Fait"
+   ],
+   "title": "Jüdische Phantome in der Lyrik Tomasz Różyckis: Intertextuelle Wiederbelebungen und Aneignungen von Bruno Schulz und Debora Vogel",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR221-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_03a",
+   "speakers": [
+    "Annelie Bachmaier"
+   ],
+   "title": "Erinnern am anderen Ende der Welt: Formen des Gedenkens an die Shoah und den Zweiten Weltkrieg in der argentinischen Polonia",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR222-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|die gegenwärtige protestkultur in serbien im spiegel widerständiger praktiken und politischer ästhetiken",
+   "speakers": [
+    "Danica Trifunjagić"
+   ],
+   "title": "Student Protests in Serbia between Performance and Liminality",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR222-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|die gegenwärtige protestkultur in serbien im spiegel widerständiger praktiken und politischer ästhetiken",
+   "speakers": [
+    "Aleksandra Salamurovic",
+    "Tanja Gradecak"
+   ],
+   "title": "Kreative Metonymien in der Protestkommunikation",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR222-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|die gegenwärtige protestkultur in serbien im spiegel widerständiger praktiken und politischer ästhetiken",
+   "speakers": [
+    "Philine Bickhardt"
+   ],
+   "title": "Die Ästhetik des Protests: Ironie und Performativität",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR223-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|narrating the past, evading the future? silence, memory, and responsibility",
+   "speakers": [
+    "Aleksandra Konarzewska"
+   ],
+   "title": "Problematic Humanism. On Re-Reading Svetlana Alexievich’s Tsinkovyie mal’chiki (Boys in Zinc) in 2026",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR223-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|narrating the past, evading the future? silence, memory, and responsibility",
+   "speakers": [
+    "Saikovska Olena"
+   ],
+   "title": "The Future of Europe: Between a Relict Museum and a Living Project",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR223-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|narrating the past, evading the future? silence, memory, and responsibility",
+   "speakers": [
+    "Anastasiia Sergeeva"
+   ],
+   "title": "Die \"Wiederherstellung im Verfall begriffener Geschichte\": Schweigen und (historische) Sinnbildung im postsowjetischen historischen Roman",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR224-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|future margins: changing forces in the study of (post)yugoslav cinema",
+   "speakers": [
+    "Krunoslav Lučić"
+   ],
+   "title": "Non-classical style in Krešo Golik's fiction and documentary films",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR224-12:30",
+   "day": "2026-10-02",
+   "start": "12:30",
+   "end": "13:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|future margins: changing forces in the study of (post)yugoslav cinema",
+   "speakers": [
+    "Adrian Pelc"
+   ],
+   "title": "Topographies of Yugoslav Consumer Desire: Advertising Films in Yugoslavia (1950-1970)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR224-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|future margins: changing forces in the study of (post)yugoslav cinema",
+   "speakers": [
+    "Nikica Gilić"
+   ],
+   "title": "The ecological horror and the lyrical approach of the last phase of Zagreb school of animated film (and beyond)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR226-12:00",
+   "day": "2026-10-02",
+   "start": "12:00",
+   "end": "12:30",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_08b",
+   "speakers": [
+    "Ana Marija Spasojevic"
+   ],
+   "title": "„Guzel' Jachina und der Stein aus Eisen“ – Ein intermedialer Dialog über Eisensteins Leben zwischen Roman und Film",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-11:30-SR226-11:30",
+   "day": "2026-10-02",
+   "start": "11:30",
+   "end": "12:00",
+   "room": "SR 226",
+   "track": "LKW",
+   "panel_id": "2026-10-02|11:30|SEK_LKW_08b",
+   "speakers": [
+    "Konstanty Kuzma"
+   ],
+   "title": "Von Eisenstein zum zeitgenössischen polnischen Film: Ästhetik politischer Legitimation im revolutionären Kino",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-HS8-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "HS 8",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|didaktikworkshop",
+   "speakers": [
+    "Aneta Bučková"
+   ],
+   "title": "Sprachenlernen in Bewegung: Performative Methoden für A1–A2 kennenlernen und erproben",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR113-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_07",
+   "speakers": [
+    "Björn Wiemer",
+    "Marija Svedova"
+   ],
+   "title": "Das ukrainische jati-Futur: Einzelheiten auf typologischem Hintergrund",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR113-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_07",
+   "speakers": [
+    "Kira Sadoja"
+   ],
+   "title": "Bezeichnungen traditioneller Weihnachtsattribute in den ostslawischen Dialekten der ukrainischen Karpaten: Die Weihnachtsgarbe",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR113-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 113",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_07",
+   "speakers": [
+    "Ilja Seržant",
+    "Kirill Kozhanov",
+    "Dmitri Sitchinava"
+   ],
+   "title": "Dialectometric analysis of Ukrainian dialects",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR114-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_10",
+   "speakers": [
+    "Florian Wandl"
+   ],
+   "title": "Die resianische Vokalharmonie als Sprachkontaktphänomen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR114-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_10",
+   "speakers": [
+    "Đuro Blažeka",
+    "Vladimir Legac"
+   ],
+   "title": "On the Concept of Creating a Dictionary of the Local Speech of Štrigova",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR114-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 114",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_10",
+   "speakers": [
+    "Victoria Steinfeld-Lidzbarski"
+   ],
+   "title": "Zwischen Input und Output – Ist Adaptation alles? Dialektale Variation im deutsch-polnischen Lehnkontakt",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR121-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_11",
+   "speakers": [
+    "Marion Krause"
+   ],
+   "title": "Slavische Akzente als In- und Outgroupphänomen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR121-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_11",
+   "speakers": [
+    "Daria Alkhimchenkova",
+    "Chris Demian",
+    "Irenäus Kulik",
+    "Roland Meyer",
+    "Luka Szucsich"
+   ],
+   "title": "Language attitudes in multilingual settings: The case of Slavic-Slavic mixed lects",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR121-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 121",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_11",
+   "speakers": [
+    "Grzegorz Lisek"
+   ],
+   "title": "Wahrnehnmung von Linguistik Landscapes – Kyrillisch und neue Herausforderungen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR125-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 125",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_DID_02",
+   "speakers": [
+    "Nataliia Sorokina"
+   ],
+   "title": "Decolonising the Classroom: Reflective and Intercultural Perspectives on Ukrainian as a Foreign Language",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR125-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 125",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_DID_02",
+   "speakers": [
+    "Liudmyla Mobius (Pidkuimukha)"
+   ],
+   "title": "Teaching Ukrainian in Times of Change: Between Academic Practice and Cultural Diplomacy)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR125-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 125",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_DID_02",
+   "speakers": [
+    "Olesia Lazarenko"
+   ],
+   "title": "Unterricht der ukrainischen Sprache in Deutschland: traditionelle und moderne Ansätze",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR206-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_15",
+   "speakers": [
+    "Maria Nuralieva"
+   ],
+   "title": "Das Heimatkonzept im russischen Parlamentsdiskurs: Eine korpuslinguistisch-diskurssemantische Analyse von Plenarprotokollen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR206-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_15",
+   "speakers": [
+    "Małgorzata Szajbel-Keck"
+   ],
+   "title": "Normierte Neutralität? Sprachpolitik und Diskursdynamiken nach der Novellierung des polnischen Arbeitsrechts",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR206-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 206",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_15",
+   "speakers": [
+    "Bendix Niemuth"
+   ],
+   "title": "Politische Sprache im Kontext der Autokratisierung von Russland",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR207-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_21",
+   "speakers": [
+    "Martina Rybová"
+   ],
+   "title": "Lautstruktur und emotionale Valenz im Russischen und Tschechischen: Eine experimentelle Untersuchung",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR207-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_21",
+   "speakers": [
+    "Petr Biskup"
+   ],
+   "title": "Aspect and motion verbs in Slavic/Aspekt und Bewegungsverben im Slavischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR207-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 207",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_21",
+   "speakers": [
+    "Tilman Berger"
+   ],
+   "title": "Zur Abfolge von Zehnern und Einern in den zusammengesetzten Zahlen des Tschechischen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR208-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_06",
+   "speakers": [
+    "Katarína Džunková"
+   ],
+   "title": "Linguistische Vorstellungen russisch-orthodoxer Missionare im 19. und frühen 20. Jahrhundert anhand von Materialien aus der Mission unter den indigenen Völkern des Russischen Kaiserreiches",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR208-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_06",
+   "speakers": [
+    "Irina Maykova",
+    "Björn Hansen"
+   ],
+   "title": "Die Sprache der Russischen Orthodoxen Kirche im digitalen Raum (am Beispiel der Sprache der Korruption)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR208-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 208",
+   "track": "SW+DID",
+   "panel_id": "2026-10-02|14:00|SEK_SW_06",
+   "speakers": [
+    "Roman Fisun"
+   ],
+   "title": "Kirchenslavismen im Russischen des Islams: Korpusbasierte Evidenz für einen überkonfessionellen Religiolekt",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-HS7-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_11b",
+   "speakers": [
+    "Roman Dubasevych"
+   ],
+   "title": "Ukrainischen Stimmen zuhören: Dekolonisierung, Dezentrierung und akademische Resilienz im Kriegszustand",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-HS7-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "HS 7",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_11b",
+   "speakers": [
+    "Dirk Uffelmann"
+   ],
+   "title": "Strategischer Essenzialismus in ukrainischen Appellen zur Dekolonisierung",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR124-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_10",
+   "speakers": [
+    "Sonja Koroliov"
+   ],
+   "title": "Regimekritik und politische Emotionen: zu Sklaverei, Wehrdienst und Völkerrecht bei Aleksandr Radiščev",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR124-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 124",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_10",
+   "speakers": [
+    "Nicolas Dreyer"
+   ],
+   "title": "Russländischer Orientalismus: Die Reiseliteratur von Daniil Mordovcev (1830-1905)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR127-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 127",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_13b",
+   "speakers": [
+    "Oleksandr Chertenko"
+   ],
+   "title": "Colonizing by Traveling: Polish Literature on the War in Ukraine Since 2014 / Kolonisierung durch Reisen: Polnische Literatur zum Krieg in der Ukraine seit 2014",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR127-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 127",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_13b",
+   "speakers": [
+    "Anna Förster"
+   ],
+   "title": "Offener Anfang? Yevgenia Belorusets \"Tagebücher aus Kyjiw\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR209-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_12",
+   "speakers": [
+    "Natalia Lakman"
+   ],
+   "title": "Die (Un-)Lesbarkeit der Gefühle: Homosexualität als epistemisches Problem in Leto v pionerskom galstuke",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR209-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_12",
+   "speakers": [
+    "Daria Khrushcheva"
+   ],
+   "title": "\"LGBTQ-Propaganda\" unter Jugendlichen? Queere Young-Adult-Romane in Russland",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR209-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 209",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_12",
+   "speakers": [
+    "Elisa-Maria Hiemer"
+   ],
+   "title": "Norm, Trauma, Gegenentwurf: Elternschaft in der ostmitteleuropäischen Gegenwartsliteratur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR221-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_03b",
+   "speakers": [
+    "Patrik Valouch"
+   ],
+   "title": "Der Wahnsinn hat ein weibliches Gesicht. Psychopathologische Narrative in der jüngsten tschechischsprachigen Literatur ab 2019",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR221-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_03b",
+   "speakers": [
+    "Gertraude Zand"
+   ],
+   "title": "Opfererzählungen in der tschechischen und slowakischen Gegenwartsliteratur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR221-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 221",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_03b",
+   "speakers": [
+    "Elisa Kriza"
+   ],
+   "title": "A Jewish woman in Stalin’s GULag: Reexamining Olga Adamova-Sliozberg’s memoir “My Journey”",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR222-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_09",
+   "speakers": [
+    "Tatiana Kudriavtseva"
+   ],
+   "title": "Das Märchennarrativ in den Komödien von A. N. Ostrovskij",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR222-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 222",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_09",
+   "speakers": [
+    "Katarzyna Grzywka-Kolago"
+   ],
+   "title": "Immer in die Zukunft schauen… Zu Oskar Kolbergs Konzeption der Auseinandersetzung mit der polnischen Volkskultur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR223-15:00",
+   "day": "2026-10-02",
+   "start": "15:00",
+   "end": "15:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_05",
+   "speakers": [
+    "Svitlana Pidoprygora"
+   ],
+   "title": "Visible After Invasion? Ukraine’s Representational Absence and Distortion in Global Comics before 2014",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR223-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_05",
+   "speakers": [
+    "Alexander Meienberger"
+   ],
+   "title": "Vom Schweigen zur Sprache: HIV/AIDS in russischer Literatur, Film und Theater",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR223-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 223",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|SEK_LKW_05",
+   "speakers": [
+    "Evgenii Matveev"
+   ],
+   "title": "Apophatische Darstellung Russlands in der russischen Poesie",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR224-14:30",
+   "day": "2026-10-02",
+   "start": "14:30",
+   "end": "15:00",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|future margins: changing forces in the study of (post)yugoslav cinema",
+   "speakers": [
+    "Hanna Stein"
+   ],
+   "title": "Waste, Pollution, and Natural Degradation: Environmental Aesthetics and Awareness in Yugoslav (Amateur) Films",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-02-14:00-SR224-14:00",
+   "day": "2026-10-02",
+   "start": "14:00",
+   "end": "14:30",
+   "room": "SR 224",
+   "track": "LKW",
+   "panel_id": "2026-10-02|14:00|future margins: changing forces in the study of (post)yugoslav cinema",
+   "speakers": [
+    "Nikola Radic"
+   ],
+   "title": "Recollection, Duration, Tactility: Revisiting the Partisan Struggle in Landscapes of Resistance (Marta Popivoda, 2021)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR114-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 114",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_12",
+   "speakers": [
+    "Claudia Radünzel"
+   ],
+   "title": "Leichte oder Einfache Sprache? Komplexitätsreduzierte Varietäten in verschiedenen slawischen Ländern",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR114-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 114",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_12",
+   "speakers": [
+    "Nicole Richter"
+   ],
+   "title": "Nachbarsprache – ein Begriff zwischen Sprachwissenschaft und Kulturwissenschaft am Beispiel der slawischen Sprachen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR114-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 114",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_12",
+   "speakers": [
+    "Olesya Palinska"
+   ],
+   "title": "Der nächste Nachbar als Terra incognita? Einstellungen gegenüber den Polen unter Bewohnern der Zentral- und Südukraine (2014–2021)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR206-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 206",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_16",
+   "speakers": [
+    "Hanna Bazanava"
+   ],
+   "title": "Nicht standardisierte Derivation in russischen Feminitiven als Kodierung sozialer Bedeutung",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR206-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 206",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_16",
+   "speakers": [
+    "Anja Gattnar"
+   ],
+   "title": "Die Rolle von Musik in propagandistischen Kommunikationsprozessen im Spannungsfeld von Common Ground, Sprechakten und Common Beliefs",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR206-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 206",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_16",
+   "speakers": [
+    "Sorin Gadeanu"
+   ],
+   "title": "Im Spannungsfeld zwischen Slavia und Romania: Zu den identitätsstiftendenden Merkmalen des (populär)wissenschaftlichen Diskurses in Rumänien",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR206-10:30",
+   "day": "2026-10-03",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 206",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_16",
+   "speakers": [
+    "Tim-Robin Rösler-Bartsch"
+   ],
+   "title": "Mehr als Kleinigkeiten? Diminution im Polnischen und Niederländischen vor dem Hintergrund des Deutschen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR207-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 207",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_22",
+   "speakers": [
+    "Jadranka Gvozdanovic"
+   ],
+   "title": "Switch reference in Slavic",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR207-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 207",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_22",
+   "speakers": [
+    "Walter Breu"
+   ],
+   "title": "Das moliseslavische Plusquamperfekt: Ein singulärer Typ in der Slavia",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR207-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 207",
+   "track": "SW",
+   "panel_id": "2026-10-03|09:00|SEK_SW_22",
+   "speakers": [
+    "Hermann Fegert"
+   ],
+   "title": "\"Nulevoe okonchanie\" --- null Endung oder Nullendung?\"",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-HS8-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "HS 8",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|SEK_DID_01",
+   "speakers": [
+    "Dennis Tark",
+    "Daria Dmitrieva"
+   ],
+   "title": "Russisch im deutschsprachigen Kontext für Grundschulkinder an außerschulischen Lernorten: Visuelles Storytelling und methodische Umsetzungen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-HS8-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "HS 8",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|SEK_DID_01",
+   "speakers": [
+    "Lisa-Maria Goroš"
+   ],
+   "title": "Abgestaubt und aussortiert – Vorüberlegungen zu einer lerner*innenzentrierten kontrastiven Grammatik Deutsch-Russisch",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-HS8-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "HS 8",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|SEK_DID_01",
+   "speakers": [
+    "Elizabeta Jenko"
+   ],
+   "title": "špórtnica -e ž, ženska oblika od športnik oder Können Wörterbücher sexistisch sein?",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR124-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 124",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|die poetik des bewusstseins: reflexives denken und kognitives experiment in der spätsowjetischen literatur und philosophie",
+   "speakers": [
+    "Simone Guidetti"
+   ],
+   "title": "Die Ästhetik von Reflexivität und rekursivem Denken in der späten Sowjetunion",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR124-10:30",
+   "day": "2026-10-03",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 124",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|die poetik des bewusstseins: reflexives denken und kognitives experiment in der spätsowjetischen literatur und philosophie",
+   "speakers": [
+    "Robert Efird"
+   ],
+   "title": "The Color of Pomegranates as a Panorama of Conscious Experience",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR124-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 124",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|die poetik des bewusstseins: reflexives denken und kognitives experiment in der spätsowjetischen literatur und philosophie",
+   "speakers": [
+    "Stanislav Savitski"
+   ],
+   "title": "Die neoavantgardistische Bewusstswerdung als Voraussetzung für die Entstehung des spätsowjetischen Postmodernismus",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR124-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 124",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|die poetik des bewusstseins: reflexives denken und kognitives experiment in der spätsowjetischen literatur und philosophie",
+   "speakers": [
+    "Daria Baryshnikova"
+   ],
+   "title": "Erfahrung/Schreiben: Kognitive literarische Experimente von Anton Čechov bis Pavel Ulitin",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR209-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 209",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|das grauen (vor) der heimkehr: jiddische, ukrainische, belarussische, russische versionen und visionen",
+   "speakers": [
+    "Tetiana Portnova"
+   ],
+   "title": "Von Lviv nach Sandarmoch: Die ukrainische intellektuelle Emigration aus Galizien in die Sowjetukraine in den 1920er- und 1930er-Jahren (anhand der Materialien der Familie Krušel’nycky)",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR209-10:30",
+   "day": "2026-10-03",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 209",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|das grauen (vor) der heimkehr: jiddische, ukrainische, belarussische, russische versionen und visionen",
+   "speakers": [
+    "Brigitte Obermayr"
+   ],
+   "title": "Topoi und Agenden einer ‚moralisch-ethischen Genesung‘ im russischen literarischen Diskurs seit 2022",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR209-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 209",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|das grauen (vor) der heimkehr: jiddische, ukrainische, belarussische, russische versionen und visionen",
+   "speakers": [
+    "Jakob Wunderwald"
+   ],
+   "title": "Verteidigung der Vergangenheit. Die Suche nach Minsk in belarussischer Exillyrik",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR209-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 209",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|das grauen (vor) der heimkehr: jiddische, ukrainische, belarussische, russische versionen und visionen",
+   "speakers": [
+    "Eva Hückmann"
+   ],
+   "title": "Aus dem Exil, zurück zu Ruinen. Jiddische Kriegs- und Nachkriegsgedichte polnischer Juden",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR221-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 221",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|SEK_LKW_02",
+   "speakers": [
+    "Daniel Schümann"
+   ],
+   "title": "Tunnelblick und Panakustik. Evolution der Sinne bei Dmitrij Gluchovskij",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR221-10:30",
+   "day": "2026-10-03",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 221",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|SEK_LKW_02",
+   "speakers": [
+    "Eliane Fitzé"
+   ],
+   "title": "Mit Humor gegen Nationalismus: Antinationalistische Metafiktion in der spät- und postjugoslawischen Literatur",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR221-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 221",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|SEK_LKW_02",
+   "speakers": [
+    "Jakub M. Zygalski"
+   ],
+   "title": "Feuilletonistisches Schreiben über Polen 1933 bis 1939 in der konservativen „Schlesischen Zeitung“ aus Breslau",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR221-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 221",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|SEK_LKW_02",
+   "speakers": [
+    "Jasmin Neuerer-Badr"
+   ],
+   "title": "Die Maus ohne Haus: Obdachlosigkeit in der russischen Kinderliteratur im Spiegel von Politik und Gesellschaft",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR222-09:00",
+   "day": "2026-10-03",
+   "start": "09:00",
+   "end": "09:30",
+   "room": "SR 222",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|jenseits der nationalphilologien? perspektiven der slavistischen literaturwissenschaft",
+   "speakers": [
+    "Irina Wutsdorff"
+   ],
+   "title": "(Post-)Imperialität in plurikulturellen Räumen (Ost- )Mitteleuropas",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR222-10:30",
+   "day": "2026-10-03",
+   "start": "10:30",
+   "end": "11:00",
+   "room": "SR 222",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|jenseits der nationalphilologien? perspektiven der slavistischen literaturwissenschaft",
+   "speakers": [
+    "Milka Car"
+   ],
+   "title": "Modelle regionaler, postimperialer und nationaler Literaturgeschichtsschreibung: Antun Barac´ Književnost Istre i Hrvatskog Primorja und Blue humanities",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR222-10:00",
+   "day": "2026-10-03",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 222",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|jenseits der nationalphilologien? perspektiven der slavistischen literaturwissenschaft",
+   "speakers": [
+    "Schamma Schahadat"
+   ],
+   "title": "Czesław Miłosz: Räume übersetzen",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-03-09:00-SR222-09:30",
+   "day": "2026-10-03",
+   "start": "09:30",
+   "end": "10:00",
+   "room": "SR 222",
+   "track": "LKW+DID",
+   "panel_id": "2026-10-03|09:00|jenseits der nationalphilologien? perspektiven der slavistischen literaturwissenschaft",
+   "speakers": [
+    "Annette Werberger"
+   ],
+   "title": "Slavistische Literaturgeschichte jenseits der Europhonie",
+   "type": "talk"
+  },
+  {
+   "id": "2026-10-01-break-11:30",
+   "day": "2026-10-01",
+   "start": "11:00",
+   "end": "11:30",
+   "room": null,
+   "track": null,
+   "panel_id": null,
+   "speakers": [],
+   "title": "Kaffeepause und Kurzvorstellung der Poster",
+   "type": "break"
+  },
+  {
+   "id": "2026-10-01-break-14:00",
+   "day": "2026-10-01",
+   "start": "13:00",
+   "end": "14:00",
+   "room": null,
+   "track": null,
+   "panel_id": null,
+   "speakers": [],
+   "title": "Mittagspause",
+   "type": "break"
+  },
+  {
+   "id": "2026-10-01-break-16:00",
+   "day": "2026-10-01",
+   "start": "15:30",
+   "end": "16:00",
+   "room": null,
+   "track": null,
+   "panel_id": null,
+   "speakers": [],
+   "title": "Kaffeepause",
+   "type": "break"
+  },
+  {
+   "id": "2026-10-02-break-11:30",
+   "day": "2026-10-02",
+   "start": "11:00",
+   "end": "11:30",
+   "room": null,
+   "track": null,
+   "panel_id": null,
+   "speakers": [],
+   "title": "Kaffeepause",
+   "type": "break"
+  },
+  {
+   "id": "2026-10-02-break-14:00",
+   "day": "2026-10-02",
+   "start": "13:00",
+   "end": "14:00",
+   "room": null,
+   "track": null,
+   "panel_id": null,
+   "speakers": [],
+   "title": "Mittagspause",
+   "type": "break"
+  },
+  {
+   "id": "2026-10-02-break-16:00",
+   "day": "2026-10-02",
+   "start": "15:30",
+   "end": "16:00",
+   "room": null,
+   "track": null,
+   "panel_id": null,
+   "speakers": [],
+   "title": "Kaffeepause",
+   "type": "break"
+  },
+  {
+   "id": "2026-10-03-break-11:30",
+   "day": "2026-10-03",
+   "start": "11:00",
+   "end": "11:30",
+   "room": null,
+   "track": null,
+   "panel_id": null,
+   "speakers": [],
+   "title": "Kaffeepause",
+   "type": "break"
+  }
+ ],
+ "events": [
+  {
+   "day": "2026-10-01",
+   "start": "18:00",
+   "end": "19:30",
+   "title": "Führungen durch Jena (für Angemeldete)"
+  },
+  {
+   "day": "2026-10-01",
+   "start": "16:00",
+   "end": "17:30",
+   "title": "Podiumsdiskussion „Die Slavistik ist tot – es lebe die Slavistik!“ Szenarien der Entwicklung slavistischer Fächer an deutschsprachigen Universitäten (CZS 3, HS 2)"
+  },
+  {
+   "day": "2026-10-02",
+   "start": "16:00",
+   "end": "17:30",
+   "title": "Podiumsdiskussion: „Zwischen Krise und Comeback?“: Zur Bedeutung slawischer Sprachen im deutschen (Hochschul-) Bildungssystem (CZS 3, HS 8)"
+  },
+  {
+   "day": "2026-10-02",
+   "start": "16:00",
+   "end": "17:30",
+   "title": "Podiumsdiskussion: Slavistik ohne Russland? – Perspektiven unserer Fächer nach dem Angriff auf die Ukraine (CZS 3, HS 5)"
+  },
+  {
+   "day": "2026-10-02",
+   "start": "18:00",
+   "end": "19:30",
+   "title": "Konzert des ukrainischen Chors (Aula, UHG)"
+  },
+  {
+   "day": "2026-10-03",
+   "start": "11:30",
+   "end": "13:00",
+   "title": "Podiumsdiskussion „Wenn die Welt brennt – was geschieht mit Sprache? Slawistische Perspektiven auf Konflikt, Klimawandel und gesellschaftliche Umbrüche“ (CZS 3, HS 2)"
+  },
+  {
+   "day": "2026-10-03",
+   "start": "14:00",
+   "end": "15:30",
+   "title": "Führung durch Jena (für Angemeldete)"
+  },
+  {
+   "day": "2026-10-03",
+   "start": "13:00",
+   "end": "14:00",
+   "title": "Abschlussveranstaltung mit Imbiss (CZS 3, Foyer)"
+  }
+ ]
+}
