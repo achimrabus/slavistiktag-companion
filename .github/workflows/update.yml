@@ -25,31 +25,70 @@ jobs:
       - name: Abhängigkeiten
         run: pip install pdfplumber
 
-      - name: PDF laden und Hash vergleichen
+      - name: PDF laden (mit URL-Fallback) und Hash vergleichen
         id: check
         run: |
           set -euo pipefail
-          URL="https://www.gw.uni-jena.de/phifakmedia/195800/vortraege.pdf"
-          # Resilienz: Mehrere Versuche; 404/Redirect-auf-Fehlerseite -> klarer Fehler
-          HTTP=$(curl -sSL --retry 4 --retry-delay 20 --retry-all-errors \
-                 -w '%{http_code}' -o /tmp/vortraege.pdf "$URL") || HTTP=000
-          SIZE=$(wc -c < /tmp/vortraege.pdf)
-          echo "HTTP=$HTTP SIZE=$SIZE"
-          # Fehlerseiten/-leere Antworten dürfen nie als "neues PDF" durchgehen:
-          if [ "$HTTP" != "200" ] || [ "$SIZE" -lt 50000 ]; then
-            echo "::error::PDF nicht erreichbar (HTTP $HTTP, $SIZE Bytes). URL: $URL"
+          PRIMARY="https://www.gw.uni-jena.de/phifakmedia/195800/vortraege.pdf"
+          DOWNLOADS="https://www.gw.uni-jena.de/52756/downloads"
+          PDF=/tmp/vortraege.pdf
+          FINAL_URL=""
+
+          # Ein valides Kandidaten-PDF: nicht leer, >= 50 kB, echte %PDF-Magie
+          validate() {
+            [ -s "$1" ] || return 1
+            local size; size=$(wc -c < "$1")
+            [ "$size" -ge 50000 ] || return 1
+            head -c 5 "$1" | grep -q '%PDF-'
+          }
+
+          try_url() {
+            local code
+            code=$(curl -sSL --retry 3 --retry-delay 15 --retry-all-errors \
+                   -w '%{http_code}' -o "$PDF" "$1" 2>/dev/null) || code=000
+            [ "$code" = "200" ] && validate "$PDF"
+          }
+
+          echo "::group::Primäre URL"
+          if try_url "$PRIMARY"; then
+            FINAL_URL="$PRIMARY"
+            echo "Primäre URL ok: $PRIMARY"
+          fi
+          echo "::endgroup::"
+
+          # Fallback: Downloads-Seite der Tagung nach vortraege/programm-PDFs durchsuchen
+          if [ -z "$FINAL_URL" ]; then
+            echo "::warning::Primäre URL liefert kein valides PDF: $PRIMARY — Fallback: Downloads-Seite scrapen."
+            echo "::group::Fallback: Downloads-Seite"
+            curl -sSL --compressed --retry 3 -o /tmp/downloads.html "$DOWNLOADS" || true
+            CANDIDATES=$(grep -oE 'phifakmedia/[0-9]+/[^"<>[:space:]]*(vortraege|programm)[^"<>[:space:]]*\.pdf' /tmp/downloads.html \
+              | sed 's|^|https://www.gw.uni-jena.de/|' | sort -u)
+            echo "Kandidaten: ${CANDIDATES:-keine}"
+            while IFS= read -r cand; do
+              [ -n "$cand" ] || continue
+              if try_url "$cand"; then
+                FINAL_URL="$cand"
+                echo "Fallback-URL ok: $cand"
+                break
+              fi
+              echo "Kandidat unbrauchbar: $cand"
+            done <<< "$CANDIDATES"
+            echo "::endgroup::"
+          fi
+
+          if [ -z "$FINAL_URL" ] || ! validate "$PDF"; then
+            echo "::error::QUELLE BROKEN – weder die primäre URL noch ein Fallback-Kandidat liefert ein valides PDF. Programm-Update übersprungen, alte Daten bleiben online."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "broken=true" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          # Plausibilität: muss ein echtes PDF sein
-          if ! head -c 5 /tmp/vortraege.pdf | grep -q '%PDF-'; then
-            echo "::error::Antwort ist kein PDF (vermutlich Fehlerseite). URL: $URL"
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "broken=true" >> "$GITHUB_OUTPUT"
-            exit 0
+
+          if [ "$FINAL_URL" != "$PRIMARY" ]; then
+            echo "::warning::FALLBACK AKTIV: Programm wird von $FINAL_URL geladen. Bitte die PRIMARY-Zeile in .github/workflows/update.yml auf diese URL setzen – sonst läuft jeder Lauf über den Fallback."
           fi
-          NEW_SHA=$(sha256sum /tmp/vortraege.pdf | cut -d' ' -f1)
+          echo "final_url=$FINAL_URL" >> "$GITHUB_OUTPUT"
+
+          NEW_SHA=$(sha256sum "$PDF" | cut -d' ' -f1)
           OLD_SHA=$(python -c "import json; print(json.load(open('data/program.json', encoding='utf-8'))['meta']['source_sha256'])")
           echo "new_sha=$NEW_SHA" >> "$GITHUB_OUTPUT"
           echo "old_sha=$OLD_SHA" >> "$GITHUB_OUTPUT"
@@ -65,11 +104,10 @@ jobs:
         if: steps.check.outputs.broken == 'true'
         run: |
           echo "::error::QUELLE BROKEN – Programm-Update übersprungen, alte Daten bleiben online."
-          echo "Die App funktioniert weiter mit dem letzten validen Stand."
-          echo "Handlung: Neue PDF-URL auf gw.uni-jena.de suchen (Downloads-Seite der Tagung),"
-          echo "dann '.github/workflows/update.yml' URL-Zeile anpassen."
-          # Badge/Hinweis: Workflow läuft hier absichtlich NICHT auf rot fürs Repo-Health,
-          # der ::error:: oben markiert den Run aber in der Actions-UI sichtbar.
+          echo "Die App funktioniert weiter mit dem letzten validen Stand (inkl. LLM-Themen-Tags)."
+          echo "Der Fallback (Downloads-Seite) wurde bereits versucht und fand kein valides PDF."
+          echo "Handlung: Auf gw.uni-jena.de prüfen, ob das Programm umgezogen ist oder ein"
+          echo "neues Dateiformat/Name eingeführt wurde, dann PRIMARY in update.yml anpassen."
 
       - name: Neues PDF archivieren und parsen
         if: steps.check.outputs.changed == 'true'
@@ -128,9 +166,9 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/program.json tools/source/
           git commit -m "Programm-Update: PDF-Stand $(date +%F) (sha256 ${NEW_SHA:0:8})" \
-                     -m "Quelle: $URL · vorher: ${OLD_SHA:0:8}"
+                     -m "Quelle: $FINAL_URL · vorher: ${OLD_SHA:0:8}"
           git push
         env:
           NEW_SHA: ${{ steps.check.outputs.new_sha }}
           OLD_SHA: ${{ steps.check.outputs.old_sha }}
-          URL: https://www.gw.uni-jena.de/phifakmedia/195800/vortraege.pdf
+          FINAL_URL: ${{ steps.check.outputs.final_url }}
