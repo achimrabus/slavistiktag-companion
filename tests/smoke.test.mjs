@@ -194,6 +194,36 @@ t("Drawer: Teilen-Button vorhanden", () => {
 document.querySelector(".drawer-backdrop").click();
 await waitFor(() => !document.querySelector(".drawer"));
 
+// Eröffnungs-Event (Rahmenprogramm 30.09.): Karte im Programm-Grid klicken ->
+// Drawer mit Grußworten; Raum ist (noch) nicht bekanntgegeben und wird ehrlich
+// als solcher gekennzeichnet statt erfunden.
+dom.window.location.hash = "#/programm?day=2026-09-30";
+await waitFor(() => [...document.querySelectorAll("#app .event-card")]
+  .some((c) => c.querySelector(".card-title")?.textContent.includes("Eröffnung des Slavistiktages")));
+const eroffCard = [...document.querySelectorAll("#app .event-card")]
+  .find((c) => c.querySelector(".card-title")?.textContent.includes("Eröffnung des Slavistiktages"));
+t("Eröffnungs-Event: Karte klickbar (data-id + onclick)", () => {
+  assert.ok(eroffCard.getAttribute("data-id"), "Event-Karte ohne data-id");
+  assert.ok(eroffCard.getAttribute("role") === "button", "Event-Karte nicht als button");
+});
+eroffCard.click();
+await waitFor(() => document.querySelector(".drawer h2")?.textContent.includes("Eröffnung des Slavistiktages"));
+t("Eröffnungs-Drawer: Grußworte-Abschnitt mit Namen", () => {
+  const d = document.querySelector(".drawer");
+  const h3 = [...d.querySelectorAll("h3")].find((x) => x.textContent === "Grußworte");
+  assert.ok(h3, "kein Grußworte-Abschnitt im Drawer");
+  const items = h3.closest("section").querySelectorAll(".mini-list li");
+  assert.ok(items.length >= 3, `nur ${items.length} Grußworte`);
+  assert.ok([...items].some((li) => li.textContent.includes("Sonnenhauser")));
+});
+t("Eröffnungs-Drawer: fehlender Raum ehrlich gekennzeichnet", () => {
+  const d = document.querySelector(".drawer");
+  assert.ok(!d.querySelector("a.pill.room"), "unerwartet doch ein Raum-Link");
+  assert.ok(d.textContent.includes("Raum noch nicht bekanntgegeben"), "kein Raum-Hinweis");
+});
+document.querySelector(".drawer-backdrop").click();
+await waitFor(() => !document.querySelector(".drawer"));
+
 // Feature 4: Sprecher-Index
 dom.window.location.hash = "#/sprecher";
 await waitFor(() => document.querySelector("#app .view-speakers"));

@@ -286,8 +286,10 @@ function gridView(model, ctx, state, day, sessions, events) {
     rowItems.push({ kind: "slot", start });
     lastEnd = Math.max(...(byStart[start] || [{ end: start }]).map((s) => s.end));
   }
+  // Tage ohne Vortrags-Slots (z. B. Eröffnungstag 30.09.) haben kein lastEnd –
+  // ohne den Null-Fall würden deren Event-Karten im Grid gar nicht erscheinen.
   for (const ex of extras) {
-    if (lastEnd && minutes(ex.start) >= minutes(lastEnd)) rowItems.push({ kind: "full", item: ex });
+    if (!lastEnd || minutes(ex.start) >= minutes(lastEnd)) rowItems.push({ kind: "full", item: ex });
   }
 
   for (const row of rowItems) {

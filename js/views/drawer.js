@@ -146,5 +146,11 @@ function eventBody(e, close) {
     e.room ? roomFloorStrip(e.room) : null,
     e.body ? h("p", { class: "body", text: e.body }) : null,
     e.people ? h("p", { class: "meta", text: e.people }) : null,
+    e.grussworte?.length
+      ? h("section", {},
+          h("h3", { text: "Grußworte" }),
+          h("ul", { class: "mini-list" },
+            e.grussworte.map((g) => h("li", { text: g }))))
+      : null,
     e.note ? h("p", { class: "note", text: e.note }) : null);
 }
