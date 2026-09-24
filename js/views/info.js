@@ -77,10 +77,9 @@ export function renderInfo(model) {
   const stand = meta?.generated
     ? meta.generated.slice(0, 10).split("-").reverse().join(".")
     : null;
-  const methodText = meta
-    ? `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
-      `27 Themenfeldern. Die Zuordnung übernimmt ein Sprachmodell (${meta.model}, ` +
-      `Stand ${stand}), das Titel und Sprechernamen im Batch klassifiziert; ` +
+  const methodText = `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
+      `27 Themenfeldern. Die Zuordnung übernimmt ein lokales Sprachmodell (${meta?.model ?? "ufr/chat-standard"}, ` +
+      `Stand ${stand ?? "—"}), das Titel und Sprechernamen im Batch klassifiziert; ` +
       `${llmCount} Vorträge sind so getaggt, ${lexCount} ergänzend per Fallback aus ` +
       "einem kuratierten Keyword-Lexikon (Teilstring-Matching, vollständig im Browser). " +
       "Ein Vortrag kann in mehreren Clustern erscheinen, manche passen in keines. " +
@@ -89,15 +88,7 @@ export function renderInfo(model) {
       "Sprach-Hinweise (RU/UK/PL/EN/CS-Badge an Karte und Titel) beruhen auf einer " +
       "Funktionswort-Heuristik; Kyrillisch in Titeln ist selten (3 von 315, alles " +
       "russische Einschübe in de/en-Titeln) und wird über russische Funktionswörter " +
-      "erkannt – Hinweise, keine Klassifikation."
-    : `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
-      "27 Themenfeldern aus einem kuratierten Lexikon (Keyword-Matching über " +
-      "Titel und Sprechernamen, ohne maschinelles Lernen, vollständig im Browser). " +
-      `${tagged} Vorträge lassen sich so zuordnen (${Math.round(tagged / talks.length * 100)} %); ` +
-      "ein Vortrag kann in mehreren Clustern erscheinen, manche passen in keines. " +
-      "Die Sprachverteilung pro Cluster beruht auf einer Funktionswort-Heuristik " +
-      "(Deutsch/Englisch, Russisch/Ukrainisch über kyrillische Spezialzeichen, " +
-      "Tschechisch/Polnisch über Diakritika) – Hinweise, keine Klassifikation.";
+      "erkannt – Hinweise, keine Klassifikation.";
   wrap.append(h("section", { class: "card" },
     h("h2", { text: "Themen-Kompass: Methode & Grenzen" }),
     h("p", { text: methodText }),
@@ -105,11 +96,10 @@ export function renderInfo(model) {
 
   // Entstehung der App: agentisch generiert, kurze öffentliche Fassung
   wrap.append(h("section", { class: "card" },
-    h("h2", { text: "Entstehung & KI-Einsatz" }),
+    h("h2", { text: "Entstehung" }),
     h("p", { text:
-      "Diese App ist agentisch entstanden: Ein KI-Agent hat sie auf Basis des " +
-      "amtlichen Programm-PDFs geplant, gebaut und geprüft; die fachliche " +
-      "Leitung und alle Entscheidungen liegen beim Menschen (Achim Rabus). " +
+      "Diese App ist mit lokaler agentischer KI entstanden: Ein KI-Agent hat sie auf Basis des " +
+      "amtlichen Programm-PDFs geplant, gebaut und geprüft; inhaltliche Entscheidungen und das Prompting erfolgten durch Achim Rabus. " +
       "Die Themen-Zuordnung im Kompass nutzt ein großes Sprachmodell, das " +
       "Vortragstitel den 27 Themenfeldern zuordnet; seine Vorschläge werden " +
       "automatisch gegen die Themenliste validiert, unverständliche Fälle " +
