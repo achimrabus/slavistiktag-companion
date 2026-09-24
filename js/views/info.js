@@ -94,6 +94,20 @@ export function renderInfo(model) {
     h("p", { text: methodText }),
     h("p", { class: "meta", text: "App (Programm-App und Themen-Kompass): Achim Rabus · Lizenz: MIT" })));
 
+  // Farben & Favoriten: kurze öffentliche Erklärung
+  wrap.append(h("section", { class: "card" },
+    h("h2", { text: "Farben & Favoriten" }),
+    h("p", { text:
+      "Farben: Der linke Rand jeder Karte markiert die Disziplin – " +
+      "orange Fachdidaktik (DID), türkis Sprachwissenschaft (SW), " +
+      "rosa Literatur- und Kulturwissenschaft (LKW); dieselben Punkte " +
+      "stehen an den Disziplin-Filtern. " +
+      "Favoriten: Über den Stern auf jeder Karte stellst du dein persönliches " +
+      "Programm unter „Mein Programm“ zusammen. Es wird automatisch im Browser " +
+      "deines Endgeräts gespeichert (localStorage) – ohne Anmeldung, ohne Export, " +
+      "und es bleibt beim nächsten Besuch erhalten. Der JSON-Export ist nur für " +
+      "Gewächswechsel oder Umzug auf ein anderes Gerät nötig." })));
+
   // Entstehung der App: agentisch generiert, kurze öffentliche Fassung
   wrap.append(h("section", { class: "card" },
     h("h2", { text: "Entstehung" }),

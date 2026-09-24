@@ -111,7 +111,7 @@ function filterBar(model, ctx, state) {
     },
   });
 
-  const checks = (label, options, key) => {
+  const checks = (label, options, key, dotClass) => {
     const box = h("fieldset", { class: "check-group" },
       h("legend", { text: label }));
     for (const { value, text } of options) {
@@ -120,7 +120,9 @@ function filterBar(model, ctx, state) {
         state[key] = cb.checked ? [...state[key], value] : state[key].filter((x) => x !== value);
         sync();
       });
-      box.append(h("label", { class: "check" }, cb, h("span", { text })));
+      box.append(h("label", { class: "check" }, cb,
+        dotClass ? h("span", { class: `legend-dot ${dotClass(value)}`, "aria-hidden": "true" }) : null,
+        h("span", { text })));
     }
     return box;
   };
@@ -150,7 +152,7 @@ function filterBar(model, ctx, state) {
         { value: "DID", text: TRACK_LABELS.DID },
         { value: "SW", text: TRACK_LABELS.SW },
         { value: "LKW", text: TRACK_LABELS.LKW },
-      ], "tracks"),
+      ], "tracks", (v) => `dot-${v.toLowerCase()}`),
       checks("Format", [
         { value: "panel", text: FORMAT_LABELS.panel },
         { value: "sektion", text: FORMAT_LABELS.sektion },
