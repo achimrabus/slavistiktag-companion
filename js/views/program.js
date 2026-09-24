@@ -23,15 +23,23 @@ export function renderProgram(model, ctx, params) {
 }
 
 function readState(model, params) {
+  const q = params.get("q") || "";
+  const dayParam = params.get("day");
+  const browseDefault = model.days.includes(todayIso()) && inConf(model)
+    ? todayIso()
+    : model.days.find((d) => d !== model.conference.start) || model.days[0];
   const st = {
-    q: params.get("q") || "",
-    day: params.get("day") === "all" ? "" : (params.get("day") || (model.days.includes(todayIso()) && inConf(model) ? todayIso() : model.days.find((d) => d !== model.conference.start) || model.days[0])),
+    q,
+    // Volltextsuche ohne explizite Tag-Wahl durchsucht alle Tage; beim reinen
+    // Stöbern bleibt der Konferenz-Default-Tag (heute bzw. erster Vortragstag).
+    day: dayParam === "all" ? "" : (dayParam ?? (q ? "" : browseDefault)),
     room: params.get("room") || "",
     slot: params.get("slot") || "",
     panel: params.get("panel") || "",
     tracks: params.getAll("track"),
     formats: params.getAll("format"),
   };
+  st.dayExplicit = dayParam != null; // Tag vom User gewählt (Chip/URL), nicht impliziter Browse-Default
   return st;
 }
 
@@ -68,7 +76,13 @@ function filterBar(model, ctx, state) {
   const search = h("input", {
     type: "search", class: "search-input", placeholder: "Suche: Titel, Personen, Räume, Panels …",
     value: state.q, "aria-label": "Volltextsuche",
-    oninput: () => { state.q = search.value; sync(); },
+    oninput: () => {
+      // Erste Suche hebt den impliziten Browse-Default-Tag auf (alle Tage);
+      // ein explizit gewählter Tag bleibt aktiv.
+      if (!state.dayExplicit) state.day = "";
+      state.q = search.value;
+      sync();
+    },
   });
 
   const checks = (label, options, key) => {
