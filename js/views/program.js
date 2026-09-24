@@ -327,6 +327,7 @@ function listView(model, ctx, sessions, events, q, allDays) {
             : eventCard(model, ctx, x))))));
     }
   }
+  return wrap;
 }
 
 export function sessionCard(model, ctx, s, state) {

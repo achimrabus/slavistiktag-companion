@@ -13,6 +13,7 @@ globalThis.localStorage = dom.window.localStorage;
 globalThis.history = dom.window.history;
 globalThis.HTMLElement = dom.window.HTMLElement;
 globalThis.Node = dom.window.Node;
+globalThis.NodeFilter = dom.window.NodeFilter;
 globalThis.URL = dom.window.URL;
 globalThis.URLSearchParams = dom.window.URLSearchParams;
 globalThis.Blob = dom.window.Blob;
@@ -78,6 +79,21 @@ t("Suche 'Brehmer' findet Treffer", () => {
   const cards = document.querySelectorAll("#app .session-card");
   assert.ok(cards.length >= 1 && cards.length <= 5, `${cards.length} Karten`);
 });
+
+// Listenansicht (Regression: listView gab undefined zurück → Text „undefined" statt Karten)
+const listBtn = [...document.querySelectorAll("#app .view-toggle button")].find((b) => b.textContent.trim() === "Liste");
+listBtn.click();
+dom.window.location.hash = "#/programm?day=all";
+await waitFor(() => document.querySelector("#app .slot-grid"));
+await sleep(250);
+t("Liste 'Alle Tage': kein 'undefined', Karten über alle Tage", () => {
+  assert.ok(!document.body.textContent.includes("undefined"), "Textknoten 'undefined' im DOM");
+  assert.ok(document.querySelectorAll("#app .slot-grid .session-card").length > 100,
+    `nur ${document.querySelectorAll("#app .slot-grid .session-card").length} Karten`);
+});
+const gridBtn = [...document.querySelectorAll("#app .view-toggle button")].find((b) => b.textContent.trim() === "Raster");
+gridBtn.click();
+await sleep(250);
 
 // Drawer
 search.value = "";
