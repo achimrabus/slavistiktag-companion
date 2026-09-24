@@ -168,6 +168,63 @@ t("naturalRooms sortiert numerisch", () => {
     ["HS 6", "HS 8", "MMZ 220", "SR 113", "SR 114", "SR 209"]);
 });
 
+// ---------- LLM-Tagging: Merge-Logik + echte data/llm_tags.json ----------
+import { applyLlmTags } from "../js/data.js";
+import { TAGS, TAG_BY_ID } from "../js/lexicon.js";
+import { tagStats } from "../js/mining.js";
+
+const TAX_IDS = new Set(TAGS.map((t) => t.id));
+t("applyLlmTags: Überschreibt nur wo LLM-Tags vorliegen, unbekannte ids verworfen", () => {
+  const m = buildModel(program, content); // frisches Modell, Lexikon-Tags aktiv
+  const se1Before = m.sessions.find((s) => s.id === "e1")._tags.slice();
+  const llm = {
+    meta: { model: "test", generated: "2026-09-24T12:00:00" },
+    tags: {
+      // Session 'x' existiert; 'e1' wird nicht getaggt; unbekannte id im topics-Array
+      x: ["krieg", "nicht-in-der-taxonomie"],
+    },
+  };
+  applyLlmTags(m, llm);
+  const sx = m.sessions.find((s) => s.id === "x");
+  assert.deepEqual(sx._llm_tags, ["krieg"]); // unbekannte id gefiltert
+  assert.deepEqual(sx._tags, ["krieg"]);
+  assert.equal(sx._tagSource, "llm");
+  const se1 = m.sessions.find((s) => s.id === "e1");
+  assert.deepEqual(se1._tags, se1Before); // Lexikon-Tags unverändert
+  assert.equal(se1._tagSource, "lexikon");
+  assert.equal(m.llmTagsApplied, 1);
+  assert.equal(m.llmTagsMeta.model, "test");
+});
+t("applyLlmTags: ohne llm_tags.json-Objekt bleibt Lexikon aktiv", () => {
+  const m = buildModel(program, content);
+  applyLlmTags(m, null);
+  assert.equal(m.llmTagsApplied, 0);
+  assert.equal(m.llmTagsMeta, null);
+  assert.ok(m.sessions.every((s) => s._tagSource === "lexikon"));
+});
+t("llm_tags.json: alle 308 Vorträge vorhanden, alle tags ⊆ Taxonomie", () => {
+  const llm = JSON.parse(fs.readFileSync(new URL("../data/llm_tags.json", import.meta.url), "utf8"));
+  assert.ok(llm.meta && llm.meta.model, "Meta-Block fehlt");
+  const talkIds = _model.sessions.filter((s) => s.type === "talk").map((s) => s.id);
+  assert.equal(Object.keys(llm.tags).length, talkIds.length);
+  for (const id of talkIds) assert.ok(Array.isArray(llm.tags[id]), `id fehlt: ${id}`);
+  for (const [id, tags] of Object.entries(llm.tags)) {
+    for (const t of tags) assert.ok(TAX_IDS.has(t), `unbekannte tag-id '${t}' bei ${id}`);
+  }
+});
+t("llm_tags.json via applyLlmTags: Mining-Cluster übernehmen die LLM-Tags", () => {
+  const llm = JSON.parse(fs.readFileSync(new URL("../data/llm_tags.json", import.meta.url), "utf8"));
+  const m = buildModel(_prog, _content);
+  applyLlmTags(m, llm);
+  const talks = m.sessions.filter((s) => s.type === "talk");
+  const stats = tagStats(talks); // Seam: nutzt s._tags
+  const totalTags = [...stats.values()].reduce((a, b) => a + b, 0);
+  const llmTagCount = talks.reduce((a, s) => a + s._tags.length, 0);
+  assert.equal(totalTags, llmTagCount);
+  assert.ok(m.llmTagsApplied >= talks.length * 0.9, `nur ${m.llmTagsApplied} von ${talks.length} LLM-getaggt`);
+  for (const tagId of stats.keys()) assert.ok(TAG_BY_ID[tagId]);
+});
+
 // ---------- util
 t("minutes", () => {
   assert.equal(minutes("09:30"), 570);

@@ -3,6 +3,7 @@
 
 import { normalize, makeSearchText } from "./search.js";
 import { tagsFor, detectLanguage } from "./mining.js";
+import { TAG_BY_ID } from "./lexicon.js";
 
 const tokenSet = (s) =>
   new Set(normalize(s).split(/[^a-zäöüа-яё0-9]+/).filter((w) => w.length > 3));
@@ -144,6 +145,30 @@ export function buildModel(program, content) {
   };
 }
 
+// LLM-Tags (data/llm_tags.json) auf das Modell anwenden. Überschreibt die
+// Lexikon-Tags pro Session, wenn LLM-Tags vorliegen (Seam: s._tags wird von
+// mining.clusterSessions/tagStats gelesen). Unbekannte tag-ids werden
+// verworfen, Sessions ohne LLM-Tags behalten das Lexikon-Tagging.
+// model.llmTagsMeta/llmTagsApplied dokumentieren Quelle + Umfang.
+export function applyLlmTags(model, llm) {
+  const tags = llm?.tags || {};
+  let applied = 0;
+  for (const s of model.sessions) {
+    const llmTags = (tags[s.id] || []).filter((t) => TAG_BY_ID[t]);
+    if (llmTags.length) {
+      s._llm_tags = llmTags;
+      s._tags = llmTags;
+      s._tagSource = "llm";
+      applied++;
+    } else {
+      s._tagSource = "lexikon";
+    }
+  }
+  model.llmTagsMeta = llm?.meta || null;
+  model.llmTagsApplied = applied;
+  return model;
+}
+
 export async function loadData(fetchFn = fetch) {
   const [progRes, contRes] = await Promise.all([
     fetchFn("data/program.json"),
@@ -153,5 +178,15 @@ export async function loadData(fetchFn = fetch) {
   if (!contRes.ok) throw new Error(`content.json: HTTP ${contRes.status}`);
   const program = await progRes.json();
   const content = await contRes.json();
-  return buildModel(program, content);
+  const model = buildModel(program, content);
+
+  // LLM-Tagging nachladen (nicht-kritisch): bei Fehler/Feilen bleibt das
+  // Lexikon-Tagging aktiv.
+  try {
+    const llmRes = await fetchFn("data/llm_tags.json");
+    if (llmRes.ok) applyLlmTags(model, await llmRes.json());
+  } catch {
+    // llm_tags.json fehlt oder ist defekt → Lexikon-Tags bleiben aktiv
+  }
+  return model;
 }

@@ -71,17 +71,35 @@ export function renderInfo(model) {
   // Über die App / Urheber / Methode
   const talks = model.sessions.filter((s) => s.type === "talk");
   const tagged = talks.filter((s) => (s._tags || []).length).length;
-  wrap.append(h("section", { class: "card" },
-    h("h2", { text: "Themen-Kompass: Methode & Grenzen" }),
-    h("p", { text:
-      `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
+  const llmCount = talks.filter((s) => s._tagSource === "llm").length;
+  const lexCount = tagged - llmCount;
+  const meta = model.llmTagsMeta;
+  const stand = meta?.generated
+    ? meta.generated.slice(0, 10).split("-").reverse().join(".")
+    : null;
+  const methodText = meta
+    ? `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
+      `27 Themenfeldern. Die Zuordnung übernimmt ein Sprachmodell (${meta.model}, ` +
+      `Stand ${stand}), das Titel und Sprechernamen im Batch klassifiziert; ` +
+      `${llmCount} Vorträge sind so getaggt, ${lexCount} ergänzend per Fallback aus ` +
+      "einem kuratierten Keyword-Lexikon (Teilstring-Matching, vollständig im Browser). " +
+      "Ein Vortrag kann in mehreren Clustern erscheinen, manche passen in keines. " +
+      "Grenzen: Die automatische Zuordnung kann danebenliegen und ist bewusst grob – " +
+      "sie ersetzt keine inhaltliche Sichtung. " +
+      "Die Sprachverteilung pro Cluster beruht auf einer Funktionswort-Heuristik " +
+      "(Deutsch/Englisch, Russisch/Ukrainisch über kyrillische Spezialzeichen, " +
+      "Tschechisch/Polnisch über Diakritika) – Hinweise, keine Klassifikation."
+    : `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
       "27 Themenfeldern aus einem kuratierten Lexikon (Keyword-Matching über " +
       "Titel und Sprechernamen, ohne maschinelles Lernen, vollständig im Browser). " +
       `${tagged} Vorträge lassen sich so zuordnen (${Math.round(tagged / talks.length * 100)} %); ` +
       "ein Vortrag kann in mehreren Clustern erscheinen, manche passen in keines. " +
       "Die Sprachverteilung pro Cluster beruht auf einer Funktionswort-Heuristik " +
       "(Deutsch/Englisch, Russisch/Ukrainisch über kyrillische Spezialzeichen, " +
-      "Tschechisch/Polnisch über Diakritika) – Hinweise, keine Klassifikation." }),
+      "Tschechisch/Polnisch über Diakritika) – Hinweise, keine Klassifikation.";
+  wrap.append(h("section", { class: "card" },
+    h("h2", { text: "Themen-Kompass: Methode & Grenzen" }),
+    h("p", { text: methodText }),
     h("p", { class: "meta", text: "App (Programm-App und Themen-Kompass): Achim Rabus · Lizenz: MIT" })));
 
   return wrap;
