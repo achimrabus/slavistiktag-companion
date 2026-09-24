@@ -79,6 +79,19 @@ t("filter: Format pause", () => {
 t("formatOf: SEK-Code → sektion", () => {
   assert.equal(formatOf({ type: "talk", panel_code: "SEK_SW_01" }), "sektion");
 });
+t("formatOf: Vortrag ohne SEK-Code → panel (eingereichtes Panel)", () => {
+  assert.equal(formatOf({ type: "talk" }), "panel");
+});
+t("filter: Format panel → nur code-lose Panels (nicht Sektionen)", () => {
+  const hit = filterSessions(sessions, { formats: ["panel"] }).map((s) => s.id);
+  assert.deepEqual(hit.sort(), ["b", "d", "x"].sort(), "Talks ohne SEK-Code sind 'panel'");
+});
+t("filter: Format sektion → nur SEK_-Vorträge", () => {
+  const s = S({ id: "sek1", panel_code: "SEK_SW_01" });
+  s._search = normalize(s.title);
+  assert.deepEqual(filterSessions([s], { formats: ["sektion"] }).map((x) => x.id), ["sek1"]);
+  assert.deepEqual(filterSessions([s], { formats: ["panel"] }).map((x) => x.id), []);
+});
 
 // ---------- ics
 t("ICS enthält VTIMEZONE und korrekte DTSTART", () => {
