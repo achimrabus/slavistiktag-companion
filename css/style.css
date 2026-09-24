@@ -186,6 +186,7 @@ mark { background: var(--warn); color: var(--bg); border-radius: 3px; padding: 0
   cursor: pointer; font-weight: 600;
 }
 .toast-action:hover { filter: brightness(1.15); }
+.pill.lang { font-size: 0.68rem; padding: 0.05rem 0.35rem; font-weight: 700; letter-spacing: 0.02em; color: var(--ink-dim); border-color: var(--line); }
 .conflict-note {
   background: color-mix(in srgb, var(--warn) 14%, transparent);
   border: 1px solid color-mix(in srgb, var(--warn) 45%, transparent);

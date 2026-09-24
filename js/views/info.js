@@ -86,9 +86,10 @@ export function renderInfo(model) {
       "Ein Vortrag kann in mehreren Clustern erscheinen, manche passen in keines. " +
       "Grenzen: Die automatische Zuordnung kann danebenliegen und ist bewusst grob – " +
       "sie ersetzt keine inhaltliche Sichtung. " +
-      "Die Sprachverteilung pro Cluster beruht auf einer Funktionswort-Heuristik " +
-      "(Deutsch/Englisch, Russisch/Ukrainisch über kyrillische Spezialzeichen, " +
-      "Tschechisch/Polnisch über Diakritika) – Hinweise, keine Klassifikation."
+      "Sprach-Hinweise (RU/UK/PL/EN/CS-Badge an Karte und Titel) beruhen auf einer " +
+      "Funktionswort-Heuristik (Deutsch/Englisch, Russisch/Ukrainisch über kyrillische " +
+      "Spezialzeichen, Tschechisch/Polnisch über Diakritika) – Hinweise, keine " +
+      "Klassifikation."
     : `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
       "27 Themenfeldern aus einem kuratierten Lexikon (Keyword-Matching über " +
       "Titel und Sprechernamen, ohne maschinelles Lernen, vollständig im Browser). " +

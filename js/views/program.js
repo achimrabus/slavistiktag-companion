@@ -17,6 +17,19 @@ export function isRunningNow(model, x, now = new Date()) {
 }
 
 const TRACK_LABELS = { DID: "Fachdidaktik", SW: "Sprachwissenschaft", LKW: "Literatur-/Kulturwiss." };
+// Sprach-Badge (Heuristik aus mining.detectLanguage, s. Info-Ansicht):
+// nur nicht-deutsche Vorträge werden markiert; „de" bleibt unbezeichnet.
+const LANG_BADGES = {
+  ru: { label: "RU", title: "Vortragstitel auf Russisch (Heuristik)" },
+  uk: { label: "UK", title: "Vortragstitel auf Ukrainisch (Heuristik)" },
+  pl: { label: "PL", title: "Vortragstitel auf Polnisch (Heuristik)" },
+  en: { label: "EN", title: "Vortragstitel auf Englisch (Heuristik)" },
+  cs: { label: "CS", title: "Vortragstitel auf Tschechisch (Heuristik)" },
+};
+function langBadge(lang) {
+  const b = LANG_BADGES[lang];
+  return b ? h("span", { class: "pill lang", text: b.label, title: b.title }) : null;
+}
 const FORMAT_LABELS = {
   panel: "Eingereichte Panels", sektion: "Thematische Sektionen",
   pause: "Pausen", podium: "Podiumsdiskussionen", special: "Sonderformate", rahmen: "Rahmenprogramm",
@@ -390,6 +403,9 @@ export function sessionCard(model, ctx, s, state) {
       })),
     h("div", { class: "card-title", html: titleHtml || undefined, text: titleHtml ? undefined : s.title }),
     s.speakers?.length ? h("div", { class: "card-speakers", text: s.speakers.join(", ") }) : null,
+    // Sprach-Hinweis (Heuristik, s. Info): nur wenn NICHT deutsch — die
+    // Mehrheit der Vorträge ist deutsch, ein Badge für alle wäre Rauschen.
+    langBadge(s._lang),
     s.panel_code ? h("span", { class: "pill code", text: s.panel_code }) : null,
     s.room ? roomLink(s.room) : null,
     // Chair sichtbar machen: bei Personensuchen ist er der (einzige) Treffergrund
