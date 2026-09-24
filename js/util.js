@@ -82,13 +82,24 @@ export function escapeHtml(s) {
 }
 
 // Toast: kurze Rückmeldung ohne alert(); auto-hide nach 3.5 s
-export function toast(msg) {
+// options.action: { label, onclick } zeigt zusätzlich einen Aktions-Button
+// (z. B. „Neu laden" beim SW-Update); options.duration überschreibt die Anzeigezeit.
+export function toast(msg, options) {
   if (typeof document === "undefined") return;
   const el = h("div", { class: "toast", role: "status", text: msg });
+  if (options?.action?.label) {
+    const btn = h("button", { class: "toast-action", text: options.action.label });
+    btn.addEventListener("click", () => {
+      options.action.onclick?.();
+      el.remove();
+    });
+    el.append(btn);
+  }
   document.body.append(el);
   requestAnimationFrame(() => el.classList.add("show"));
   setTimeout(() => {
     el.classList.remove("show");
     setTimeout(() => el.remove(), 350);
-  }, 3500);
+  }, options?.duration || 3500);
+  return el;
 }

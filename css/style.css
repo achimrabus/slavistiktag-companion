@@ -180,6 +180,12 @@ mark { background: var(--warn); color: var(--bg); border-radius: 3px; padding: 0
   box-shadow: 0 6px 24px rgba(0,0,0,0.35);
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.toast-action {
+  margin-left: 0.8rem; background: var(--accent, #4462ff); color: var(--bg, #fff);
+  border: 0; border-radius: 6px; padding: 0.3rem 0.7rem; font-size: 0.82rem;
+  cursor: pointer; font-weight: 600;
+}
+.toast-action:hover { filter: brightness(1.15); }
 .conflict-note {
   background: color-mix(in srgb, var(--warn) 14%, transparent);
   border: 1px solid color-mix(in srgb, var(--warn) 45%, transparent);
@@ -416,4 +422,23 @@ select {
   .filter-bar .filter-row:first-child select { flex: 0 0 auto; width: auto; min-width: 6.5em; }
   .hero h1 { font-size: 1.5rem; }
   .drawer { width: 100vw; border-left: 0; }
+}
+
+/* ---------- Druck ---------- */
+/* Tagesprogramm druckbar: Chrome/Bildschirm-Zierde raus, Karten schwarz auf weiß */
+@media print {
+  .main-nav, .topbar .theme-toggle, .welcome-wall, .toast, .drawer-backdrop,
+  .drawer, .fav, .view-toggle, .day-tabs, .filter-bar, .grid-head
+  { display: none !important; }
+  body, .app-main { background: #fff; color: #000; }
+  .card {
+    break-inside: avoid; page-break-inside: avoid;
+    border: 1px solid #999; box-shadow: none; background: #fff;
+  }
+  .card-title, .card-speakers, .card-panel, .podium .body { color: #000; }
+  h1, h2, h3 { break-after: avoid; page-break-after: avoid; color: #000; }
+  a { color: #000; text-decoration: none; }
+  .results { display: block; }
+  .results .grid { grid-template-columns: 1fr !important; gap: 0.3rem; }
+  .card a.pill.room { color: #000; }
 }

@@ -1,5 +1,5 @@
 // app.js – Router, State, Boot (Programm-App + Themen-Kompass in einer App)
-import { h } from "./util.js";
+import { h, toast } from "./util.js";
 import { loadData } from "./data.js";
 import { clusterSessions, tfidf } from "./mining.js";
 import { renderDashboard } from "./views/dashboard.js";
@@ -131,7 +131,23 @@ export function boot() {
   window.addEventListener("hashchange", render);
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js").catch(() => { /* offline optional */ });
+      navigator.serviceWorker.register("./sw.js").then((reg) => {
+        // Update-Toast: wenn ein neuer Worker installiert und bereits ein
+        // Worker aktiv ist (echtes Update, nicht Erst-Installation), Hinweis
+        // mit Reload-Aktion zeigen. Erst-Install bleibt still.
+        reg.addEventListener("updatefound", () => {
+          const nw = reg.installing;
+          if (!nw) return;
+          nw.addEventListener("statechange", () => {
+            if (nw.state === "installed" && navigator.serviceWorker.controller) {
+              toast("Neue Version verfügbar – neu laden?", {
+                action: { label: "Neu laden", onclick: () => location.reload() },
+                duration: 12000,
+              });
+            }
+          });
+        });
+      }).catch(() => { /* offline optional */ });
     });
   }
   loadData()

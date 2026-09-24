@@ -122,6 +122,35 @@ for (const vp of VIEWPORTS) {
   await ctx.close();
 }
 
+// ---------- Print-Stylesheet (Item 9) ----------
+{
+  const page = await browser.newPage();
+  await page.goto(BASE + "#/programm", { waitUntil: "networkidle" });
+  await page.waitForSelector("#app .session-card");
+  await page.emulateMedia({ media: "print" });
+  await t("Print: Nav unsichtbar", async () => {
+    assert.equal(await page.locator("#main-nav").isVisible(), false);
+  });
+  await t("Print: Filterleiste unsichtbar", async () => {
+    assert.equal(await page.locator("#app .filter-bar").isVisible(), false);
+  });
+  await t("Print: Karten sichtbar (Schwarz auf Weiß)", async () => {
+    const card = page.locator("#app .session-card").first();
+    assert.equal(await card.isVisible(), true);
+    const colors = await card.evaluate((el) => {
+      const cs = getComputedStyle(el);
+      return { bg: cs.backgroundColor, shadow: cs.boxShadow };
+    });
+    assert.ok(!colors.shadow || colors.shadow === "none", `Schatten im Druck: ${colors.shadow}`);
+  });
+  await t("Print: Grid einspaltig", async () => {
+    const cols = await page.locator("#app .grid").first().evaluate((el) => getComputedStyle(el).gridTemplateColumns.split(" ").length);
+    assert.equal(cols, 1);
+  });
+  await page.emulateMedia({ media: "screen" });
+  await page.close();
+}
+
 await browser.close();
 server.kill();
 console.log(`\n${n} Layout-Checks, ${failures} Fehler.`);
