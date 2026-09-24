@@ -87,9 +87,9 @@ export function renderInfo(model) {
       "Grenzen: Die automatische Zuordnung kann danebenliegen und ist bewusst grob – " +
       "sie ersetzt keine inhaltliche Sichtung. " +
       "Sprach-Hinweise (RU/UK/PL/EN/CS-Badge an Karte und Titel) beruhen auf einer " +
-      "Funktionswort-Heuristik (Deutsch/Englisch, Russisch/Ukrainisch über kyrillische " +
-      "Spezialzeichen, Tschechisch/Polnisch über Diakritika) – Hinweise, keine " +
-      "Klassifikation."
+      "Funktionswort-Heuristik; Kyrillisch in Titeln ist selten (3 von 315, alles " +
+      "russische Einschübe in de/en-Titeln) und wird über russische Funktionswörter " +
+      "erkannt – Hinweise, keine Klassifikation."
     : `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
       "27 Themenfeldern aus einem kuratierten Lexikon (Keyword-Matching über " +
       "Titel und Sprechernamen, ohne maschinelles Lernen, vollständig im Browser). " +
@@ -102,6 +102,20 @@ export function renderInfo(model) {
     h("h2", { text: "Themen-Kompass: Methode & Grenzen" }),
     h("p", { text: methodText }),
     h("p", { class: "meta", text: "App (Programm-App und Themen-Kompass): Achim Rabus · Lizenz: MIT" })));
+
+  // Entstehung der App: agentisch generiert, kurze öffentliche Fassung
+  wrap.append(h("section", { class: "card" },
+    h("h2", { text: "Entstehung & KI-Einsatz" }),
+    h("p", { text:
+      "Diese App ist agentisch entstanden: Ein KI-Agent hat sie auf Basis des " +
+      "amtlichen Programm-PDFs geplant, gebaut und geprüft; die fachliche " +
+      "Leitung und alle Entscheidungen liegen beim Menschen (Achim Rabus). " +
+      "Die Themen-Zuordnung im Kompass nutzt ein großes Sprachmodell, das " +
+      "Vortragstitel den 27 Themenfeldern zuordnet; seine Vorschläge werden " +
+      "automatisch gegen die Themenliste validiert, unverständliche Fälle " +
+      "bleiben bewusst ohne Zuordnung. Sprach-Hinweise (RU/UK/PL/EN/CS) sind " +
+      "eine einfache Heuristik. Alles ist mit Sorgfalt, aber ohne Gewähr – " +
+      "maßgeblich ist immer das offizielle Programm der Tagung." })));
 
   return wrap;
 }
