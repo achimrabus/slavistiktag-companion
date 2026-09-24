@@ -30,7 +30,25 @@ jobs:
         run: |
           set -euo pipefail
           URL="https://www.gw.uni-jena.de/phifakmedia/195800/vortraege.pdf"
-          curl -sSL --retry 3 -o /tmp/vortraege.pdf "$URL"
+          # Resilienz: Mehrere Versuche; 404/Redirect-auf-Fehlerseite -> klarer Fehler
+          HTTP=$(curl -sSL --retry 4 --retry-delay 20 --retry-all-errors \
+                 -w '%{http_code}' -o /tmp/vortraege.pdf "$URL") || HTTP=000
+          SIZE=$(wc -c < /tmp/vortraege.pdf)
+          echo "HTTP=$HTTP SIZE=$SIZE"
+          # Fehlerseiten/-leere Antworten dürfen nie als "neues PDF" durchgehen:
+          if [ "$HTTP" != "200" ] || [ "$SIZE" -lt 50000 ]; then
+            echo "::error::PDF nicht erreichbar (HTTP $HTTP, $SIZE Bytes). URL: $URL"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "broken=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Plausibilität: muss ein echtes PDF sein
+          if ! head -c 5 /tmp/vortraege.pdf | grep -q '%PDF-'; then
+            echo "::error::Antwort ist kein PDF (vermutlich Fehlerseite). URL: $URL"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "broken=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           NEW_SHA=$(sha256sum /tmp/vortraege.pdf | cut -d' ' -f1)
           OLD_SHA=$(python -c "import json; print(json.load(open('data/program.json', encoding='utf-8'))['meta']['source_sha256'])")
           echo "new_sha=$NEW_SHA" >> "$GITHUB_OUTPUT"
@@ -42,6 +60,16 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "PDF geändert: $OLD_SHA -> $NEW_SHA"
           fi
+
+      - name: Alarm bei nicht erreichbarer Quelle
+        if: steps.check.outputs.broken == 'true'
+        run: |
+          echo "::error::QUELLE BROKEN – Programm-Update übersprungen, alte Daten bleiben online."
+          echo "Die App funktioniert weiter mit dem letzten validen Stand."
+          echo "Handlung: Neue PDF-URL auf gw.uni-jena.de suchen (Downloads-Seite der Tagung),"
+          echo "dann '.github/workflows/update.yml' URL-Zeile anpassen."
+          # Badge/Hinweis: Workflow läuft hier absichtlich NICHT auf rot fürs Repo-Health,
+          # der ::error:: oben markiert den Run aber in der Actions-UI sichtbar.
 
       - name: Neues PDF archivieren und parsen
         if: steps.check.outputs.changed == 'true'
@@ -63,6 +91,7 @@ jobs:
           panels = p.get("panels", [])
           talks = [s for s in sessions if s.get("type") == "talk"]
           blocks = p.get("blocks", [])
+          rooms = {s.get("room") for s in sessions if s.get("room")}
           problems = []
           if len(talks) < 250: problems.append(f"nur {len(talks)} Vorträge (Mindestanzahl 250)")
           if len(panels) < 80: problems.append(f"nur {len(panels)} Panels (Mindestanzahl 80)")
@@ -71,11 +100,23 @@ jobs:
               if not s.get("day") or not s.get("start"):
                   problems.append(f"Session ohne Tag/Zeit: {s.get('id')}")
                   break
+          # Raumplan-Konsistenz: unbekannte Räume blockieren nicht, aber sichtbar machen
+          import re
+          known = set()
+          try:
+              txt = open("js/rooms.js", encoding="utf-8").read()
+              known = set(re.findall(r'"(HS \d|SR \d+|MMZ \d+|Foyer[^"]*|Aula[^"]*)":', txt))
+          except FileNotFoundError:
+              problems.append("js/rooms.js fehlt – Raum-Mapping kann nicht geprüft werden")
+          if known:
+              new_rooms = rooms - known
+              if new_rooms:
+                  print("HINWEIS – neue Räume ohne Karten-Link:", sorted(new_rooms))
           if problems:
               print("VALIDIERUNG FEHLGESCHLAGEN – kein Deploy:")
               for pr in problems: print(" -", pr)
               sys.exit(1)
-          print(f"Validierung OK: {len(talks)} Vorträge, {len(panels)} Panels, {len(blocks)} Blöcke")
+          print(f"Validierung OK: {len(talks)} Vorträge, {len(panels)} Panels, {len(blocks)} Blöcke, {len(rooms)} Räume")
           print("Warnings:", json.dumps(p.get("meta", {}).get("warnings", []), ensure_ascii=False))
           EOF
 
