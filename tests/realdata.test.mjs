@@ -7,7 +7,20 @@ import { nowInfo } from "../js/now.js";
 import { icsFor } from "../js/ics.js";
 
 let n = 0;
-const t = (name, fn) => { fn(); n++; console.log("  ok", name); };
+let failed = 0;
+const pending = [];
+// t() trackt auch async-Callbacks: verlorene Rejections wären sonst stille Fails (Exit 0)
+const t = (name, fn) => {
+  try {
+    const r = fn();
+    if (r && typeof r.catch === "function") {
+      pending.push(r.catch((e) => { failed++; console.error(`  FAIL ${name}: ${e.message}`); }));
+    }
+  } catch (e) {
+    failed++; console.error(`  FAIL ${name}: ${e.message}`);
+  }
+  n++; console.log("  ok", name);
+};
 
 const program = JSON.parse(await readFile(new URL("../data/program.json", import.meta.url), "utf-8"));
 const content = JSON.parse(await readFile(new URL("../data/content.json", import.meta.url), "utf-8"));
@@ -68,4 +81,6 @@ t("ICS: alle Pausen+Vorträge eines Tages valide", () => {
   assert.equal(count, events.length);
 });
 
+await Promise.allSettled(pending);
 console.log(`\n${n} Integrationstests bestanden.`);
+process.exit(failed ? 1 : 0);

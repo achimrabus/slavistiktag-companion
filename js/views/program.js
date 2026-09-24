@@ -4,6 +4,18 @@ import { filterSessions, highlight } from "../search.js";
 import { favs } from "../favorites.js";
 import { roomLink } from "../rooms.js";
 
+// Läuft diese Veranstaltung „jetzt“? Nur während der Konferenztage; der
+// Zeitpunkt ist per ctx.now injizierbar (Tests).
+export function isRunningNow(model, x, now = new Date()) {
+  if (!x || !x.day || !x.start || !x.end) return false;
+  const d = new Date(now);
+  const p = (n) => String(n).padStart(2, "0");
+  const today = `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+  if (x.day !== today) return false;
+  const m = minutes(x.start), end = minutes(x.end), tm = d.getHours() * 60 + d.getMinutes();
+  return tm >= m && tm < end;
+}
+
 const TRACK_LABELS = { DID: "Fachdidaktik", SW: "Sprachwissenschaft", LKW: "Literatur-/Kulturwiss." };
 const FORMAT_LABELS = {
   panel: "Eingereichte Panels", sektion: "Thematische Sektionen",
@@ -350,8 +362,11 @@ function listView(model, ctx, sessions, events, q, allDays) {
 export function sessionCard(model, ctx, s, state) {
   const isFav = favs.has(s.id);
   const titleHtml = state.q ? highlight(s.title, state.q) : null;
+  // „Läuft gerade": nur während der Tagung, Karte mit laufender Zeit
+  const now = ctx.now instanceof Date ? ctx.now : new Date();
+  const isNow = isRunningNow(model, s, now);
   return h("article", {
-    class: `card session-card track-${(s.discipline || "x").toLowerCase()} ${isFav ? "is-fav" : ""}`,
+    class: `card session-card track-${(s.discipline || "x").toLowerCase()} ${isFav ? "is-fav" : ""} ${isNow ? "is-now" : ""}`,
     "data-id": s.id,
     onclick: () => ctx.openSession(s.id),
     tabindex: "0",
@@ -359,6 +374,7 @@ export function sessionCard(model, ctx, s, state) {
   },
     h("div", { class: "card-top" },
       h("span", { class: "time", text: `${s.start}–${s.end}` }),
+      isNow ? h("span", { class: "pill now", text: "jetzt" }) : null,
       h("button", {
         class: `fav ${isFav ? "active" : ""}`, "aria-label": "Merken",
         text: isFav ? "★" : "☆",
@@ -374,13 +390,17 @@ export function sessionCard(model, ctx, s, state) {
     s.speakers?.length ? h("div", { class: "card-speakers", text: s.speakers.join(", ") }) : null,
     s.panel_code ? h("span", { class: "pill code", text: s.panel_code }) : null,
     s.room ? roomLink(s.room) : null,
+    // Chair sichtbar machen: bei Personensuchen ist er der (einzige) Treffergrund
+    s.chair && state.q ? h("div", { class: "card-speakers dim-chair", text: `Chair: ${s.chair}` }) : null,
     s.panel_title && !s.panel_code ? h("div", { class: "card-panel", text: s.panel_title }) : null);
 }
 
 export function eventCard(model, ctx, e) {
   const typeLabel = { podium: "Podiumsdiskussion", special: "Sonderformat", rahmen: "Rahmenprogramm", break: "Pause" }[e.type] || "";
+  const now = ctx.now instanceof Date ? ctx.now : new Date();
+  const isNow = isRunningNow(model, e, now);
   return h("article", {
-    class: `card event-card type-${e.type}`,
+    class: `card event-card type-${e.type} ${isNow ? "is-now" : ""}`,
     "data-id": e.id || "",
     onclick: e.id ? () => ctx.openEvent(e.id) : null,
     tabindex: e.id ? "0" : null,
@@ -388,6 +408,7 @@ export function eventCard(model, ctx, e) {
   },
     h("div", { class: "card-top" },
       h("span", { class: "time", text: timeRange(e.start, e.end) || "ganztägig" }),
+      isNow ? h("span", { class: "pill now", text: "jetzt" }) : null,
       typeLabel ? h("span", { class: "pill", text: typeLabel }) : null),
     h("div", { class: "card-title", text: e.title }),
     e.room ? roomLink(e.room) : null,

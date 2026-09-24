@@ -12,16 +12,35 @@ assert.ok(shellMatch, "SHELL-Array in sw.js nicht gefunden");
 const shell = [...shellMatch[1].matchAll(/"([^"]+)"/g)].map((m) => m[1]);
 
 let n = 0;
-const t = (name, fn) => { fn(); n++; console.log("  ok", name); };
+let failed = 0;
+const pending = [];
+// t() trackt auch async-Callbacks: verlorene Rejections wären sonst stille Fails (Exit 0)
+const t = (name, fn) => {
+  try {
+    const r = fn();
+    if (r && typeof r.catch === "function") {
+      pending.push(r.catch((e) => { failed++; console.error(`  FAIL ${name}: ${e.message}`); }));
+    }
+  } catch (e) {
+    failed++; console.error(`  FAIL ${name}: ${e.message}`);
+  }
+  n++; console.log("  ok", name);
+};
 
-// 1. Jeder SHELL-Eintrag existiert als Datei
+// 1. Jeder SHELL-Eintrag existiert als Datei (oder Verzeichnis-Root "./")
 t("Jeder SHELL-Eintrag existiert", async () => {
   const missing = [];
   for (const entry of shell) {
     const rel = entry.replace(/^\.\//, "");
+    if (rel === "") continue; // "./" = App-Root (index.html ist separat geprüft)
     try { await readFile(join(ROOT, rel)); } catch { missing.push(entry); }
   }
   assert.deepEqual(missing, [], `SHELL-Einträge ohne Datei: ${missing.join(", ")}`);
+});
+
+// 1b. index.html als Einstiegspunkt explizit
+t("index.html in der SHELL", () => {
+  assert.ok(shell.includes("index.html"));
 });
 
 // 2. Jedes echte JS-Modul ist in der SHELL (Views + Root-Module)
@@ -52,5 +71,6 @@ t("data/program.json + data/content.json + manifest + icon in SHELL", () => {
   assert.ok(shell.includes("icons/icon.svg"));
 });
 
+await Promise.allSettled(pending);
 console.log(`\n${n} Shell-Tests bestanden.`);
-process.exit(0);
+process.exit(failed ? 1 : 0);

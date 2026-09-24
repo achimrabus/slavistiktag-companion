@@ -80,3 +80,15 @@ export function escapeHtml(s) {
   return s.replace(/[&<>"']/g, (c) =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
+
+// Toast: kurze Rückmeldung ohne alert(); auto-hide nach 3.5 s
+export function toast(msg) {
+  if (typeof document === "undefined") return;
+  const el = h("div", { class: "toast", role: "status", text: msg });
+  document.body.append(el);
+  requestAnimationFrame(() => el.classList.add("show"));
+  setTimeout(() => {
+    el.classList.remove("show");
+    setTimeout(() => el.remove(), 350);
+  }, 3500);
+}

@@ -9,6 +9,7 @@ import { renderInfo } from "./views/info.js";
 import { openDrawer } from "./views/drawer.js";
 import { favs } from "./favorites.js";
 import { renderTopics, renderCluster } from "./views/topics.js";
+import { renderSpeakers } from "./views/speakers.js";
 
 const app = document.getElementById("app");
 const nav = document.getElementById("main-nav");
@@ -74,6 +75,7 @@ function renderNav() {
     link("#/programm", "Programm"),
     link("#/mein", "Mein Programm", h("span", { class: "fav-count pill", text: String(favs.all().length || "") })),
     link("#/themen", "Themen", null, route.startsWith("/themen")),
+    link("#/sprecher", "Sprecher:innen"),
     link("#/info", "Info"));
 }
 
@@ -105,8 +107,16 @@ function render() {
     view = renderTopics(ctx.model, ctx, params);
   } else if (route === "/programm") {
     view = renderProgram(ctx.model, ctx, params);
+    // Deep-Link auf einzelnen Vortrag: ?q=<id> exakt matchend -> Drawer öffnen
+    const q = params.get("q") || "";
+    if (q && ctx.model.byId[q]) {
+      setTimeout(() => ctx.openSession(q), 0);
+      history.replaceState(null, "", `#/programm?day=${encodeURIComponent(ctx.model.byId[q].day)}`);
+    }
   } else if (route === "/mein") {
     view = renderMine(ctx.model, ctx);
+  } else if (route === "/sprecher") {
+    view = renderSpeakers(ctx.model, ctx);
   } else if (route === "/info") {
     view = renderInfo(ctx.model);
   } else {

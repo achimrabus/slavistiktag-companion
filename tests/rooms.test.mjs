@@ -6,7 +6,20 @@ const { ROOMS, roomMeta, roomMapUrl, unmappedRooms } = await import("../js/rooms
 const program = JSON.parse(await readFile(new URL("../data/program.json", import.meta.url), "utf-8"));
 
 let n = 0;
-const t = (name, fn) => { fn(); n++; console.log("  ok", name); };
+let failed = 0;
+const pending = [];
+// t() trackt auch async-Callbacks: verlorene Rejections wären sonst stille Fails (Exit 0)
+const t = (name, fn) => {
+  try {
+    const r = fn();
+    if (r && typeof r.catch === "function") {
+      pending.push(r.catch((e) => { failed++; console.error(`  FAIL ${name}: ${e.message}`); }));
+    }
+  } catch (e) {
+    failed++; console.error(`  FAIL ${name}: ${e.message}`);
+  }
+  n++; console.log("  ok", name);
+};
 
 // 1. Alle Programm-Räume sind gemappt
 t("Alle Programm-Räume gemappt (keine Lücken)", () => {
@@ -80,5 +93,6 @@ t("Floor-Strip: Etage korrekt gruppiert, aktueller Raum markiert", async () => {
   assert.ok(siblings.some(([n]) => n === "SR 223"));
 });
 
+await Promise.allSettled(pending);
 console.log(`\n${n} Raum-Tests bestanden.`);
-process.exit(0);
+process.exit(failed ? 1 : 0);

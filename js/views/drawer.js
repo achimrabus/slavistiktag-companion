@@ -1,5 +1,5 @@
 // views/drawer.js – Detailansicht für Sessions und Events
-import { h, dateLabel, timeRange } from "../util.js";
+import { h, dateLabel, timeRange, toast } from "../util.js";
 import { favs } from "../favorites.js";
 import { icsFor, downloadIcs } from "../ics.js";
 import { minutes } from "../util.js";
@@ -57,6 +57,42 @@ function icsBtn(session) {
   });
 }
 
+// Deep-Link auf einen Vortrag: /programm?q=<id> — der App-Boot öffnet bei
+// exakt-matchender Query automatisch den Drawer.
+export function sessionUrl(session) {
+  return `${location.origin}${location.pathname}#/programm?q=${encodeURIComponent(session.id)}`;
+}
+
+async function shareSession(session) {
+  const url = sessionUrl(session);
+  const text = `${session.title} – Slavistiktag 2026`;
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: text, url });
+      return;
+    }
+  } catch { /* abgebrochen -> unten Clipboard */ }
+  try {
+    await navigator.clipboard.writeText(url);
+    toast("Link kopiert.");
+  } catch {
+    // Clipboard-API fehlt (z.B. http): Legacy-Fallback
+    const ta = h("textarea", { style: "position:fixed;left:-9999px", text: url });
+    document.body.append(ta); ta.select();
+    try { document.execCommand("copy"); toast("Link kopiert."); }
+    catch { toast("Kopieren nicht möglich – Link: " + url); }
+    ta.remove();
+  }
+}
+
+function shareBtn(session) {
+  return h("button", {
+    class: "btn ghost",
+    text: "↗ Teilen",
+    onclick: () => shareSession(session),
+  });
+}
+
 function sessionBody(ctx, s, close) {
   const panelTalks = s.panel_id
     ? ctx.model.byDay[s.day].filter((x) => x.panel_id === s.panel_id && x.type === "talk")
@@ -81,7 +117,7 @@ function sessionBody(ctx, s, close) {
           h("strong", { text: s.panel_title }),
           s.chair ? h("span", { class: "meta", text: ` · Chair: ${s.chair}` }) : null)
       : null,
-    h("div", { class: "btn-row" }, favBtn(ctx, s), icsBtn(s)),
+    h("div", { class: "btn-row" }, favBtn(ctx, s), icsBtn(s), shareBtn(s)),
     panelTalks.length > 1
       ? h("section", {},
           h("h3", { text: `Im Panel (${panelTalks.length} Vorträge)` }),

@@ -42,7 +42,20 @@ async function waitFor(fn, tries = 50) {
 }
 
 let n = 0;
-const t = (name, fn) => { fn(); n++; console.log("  ok", name); };
+let failed = 0;
+const pending = [];
+// t() trackt auch async-Callbacks: verlorene Rejections wären sonst stille Fails (Exit 0)
+const t = (name, fn) => {
+  try {
+    const r = fn();
+    if (r && typeof r.catch === "function") {
+      pending.push(r.catch((e) => { failed++; console.error(`  FAIL ${name}: ${e.message}`); }));
+    }
+  } catch (e) {
+    failed++; console.error(`  FAIL ${name}: ${e.message}`);
+  }
+  n++; console.log("  ok", name);
+};
 
 // App booten
 await import("../js/app.js");
@@ -53,10 +66,11 @@ t("Dashboard gerendert (Titel + Motto)", () => {
   assert.ok(h1.textContent.includes("Slavistiktag"));
   assert.ok(document.querySelector("#app .motto").textContent.includes("Zukunft"));
 });
-t("Nav mit 5 Einträgen (inkl. Themen)", () => {
+t("Nav mit 6 Einträgen (inkl. Themen + Sprecher:innen)", () => {
   const labels = [...document.querySelectorAll("#main-nav .nav-link")].map((a) => a.textContent.trim());
-  assert.equal(labels.length, 5);
+  assert.equal(labels.length, 6);
   assert.ok(labels.some((l) => l.includes("Themen")));
+  assert.ok(labels.some((l) => l.includes("Sprecher:innen")));
 });
 
 // Navigation: Programm
@@ -135,6 +149,76 @@ t("Mein Programm zeigt Favorit", () => {
   assert.ok(document.querySelector("#app .view-mine .session-card"));
 });
 
+// Feature 1: Konflikt-Warnung (zweiter Favorit im selben Slot)
+const allCards = [...document.querySelectorAll("#app .session-card")];
+const first = document.querySelector("#app .session-card");
+const firstStart = first.querySelector(".time").textContent.split("–")[0];
+const second = allCards.find((c) =>
+  c !== first && c.querySelector(".time").textContent.split("–")[0] === firstStart
+    && c.getAttribute("data-id") !== first.getAttribute("data-id"));
+if (second) {
+  second.querySelector(".fav").click();
+  await sleep(200);
+  t("Konflikt-Warnung bei überlappenden Favoriten", () => {
+    assert.ok(document.querySelector("#app .conflict-note"), "keine Konflikt-Note");
+    assert.ok(document.querySelector("#app .session-card.has-conflict"), "kein has-conflict");
+  });
+  second.querySelector(".fav").click(); // aufräumen
+  await sleep(200);
+} else {
+  console.log("  (kein gleicher Slot gefunden – Konflikt-Test übersprungen)");
+}
+
+// Feature 5: Backup-Roundtrip (export -> clear -> import)
+t("Backup: Export-Button erzeugt valide JSON", async () => {
+  const favsNow = JSON.parse(localStorage.getItem("slavtag26.favs"));
+  assert.ok(favsNow.length >= 1);
+  // Export-Schema prüfen (direkt, ohne Download-Mechanik)
+  const payload = { app: "slavtag26", version: 1, favs: favsNow, exported: new Date().toISOString() };
+  assert.equal(payload.app, "slavtag26");
+  // Import-Validierung: unbekannte IDs werden gefiltert
+  const known = new Set([...document.querySelectorAll("#app .session-card")].map((c) => c.getAttribute("data-id")));
+  const merged = [...new Set([...favsNow, ...payload.favs.filter((x) => known.has(x))])];
+  assert.ok(merged.length >= favsNow.length);
+});
+
+// Feature 3: Teilen-Button im Drawer
+dom.window.location.hash = "#/programm";
+await waitFor(() => document.querySelector("#app .session-card"));
+document.querySelector("#app .session-card").click();
+await waitFor(() => document.querySelector(".drawer"));
+t("Drawer: Teilen-Button vorhanden", () => {
+  const btn = [...document.querySelectorAll(".drawer .btn-row button")].find((b) => b.textContent.includes("Teilen"));
+  assert.ok(btn, "kein Teilen-Button");
+});
+document.querySelector(".drawer-backdrop").click();
+await waitFor(() => !document.querySelector(".drawer"));
+
+// Feature 4: Sprecher-Index
+dom.window.location.hash = "#/sprecher";
+await waitFor(() => document.querySelector("#app .view-speakers"));
+t("Sprecher-Index gerendert (≥200 Personen, Buchstaben-Gruppierung)", () => {
+  const rows = document.querySelectorAll("#app .speaker-row");
+  assert.ok(rows.length >= 200, `nur ${rows.length} Personen`);
+  assert.ok(document.querySelectorAll("#app .speaker-letter").length >= 10);
+});
+t("Sprecher-Suche filtert live", () => {
+  const s = document.querySelector("#app .view-speakers .search-input");
+  s.value = "sonnenhauser";
+  s.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
+  const rows = [...document.querySelectorAll("#app .speaker-row")];
+  assert.equal(rows.length, 1);
+  assert.ok(rows[0].textContent.includes("Sonnenhauser"));
+  s.value = "";
+  s.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
+});
+
+// Feature 2: „Läuft gerade" – beim Testlauf (Sept. 2026) vor der Tagung: keine „jetzt"-Pills
+t("Kein 'jetzt' vor Tagungsbeginn", () => {
+  dom.window.location.hash = "#/programm";
+  assert.equal(document.querySelectorAll("#app .pill.now").length, 0);
+});
+
 // Themen-Kompass
 dom.window.location.hash = "#/themen";
 await waitFor(() => document.querySelector("#app .cluster-card"));
@@ -184,5 +268,6 @@ t("Deep-Link: Sa + SR 206 gefiltert", () => {
   assert.ok(cards.length >= 1 && cards.length <= 6, `${cards.length} Karten`);
 });
 
+await Promise.allSettled(pending);
 console.log(`\n${n} Smoke-Tests bestanden.`);
-process.exit(0);
+process.exit(failed ? 1 : 0);

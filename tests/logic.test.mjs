@@ -5,9 +5,28 @@ import { icsFor } from "../js/ics.js";
 import { nowInfo } from "../js/now.js";
 import { buildModel, naturalRooms } from "../js/data.js";
 import { minutes, dateLabel, isoDay } from "../js/util.js";
+import fs from "node:fs";
+
+// Gemeinsames Modell für die Feature-Tests (sync geladen)
+const _prog = JSON.parse(fs.readFileSync(new URL("../data/program.json", import.meta.url), "utf8"));
+const _content = JSON.parse(fs.readFileSync(new URL("../data/content.json", import.meta.url), "utf8"));
+const _model = buildModel(_prog, _content);
 
 let n = 0;
-const t = (name, fn) => { fn(); n++; console.log("  ok", name); };
+let failed = 0;
+const pending = [];
+// t() trackt auch async-Callbacks: verlorene Rejections wären sonst stille Fails (Exit 0)
+const t = (name, fn) => {
+  try {
+    const r = fn();
+    if (r && typeof r.catch === "function") {
+      pending.push(r.catch((e) => { failed++; console.error(`  FAIL ${name}: ${e.message}`); }));
+    }
+  } catch (e) {
+    failed++; console.error(`  FAIL ${name}: ${e.message}`);
+  }
+  n++; console.log("  ok", name);
+};
 
 // ---------- search
 t("normalize faltet Diakritika", () => {
@@ -160,4 +179,40 @@ t("dateLabel", () => {
   assert.equal(dateLabel("2026-10-01"), "Donnerstag, 01.10.");
 });
 
+// ---------- Feature 1: Konflikt-Erkennung
+import { conflictsByDay } from "../js/views/mine.js";
+t("Konflikte: überlappende Favoriten erkannt", () => {
+  const day = "2026-10-01";
+  const pairs = _model.sessions.filter((x) => x.day === day);
+  const a = pairs.find((x) => x.start === "14:00" && x.end === "14:30" && x.type !== "break");
+  const b = pairs.find((x) => x.start === "14:00" && x.end === "14:30" && x !== a && x.type !== "break");
+  assert.ok(a && b, "Testdaten: kein gleichzeitiges Paar gefunden");
+  const { conflicts } = conflictsByDay(_model, [a.id, b.id]);
+  // Konflikt-Map: beide IDs verweisen aufeinander
+  assert.deepEqual((conflicts[a.id] || []).sort(), [b.id].sort());
+  assert.deepEqual((conflicts[b.id] || []).sort(), [a.id].sort());
+});
+t("Konflikte: nacheinander = kein Konflikt", () => {
+  const day = "2026-10-01";
+  const a = _model.sessions.find((x) => x.day === day && x.start === "14:00" && x.end === "14:30" && x.type !== "break");
+  const b = _model.sessions.find((x) => x.day === day && x.start === "14:30" && x.end === "15:00" && x.type !== "break");
+  assert.ok(a && b, "Testdaten: kein 14:00/14:30-Paar gefunden");
+  const { conflicts } = conflictsByDay(_model, [a.id, b.id]);
+  assert.equal(conflicts[a.id], undefined);
+  assert.equal(conflicts[b.id], undefined);
+});
+
+// ---------- Feature 2: isRunningNow
+import { isRunningNow } from "../js/views/program.js";
+t("isRunningNow: laufender Vortrag ja, davor/danach nein, außerhalb der Tagung nein", () => {
+  const s = _model.sessions.find((x) => x.day === "2026-10-01" && x.start === "14:00" && x.end === "14:30");
+  assert.ok(s, "Testdaten: Session fehlt");
+  assert.equal(isRunningNow(_model, s, new Date("2026-10-01T14:10:00")), true);
+  assert.equal(isRunningNow(_model, s, new Date("2026-10-01T13:59:00")), false);
+  assert.equal(isRunningNow(_model, s, new Date("2026-10-01T14:30:00")), false);
+  assert.equal(isRunningNow(_model, s, new Date("2026-09-20T14:10:00")), false);
+});
+
+await Promise.allSettled(pending);
 console.log(`\n${n} Tests bestanden.`);
+process.exit(failed ? 1 : 0);

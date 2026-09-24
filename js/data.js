@@ -123,6 +123,8 @@ export function buildModel(program, content) {
     (eventByDay[e.day] ||= []).push(e);
   }
 
+  const byId = Object.fromEntries(sessions.map((s) => [s.id, s]));
+
   return {
     conference: content.conference,
     content,
@@ -132,6 +134,7 @@ export function buildModel(program, content) {
       .map((b) => [b.day, b.day_label])),
     sessions,
     byDay,
+    byId,
     panels,
     events,
     eventByDay,

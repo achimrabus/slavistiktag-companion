@@ -5,7 +5,20 @@ import { tagsFor, detectLanguage, tfidf, clusterSessions, tagStats } from "../js
 import { TAGS } from "../js/lexicon.js";
 
 let n = 0;
-const t = (name, fn) => { fn(); n++; console.log("  ok", name); };
+let failed = 0;
+const pending = [];
+// t() trackt auch async-Callbacks: verlorene Rejections wären sonst stille Fails (Exit 0)
+const t = (name, fn) => {
+  try {
+    const r = fn();
+    if (r && typeof r.catch === "function") {
+      pending.push(r.catch((e) => { failed++; console.error(`  FAIL ${name}: ${e.message}`); }));
+    }
+  } catch (e) {
+    failed++; console.error(`  FAIL ${name}: ${e.message}`);
+  }
+  n++; console.log("  ok", name);
+};
 
 // ---------- Tagging (künstliche Fälle)
 t("Tagging: Flexionen + Komposita", () => {
@@ -88,4 +101,6 @@ t("Echte Daten: Sprachverteilung plausibel (de dominiert)", () => {
   assert.ok(en > 10, `en nur ${en}`);
 });
 
+await Promise.allSettled(pending);
 console.log(`\n${n} Mining-Tests bestanden.`);
+process.exit(failed ? 1 : 0);

@@ -164,9 +164,44 @@ a.pill.room:hover { background: color-mix(in srgb, var(--accent) 30%, transparen
 .floor-rooms { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 .pill.floor-room { background: transparent; border: 1px solid var(--border); color: var(--dim); }
 .pill.floor-room.current { background: var(--accent); color: var(--bg); border-color: var(--accent); font-weight: 700; }
+/* „Läuft gerade“: Karten mit laufendem Vortrag hervorheben */
+.session-card.is-now, .event-card.is-now { border-color: var(--accent); box-shadow: 0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent); }
+.pill.now { background: var(--warn); color: var(--bg); font-weight: 700; animation: nowPulse 2s ease-in-out infinite; }
+@keyframes nowPulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.65; } }
+@media (prefers-reduced-motion: reduce) { .pill.now { animation: none; } }
 .pill.code { background: color-mix(in srgb, var(--accent2) 13%, transparent); color: var(--accent2); font-family: ui-monospace, monospace; }
 
 mark { background: var(--warn); color: var(--bg); border-radius: 3px; padding: 0 2px; }
+.toast {
+  position: fixed; left: 50%; bottom: 1.2rem; transform: translateX(-50%) translateY(1rem);
+  background: var(--panel, #1c2340); color: var(--ink, #eee); border: 1px solid var(--line-strong, #445);
+  padding: 0.6rem 1rem; border-radius: 10px; font-size: 0.88rem; z-index: 200;
+  opacity: 0; transition: opacity 0.3s, transform 0.3s; max-width: min(90vw, 480px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.35);
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+.conflict-note {
+  background: color-mix(in srgb, var(--warn) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--warn) 45%, transparent);
+  border-radius: 8px; padding: 0.35rem 0.55rem; margin-bottom: 0.35rem;
+  font-size: 0.8rem; color: var(--ink); overflow-wrap: anywhere;
+}
+.conflict-note strong { color: var(--warn); }
+.session-card.has-conflict { border-color: color-mix(in srgb, var(--warn) 55%, transparent); }
+/* Sprecher-Index */
+.speaker-list { margin-top: 0.8rem; }
+.speaker-letter {
+  font-weight: 800; font-size: 0.9rem; color: var(--accent);
+  margin: 1rem 0 0.3rem; padding-bottom: 0.15rem; border-bottom: 1px solid var(--line, var(--border));
+}
+.speaker-row {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 0.6rem;
+  width: 100%; text-align: left; background: none; border: none; border-bottom: 1px solid var(--line, var(--border));
+  padding: 0.45rem 0.2rem; cursor: pointer; color: var(--ink, inherit); font-size: 0.92rem;
+}
+.speaker-row:hover { background: color-mix(in srgb, var(--accent) 7%, transparent); }
+.speaker-name { font-weight: 600; }
+.speaker-count { font-size: 0.78rem; flex: none; }
 
 /* ---------- Welcome-Wall ---------- */
 .welcome-wall {
@@ -304,7 +339,11 @@ select {
 .fav.active { color: var(--warn); }
 .card-title { font-weight: 600; font-size: 0.92rem; overflow-wrap: anywhere; }
 .card-speakers { color: var(--ink-dim); font-size: 0.83rem; margin-top: 0.15rem; overflow-wrap: anywhere; }
+.card-speakers.dim-chair { font-style: italic; }
 .card-panel { color: var(--ink-dim); font-size: 0.78rem; margin-top: 0.3rem; overflow-wrap: anywhere; }
+/* Pills nebeneinander brauchen Abstand (sonst klebt "SEK_LKW_09" an "SR 222") */
+.card-title + .pill, .pill + .pill, .pill + .card-speakers, .pill + .card-panel { margin-right: 0.35rem; }
+.session-card .pill, .event-card .pill { margin-bottom: 0.3rem; }
 .event-card.type-podium { border-left-color: var(--accent); }
 .event-card.type-special { border-left-color: var(--warn); }
 .event-card.type-rahmen { border-left-color: var(--accent2); }
