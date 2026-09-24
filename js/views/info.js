@@ -12,6 +12,7 @@ export function renderInfo(model) {
   // Orte
   wrap.append(h("section", { class: "card" },
     h("h2", { text: "Wohin gehe ich? – Die Orte" }),
+    h("p", { class: "meta", text: "Raumnummern sind im gesamten Programm klickbar und öffnen die Karte mit Gebäude-Marker. Gebäude: Vorträge in der Carl-Zeiß-Straße 3 (HS 6–8, SR 113–127, SR 206–226), SR 223 im Universitätshauptgebäude (Fürstengraben 1), MMZ 220 im Multimediazentrum (Ernst-Abbe-Platz 8)." }),
     h("div", { class: "venue-grid" },
       Object.entries(c.venues).map(([key, v]) => h("div", { class: "venue-card" },
         h("h3", { text: v.name }),
