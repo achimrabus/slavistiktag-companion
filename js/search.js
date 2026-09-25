@@ -26,7 +26,8 @@ export function makeSearchText(session, panelTitle) {
   const venue = session.venue || "";
   return normalize(
     [session.title, (session.speakers || []).join(" "), panelTitle, session.chair,
-     room, venue, session.sek_code, session.track].filter(Boolean).join(" "));
+     room, venue, session.sek_code, session.track, session.abstract]
+      .filter(Boolean).join(" "));
 }
 
 export function matchesQuery(searchText, q) {

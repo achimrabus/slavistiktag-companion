@@ -96,25 +96,29 @@ export function buildModel(program, content) {
     ...Object.keys(byDay),
   ])].filter(Boolean).sort();
 
-  // Events vereinheitlichen: Footer-Events, Podien (Volltext), Sonderformate, Rahmenprogramm
+  // Events vereinheitlichen: Quelle (ConfTool/PDF) + kuratierte Inhalte.
+  // Kuratierte Einträge ersetzen Quell-Events mit gleichem Tag + ähnlichem Titel
+  // (Podien, Sonderformate, Rahmenprogramm), damit nichts doppelt erscheint.
   const events = [];
   let evIdx = 0;
   for (const e of program.events || []) {
     events.push({ ...e, id: `ev-${evIdx++}`, type: e.title.toLowerCase().includes("podium") ? "podium" : "event", source: "pdf" });
   }
-  for (const p of content.podiums || []) {
-    // PDF-Footer-Podium mit gleichem Inhalt entfernen (Titel-Overlap ≥ 0.5, gleicher Tag)
-    const pt = tokenSet(p.title);
+  const dropSimilar = (p) => {
     const idx = events.findIndex((e) =>
-      e.type === "podium" && e.day === p.day &&
-      titleSimilar(e.title, p.title) >= 0.5);
+      e.day === p.day && titleSimilar(e.title, p.title) >= 0.5);
     if (idx >= 0) events.splice(idx, 1);
+  };
+  for (const p of content.podiums || []) {
+    dropSimilar(p);
     events.push({ ...p, type: "podium", source: "curated" });
   }
   for (const e of content.special || []) {
+    dropSimilar(e);
     events.push({ ...e, id: `ev-${evIdx++}`, type: "special", source: "curated" });
   }
   for (const e of content.accompanying || []) {
+    dropSimilar(e);
     events.push({ ...e, id: `ev-${evIdx++}`, type: "rahmen", source: "curated" });
   }
   events.sort((a, b) => (a.day || "").localeCompare(b.day || "") || (a.start || "99").localeCompare(b.start || "99"));

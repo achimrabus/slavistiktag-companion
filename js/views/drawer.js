@@ -93,6 +93,14 @@ function shareBtn(session) {
   });
 }
 
+function speakerLine(s) {
+  if (!s.speakers?.length) return "";
+  if (!s.affiliations?.length) return s.speakers.join(", ");
+  return s.speakers
+    .map((n, i) => (s.affiliations[i] ? `${n} (${s.affiliations[i]})` : n))
+    .join(", ");
+}
+
 function sessionBody(ctx, s, close) {
   const panelTalks = s.panel_id
     ? ctx.model.byDay[s.day].filter((x) => x.panel_id === s.panel_id && x.type === "talk")
@@ -105,7 +113,7 @@ function sessionBody(ctx, s, close) {
     h("p", { class: "kicker", text: `${dateLabel(s.day)} · ${timeRange(s.start, s.end)}` }),
     h("h2", { text: s.title },
       s._lang && s._lang !== "de" ? h("span", { class: "pill lang", text: s._lang.toUpperCase(), title: `Titelsprache (Heuristik): ${s._lang}` }) : null),
-    h("p", { class: "speakers", text: s.speakers?.join(", ") || "" }),
+    h("p", { class: "speakers", text: speakerLine(s) }),
     h("p", { class: "meta" },
       roomLink(s.room), " ",
       s.venue ? h("span", { class: "pill", text: ctx.model.content.venues[s.venue]?.short || s.venue }) : null,
@@ -117,6 +125,11 @@ function sessionBody(ctx, s, close) {
           s.panel_code ? h("span", { class: "pill code", text: s.panel_code }) : null, " ",
           h("strong", { text: s.panel_title }),
           s.chair ? h("span", { class: "meta", text: ` · Chair: ${s.chair}` }) : null)
+      : null,
+    s.abstract
+      ? h("section", {},
+          h("h3", { text: "Abstract" }),
+          h("p", { class: "abstract", text: s.abstract }))
       : null,
     h("div", { class: "btn-row" }, favBtn(ctx, s), icsBtn(s), shareBtn(s)),
     panelTalks.length > 1
