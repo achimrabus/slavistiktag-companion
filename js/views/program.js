@@ -1,6 +1,6 @@
 // views/program.js – Programm: Filterleiste, Grid- und Listenansicht
 import { h, dateLabel, timeRange, debounce, minutes } from "../util.js";
-import { filterSessions, highlight } from "../search.js";
+import { filterSessions, highlight, snippet } from "../search.js";
 import { favs } from "../favorites.js";
 import { roomLink } from "../rooms.js";
 
@@ -379,6 +379,8 @@ function listView(model, ctx, sessions, events, q, allDays) {
 export function sessionCard(model, ctx, s, state) {
   const isFav = favs.has(s.id);
   const titleHtml = state.q ? highlight(s.title, state.q) : null;
+  // Treffer-Snippet aus dem Abstract (nur bei aktiver Suche)
+  const abstractSnippet = state.q && s.abstract ? snippet(s.abstract, state.q) : null;
   // „Läuft gerade": nur während der Tagung, Karte mit laufender Zeit
   const now = ctx.now instanceof Date ? ctx.now : new Date();
   const isNow = isRunningNow(model, s, now);
@@ -405,6 +407,7 @@ export function sessionCard(model, ctx, s, state) {
       })),
     h("div", { class: "card-title", html: titleHtml || undefined, text: titleHtml ? undefined : s.title }),
     s.speakers?.length ? h("div", { class: "card-speakers", text: s.speakers.join(", ") }) : null,
+    abstractSnippet ? h("div", { class: "card-snippet", html: abstractSnippet }) : null,
     // Sprach-Hinweis (Heuristik, s. Info): nur wenn NICHT deutsch — die
     // Mehrheit der Vorträge ist deutsch, ein Badge für alle wäre Rauschen.
     langBadge(s._lang),

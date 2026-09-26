@@ -212,10 +212,24 @@ mark { background: var(--warn); color: var(--bg); border-radius: 3px; padding: 0
   display: flex; justify-content: space-between; align-items: baseline; gap: 0.6rem;
   width: 100%; text-align: left; background: none; border: none; border-bottom: 1px solid var(--line, var(--border));
   padding: 0.45rem 0.2rem; cursor: pointer; color: var(--ink, inherit); font-size: 0.92rem;
+  text-decoration: none;
 }
 .speaker-row:hover { background: color-mix(in srgb, var(--accent) 7%, transparent); }
 .speaker-name { font-weight: 600; }
 .speaker-count { font-size: 0.78rem; flex: none; }
+/* Personen-Detailansicht */
+.chair-entry { cursor: pointer; }
+.chair-entry .card-title { font-weight: 600; }
+/* Speaker-Links im Drawer */
+.speakers a { color: var(--accent2); text-decoration: none; }
+.speakers a:hover { text-decoration: underline; }
+/* Änderungs-Ansicht (Was ist neu?) */
+.view-changes section { margin: 1.2rem 0; }
+.view-changes h3 { margin: 0 0 0.5rem; }
+.view-changes .slot-change { font-size: 0.82rem; color: var(--ink-dim); }
+.view-changes .slot-change .old { text-decoration: line-through; }
+.view-changes .slot-change .new { color: var(--accent2); }
+.view-changes .mini-list li.removed { color: var(--ink-dim); }
 
 /* ---------- Welcome-Wall ---------- */
 .welcome-wall {
@@ -355,6 +369,10 @@ select {
 .card-speakers { color: var(--ink-dim); font-size: 0.83rem; margin-top: 0.15rem; overflow-wrap: anywhere; }
 .card-speakers.dim-chair { font-style: italic; }
 .card-panel { color: var(--ink-dim); font-size: 0.78rem; margin-top: 0.3rem; overflow-wrap: anywhere; }
+.card-snippet {
+  color: var(--ink-dim); font-size: 0.8rem; line-height: 1.4;
+  margin-top: 0.35rem; overflow-wrap: anywhere;
+}
 /* Pills nebeneinander brauchen Abstand (sonst klebt "SEK_LKW_09" an "SR 222") */
 .card-title + .pill, .pill + .pill, .pill + .card-speakers, .pill + .card-panel { margin-right: 0.35rem; }
 .session-card .pill, .event-card .pill { margin-bottom: 0.3rem; }

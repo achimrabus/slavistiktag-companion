@@ -9,7 +9,8 @@ import { renderInfo } from "./views/info.js";
 import { openDrawer } from "./views/drawer.js";
 import { favs } from "./favorites.js";
 import { renderTopics, renderCluster } from "./views/topics.js";
-import { renderSpeakers } from "./views/speakers.js";
+import { renderSpeakers, renderPerson } from "./views/speakers.js";
+import { renderChanges } from "./views/changes.js";
 
 const app = document.getElementById("app");
 const nav = document.getElementById("main-nav");
@@ -117,6 +118,10 @@ function render() {
     view = renderMine(ctx.model, ctx);
   } else if (route === "/sprecher") {
     view = renderSpeakers(ctx.model, ctx);
+  } else if (route.startsWith("/sprecher/")) {
+    view = renderPerson(ctx.model, ctx, decodeURIComponent(route.split("/")[2] || ""));
+  } else if (route === "/aenderungen") {
+    view = renderChanges(ctx.model, ctx);
   } else if (route === "/info") {
     view = renderInfo(ctx.model);
   } else {
@@ -159,6 +164,22 @@ export function boot() {
         try { localStorage.setItem("slavtag26.view", ctx.viewMode); } catch { /* ignore */ }
       }
       render();
+      // Änderungs-Hinweis: wenn der letzte Programm-Sync Änderungen brachte und
+      // dieser Stand noch nicht gesehen wurde, Toast mit Sprung zur Übersicht.
+      const ch = model.changes;
+      if (ch && ch.generated_at) {
+        const c = ch.counts || {};
+        const total = (c.new || 0) + (c.changed || 0) + (c.removed || 0);
+        let seen = null;
+        try { seen = localStorage.getItem("slavtag26.changes.seen"); } catch { /* ignore */ }
+        if (total > 0 && seen !== ch.generated_at) {
+          try { localStorage.setItem("slavtag26.changes.seen", ch.generated_at); } catch { /* ignore */ }
+          toast(`Programm aktualisiert: ${c.new || 0} neu, ${c.changed || 0} geändert, ${c.removed || 0} entfallen`, {
+            action: { label: "Ansehen", onclick: () => { location.hash = "#/aenderungen"; } },
+            duration: 10000,
+          });
+        }
+      }
       // „Jetzt“-Karte alle 60 s auffrischen
       setInterval(() => {
         const { route } = parseHash();

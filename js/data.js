@@ -192,5 +192,13 @@ export async function loadData(fetchFn = fetch) {
   } catch {
     // llm_tags.json fehlt oder ist defekt → Lexikon-Tags bleiben aktiv
   }
+
+  // Änderungs-Diff des letzten Syncs (nicht-kritisch, Datei kann fehlen)
+  try {
+    const chRes = await fetchFn("data/changes.json");
+    if (chRes.ok) model.changes = await chRes.json();
+  } catch {
+    /* ohne changes.json kein Änderungs-Hinweis */
+  }
   return model;
 }

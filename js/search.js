@@ -68,34 +68,25 @@ export function formatOf(s) {
   return s.type || "sonstiges";
 }
 
-export function highlight(text, q) {
+export function findMarks(text, q) {
   const nq = normalize(q);
-  if (!nq) return null;
+  if (!nq) return [];
   const terms = nq.split(" ").filter((t) => t.length > 2);
-  if (!terms.length) return null;
-  // Hervorhebung im Originaltext: Begriffe case-insensitive/diacritics-unsensitiv suchen
-  const fold = (s) => normalize(s);
+  if (!terms.length) return [];
+  // Hervorhebung im Originaltext: Begriffe case-insensitive suchen
+  // (pragmatisch: exakter Term im lowercase-Original, keine Diakritika-Faltung)
   const lowered = text.toLowerCase();
-  const normMap = []; // Zuordnung Index im Original → Index im normalisierten String ist aufwendig;
-  // pragmatisch: Suche nach Wortanfängen im Original
   const marks = [];
   for (const term of terms) {
     let idx = 0;
-    const t = term;
-    while (t && idx < lowered.length) {
-      const found = lowered.indexOf(t[0], idx);
-      if (found === -1) break;
-      // versuche direkten Treffer
-      const direct = lowered.indexOf(t, idx);
-      if (direct !== -1) {
-        marks.push([direct, direct + t.length]);
-        idx = direct + t.length;
-        continue;
-      }
-      idx = found + 1;
+    while (idx < lowered.length) {
+      const direct = lowered.indexOf(term, idx);
+      if (direct === -1) break;
+      marks.push([direct, direct + term.length]);
+      idx = direct + term.length;
     }
   }
-  if (!marks.length) return null;
+  if (!marks.length) return [];
   // überlappende Markierungen mergen
   marks.sort((a, b) => a[0] - b[0]);
   const merged = [marks[0]];
@@ -104,6 +95,12 @@ export function highlight(text, q) {
     if (a <= last[1]) last[1] = Math.max(last[1], b);
     else merged.push([a, b]);
   }
+  return merged;
+}
+
+export function highlight(text, q) {
+  const merged = findMarks(text, q);
+  if (!merged.length) return null;
   let out = "";
   let pos = 0;
   for (const [a, b] of merged) {
@@ -112,6 +109,30 @@ export function highlight(text, q) {
   }
   out += escapeH(text.slice(pos));
   return out;
+}
+
+// Ausschnitt um den ersten Treffer (für Ergebnislisten): Fenster von ~radius
+// Zeichen um den ersten Treffer, erweitert auf nachfolgende Treffer im Fenster.
+export function snippet(text, q, radius = 150) {
+  const merged = findMarks(text, q);
+  if (!merged.length) return null;
+  const [fa, ] = merged[0];
+  let lo = Math.max(0, fa - 60);
+  let hi = Math.min(text.length, fa + radius);
+  for (const [a, b] of merged.slice(1)) {
+    if (a < hi) hi = Math.min(text.length, Math.max(hi, b + 20));
+  }
+  // Wortgrenzen schonen
+  if (lo > 0) {
+    const ws = text.slice(0, lo).search(/\s\S*$/);
+    if (ws !== -1) lo = ws + 1;
+  }
+  if (hi < text.length) {
+    const ws = text.slice(hi).search(/\s/);
+    if (ws !== -1) hi += ws;
+  }
+  const body = highlight(text.slice(lo, hi), q) || escapeH(text.slice(lo, hi));
+  return (lo > 0 ? "… " : "") + body + (hi < text.length ? " …" : "");
 }
 
 function escapeH(s) {

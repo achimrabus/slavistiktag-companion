@@ -1,7 +1,8 @@
-// views/speakers.js – Sprecher-Index A–Z (Sprecher + Chairs), Klick → Drawer
+// views/speakers.js – Sprecher-Index A–Z (Sprecher + Chairs), Klick → Person
 // Indexformat „Nachname, Vorname" (wissenschaftliche Konvention); Karten und
 // Drawer zeigen weiterhin „Vorname Nachname".
-import { h } from "../util.js";
+import { h, dateLabel } from "../util.js";
+import { sessionCard } from "./program.js";
 
 // „Vorname Nachname" → „Nachname, Vorname"; Klammern-Zusatz (Geburtsname o.ä.)
 // bleibt erhalten: „Liudmyla Mobius (Pidkuimukha)" → „Mobius, Liudmyla (Pidkuimukha)"
@@ -33,7 +34,7 @@ export function buildSpeakerIndex(model) {
     for (const one of splitPeople(raw)) {
       const key = one.trim();
       if (!key) continue;
-      if (!map.has(key)) map.set(key, { ...nameParts(key), talks: [], chairOf: [] });
+      if (!map.has(key)) map.set(key, { raw: key, ...nameParts(key), talks: [], chairOf: [] });
       const entry = map.get(key);
       if (role === "chair") entry.chairOf.push(session);
       else entry.talks.push(session);
@@ -78,12 +79,12 @@ export function renderSpeakers(model, ctx) {
         ...p.talks.map((s) => ({ s, role: "" })),
         ...p.chairOf.map((s) => ({ s, role: "Chair" })),
       ].sort((a, b) => (a.s.day + a.s.start).localeCompare(b.s.day + b.s.start));
-      const btn = h("button", { class: "speaker-row", onclick: () => ctx.openSession(items[0].s.id) },
+      const href = `#/sprecher/${encodeURIComponent(p.raw)}`;
+      const btn = h("a", { class: "speaker-row", href },
         h("span", { class: "speaker-name", text: p.display }),
         h("span", { class: "speaker-count dim" },
           [p.talks.length ? `${p.talks.length} Vortrag${p.talks.length === 1 ? "" : "e"}` : "",
            p.chairOf.length ? `${p.chairOf.length}× Chair` : ""].filter(Boolean).join(" · ")));
-      btn.addEventListener("keydown", (e) => { if (e.key === "Enter") ctx.openSession(items[0].s.id); });
       list.append(btn);
     }
   };
@@ -91,5 +92,64 @@ export function renderSpeakers(model, ctx) {
   renderList();
 
   wrap.append(search, list);
+  return wrap;
+}
+
+// Personen-Detailansicht: alle Vorträge + Chair-Rollen einer Person.
+// Route: #/sprecher/<encodeURIComponent(raw)>
+export function renderPerson(model, ctx, rawName) {
+  const people = buildSpeakerIndex(model);
+  const p = people.find((x) => x.raw === rawName);
+  const wrap = h("div", { class: "view view-person" });
+
+  if (!p) {
+    wrap.append(
+      h("header", { class: "hero compact" },
+        h("h1", { text: "Person nicht gefunden" }),
+        h("p", { class: "meta", text: `„${rawName}“ ist nicht im Sprecher:innen-Index. Eventuell hat sich das Programm geändert.` })),
+      h("a", { class: "btn ghost", href: "#/sprecher", text: "← Zurück zur Übersicht" }));
+    return wrap;
+  }
+
+  const items = [
+    ...p.talks.map((s) => ({ s, role: "" })),
+    ...p.chairOf.map((s) => ({ s, role: "Chair" })),
+  ].sort((a, b) => (a.s.day + a.s.start).localeCompare(b.s.day + b.s.start));
+
+  const affis = new Set();
+  for (const s of p.talks) {
+    const i = (s.speakers || []).indexOf(p.raw);
+    if (i >= 0 && s.affiliations?.[i]) affis.add(s.affiliations[i]);
+  }
+
+  const hero = h("header", { class: "hero compact" },
+    h("p", { class: "kicker" }, h("a", { href: "#/sprecher", text: "← Sprecher:innen" })),
+    h("h1", { text: p.display }),
+    h("p", { class: "meta", text:
+      [`${p.talks.length} Vortrag${p.talks.length === 1 ? "" : "e"}`,
+       p.chairOf.length ? `${p.chairOf.length}× Chair` : "",
+       [...affis].join(" · ")].filter(Boolean).join(" · ") }));
+
+  wrap.append(hero);
+
+  let lastDay = "";
+  for (const { s, role } of items) {
+    if (s.day !== lastDay) {
+      lastDay = s.day;
+      wrap.append(h("div", { class: "day-divider" },
+        h("span", { class: "day-name", text: dateLabel(s.day) })));
+    }
+    if (role === "Chair") {
+      wrap.append(h("div", { class: "slot-block" },
+        h("div", { class: "slot-head" },
+          h("span", { text: `${s.start}–${s.end}` }),
+          h("span", { class: "pill", text: "Chair" })),
+        h("div", { class: "card session-card chair-entry", onclick: () => ctx.openSession(s.id), tabindex: "0", role: "button" },
+          h("div", { class: "card-title", text: s.panel_title || s.title }),
+          s.room ? h("span", { class: "meta", text: s.room }) : null)));
+    } else {
+      wrap.append(sessionCard(model, ctx, s, {}));
+    }
+  }
   return wrap;
 }

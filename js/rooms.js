@@ -32,6 +32,9 @@ export const ROOMS = {
   "SR 224":  { building: "CZS 3", address: "Carl-Zeiß-Straße 3", floor: "2. OG", inner: "2.024", lat: 50.92879, lon: 11.58161 },
   "SR 226":  { building: "CZS 3", address: "Carl-Zeiß-Straße 3", floor: "2. OG", inner: "2.026", lat: 50.92879, lon: 11.58161 },
   // Sonstige Tagungsorte
+  // HS 2: Programm-PDF nennt „CZS 3, HS 2“ (Podien); Etage/Innen-Nummer sind
+  // nicht amtlich dokumentiert → bewusst ohne floor/inner (kein Etagen-Streifen).
+  "HS 2":    { building: "CZS 3", address: "Carl-Zeiß-Straße 3", floor: null, inner: null, lat: 50.92879, lon: 11.58161 },
   "MMZ 220": { building: "MMZ",  address: "Ernst-Abbe-Platz 8",  floor: "2. OG", inner: "220",  lat: 50.92810, lon: 11.58256 },
   "Foyer CZS 3": { building: "CZS 3", address: "Carl-Zeiß-Straße 3", floor: "EG", inner: null, lat: 50.92879, lon: 11.58161 },
   "Aula UHG":    { building: "UHG",  address: "Fürstengraben 1",     floor: "EG", inner: "E008", lat: 50.92945, lon: 11.58944 },
@@ -67,14 +70,15 @@ export function roomWhere(name) {
   const m = roomMeta(name);
   if (!m) return null;
   const inner = m.inner ? ` · Nr. ${m.inner}` : "";
-  return h("span", { class: "room-where", text: `${m.building} · ${m.floor}${inner}` });
+  const floor = m.floor ? ` · ${m.floor}` : "";
+  return h("span", { class: "room-where", text: `${m.building}${floor}${inner}` });
 }
 
 // Schematischer Etagen-Streifen: alle Tagungsräume derselben Etage, aktueller
 // hervorgehoben („was ist noch hier?“). Amtliche Ebenen-Daten, kein Grundriss.
 export function roomFloorStrip(name) {
   const m = roomMeta(name);
-  if (!m) return null;
+  if (!m || !m.floor) return null; // ohne dokumentierte Etage kein Streifen
   const siblings = Object.entries(ROOMS)
     .filter(([n, x]) => x.building === m.building && x.floor === m.floor)
     .sort((a, b) => String(a[1].inner || a[0]).localeCompare(String(b[1].inner || b[0]), undefined, { numeric: true }));

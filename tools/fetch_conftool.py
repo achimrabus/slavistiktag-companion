@@ -221,9 +221,19 @@ def parse_detail(page: str, sid: str, warnings: list) -> dict | None:
         authors: list[str] = []
         affis: list[str | None] = []
         if am:
-            # Autoren + ihre Affiliations-Nummern: '<u>Name</u><sup>1,5</sup>, Name2<sup>2</sup>'
-            for part in re.split(r",(?![^<]*>)", re.sub(r"</sup>\s*,\s*", ",,", am.group(1))):
-                part = part.strip()
+            # Autoren + ihre Affiliations-Nummern: '<u>Name</u><sup>1,5</sup>, Name2<sup>2</sup>'.
+            # Kommas innerhalb von <sup>…</sup> (Affiliations-Listen) dürfen nicht
+            # splitten → Sup-Inhalte vorher durch Platzhalter schützen.
+            sups: list[str] = []
+
+            def _keep(m: re.Match) -> str:
+                sups.append(m.group(1))
+                return f"\x00{len(sups) - 1}\x00"
+
+            protected = re.sub(r"<sup>(.*?)</sup>", _keep, am.group(1), flags=re.S)
+            for part in protected.split(","):
+                part = re.sub(r"\x00(\d+)\x00",
+                              lambda m: f"<sup>{sups[int(m.group(1))]}</sup>", part).strip()
                 if not part:
                     continue
                 nums_m = re.search(r"<sup>([^<]+)</sup>", part)
@@ -347,9 +357,15 @@ def build(days_data: dict, details: dict, code_map: dict, warnings: list) -> dic
             key = (det["day"], det["start"])
             block_rooms[key].add(det["room"])
             block_span[key].append((det["start"], det["end"]))
+            used_ids: dict[str, int] = {}
             for pp in det["papers"]:
+                base = f"{det['day']}-{det['start']}-{(det['room'] or '').replace(' ', '')}-{pp['start'] or det['start']}"
+                # Eindeutigkeit: mehrere Vorträge im selben Slot (parallele
+                # Kurzvorträge, Panel-Intro + erster Vortrag) bekommen -2, -3 …
+                n = used_ids.get(base, 0) + 1
+                used_ids[base] = n
                 sessions.append({
-                    "id": f"{det['day']}-{det['start']}-{(det['room'] or '').replace(' ', '')}-{pp['start'] or det['start']}",
+                    "id": base if n == 1 else f"{base}-{n}",
                     "day": det["day"],
                     "start": pp["start"] or det["start"],
                     "end": pp["end"] or det["end"],
@@ -418,6 +434,52 @@ def validate(data: dict, warnings: list) -> list[str]:
     return problems
 
 
+# ---------------------------------------------------------------- Diff
+
+def _talk_key(t: dict) -> tuple:
+    """Identität eines Vortrags unabhängig von Tag/Zeit/Raum:
+    (normalisierter Titel, sortierte Sprecher)."""
+    title = re.sub(r"\s+", " ", t.get("title", "")).strip().lower()
+    speakers = tuple(sorted(s.strip().lower() for s in (t.get("speakers") or [])))
+    return (title, speakers)
+
+
+def _mini(t: dict) -> dict:
+    return {k: t.get(k) for k in ("id", "title", "speakers", "day", "start", "end", "room")}
+
+
+def _slot(t: dict) -> dict:
+    return {k: t.get(k) for k in ("day", "start", "end", "room")}
+
+
+def diff_programs(old: dict, new: dict) -> dict:
+    """Änderungen zwischen zwei Programmständen (nur Vorträge).
+    Titel-Änderungen erscheinen als entfallen+neu (gleiche Slots wären Zufall)."""
+    old_talks = {_talk_key(s): s for s in old.get("sessions", []) if s.get("type") == "talk"}
+    new_talks = {_talk_key(s): s for s in new.get("sessions", []) if s.get("type") == "talk"}
+
+    added, changed, removed = [], [], []
+    for k, s in new_talks.items():
+        o = old_talks.get(k)
+        if o is None:
+            added.append(_mini(s))
+        elif _slot(o) != _slot(s):
+            changed.append({**_mini(s), "old": _slot(o)})
+    for k, s in old_talks.items():
+        if k not in new_talks:
+            removed.append(_mini(s))
+
+    added.sort(key=lambda t: (t.get("day") or "", t.get("start") or "", t.get("room") or ""))
+    changed.sort(key=lambda t: (t.get("day") or "", t.get("start") or "", t.get("room") or ""))
+    removed.sort(key=lambda t: (t.get("day") or "", t.get("start") or "", t.get("room") or ""))
+    return {
+        "counts": {"new": len(added), "changed": len(changed), "removed": len(removed)},
+        "new": added,
+        "changed": changed,
+        "removed": removed,
+    }
+
+
 # ---------------------------------------------------------------- io
 
 def canonical(data: dict) -> str:
@@ -450,6 +512,8 @@ def main() -> int:
                     help="bisherige program.json als Quelle für SEK-Codes (Titel-Matching)")
     ap.add_argument("--compare", metavar="FILE",
                     help="nur vergleichen: Exit 1, wenn Programminhalt geändert ist")
+    ap.add_argument("--changes", metavar="FILE",
+                    help="Diff gegen den bisherigen Stand (--codes) als changes.json schreiben")
     ap.add_argument("--delay", type=float, default=0.4)
     args = ap.parse_args()
 
@@ -506,6 +570,21 @@ def main() -> int:
         return 1
 
     out = Path(args.out)
+    if args.changes:
+        try:
+            old = json.load(open(args.codes, encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            old = None
+        if old is None:
+            print("DIFF: kein alter Stand (--codes) – changes.json wird nicht geschrieben")
+        else:
+            changes = diff_programs(old, data)
+            changes["generated_at"] = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
+            cpath = Path(args.changes)
+            cpath.write_text(json.dumps(changes, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"Diff: +{changes['counts']['new']} neu, "
+                  f"{changes['counts']['changed']} geändert, "
+                  f"{changes['counts']['removed']} entfallen → {cpath}")
     write_out(data, out, warnings)
     print(f"\nwrote {out} ({out.stat().st_size} bytes)")
     print("VALIDIERUNG OK")

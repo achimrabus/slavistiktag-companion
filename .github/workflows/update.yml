@@ -26,7 +26,7 @@ jobs:
         id: check
         run: |
           set -euo pipefail
-          if ! python tools/fetch_conftool.py -o /tmp/program.json --codes data/program.json; then
+          if ! python tools/fetch_conftool.py -o /tmp/program.json --codes data/program.json --changes /tmp/changes.json; then
             echo "::error::ConfTool nicht erreichbar oder Validierung fehlgeschlagen – Programm-Update übersprungen, alte Daten bleiben online."
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
@@ -48,8 +48,10 @@ jobs:
         run: |
           set -euo pipefail
           cp /tmp/program.json data/program.json
+          if [ -s /tmp/changes.json ]; then cp /tmp/changes.json data/changes.json; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/program.json
+          if [ -f data/changes.json ]; then git add data/changes.json; fi
           git commit -m "Programm-Update: ConfTool-Stand $(date +%F) ($(date +%H:%M UTC))"
           git push

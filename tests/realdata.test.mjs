@@ -29,9 +29,9 @@ const m = buildModel(program, content);
 t("Model: 3 Programmtage + Eröffnungstag", () => {
   assert.deepEqual(m.days, ["2026-09-30", "2026-10-01", "2026-10-02", "2026-10-03"]);
 });
-t("Model: 308 Sessions, 99 Panels", () => {
-  assert.equal(m.sessions.length, 315); // 308 + 7 Pausen
-  assert.equal(Object.keys(m.panels).length, 99);
+t("Model: 311 Sessions, 102 Panels", () => {
+  assert.equal(m.sessions.length, 318); // 311 Vorträge + 7 Pausen
+  assert.equal(Object.keys(m.panels).length, 102);
 });
 t("Model: Räume mit Venue", () => {
   assert.ok(m.rooms.includes("MMZ 220"));

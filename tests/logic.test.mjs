@@ -215,7 +215,7 @@ t("applyLlmTags: ohne llm_tags.json-Objekt bleibt Lexikon aktiv", () => {
   assert.equal(m.llmTagsMeta, null);
   assert.ok(m.sessions.every((s) => s._tagSource === "lexikon"));
 });
-t("llm_tags.json: alle 308 Vorträge vorhanden, alle tags ⊆ Taxonomie", () => {
+t("llm_tags.json: alle Vorträge vorhanden, alle tags ⊆ Taxonomie", () => {
   const llm = JSON.parse(fs.readFileSync(new URL("../data/llm_tags.json", import.meta.url), "utf8"));
   assert.ok(llm.meta && llm.meta.model, "Meta-Block fehlt");
   const talkIds = _model.sessions.filter((s) => s.type === "talk").map((s) => s.id);

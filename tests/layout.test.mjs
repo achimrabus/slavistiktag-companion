@@ -2,7 +2,7 @@
 // Startet eigenen http.server. node tests/layout.test.mjs
 import { chromium } from "playwright";
 import assert from "node:assert/strict";
-import { spawn } from "node:child_process";
+import { spawn, execSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -10,6 +10,14 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PORT = 8127;
 const server = spawn("python", ["-m", "http.server", String(PORT)], { cwd: ROOT, shell: true, stdio: "ignore" });
 await new Promise((r) => setTimeout(r, 1800));
+
+// Windows: shell:true → server.pid ist die Shell, kill() tötet sie, aber NICHT den
+// eigentlichen Python-Child. Folge: Zombie-http.server auf PORT, beim nächsten Lauf
+// „Address already in use" → Testläufe hängen scheinbar ewig. taskkill /T beendet
+// den kompletten Prozessbaum zuverlässig.
+function killServer() {
+  try { execSync(`taskkill /PID ${server.pid} /T /F`, { stdio: "ignore" }); } catch { /* schon tot */ }
+}
 
 const BASE = `http://localhost:${PORT}/`;
 const VIEWPORTS = [
@@ -64,7 +72,12 @@ for (const vp of VIEWPORTS) {
   const page = await ctx.newPage();
   const errors = [];
   page.on("pageerror", (e) => errors.push(String(e)));
-  page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
+  page.on("console", (m) => {
+    // Playwright meldet fehlgeschlagene Subressourcen (z.B. optionale JSON-Dateien
+    // wie data/changes.json) als console-error mit line 0 — nicht als pageerror.
+    // Solche Netz-Fehler sind keine JS-Fehler der App und werden hier ignoriert.
+    if (m.type() === "error" && m.location().line !== 0) errors.push(m.text());
+  });
 
   console.log(`\n=== ${vp.name} ===`);
   await page.goto(BASE + "#/heute");
@@ -152,6 +165,6 @@ for (const vp of VIEWPORTS) {
 }
 
 await browser.close();
-server.kill();
+killServer();
 console.log(`\n${n} Layout-Checks, ${failures} Fehler.`);
 process.exit(failures ? 1 : 0);

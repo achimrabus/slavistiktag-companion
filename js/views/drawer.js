@@ -4,6 +4,8 @@ import { favs } from "../favorites.js";
 import { icsFor, downloadIcs } from "../ics.js";
 import { minutes } from "../util.js";
 import { roomLink, roomWhere, roomFloorStrip } from "../rooms.js";
+import { splitPeople } from "./speakers.js";
+import { highlight } from "../search.js";
 
 export function openDrawer(ctx, id) {
   const model = ctx.model;
@@ -22,6 +24,8 @@ export function openDrawer(ctx, id) {
   document.addEventListener("keydown", onKey);
 
   if (session) {
+    // Aktive Suchquery mitgeben (für Abstract-Highlighting)
+    session._q = ctx.programState?.q || "";
     drawer.append(sessionBody(ctx, session, close));
   } else if (event) {
     drawer.append(eventBody(event, close));
@@ -93,12 +97,22 @@ function shareBtn(session) {
   });
 }
 
-function speakerLine(s) {
-  if (!s.speakers?.length) return "";
-  if (!s.affiliations?.length) return s.speakers.join(", ");
-  return s.speakers
-    .map((n, i) => (s.affiliations[i] ? `${n} (${s.affiliations[i]})` : n))
-    .join(", ");
+// Speaker-Zeile: jeder Name verlinkt auf die Personen-Ansicht
+// (#/sprecher/<name>), Affiliation (falls vorhanden) in Klammern dahinter.
+function speakerLineEl(s) {
+  if (!s.speakers?.length) return null;
+  const p = h("p", { class: "speakers" });
+  s.speakers.forEach((raw, i) => {
+    if (i) p.append(", ");
+    for (const one of splitPeople(raw)) {
+      p.append(h("a", {
+        href: `#/sprecher/${encodeURIComponent(one.trim())}`,
+        text: one.trim(),
+      }));
+    }
+    if (s.affiliations?.[i]) p.append(` (${s.affiliations[i]})`);
+  });
+  return p;
 }
 
 function sessionBody(ctx, s, close) {
@@ -113,7 +127,7 @@ function sessionBody(ctx, s, close) {
     h("p", { class: "kicker", text: `${dateLabel(s.day)} · ${timeRange(s.start, s.end)}` }),
     h("h2", { text: s.title },
       s._lang && s._lang !== "de" ? h("span", { class: "pill lang", text: s._lang.toUpperCase(), title: `Titelsprache (Heuristik): ${s._lang}` }) : null),
-    h("p", { class: "speakers", text: speakerLine(s) }),
+    speakerLineEl(s),
     h("p", { class: "meta" },
       roomLink(s.room), " ",
       s.venue ? h("span", { class: "pill", text: ctx.model.content.venues[s.venue]?.short || s.venue }) : null,
@@ -128,8 +142,10 @@ function sessionBody(ctx, s, close) {
       : null,
     s.abstract
       ? h("section", {},
-          h("h3", { text: "Abstract" }),
-          h("p", { class: "abstract", text: s.abstract }))
+          h("h3", { text: s._q && highlight(s.abstract, s._q) ? "Abstract (Suchtreffer hervorgehoben)" : "Abstract" }),
+          s._q && highlight(s.abstract, s._q)
+            ? h("p", { class: "abstract", html: highlight(s.abstract, s._q) })
+            : h("p", { class: "abstract", text: s.abstract }))
       : null,
     h("div", { class: "btn-row" }, favBtn(ctx, s), icsBtn(s), shareBtn(s)),
     panelTalks.length > 1

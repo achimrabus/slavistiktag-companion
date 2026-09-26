@@ -91,7 +91,8 @@ search.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
 await sleep(450);
 t("Suche 'Brehmer' findet Treffer", () => {
   const cards = document.querySelectorAll("#app .session-card");
-  assert.ok(cards.length >= 1 && cards.length <= 5, `${cards.length} Karten`);
+  // Abstracts werden mit durchsucht → mehr Treffer als nur Titel-/Namenstreffer
+  assert.ok(cards.length >= 1 && cards.length <= 15, `${cards.length} Karten`);
 });
 
 // Listenansicht (Regression: listView gab undefined zurück → Text „undefined" statt Karten)
@@ -241,6 +242,30 @@ t("Sprecher-Suche filtert live", () => {
   assert.ok(rows[0].textContent.includes("Sonnenhauser"));
   s.value = "";
   s.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
+});
+
+// Personen-Detailansicht (#/sprecher/<Name>) — Regression: Route unbekannt → Dashboard
+dom.window.location.hash = "#/sprecher/Gerta%20Monakhova";
+await waitFor(() => document.querySelector("#app .view-person"));
+t("Personen-Ansicht: Vorträge + Affiliation + Chair-Rollen", () => {
+  const h1 = document.querySelector("#app .view-person h1");
+  assert.ok(h1.textContent.includes("Monakhova"), h1.textContent);
+  assert.ok(document.querySelectorAll("#app .view-person .session-card").length >= 1, "keine Vortragskarten");
+  assert.ok(document.body.textContent.includes("Friedrich-Schiller-Universität Jena"), "Affiliation fehlt");
+});
+dom.window.location.hash = "#/sprecher/Does%20Not%20Exist";
+await waitFor(() => document.querySelector("#app .view-person") &&
+  document.querySelector("#app .view-person h1").textContent.includes("nicht gefunden"));
+t("Personen-Ansicht: unbekannter Name → ehrlicher Leerzustand", () => {
+  assert.ok(document.body.textContent.includes("nicht im Sprecher:innen-Index"));
+});
+
+// Änderungs-Ansicht (Was ist neu? / data/changes.json)
+dom.window.location.hash = "#/aenderungen";
+await waitFor(() => document.querySelector("#app .view-changes"));
+t("Änderungs-Ansicht: leerer Stand ohne Fehler", () => {
+  assert.ok(document.querySelector("#app .view-changes h1").textContent.includes("Programm-Änderungen"));
+  assert.ok(document.body.textContent.includes("keine Änderungen"));
 });
 
 // Feature 2: „Läuft gerade" – beim Testlauf (Sept. 2026) vor der Tagung: keine „jetzt"-Pills
