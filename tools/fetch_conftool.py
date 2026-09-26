@@ -438,9 +438,16 @@ def validate(data: dict, warnings: list) -> list[str]:
 
 def _talk_key(t: dict) -> tuple:
     """Identität eines Vortrags unabhängig von Tag/Zeit/Raum:
-    (normalisierter Titel, sortierte Sprecher)."""
+    (normalisierter Titel, sortierte Sprecher).
+    Sprecher-Namen werden normalisiert (klein, ohne angehängte Affiliations-
+    Ziffern wie 'Name 2', ohne Leerstrings) — sonst erscheint ein reiner
+    Parser-Fix an den Namen als entfallen+neu statt als (keine) Änderung."""
     title = re.sub(r"\s+", " ", t.get("title", "")).strip().lower()
-    speakers = tuple(sorted(s.strip().lower() for s in (t.get("speakers") or [])))
+    speakers = tuple(sorted(
+        re.sub(r"\s+\d+$", "", s.strip().lower())
+        for s in (t.get("speakers") or [])
+        if s and s.strip() and not s.strip().isdigit()
+    ))
     return (title, speakers)
 
 

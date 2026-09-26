@@ -2,14 +2,14 @@
  "meta": {
   "source": "conftool",
   "source_url": "https://www.conftool.com/slavistiktag2026/index.php",
-  "source_sha256": "2e0631fe13795834",
-  "generated_at": "2026-09-26T04:58:16+00:00",
+  "source_sha256": "7bd4cd55adec0884",
+  "generated_at": "2026-09-26T11:00:20+02:00",
   "stats": {
    "sessions": 311,
    "breaks": 7,
    "panels": 102,
    "footer_events": 8,
-   "abstracts": 310
+   "abstracts": 309
   },
   "warnings": [
    "Tag 2026-09-30: keine Sitzungen gefunden",
@@ -1280,14 +1280,14 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|09:00|ct51",
    "speakers": [
-    "Bernhard Brehmer 1",
+    "Bernhard Brehmer",
     "Ramona Teresa Plitt"
    ],
    "title": "Polnisch als Herkunftssprache in Deutschland – Einblicke aus einer soziolinguistischen Survey-Studie (Polski.Kompass)",
    "type": "talk",
    "abstract": "Soziolinguistische Studien zu slavischen Herkunftssprachen, die sich mit der familiären Sprach­situation beschäftigen, beruhen oft auf relativ kleinen Stichproben, die entweder über schriftliche Fragebögen oder leitfadengestützte Interviews zu den familiären Sprachpraktiken und Spracheinstellungen befragt werden. Die Stichproben werden zudem meist über persön­liche Kontakte der Forschenden, d.h. in Form der „Schneeballmethode“ gezogen. Derartige qualitativ ausgelegte Ansätze liefern wertvolle Erkenntnisse über das komplexe Wechselspiel von Faktoren, die den Spracherhalt bzw. die Aufgabe der slavischen Familiensprache beeinflussen. Allerdings lassen diese Pilotstudien oft keine Rückschlüsse darüber zu, ob sich die Beobachtungen auf größere Stichproben übertragen lassen.\n\nIn unserem Vortrag stellen wir Ergebnisse der deutschlandweit durchgeführten Survey-Studie Polski.Kompass vor, die auf der Basis einer großen Zufallsstichprobe (ca. 400 Respondenten) Erkenntnisse zu rekurrenten Mustern des Sprachgebrauchs in den befragten Familien und der Spracheinstellungen gegenüber dem Polnischen liefert. Aktuell läuft die Erhebung noch, aber es zeichnet sich bereits ab, dass das Sample hinsichtlich der sozio­linguistischen Parameter wesentlich breiter gestreut ist als bisherige Studien zur familiären Sprachpolitik in slavischsprachigen Familien in Deutschland. Die Erhebung erfolgt über einen ausführlichen Online-Fragebogen, mit dem Informationen zu den klassischen Komponenten der familiären Sprachenpolitik (vgl. Spolsky 2004, Lanza & Lomeu Gomes 2020) gewonnen werden, d.h. Daten zu den Sprachpraktiken, Spracheinstellungen und Maßnahmen zur Steuerung des Sprachgebrauchs in den Familien, die sich quantitativ auswerten lassen, sodass übergreifende Muster und Korrelationen sichtbar werden, die sich nur anhand größerer Stichproben identifizieren lassen.",
    "affiliations": [
-    null,
+    "Universität Konstanz, Deutschland",
     "Kompetenz- und Koordinationszentrum Polnisch (KoKoPol), St. Marienthal"
    ]
   },
@@ -1354,14 +1354,14 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|09:00|ct37",
    "speakers": [
-    "Ivan Šimko 1",
+    "Ivan Šimko",
     "Stefan Savić"
    ],
    "title": "Productivity of Verbal Stems in OCS and Gothic",
    "type": "talk",
    "abstract": "Although a number of Proto Indo European (PIE) verbal suffixes can be reconstructed in its daughter languages including the Slavic branch (Leskien 1922:121, Kamphuis 2020:94), numerous questions remain open. Many suffixes phonologically merged, determinating the conjugation class of the verb (Andersen 2014). However, it has also been suggested that a verb's allocation to a conjugation class may also be affected by language contact. Nichols (2020) points out that Slavic borrowed the Germanic derivation patterns, through which intransitive ě ‑stem verbs created transitive i-stem (with o-grade root) counterparts, e.g. vъrěti 'boil' > variti 'cook'. The transferability of the derivational pattern from one language to another can be understood by analyzing the productivity of the morphemes involved in both branches at their earliest recorded historical stages.\n\nIn our study, we focus on the PIE causative/intransitive suffix *- éi̯e / o - and the present suffix *‑ néu ‑/‑ nu -, which have developed valency and aspectual/ aktionsart functions in both Germanic and Slavic. Using digital editions of the Gothic and Old Church Slavonic (OCS) Gospels, we compare related verbs with and without the reflexes of said PIE suffixes with respect to their (1) transitivity and (2) tense-aspect-mood. This approach enables a comparison of the productivity of transitivity and aspectual marking between Gothic and OCS. Furthermore, frequent occurrence of reflexes of given suffixes with certain verb roots, as well as their distribution within specific tenses, aspects and moods, may indicate whether they had lost the initial functions by becoming lexicalized as part of the paradigm of the Gothic or OCS verb in question. Finally, any parallels between OCS and Gothic in the morphological structure, valency or aspectual/ aktionsart properties of individual verbs containing the reflexes of the given suffixes may also be indicative of language contact.",
    "affiliations": [
-    null,
+    "Slovak Academy of Sciences, Slovakia",
     "University of Zurich, Switzerland"
    ]
   },
@@ -1504,7 +1504,7 @@
    ],
    "title": "Lem gamified – Ich-Krisen im Weltraum",
    "type": "talk",
-   "abstract": "Die Vorstellung von personaler Authentizität als unveräußerlichem Wesenskern eines Menschen entsteht in der Frühen Neuzeit. Aleida Assmann verortet ihren paradigmatischen Ausdruck in Shakespeares Hamlet , dessen Suche nach dem Authentischen sich nicht mehr auf eine transzendente Wahrheit hinter der Erscheinungswelt, sondern auf die „geheimnisvolle Essenz der Individualität“ richtet (Assmann 2012, 36). Die personale Authentizität hat auch heute eine hohe Konjunktur, und zwar insbesondere an dem Ort, der vom Authentischen nicht weiter entfernt sein könnte: im digitalen Raum.\n\nVor dem Hintergrund dieser Überlegungen soll das Sci-Fi-Spiel The Alters (11 bit studios, 2025) als Reflexion und Weiterführung personaler Authentizitätskonzepte ausgelegt werden. Im Zentrum des Spiels steht der Protagonist Jan Dolski, der allein auf einem lebensfeindlichen Planeten strandet. Um zu überleben, muss er auf dem Planeten Ressourcen sammeln und eine Basis aufbauen. Mit der Vielzahl von Aufgaben bald überfordert erschafft Jan alternative Versionen seiner selbst – die Alters. Die Alters entstehen aus Jans nicht realisierten Lebensentscheidungen und verkörpern divergierende Ich-Entwürfe mit eigenen Fähigkeiten, Temperamenten und Perspektiven.\n\nDer Beitrag zeigt, wie The Alters personale Authentizität nicht als einheitliche, essenzielle Eigenschaft, sondern als prozessuale Zuschreibung und Konstruktion inszeniert. Spielerisch wie erzählerisch wird das Ich des Protagonisten zur Ressource, die – analog zum Rohstoffabbau – fragmentiert, verwaltet und neu zusammengesetzt werden muss. Gerade im Dialog mit seinen nicht gelebten Ich-Varianten gelangt Jan zu einer reflexiven Neubewertung seiner Lebensentscheidungen und also seines Ichs. Das Spiel erzählt damit nebenbei den Übergang von einem Authentizitätsessentialismus hin zu einer emanzipatorischen Praxis der Selbstgestaltung und leistet einen Beitrag zur gegenwärtigen kulturellen Aushandlung dessen, was es heute heißt, „authentisch“ zu sein.",
+   "abstract": null,
    "affiliations": [
     "Institut für Slavistik (Universität Münster)"
    ]
@@ -1518,18 +1518,18 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|09:00|ct1",
    "speakers": [
-    "Gerta Monakhova 1",
-    "Olga Burdakova 2",
-    "Ekaterina Konakova 2",
+    "Gerta Monakhova",
+    "Olga Burdakova",
+    "Ekaterina Konakova",
     "Tatiana Miroshkina"
    ],
    "title": "Russischlernen in Europa: Eine Exkursion nach Narva zwischen Sprachpraxis, regionalgeschichtlicher Erkundung und einer sicheren Alternative zur Russlandreise",
    "type": "talk",
    "abstract": "Seit 2022 haben sich die Rahmenbedingungen für Studien- und Sprachaufenthalte im Russischen deutlich verändert. Aufenthalte in Russland werden derzeit von vielen Hochschulen nicht empfohlen oder sind organisatorisch kaum umsetzbar. Dadurch ist ein Bedarf an neuen, sicheren und zugleich authentischen Lernräumen entstanden.\n\nDie im Frühjahr 2025 vom Institut für Slawistik und Kaukasusstudien der Friedrich-Schiller-Universität Jena organisierte einwöchige Exkursion nach Narva (Estland) stellt ein Beispiel dafür dar, wie solche Alternativen didaktisch sinnvoll gestaltet werden können.\n\nDas Programm verfolgte zwei Zielsetzungen: (1) authentische Sprachpraxis im russischsprachigen Umfeld und (2) regionalgeschichtliche sowie landeskundliche Erkundung des mehrsprachig geprägten Grenzraums Ostestlands. Während die vorbereitenden Unterrichtseinheiten im Narva College der Universität Tartu lexikalische und kommunikative Mittel zu Themen wie Stadtgeschichte, sowjetischem Erbe, Alltagskultur und regionalen Identitäten vermittelten, fand die eigentliche Sprachpraxis vor allem im Rahmen von Exkursionen, Gesprächen mit Ortsbewohner*innen und im Kontakt mit Gastfamilien statt. Diese Lernorte waren überwiegend russischsprachig geprägt und boten vielfältige Gelegenheiten zu alltagsnaher Interaktion.\n\nGleichzeitig ermöglichte die Exkursion eine Auseinandersetzung mit historischen Schichten der Region (vor-, sowjetische und postsowjetische Perioden) sowie mit aktuellen Fragen der estnischen Sprach- und Integrationspolitik. Es entstand ein Lernsetting, in dem fachliche Inhalte und Sprachlernen eng miteinander verbunden waren (Content and Language Integrated Learning, CLIL), ohne den Anspruch eines vollständigen CLIL-Programms zu erheben.\n\nDer Beitrag diskutiert, inwiefern solche Exkursionen ein tragfähiges Modell für den universitären Russischunterricht darstellen können, welche motivationalen Effekte sie entfalten und wie sie helfen, den Wegfall klassischer Sprachaufenthalte in Russland didaktisch zu kompensieren.",
    "affiliations": [
-    null,
-    null,
-    null,
+    "Friedrich-Schiller-Universität Jena, Deutschland",
+    "Narva College der Universität Tartu, Estland",
+    "Narva College der Universität Tartu, Estland",
     "Narva College der Universität Tartu, Estland"
    ]
   },
@@ -1798,16 +1798,16 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|09:00|ct51",
    "speakers": [
-    "Tatjana Kurbangulova 2",
-    "Olia Blacher 3",
+    "Tatjana Kurbangulova",
+    "Olia Blacher",
     "Chingiz Poletaev"
    ],
    "title": "Intergenerational transformation of linguistic, national and cultural identity of Russian-speaking families in Germany",
    "type": "talk",
    "abstract": "While linguists often consider language a key factor in shaping one’s identity, bilinguals were often regarded as unstable or lacking the sense of identity and belonging (e.g., Schneider 2015: 265; Werani 2023: 238f.). Studying identity in bilingual contexts remains a prominent research area.\n\nThis study analyses the cultural, national, and linguistic identities of Russian-speaking families in Germany from an intergenerational perspective. The study includes representatives from three generations: grandparents (G1) and parents (G2) who moved to Germany from countries of the former Soviet Union; children (G3) born and raised in Germany. The main aim of the paper is to compare the identity constructions of these three generations. The study is based on 19 families (77 participants) who completed a socio-demographic survey and an interview.\n\nThe results show that linguistic, national and cultural identities transform in a non-linear manner from one generation to the other. The monolingual Russian linguistic identity of the G1 shifts to a more or less balanced bilingual identity in the G2, and a primarily German-oriented bilingual identity in the G3. The national identity of the G1 and G2 often relates to Soviet experience, while in the G3 it is related to German citizenship and socialization. Russian remains an important anchor for cultural identity in all three generations; yet, G3 exhibits more flexible, hybrid identities than their parents and grandparents. Higher oral proficiency in Russian in the G3 correlates with hybrid identity constructions, while higher Russian literacy skills in the G2 and G3 correlates with Russian-leaning identity. Migration background matters: in the G2, ethnic German repatriates lean towards German or Russian-German cultural identity more often than Jewish migrants, who predominantly identify with Russian culture.",
    "affiliations": [
-    null,
-    null,
+    "Universität Innsbruck, Österreich",
+    "Universität Jena, Deutschland",
     "Universität Konstanz, Deutschland"
    ]
   },
@@ -2180,13 +2180,14 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|11:30|ct2",
    "speakers": [
-    "Pavlo Popov 1",
-    "2"
+    "Pavlo Popov"
    ],
    "title": "Bewegungsverben im Russischen - Aus der sprachdidaktischen und linguistischen Perspektiven",
    "type": "talk",
    "abstract": "Der Gebrauch von Bewegungsverben sowie deren Vermittlung stellt nach wie vor eine der größeren Herausforderungen im Sprachunterricht dar. Dabei steht ihrer kommunikativen Wichtigkeit und hoher Frequenz im Sprachgebrauch eine zunächst unüberschaubare Komplexität entgegen, was die Wahl des richtigen Verbs aus dem Triple-Pool (bspw. идти - пойти - ходить ) angeht. Der Vortrag setzt sich als Ziel, die aspektuellen Funktionen (Prozess, Wiederholung, Sequentialität, Isoliertheit) der jeweiligen drei Verben zu beleuchten, einen Vergleich der Funktionsverteilung in Abgrenzung zu den Nicht-Bewegungsverben zu ziehen, und so die genannten Schwierigkeiten - für Lehrende und Lernende - erst sichtbar zu machen. Insbesondere wird auf die Asymmetrie der Funktionsverteilung in der Vergangenheit, der Gegenwart und der Zukunft eingegangen. Der Ansatz basiert auf der kognitiven Theorie des russischen Aspekts, ausgearbeitet und später revidiert durch Dickey (2000, 2015, 2019).",
-   "affiliations": null
+   "affiliations": [
+    "FSU Jena, Deutschland · LMU München, Deutschland"
+   ]
   },
   {
    "id": "2026-10-01-11:30-MMZ220-11:30",
@@ -2253,14 +2254,16 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|11:30|ct9",
    "speakers": [
-    "Jan Patrick Zeller 1",
-    "Tetiana Kuznietsova 1",
-    "2"
+    "Jan Patrick Zeller",
+    "Tetiana Kuznietsova"
    ],
    "title": "Sprachenpolitik im Krieg: die Meso-Ebene",
    "type": "talk",
    "abstract": "Der Vortrag ist Teil des Panels „Sprache und Krieg“.\n\nDer russische Angriffskrieg gegen die Ukraine mit seiner Brutalität gegenüber der Zivilbevölkerung führte einerseits bei weiten Teilen der Bevölkerung zu einer politisch-symbolischen Neubewertung der Sprachenfrage. Andererseits führte die Binnenvertreibung vieler Menschen gerade auch aus eher russischsprachigen Gebieten der Ukraine zu deutlichen Veränderungen in der sprachlichen Situation vormals stabiler, lokaler Gemeinschaften (Sokolova 2025). Die staatliche Sprachenpolitik in der Ukraine im Kontext des Krieges ist mittlerweile gut dokumentiert (Kiss & Wingender 2025), ebenso existieren Studien, die die Einstellungen der Bevölkerung zu den Sprachen und individuelle Veränderungen im Sprachgebrauch dokumentieren (Kulyk 2022). Was bislang angesichts der Veränderungen im politisch-symbolischen Bereich und in den faktischen lokalen Gegebenheiten durch Binnenvertreibung jedoch weitgehend fehlt, ist eine systematische Betrachtung der „language policies beyond the state“ (Brown et al. 2017), d.h. der Sprachenpolitik(en) von AkteurInnen der mittleren und oft regionalen Ebene zwischen Staat und Individuum: zivilgesellschaftliche Organisationen, BürgerInneninitiativen, Schulen, Firmen, Lokalpolitik, regionale Presse usw. In dem Vortrag werden wir anhand von ExpertInnen-Interviews mit lokalen und regionalen AkteurInnen aus Sumy, Odesa und L’viv die Sprachenpolitik der Meso-Ebene untersuchen und die „Agency“, Motivationen, Strategien und Ressourcen der AkteurInnen sowie Strategien von diskursiver (Il‑)Legitimierung und Autorisierung (Bucholtz & Hall 2005) in den Blick nehmen.",
-   "affiliations": null
+   "affiliations": [
+    "Carl von Ossietzky Universität Oldenburg, Deutschland",
+    "Carl von Ossietzky Universität Oldenburg, Deutschland · Borys-Hrintschenko-Universität Kyjiv, Ukraine"
+   ]
   },
   {
    "id": "2026-10-01-11:30-SR206-11:30",
@@ -2271,16 +2274,16 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|11:30|ct38",
    "speakers": [
-    "Zrinka Kolakovic 1",
-    "Ines Carovic 2",
+    "Zrinka Kolakovic",
+    "Ines Carovic",
     "Marion Krause"
    ],
    "title": "Clitic placement, weight of clitic host, and prosodic boundaries: Evidence from an experimental production study in Croatian",
    "type": "talk",
    "abstract": "In this talk to be presented within Corpus and Experimental Approaches to South Slavic Languages panel, we address the following research question: How do clitic (CL) placement, phonological weight of the CL host, and the prosodic boundary between the CL and its phonological host (operationalized in this contribution in terms of pausation) co-vary?* We debate over issues such as whether phonological weight should be operationalized as the number of vowels, the number of phonemes, or as duration measured in milliseconds (cf. Stefanowitsch 2020: 90–91); whether the prosodic boundary – in this study restricted exclusively to the presence or absence of a physical pause – should be operationalized as a numeric variable (pause duration in milliseconds; e.g., Paschen 2025), or should it be re-coded as a categorical, binary variable (pause present vs. absent). We also discuss the repercussions of each decision for the subsequent choice of statistical tests.\n\nThe data for the talk (360 data points from three experimental lists with systematically manipulated CL placement; 30 L1 speakers) are drawn from a production study on the prosodic realization of auxiliary CLs je ‘is’ and su ‘are’ in Croatian. All experimental items were extracted from the Riznica language corpus (Brozović Rončević et al. 2018), minimally adapted to control experimental conditions, and presented to participants as embedded in short contextual prompts within news excerpts.\n\nBy questioning the repercussions of variation in Croatian CL placement (Kolaković & Kristensen 2024; Vuković & Sajko 2024) for their typological classification as promiscuous Wackernagel CLs (cf. Wackernagel 1892 [2020]; Katičić 1986; Zwicky 1994; Peti-Stantić 2007), the talk highlights how prosodic experimental production data can be analyzed using multivariate techniques.\n\n* Boundaries can be signaled by a range of other means, e.g., pauses, boundary-related vowel lengthening, pitch reset, tonal scaling, rhythm, or combinations thereof.",
    "affiliations": [
-    null,
-    null,
+    "Universität Klagenfurt, Österreich",
+    "Department of Phonetics, Faculty of Humanities and Social Sciences, University of Zagreb",
     "Institute of Slavonic Studies, Faculty of Humanities, University of Hamburg"
    ]
   },
@@ -2729,20 +2732,20 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|11:30|ct38",
    "speakers": [
-    "Krasovitsky Alexander 1",
-    "Baerman Matthew 2",
-    "Corbett Greville 2",
-    "Kyuseva Masha 2",
+    "Krasovitsky Alexander",
+    "Baerman Matthew",
+    "Corbett Greville",
+    "Kyuseva Masha",
     "Makartsev Maxim"
    ],
    "title": "Loss of tense in South Slavic: A dialectometrical corpus-based approach",
    "type": "talk",
    "abstract": "The synchronic distribution of past tense systems in the transitional zone between Balkan Slavic and West South Slavic is the outcome of several diachronic processes. Their complexity presents an analytical challenge, and we discuss appropriate methods.\n\nWe adopt two axes of analysis: (1) East to West, applied to Western Bulgarian and Štokavian dialects; (2) North-East to South-West, applied to Western Bulgarian, part of the Prizren-Timok, and Macedonian. The first axis will examine the decline and loss of synthetic tenses, the increased use of the perfect as a generalized past, and the loss of its modal uses (see the review of the problems in Friedman and Joseph 2025, 643–46). The second axis will inspect the structural simplification and semantic bleaching of temporal semantics by perfect I (be-auxiliary and l -participle) and the increased use of perfect II (have-auxiliary and petrified - n -/‑ t ‑participle) and perfect III (be-auxiliary and inflected - n -/‑ t ‑participle); see the overview in (Friedman 1988).\n\nWe discuss our approach based on a pilot dataset of tagged and parsed examples from the selected pool (about 400,000 tokens) of published dialectal transcripts. The analysis will be based on the juxtaposition of morphological forms and semantic content, an adaptation of the Reichenbach/Comrie framework (Reichenbach 1947; Comrie 1985).\n\nThe following statistical methods will be applied: cluster analysis to group together dialects that manifest similar patterns in the formal marking and use of past tenses; multiple linear regression to estimate the significance of geographical direction in the distribution of our data; and multinomial logistic regression to interpret the estimates of relative usage probabilities of different forms. The latter will allow us to assess which forms replace others and how these patterns vary across contexts and regions.\n\nWe particularly invite feedback on the appropriateness of our methodology, but welcome comment on any aspect of the project.",
    "affiliations": [
-    null,
-    null,
-    null,
-    null,
+    "University of Oxford",
+    "University of Surrey",
+    "University of Surrey",
+    "University of Surrey",
     "Carl von Ossietzky Universität Oldenburg, Deutschland"
    ]
   },
@@ -2887,7 +2890,7 @@
    "affiliations": null
   },
   {
-   "id": "2026-10-01-14:00-HS8-14:00",
+   "id": "2026-10-01-14:00-HS8-14:00-2",
    "day": "2026-10-01",
    "start": "14:00",
    "end": "14:30",
@@ -2967,16 +2970,16 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|14:00|ct39",
    "speakers": [
-    "Maxim Makartsev 1",
-    "Björn Wiemer 2",
+    "Maxim Makartsev",
+    "Björn Wiemer",
     "Đorđe Genović"
    ],
    "title": "Mikro-Variation der Futurmarkierung in štokavischen territorialen Dialekten",
    "type": "talk",
    "abstract": "Das volitive Futur südslavischer Sprachen ist ein Standardbeispiel zur Grammatikalisierung. Jedoch ist die erstaunlich vielfältige Mikro-Variation dieses Futurtyps schlecht erfaßt. Im štokavischen Raum gibt es mindestens sieben Varianten (Makartsev 2023; Mirić 2018; Wiemer, forthcoming):\n\n1. X =WANTprs + inf\n\nSutra= ć-u napisa-t(i) pism-o .\n\ntomorrow= fut-1sg write[pfv]-inf letter-acc.sg\n\n2. inf(full) =WANTprs\n\nNapisa-ti= ć-u pism-o .\n\nwrite[pfv]-inf= fut-1sg letter-acc.sg\n\n3. inf(trunc) =WANTprs\n\nNapisa-t= ć-u pism-o .\n\nwrite[pfv]-inf= fut-1sg letter-acc.sg\n\n4. Vstem =WANTprs\n\nNapisa= ć-u pism-o .\n\nwrite[pfv]= fut-1sg letter-acc.sg\n\n\n\n5. X =WANTprs agr + irr= Vfin prs.agr\n\nSutra= ć-u da= napiš-em pism-o .\n\ntomorrow= fut-1sg irr write[pfv]-prs.1sg letter-acc.sg\n\n\n\n6. WANTprs agr + Vfin prs.agr\n\nĆ-u n apiš-em pism-o .\n\nfut-1sg write[pfv]-prs.1sg letter-acc.sg\n\n\n\n7. WANTuninfl + Vfin prs.agr\n\nĆe napiš-em pism-o .\n\nfut.u ninfl write[pfv]-prs.1sg letter-acc.sg\n\n‘Tomorrow I will write a letter.’\n\nUnser Vortrag stellt diese Varianten in Relation zur diachronen Entwicklung und fragt nach ihrer tatsächlichen diatopischen Differenzierung.\n\nWir konzentrieren uns auf mehrere strukturelle Parameter: den Grad der Morphologisierung der devolitiven Kopula (Vollverb – klitisiertes Auxiliar, flektiert oder unflektiert – Endung), die Form des lexikalischen Verbs (finit, Vollinfinitiv, gekürzter Infinitiv, bloßer Stamm), das Vorhandensein/Fehlen von da sowie weitere (morpho)syntaktische Restriktionen. Die Variation der Futurformen entlang dieser Parameter untersuchen wir mithilfe quantitativer und geolinguistischer Methoden.\n\nUnsere Daten stammen aus einer Konkordanz, die auf in den letzten 20 Jahren veröffentlichten Transkripten štokavischer Dialekte basiert (ca. 250.000 Token) und eine Stichprobe der štokavischen Dialekte in Bosnien und Herzegowina, Kosovo, Montenegro und Serbien darstellt (vgl. Karte).",
    "affiliations": [
-    null,
-    null,
+    "Carl von Ossietzky Universität Oldenburg, Deutschland",
+    "Johannes Gutenberg-Universität Mainz",
     "Belgrad, Serbien"
    ]
   },
@@ -3043,15 +3046,13 @@
    "track": "LKW",
    "panel_id": "2026-10-01|14:00|ct43",
    "speakers": [
-    "Alfred Gall 1",
-    "2"
+    "Alfred Gall"
    ],
    "title": "Kritik an Wertfreiheit: Kritische Theorie und die jugoslawische Praxis-Gruppe",
    "type": "talk",
    "abstract": "Der Begriff „Wertfreiheit“ geht auf Max Weber zurück, der für die wissenschaftliche Erkenntnis postulierte, sie solle unabhängig von normativem Gehalt sein. Die Wahrheit der Erkenntnis soll ausschließlich empirisch fundiert sein und deskriptiv dargeboten werden. Das wissenschaftlich untersuchte Sein wird so strikt vom Sollen getrennt. Weber begründet mit der Wertfreiheit die Autonomie und Objektivität der Wissenschaft und will diese so von politischen oder anderen normativen Vorgaben freihalten. Dieser Ansatz stieß von Anfang an auf Kritik. Im Beitrag zum Panel der DGO werden zwei prägnante Beispiele dieser Kritik vorgestellt: Zum einen die Kritische Theorie, zum anderen die jugoslawische Praxis-Gruppe, die sich ihrerseits auf die Kritische Theorie bezieht. Beide Kritiken sind bis heute relevant.\n\nFür die Kritische Theorie hat u. a. Herbert Marcuse Webers Konzept der Wertfreiheit entgegengehalten, „die Wissenschaft frei zu machen für die Akzeptierung von verbindlichen Wertsetzungen, die von außen der Wissenschaft aufgetragen werden“ (Marcuse 1965: 108). Die jugoslawische Praxis-Gruppe, eine Vereinigung unorthodoxer und gegen bürokratischen Parteidogmatismus opponierender Intellektueller v. a. in den 1960er und 1970er Jahren, hat sich ebenfalls dezidiert gegen eine von Normativität abgekoppelte wissenschaftliche Rationalität gestellt und dem Begriff Praxis eine zentrale Bedeutung für eine ihrer gesellschaftlichen Funktion bewussten Wissenschaft zugewiesen (s. z. B. Gajo Petrović).\n\nDer Beitrag ist Teil des DGO-Panels Zum Habitus von Intellektuellen im 21. Jahrhundert: Slavistische Perspektiven und geht der Frage nach, wie aus der Kritik von Wertfreiheit Perspektiven für eine auch in der Wissenschaft gültige kritische Intelligenz gewonnen werden können. Zudem wird eine aus slavistischer Sicht fruchtbare Konstellation von Kritischer Theorie und Praxis-Schule aufgearbeitet.",
    "affiliations": [
-    "Fachgruppe Literatur- und Kulturwissenschaft",
-    "Fachgruppe Literatur- und Kulturwissenschaft"
+    "Johannes Gutenberg-Universität Mainz, Deutschland · Deutsche Gesellschaft für Osteuropakunde (DGO) e. V."
    ]
   },
   {
@@ -3153,16 +3154,16 @@
    "track": "SW+DID",
    "panel_id": "2026-10-01|14:00|ct39",
    "speakers": [
-    "Olivier Winistörfer 1",
-    "Anastasia Escher 2",
+    "Olivier Winistörfer",
+    "Anastasia Escher",
     "Ana Golaboska"
    ],
    "title": "Differential Place Marking in Macedonian - why empirical and corpus-linguistic approaches matter in Macedonian dialectology",
    "type": "talk",
    "abstract": "Phenomena of Differential Place Marking (Haspelmath 2019), also referred to as zero-marking of spatial reference (Stolz et al. 2014), have already been attested in several Macedonian varieties. Labroska (2008: 291) and Vidoeski (1999: 25) observed constructions marking Location and Direction without any preposition (example 1) in different Macedonian varieties (predominantly in the South West):\n\n(1) né-si-bil túka, Skópje si-bíl NEG=be.3SG.PRS.AUX=be.PTCP.M.SG here Skopje(N).SG be.3SG.PRS.AUX=be.PTCP.M.SG ‘You were not there, you were in Skopje.’ (Macedonian, Kičevo, Labroska 2008: 291)\n\nThe existence of such phenomena in Albanian, Aromanian, Greek, and Macedonian (Sandfeld 1930: 110-111) has led Vidoeski (1999: 20) to consider such patterns a ‘new Balkanism’. However, to date, there has been no exhaustive dialectological study of the quantitative and diatopic distribution of Differential Marking Patterns in the Macedonian varieties. To address this research gap, we combine qualitative and quantitative methods. Our data (comprising over 500 occurrences in total) are based on linguistic transcripts from multiple sources and diatopic varieties (which are also to be part of a linguistic corpus of Macedonian). The quantitative and qualitative analyses indicate that such patterns are attested across varieties, but that their distribution is far from uniform. We observe both considerable inter-diatopic and intra-diatopic variation. Nonetheless, these patterns do not appear to be random. Rather, they follow general typological tendencies, being, for example, more frequent with toponyms than with common nouns. Like this, the study not only sheds new light on the patterns of Differential Place Marking in Macedonian, but can also constitutes a crucial first step toward the construction of a state-of-the-art linguistic corpus for the Macedonian varieties.",
    "affiliations": [
-    null,
-    null,
+    "University of Zurich, Switzerland",
+    "ETH Zurich, Switzerland",
     "Ss. Cyril and Methodius University in Skopje (UKIM)"
    ]
   },
@@ -3175,14 +3176,14 @@
    "track": "LKW",
    "panel_id": "2026-10-01|14:00|ct85",
    "speakers": [
-    "Svetlana Sokolova 1",
+    "Svetlana Sokolova",
     "Anastasia Makarova"
    ],
    "title": "Pragmatik durch Konstruktionen lehren: Diskursfunktionen russischer Indefinitpronomen",
    "type": "talk",
    "abstract": "Eine der größten Herausforderungen für fortgeschrittene Sprachlernende ist die Beherrschung pragmatischer Diskursmuster. Der pragmatische Aspekt des Diskurses ist entscheidend für muttersprachliche Flüssigkeit und sollte daher systematisch im Unterricht berücksichtigt werden.\n\nDer Vortrag untersucht die modifizierenden Funktionen russischer Indefinitpronomen, die ein komplexes System von Diskursfunktionen bilden. Diskursfunktionen entstehen, wenn die primäre Referenzfunktion in den Hintergrund tritt. Diese Verwendungen werden in Lehrwerken kaum behandelt (z.B. Basko 2010a,b) und bleiben meist außerhalb des Russian Constructicon (Endresen & Janda 2020). Wir zeigen, dass sie sich im Rahmen der Konstruktionsgrammatik (Goldberg 2006) systematisch erfassen lassen. Russische Indefinitpronomen weisen im Diskurs eine nicht triviale Semantik auf (Švedova 1998). Je nach Kontext können sie als Slot oder als Anker fungieren.\n\nUnsere Daten stammen aus dem mündlichen Teilkorpus des Russischen Nationalkorpus (2000-heute). In ihrer grundlegenden referenziellen Funktion füllen Pronomen den Slot einer DP-Konstruktion, z.B.:\n\n(1) Možet u vas est’ kakie-to voprosy k Kirillu? ‘Vielleicht haben Sie einige Fragen an Kirill?’\n\nDarüber hinaus gibt es pragmatische Erweiterungen, in denen kakoj-to als Anker dient. In evaluativen Konstruktionen [NP[abstraktes Nomen] kakoj-to ] verweist kakoj-to nicht auf ein Element einer Menge, sondern auf einen hohen Grad einer negative Eigenschaft:\n\n(2) Potomu čto eto košmar kakoj-to ‘Denn das ist purer Albtraum’\n\nEine weitere Erweiterung ist das Hedging, etwa in kakoj-to AdjP:\n\n(3) … čtoby počuvstvovat’ sebia v kakoj-to privyčnoj obstanovke …\n\nHier schwächt kakoj-to eine Verallgemeinerung ab.\n\nSolche Erweiterungen machen rund 40 % der Belege im mündlichen Korpus aus.\n\nZiel ist es, diese Verwendungen als Netzwerk zusammenhängender Konstruktionen darzustellen, um bei Lernenden das Erkennen und die Produktion pragmatischer Diskursmuster zu fördern.",
    "affiliations": [
-    null,
+    "UiT Norges arktiske universitet, Norwegen",
     "Uppsala Universitet, Schweden"
    ]
   },
@@ -3555,14 +3556,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|09:00|ct88",
    "speakers": [
-    "Uwe Junghanns 1",
+    "Uwe Junghanns",
     "Ljudmila Geist"
    ],
    "title": "Klärung von Besitzverhältnissen: Komplexe Possessoren",
    "type": "talk",
    "abstract": "Der Vortrag behandelt Ausdrücke mit komplexen Possessoren (KPn), vgl. (1), (2). KPn treten in älteren Sprachstufen und in einigen modernen Slavinen auf. Vorgängige Arbeiten übersahen Daten (Sprachen und Typen); die vorgeschlagenen Analysen können nicht überzeugen.\n\nKPn bestehen minimal aus einem Element α and einem Possessivadjektiv (PA). Sie kommen in zwei Typen vor: Typ A mit α Î M1, M1 = {Verwandtschaftsbezeichung; Titel; …} – (1), Typ B mit α Î M2, M2 = {Qualitätsadj.; Possessivpron.} – (2a, b). Russ. und Tschech. haben nur Typ A, Obersorb. und Slovak. beide Typen. Die Ausdrücke zeigen verwickelte Kongruenzbeziehungen: (i) α reflektiert das natürliche Geschlecht des Referenten des nominalen Stamms des PA. (ii) Phi-Merkmale und Kasus des PA sind vom Possessum bestimmt.\n\nDesiderata: Vervollständigung und Systematisierung der Daten, Erklärung der Funktionen der possessivadjektivbildenden Suffixe - in -/- ov - und Entwicklung einer morphosyntaktisch und semantisch adäquaten Analyse.\n\nFolgende Punkte werden adressiert: (i) Disparate morphologische Markierung: α mit Genitiv, Possessivmarker am nominalen Stamm. (ii) Doppelrolle des PA – Kontrolle der Genusspezifierung von α und Kongruenz mit dem Possessum. (iii) Prä- vs. Post-Possessum-Position des KP.\n\nTheoretischer Rahmen: Distributed Morphology . Wir analysieren KPn als einen Typ von Construct State – eine Konstituente mit der internen Struktur einer Phrase, nach außen aber mit Wort-Status. Dies bietet die Grundlage für die Erklärung der (i) internen Flexion (α mit Genitiv) und (ii) Formierung des PA (- in -/- ov -Suffigierung, gefolgt von einer Kongruenz anzeigenden Endung). Die zweite Oberflächenposition des Possessums wird über Bewegung hergeleitet.\n\n(1) tëti Ninino pis’mo (Russisch)\n\nTante.f.sg.gen Nina.poss.n.sg.nom Brief.n.sg.nom\n\n(2) a. bohateho młynkowa dźowka (Obersorbisch)\n\nreich.m.sg.gen Müller.poss.f.sg.nom Tochter.f.sg.nom\n\nb. nášho susedova záhrada (Slovakisch)\n\nunser.m.sg.gen Nachbar.poss.f.sg.nom Garten.f.sg.nom",
    "affiliations": [
-    null,
+    "Georg-August-Universität Göttingen, Deutschland",
     "Universität Stuttgart"
    ]
   },
@@ -3611,14 +3612,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|09:00|ct67",
    "speakers": [
-    "Barbara Sonnenhauser 1",
+    "Barbara Sonnenhauser",
     "Paul Widmer"
    ],
    "title": "Altostslavische Dichtung im Kontext",
    "type": "talk",
    "abstract": "Für das Erfassen poetischer Sprache sind linguistische Kategorien oft ungeeignet, und Strukturen wie Füsse, Zeilen, etc., Stilmittel wie Parallelismen etc., sowie Annahmen zu ihrer Dynamik sind empirisch nur schwer verifizierbar. Dies betrifft v.a. Eigenschaften, die keiner strikten Regelmässigkeit folgen (z.B. Hebungen), deren Fehlen aber die Validität beeinträchtigt (z.B. Kenninge in altnordischer Dichtung). Die Herausforderungen einer datengetriebenen Analyse poetischer Regelmässigkeiten werden hier an lautbasierten Mustern im Igorlied diskutiert. Allgemein werden Alliterationen und Binnenreime als Merkmale gesehen, die dieses Werk von Prosa und anderen Formen altostslavischer Heldenepik (Bylinen) unterscheiden. Zurückgeführt werden sie auf skandinavischen Einfluss, v.a. die hending (Binnenreime) des altnordischen Dróttkvætt [1, 2, 3]. Als Evidenz werden prominente Einzelbeispiele und vielfältige Möglichkeiten paralleler Vorkommen von Lauten und Lautkombinationen genannt. Die poetische Spezifik jenseits der generellen Charakteristik des Altostslavischen bleibt jedoch unklar, da eine Quantifikation des Phänomens in Bezug auf positionelle Beschränkungen, Umfang und Regelhaftigkeit, auch in vergleichender Perspektive, ausbleibt. Damit ist auch die Frage von kulturellem Transfer aus dem Skandinavischen nicht zu klären. Eine systematische Überprüfung anhand von Bylinen und Prosatexten zeigt, dass die angenommene Ähnlichkeit mit der nordgermanischen Tradition nicht spezifisch für das Igorlied ist. Bezüglich seiner strukturellen Abhängigkeiten vom Nordgermanischen kann es damit nicht losgelöst von anderen altostslavischen Genres betrachtet werden; eine differenzierte Beurteilung von Geschichte und Form altostslavischer Dichtung wird notwendig. Dies ist mit einem Beschreibungsrahmen möglich, der–analog zu Datenbanken wie Grambank [4] oder Global Jukebox [5]–eine sprach- und kulturvergleichende Perspektive erlaubt und dessen Grundzüge in diesem Beitrag vorgestellt werden.",
    "affiliations": [
-    null,
+    "LMU München, Deutschland",
     "Universität Zürich, Schweiz"
    ]
   },
@@ -3865,16 +3866,16 @@
    "track": "LKW",
    "panel_id": "2026-10-02|09:00|ct88",
    "speakers": [
-    "Kirill Kozhanov 1",
-    "Ilja Seržant 1",
+    "Kirill Kozhanov",
+    "Ilja Seržant",
     "Eleni Bužarovska"
    ],
    "title": "Evolution of differential object marking in Macedonian dialects",
    "type": "talk",
    "abstract": "By the late Middle Ages, a part of South Slavic, including Macedonian and Bulgarian, had lost nominal case inflection, leading to the disappearance of the old Slavic differential object marking (DOM) system. In the 19th century, some southern Macedonian dialects developed a new DOM system based on the preposition na ‘on, to’. Compare (2), where the direct object is marked with na , to (1), where such prepositional marking is not possible.\n\n(1) Macedonian, standard (constructed)\n\nGo vid-ov čovek-ot na ulic a\n\n3sg.m.acc.cl meet-aor.1sg man-def.m.sg on street\n\n‘I saw the man on the street.’\n\n(2) Southern Macedonian, dialectal (Ugrinovski 1962: 221)\n\nNa drugo-to den gu vik-a tatko-to na Petko .\n\non next-def.sg.m day 3sg.m.acc.cl call-prs.3sg father-def.sg.m dof Petko\n\n‘The next day the father calls Petko.’\n\nOur paper explores the evolution of this DOM system by comparing Southern Macedonian texts from two periods — the mid-19th century (a collection of folk tales gathered by Stefan Verkoviḱ in 1863 in northern Greece and published by Penušliski [1985]) and mid-20th century (a collection of tales recorded in Skopje from the Macedonian speakers who migrated from northern Greece during the Greek civil war; Ugrinovski [1962]). The main factors conditioning DOM include animacy (humanness), definiteness, and the lexical class of the verb. We observe a general increase in the na -marking and a shift from optionality toward automatization. In early texts, the na -marking sporadically occurs with pronouns and definite human-referring nouns. In later texts, pronouns and human proper names are almost always marked, whereas marking of definite human-referring common nouns remains optional, albeit with increasing frequency over time. We also report negative evidence for other factors frequently mentioned in typological works on DOM, such as the disambiguating function of case within the global discourse context.",
    "affiliations": [
-    null,
-    null,
+    "Universität Potsdam, Deutschland",
+    "Universität Potsdam, Deutschland",
     "Ss. Cyril and Methodius University, Nordmazedonien"
    ]
   },
@@ -4049,14 +4050,14 @@
    "track": "SW+DID",
    "panel_id": "2026-10-02|09:00|ct55",
    "speakers": [
-    "Elena Tchernega Meinert 1",
+    "Elena Tchernega Meinert",
     "Anna Wolfauer"
    ],
    "title": "COIL als Ressource im hochschulischen Russischunterricht (eine Fallstudie)",
    "type": "talk",
    "abstract": "Der Russischunterricht (RU) an der Hochschule ist – wie der schulische Kontext (vgl. Mehlhorn, Rutzen, 2020) – durch Heterogenität gekennzeichnet: am RU nehmen sowohl Fremdsprachenlernende als auch Herkunftssprecher:innen (Polinsky, 2018) teil, deren Sprachbiografien und Kompetenzprofile erheblich variieren.\n\nDer Beitrag geht der Frage nach, wie das Collaborative Online International Learning (COIL) im RU genutzt werden kann, um die Heterogenität der Lernenden als Ressource produktiv einzubeziehen. COIL basiert auf Prinzipien des Virtual Exchange und ermöglicht eine curricular verankerte Zusammenarbeit mit definierten Lernzielen und Prüfungsrelevanz (Rubin, 2022). Zugleich wird erörtert, wie COIL als didaktisches Format zur gesteuerten Internationalisierung des RU beitragen kann.\n\nVorgestellt wird eine Fallstudie zu einem COIL-Projekt im Rahmen der Russischkurse an der Frankfurt University of Applied Sciences und der Fachhochschule des BFI Wien (insgesamt 19 Studierende, davon 15 Herkunftssprecher:innen). Das didaktische Design orientiert sich an Prinzipien der Binnendifferenzierung und des aufgabenorientierten Lernens. Offene Aufgabenformate mit differenzierter Komplexität erlauben es, unterschiedliche Kompetenzprofile gezielt in kooperative Lernprozesse einzubinden (Burvikova, Zheltouchova, 2025).\n\nAuf Grundlage der Fallstudie werden didaktische Empfehlungen entwickelt, die auf weitere Herkunfts- und Fremdsprachen übertragbar sind.",
    "affiliations": [
-    null,
+    "Frankfurt University of Applied Sciences, Deutschland",
     "Fachhochschule des BFI Wien, Österreich"
    ]
   },
@@ -4179,14 +4180,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|09:00|ct88",
    "speakers": [
-    "Edyta Jurkiewicz-Rohrbacher 1",
+    "Edyta Jurkiewicz-Rohrbacher",
     "Jerzy Gaszewski"
    ],
    "title": "Wie viele Fazilitive hat das Polnische?",
    "type": "talk",
    "abstract": "Fazilitive stellen menschliches Handeln oder zumindest Willensentscheidungen als notwendige, aber nicht ausreichende Bedingung für die Verwirklichung von (...) Ereignissen dar (Holvoet & Daugavet 2020:295). Das zentrale strukturelle Element in Fazilitiven ist das overte evaluative Adverb. Polnische Fazilitive werden mit dem Marker się gekennzeichnet. Unsere Korpusdaten (aus Przepiórkowski et al. 2012, Jakubíček et al. 2013) zeigen zwei Hauptmuster, vgl. (1-2).\n\n(1) Zbiornik napełniał się łatwo i szybko.\n\n(2) Skakało mi się rewelacyjnie.\n\n(1) kann als „kanonisches Fazlitiv“ bezeichnet werden. Das patientive Argument ist das Subjekt mit Nominativmarkierung, das mit dem Verb kongruiert. Es beschränkt sich auf transitive Verben. Das Subjekt der entsprechenden transitiven Konstruktion kann theoretisch als Dativ-Phrase eingeführt werden (vgl. Holvoet & Linde-Usiekniewicz 2015). Unser Datensatz beinhaltet solche Beispiele nicht, was darauf hindeutet, dass diese Variante selten ist.\n\n(2) hat immer ein nicht kongruierendes 3SG.N-Verb, daher bezeichnen wir es als „unpersönlich-fazilitiv”. Das patientive Argument behält die Akkusativmarkierung bei, aber die Struktur tritt auch bei intransitiven Verben auf, vgl. (2). Korpusbeispiele für unpersönliche Fazilitive enthalten regelmäßig dativmarkierte agentive Argumente – in deutlichem Gegensatz zum kanonischen Fazilitiv.\n\nWährend Holvoet & Linde-Usekniewicz (2015: 114) vermuten, dass das unpersönliche Fazilitiv das kanonische Fazilitiv allmählich ersetzt, zeigen unsere Daten eine klare Arbeitsteilung zwischen den beiden Varianten. Das kanonische Fazilitiv scheint den Dativ zu vermeiden, während das unpersönliche Fazilitiv eine gegenteilige Tendenz aufweist. Wir schließen daraus, dass die dativmarkierten Phrasen in diesen zwei Fazilitivtypen unterschiedliche strukturelle Status haben und tragen somit zur Diskussion über den Platz der unpersönlichen Fazilitiven in der Typologie unpersönlicher Konstruktionen im Polnischen (Brajerski 1979) bei.",
    "affiliations": [
-    null,
+    "Universität Hamburg, Deutschland",
     "University of Lodz"
    ]
   },
@@ -4561,14 +4562,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|11:30|ct11",
    "speakers": [
-    "Eva Kowollik 1",
+    "Eva Kowollik",
     "Tijana Matijević"
    ],
    "title": "Dulce et utile? Die postjugoslawische (feministische) Jugendliteratur zwischen Ästhetik und Pragmatik",
    "type": "talk",
    "abstract": "Ziel des Beitrags ist eine Reflexion des Verhältnisses von ästhetischen und pragmatischen Paradigmen in der postjugoslawischen Jugendliteratur am Beispiel von Texten aus Bosnien und Herzegowina und Serbien, in denen feministische Themen diskutiert werden.\n\nZunächst soll die Position des Feminismus im Wertekanon von Serbien sowie Bosnien und Herzegowina seit den jugoslawischen Zerfallskriegen und damit einhergehend der Position feministischer Jugendliteratur im aktuellen (sub)kulturellen Feld herausgearbeitet werden. Hierbei wird der theoretisch inzwischen breit elaborierte Begriff der postjugoslawischen Literatur, der in Abgrenzung von der nationalliterarischen Norm und in Reflexion des jugoslawischen Erbes einschließlich dessen feministischer Dimension (vgl. Matijević 2020) zu verstehen ist, auf den Bereich der postjugoslawischen Kinder- und Jugendliteratur angewendet.\n\nAuf dieser theoretischen Basis sollen Texte von Dragana Mladenović, Aleksandra Jovanović und Lamija Begagić untersucht werden, Autorinnen also, die sowohl für junge Leser*innen als auch für Erwachsene schreiben und deren Texte im oben skizzierten postjugoslawischen literarischen Feld zu verorten sind. Die Analyse der literarischen Strategien der Autorinnen in ihren jugendliterarischen Texten im Spannungsfeld von Ästhetik und Pragmatik verspricht Einsichten in explizite und implizite Mechanismen der Vermittlung feministischer Werte, die in den patriarchal strukturierten Gesellschaften Serbiens sowie von Bosnien und Herzegowina nicht zum Kanon politischer Bildung gehören.\n\nDer Beitrag ist Teil des Panels „Kinderliteratur – Bildung – Politik. Wie Kinderbücher Zukunft mitgestalten“",
    "affiliations": [
-    null,
+    "Martin-Luther-Universität Halle-Wittenberg, Deutschland",
     "Institute for Philosophy and Social Theory, Beograd, Serbien"
    ]
   },
@@ -4887,14 +4888,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|11:30|ct11",
    "speakers": [
-    "Tamara Bučková 1",
+    "Tamara Bučková",
     "Aneta Bučková"
    ],
    "title": "Petr Sís: „Nicky und Vera“",
    "type": "talk",
    "abstract": "Das Bilderbuch Nicky & Vera ( Nicky und Věra , 2021) von Petr Sís ist ein eindrucksvolles Beispiel dafür, wie Kinderliteratur das kulturelle Gedächtnis mitgestalten und gesellschaftliche wie politische Wahrnehmungen beeinflussen kann. Im Zentrum steht die Geschichte von Exil und Heimatverlust im Kontext des Zweiten Weltkriegs – erzählt anhand zweier realer Figuren: Sir Nicholas Winton und der kleinen Věra aus der Tschechoslowakei, die durch einen von Winton organisierten Kindertransport nach London gelangt. Die Lebenserfahrung bearbeitete sie später in dem autobiographischen Buch Pearls of Childhood . Das besprochene Werk verknüpft zwei Lebensgeschichten – die von Věra, die ihre Heimat verlassen muss und in England ein neues Leben beginnt, und die von Winton, dessen Handeln das Schicksal vieler Kinder beeinflusste und sie rettete. Beide Erzählstränge schlagen eine Brücke von der Vergangenheit in die Gegenwart und bringen einen bedeutenden, fein gestalteten Hoffnungsfunken – eine Botschaft, die auch heutigen Kindern Kraft geben kann, die ein neues Zuhause in einem fremden Land suchen. Denn das Thema Exil ist nach wie vor hochaktuell. Im Fokus steht der Stil des Autors, beziehungsweise die Verbindung von verbaler und visueller Ebene, auf einer sachliche und auf der Seite das emotionengeladene Erzähweise, die eine außergewöhnliche künstlerische und pädagogische Wirkung entfaltet und das kritische Denken der muttersprachlichen sowie fremdsprachigen Leserinnen und Leser fördert. Ein besonderes Augenmerk gilt auch den interkulturellen Rezeptionsaspekten dieses vielschichtig adressierten Werks, die im Rahmen verschiedener Workshops mit den angehenden LehrerInnen und BibliothekarInnen aus den Jahren 2022–2025 untersucht wurden.",
    "affiliations": [
-    null,
+    "Karlsuniversität Prag, Tschechien",
     "Friedrich-Schiller-Universität Jena, Deutschland"
    ]
   },
@@ -5069,14 +5070,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|11:30|ct92",
    "speakers": [
-    "Arkady Kruglov 1",
+    "Arkady Kruglov",
     "Nikolay Hakimov"
    ],
    "title": "Distributiver Numerus im Russischen: Zwischen der Syntax und dem Lexikon",
    "type": "talk",
    "abstract": "Bei distributivem Gebrauch des Singulars bei Nomen wird das bezeichnete Objekt als mehreren Individuen jeweils einzeln zukommend interpretiert. Obwohl dieser Gebrauch auch dem Russischen eigen ist (Švedova 1980: 472), weist Pete (1981: 60) darauf hin, dass Objekte der Distribution im Russischen gewöhnlich im Plural verwendet werden. Da die Regelmäßigkeiten bei der Wahl zwischen Plural und Singular bei distributiv verwendeten Nomen bislang nicht systematisch beschrieben worden ist, bildet diese Variation den Gegenstand dieses Beitrags.\n\nDie Auswahl der Lexeme erfolgte anhand der vergleichenden Studie von Rudnicka und Klégr (2024) und wurde erweitert. Für einen systematischen Vergleich wurden die syntaktischen Strukturen auf die Adverbialpartizipialkonstruktion reduziert, z. B.:\n\n(1) Волки стояли рядом […] и, подняв головы, выли на луну […].\n\n(2) С оленей сбрасывают лямки, и они убегают […], грациозно подняв голову.\n\nDas Material für die Analyse lieferte das Russische Nationalkorpus.\n\nDie Ergebnisse bestätigen einige der für andere Sprachen beschriebenen Tendenzen: Der distributive Singular geht mit Verallgemeinerungen sowie mit der Verwendung von Lexemen in übertragener Bedeutung einher. Spezifisch für das Russische ist zudem, dass die an phraseologischen Einheiten beteiligten Lexeme – etwa голову in пряча голову в песок – dazu neigen, mit einem festen Numeruswert gebraucht zu werden, meist im Singular.\n\nEine multivariate Analyse zeigt deutlich eine Korrelation zwischen Numeruswert und Bedeutung: Während Lexeme in Phrasen mit kompositioneller Bedeutung häufig im Plural stehen, werden dieselben Lexeme in Phrasen mit übertragener oder nichtkompositioneller Bedeutung eher im Singular verwendet. Dieser Numeruswert ist zudem mit Generalisierungen, Vergleichen sowie mit Negation assoziiert. Schließlich belegen historische Korpusdaten die Dynamik im Numerusgebrauch: Während bei einigen Lexemen die Variation allmählich reduziert wird, besteht bei anderen über lange Zeit freie Variation.",
    "affiliations": [
-    null,
+    "Otto-Friedrich-Universität Bamberg, Master Studium Slavistik",
     "Otto-Friedrich-Universität Bamberg"
    ]
   },
@@ -5377,14 +5378,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|11:30|ct65",
    "speakers": [
-    "Michael Kuhn 1",
+    "Michael Kuhn",
     "Maria Larina"
    ],
    "title": "Poetik der Autofiktion-Trilogie von Oksana Vasjakina „Die Wunde“, „Die Steppe“ und „Die Rose“: Schlüsselmotive",
    "type": "talk",
    "abstract": "Autofiktionale Prosa ist ein sich aktiv entwickelndes Phänomen der gegenwärtigen russischsprachigen Literatur. In autofiktionalen Texten tritt die objektive Realität in eine komplexe Wechselwirkung mit der künstlerischen Fiktion: Die Dokumentation des autobiographischen Schreibens verbindet sich mit der Bildhaftigkeit der Belletristik. Dies erlaubt es Autor:innen, zutiefst persönliche, der Form des Bekenntnisses nahestehende Werke zu schaffen und neue Wege zur Deutung subjektiver Erfahrung anzubieten.\n\nDie Trilogie von Oksana Vasjakina ist eines der bedeutendsten Beispiele russischsprachiger Autofiktion in der ersten Hälfte der 2020er Jahre. Die Romane „Die Wunde“ («Рана», 2021), „Die Steppe“ («Степь», 2022) und „Die Rose“ («Роза», 2023) sind der Erforschung der persönlichen Geschichte der Autorin, der Beziehung zu den Eltern, Trauma, Körperlichkeit, Sexualität und – weiter gefasst – (Selbst-)Identität gewidmet. Vasjakinas Werke fügen sich zu einem charakteristischen vielschichtigen Narrativ, das nicht nur ihre eigene Autorenpoetik, sondern auch die Spezifik der zeitgenössischen russischsprachigen Autofiktion im Ganzen widerspiegelt.\n\nZiel dieses Vortrags ist es, die Besonderheiten der Poetik von Vasjakinas Trilogie aufzuzeigen sowie ihre Schlüsselmotive zu identifizieren und zu analysieren. Die Methodologie der Untersuchung stützt sich auf Motivanalyse, narratologische Analyse und Elemente der biographischen Methode.\n\nDie Autor:innen des Vortrags gelangen zu dem Schluss, dass Vasjakina das in der russischsprachigen Prosa der 2010er-2020er Jahre etablierte Modell der Autofiktion weiterentwickelt, in dem Trauma, Erinnerung und Identität zur treibenden Kraft der Erzählung werden. Ihrer Meinung nach leistet ihre Trilogie einen wesentlichen Beitrag zur Evolution dieses literarischen Phänomens.",
    "affiliations": [
-    null,
+    "Unabhängiger Forscher",
     "Unabhängige Forscherin"
    ]
   },
@@ -5415,14 +5416,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|11:30|ct14",
    "speakers": [
-    "Aleksandra Salamurovic 1",
+    "Aleksandra Salamurovic",
     "Tanja Gradecak"
    ],
    "title": "Kreative Metonymien in der Protestkommunikation",
    "type": "talk",
    "abstract": "Der Einsturz des Vordachs des Bahnhofs in Novi Sad am 1. November 2024 löste die größte Protestwelle in Serbien der vergangenen 30 Jahre aus. Aufgrund ihrer Dauer (nahezu ein Jahr), der Vielfalt der Protestformen, ihrer Struktur (das Fehlen einer persönlichen Führung) sowie ihrer Folgen (Regierungssturz, Stärkung des autokratischen Regimes und Verschärfung der Medienrestriktionen) können diese Proteste als politische Krise betrachtet werden. In Anlehnung an Krzyżanowski et al. (2023) werden solche Krisen als Perioden tiefgreifender gesellschaftlicher und politischer Transformation definiert.\n\nNachdem die Polizei bei einer der jüngsten Kundgebungen übermäßige Gewalt eingesetzt hatte, entstand in den sozialen Medien eine Metonymie: „Sekuritatea je za ove govnare hor Kolibri“ („Für diese Bastarde ist die Securitate wie der Kolibri-Chor“). Dieser Ausdruck ist nicht nur neuartig und kreativ, sondern auch kulturell und generationell geprägt. Er erzeugt einen Mikrodialog – einen Ideenaustausch innerhalb einer relativ kleinen Gruppe von Beteiligten, die sich der herrschenden Ideologie widersetzen. Dies kann als Merkmal des Protestdiskurses betrachtet werden (O’Dowd 2024).\n\nAusgehend vom Konzept kreativer Metonymien (Barcelona 2003; Brdar 2021; Littlemore 2022) gehen wir folgenden Fragen nach:\n\nDer Vortrag präsentiert eine Analyse der Verwendung solcher Metonymien in der Protestkommunikation auf der Grundlage eines Datensatzes, der auf der Webseite https://protestografija.cloud/ veröffentlicht wurde und Protesttransparente im öffentlichen Raum einschließt.",
    "affiliations": [
-    null,
+    "Universität Regensburg, Deutschland",
     "Universität Osijek, Kroatien"
    ]
   },
@@ -5453,25 +5454,21 @@
    "track": "X",
    "panel_id": "2026-10-02|14:00|ct124",
    "speakers": [
-    "Maria Shvedova 1",
-    "5",
-    "Olha Kanishcheva 2",
-    "3",
+    "Maria Shvedova",
+    "Olha Kanishcheva",
     "Hanna Sytar"
    ],
    "title": "A Decade of Ukrainian Language Infrastructure and Resource Development",
    "type": "talk",
    "abstract": "Over the past decade, the development of Ukrainian language resources has moved beyond basic digitization to the creation of sophisticated annotated infrastructures supporting cutting-edge research in natural language processing.\n\nThis work provides a comprehensive overview of the Ukrainian corpus projects that we have achieved in recent years with the support of German foundations and the University of Jena, the Polish Academy of Sciences, and with the participation of Ukrainian universities and volunteers. GRAC (General Regionally Annotated Corpus of Ukrainian) [1] served as the foundation for numerous specialized initiatives. These include the historical PluG corpus, the parallel corpora ParaRook [5], and parliamentary datasets such as UD_Ukrainian-ParlaMint [3], Rada_Trees, and the ParlMix-UA-RU code-switching dataset [2]. Additionally, the infrastructure includes the Ukrainian PARSEME corpus for multi-word expressions and the extensive PAWUK corpus, collected online [4]. Together, these interconnected projects offer specific research applications in a variety of linguistic fields, from syntactic analysis to the study of bilingualism and language change.\n\nThe CLARIN K-Center UkrNLP-Corpora brings together these efforts by providing a unified platform for high-quality, open-access Ukrainian resources and tools designed for both researchers and developers.",
    "affiliations": [
-    null,
-    null,
-    null,
-    null,
+    "National Technical University \"Kharkiv Polytechnic Institute\" · Friedrich Schiller University Jena",
+    "Heidelberg University · SET University",
     "Slavic Institute of the Czech Academy of Sciences"
    ]
   },
   {
-   "id": "2026-10-02-14:00-FoyerCZS3-14:00",
+   "id": "2026-10-02-14:00-FoyerCZS3-14:00-2",
    "day": "2026-10-02",
    "start": "14:00",
    "end": "15:30",
@@ -5479,19 +5476,19 @@
    "track": "X",
    "panel_id": "2026-10-02|14:00|ct124",
    "speakers": [
-    "Svetlana Ahlborn 1",
+    "Svetlana Ahlborn",
     "Wojciech Sosnowski"
    ],
    "title": "Das Projekt SIPORUS – Slavische Interkomprehension Polnisch-Russisch",
    "type": "talk",
    "abstract": "Ziel des Projekts SIPORUS ist die Entwicklung interaktiver Lehrmaterialien zur slavischen Interkomprehension für Polnisch und Russisch. Der Poster präsentiert sowohl das Konzept der entwickelten Materialien als auch die Ergebnisse aus deren Einsatz im Sprachunterricht sowie in BA-/MA-Seminaren „Spezialprobleme: Slavische Interkomprehension“ im Sommersemester 2026 an der Goethe-Universität Frankfurt am Main und an der Universität Warschau.",
    "affiliations": [
-    null,
+    "Goethe Universität Frankfurt am Main, Deutschland",
     "Universität Warschau"
    ]
   },
   {
-   "id": "2026-10-02-14:00-FoyerCZS3-14:00",
+   "id": "2026-10-02-14:00-FoyerCZS3-14:00-3",
    "day": "2026-10-02",
    "start": "14:00",
    "end": "15:30",
@@ -5499,19 +5496,19 @@
    "track": "X",
    "panel_id": "2026-10-02|14:00|ct124",
    "speakers": [
-    "Ilia Uchitel 1",
+    "Ilia Uchitel",
     "Arseny Lukashevskii"
    ],
    "title": "Exploring language policy and multilingualism patterns in pre-WW2 Soviet Ukraine through digitized press data",
    "type": "talk",
    "abstract": "One way to assess the impact of korenizatsiia —a central Soviet policy promoting, among other goals, the shift to the Ukrainian language—on multilingual practices in Ukraine is to examine multilingual newspapers. In 1924–1925, the press underwent a decisive transition from Russian to Ukrainian. Before 1926, many periodicals published articles in both languages, with proportions varying by region, audience (rural vs. urban), and topic.\n\nThis study focuses on letters from worker correspondents—local activists writing in Russian and Ukrainian. As their locations and workplaces are indicated, these contributions allow us to identify factors influencing the primary language of written communication in specific localities. As a case study, we analyze 314 issues of Krasnoye Znamya , published in the Chernihiv region in 1924–1925, during the shift from bilingual publication to a fully Ukrainian-language format. We automatically extracted more than 6,000 contributions, recording authors’ names, language choice, place of publication, and, where available, occupation (factory, farm, etc.).\n\nFor each of the five districts of the Chernihiv region, we calculated the proportion of Ukrainian-language contributions. Only in districts with an overwhelming Ukrainian-speaking majority according to the 1926 census (i.e., Nizhyn district) did the share of Ukrainian contributions exceed 15%. The contributor’s economic profile also proved significant: articles sent from factories were written almost exclusively in Russian.\n\nWe identified only a small number of contributors who switched from Ukrainian to Russian during the three-month period analyzed. No cases of authors consistently writing in both languages were observed.\n\nThese findings align with contemporary 1920s research on the initial obstacles to Ukrainization, including bibliographic analyses comparing demand for Russian- and Ukrainian-language publications in libraries (Fridyieva 1928; see also Palko 2019).",
    "affiliations": [
-    null,
+    "Friedrich-Schiller Universität, Deutschland",
     "National Technical University \"Kharkiv Polytechnic Institute\", Ukraine"
    ]
   },
   {
-   "id": "2026-10-02-14:00-FoyerCZS3-14:00",
+   "id": "2026-10-02-14:00-FoyerCZS3-14:00-4",
    "day": "2026-10-02",
    "start": "14:00",
    "end": "15:30",
@@ -5529,7 +5526,7 @@
    ]
   },
   {
-   "id": "2026-10-02-14:00-FoyerCZS3-14:00",
+   "id": "2026-10-02-14:00-FoyerCZS3-14:00-5",
    "day": "2026-10-02",
    "start": "14:00",
    "end": "15:30",
@@ -5547,7 +5544,7 @@
    ]
   },
   {
-   "id": "2026-10-02-14:00-FoyerCZS3-14:00",
+   "id": "2026-10-02-14:00-FoyerCZS3-14:00-6",
    "day": "2026-10-02",
    "start": "14:00",
    "end": "15:30",
@@ -5555,17 +5552,19 @@
    "track": "X",
    "panel_id": "2026-10-02|14:00|ct124",
    "speakers": [
-    "Hanna Sytar 1",
-    "Maria Shvedova 2",
-    "3"
+    "Hanna Sytar",
+    "Maria Shvedova"
    ],
    "title": "The German-Ukrainian Component of the Phraseme Construction Repository (PhraConRep)",
    "type": "talk",
    "abstract": "This poster presents the German-Ukrainian component of PhraConRep (COST Action CA22115), a multilingual repository project dedicated to phraseme constructions (PhraCons) in Central and Eastern European languages. PhraCons are idiomatic word combinations consisting of fixed lexical elements (\"anchors\") and variable slots for fillers. They are partly schematic units with an idiomatic general meaning that cannot be derived from the meanings of their individual components (Fillmore 1988; Dobrovol'skij 2011; Sytar 2017; Mellado Blanco 2020; Braxatorisová 2024).\n\nThe poster outlines our methodology for building the German-Ukrainian module within PhraConRep, including criteria for identifying PhraCons, procedures for extracting and aligning construction patterns from the ParaRook and InterCorp parallel corpora, and the classification system adapted for this language pair. We demonstrate how the German-Ukrainian data integrates into the broader PhraConRep repository to establish equivalents across 11 Slavic languages.\n\nTo date, the German-Ukrainian working group has analyzed 100 German PhraCons and identified equivalent and partially equivalent Ukrainian constructions. For example, the PhraCon ganz Nnom has phraseme equivalent Nnom від/з голови до п'ят in Ukrainian. Alternatively, translations may also use non-constructional means, such as the adjectives справжній/ревний : Man mußte Scholsdorff sehen: ganz Gelehrter , Schopenhauer nicht unähnlich. (H. Böll) - Треба було бачити Шольсдорфа: вчений від голови до п'ят , трохи схожий на Шопенгауера and с правжній вчений or ревний вчений .\n\nThis work contributes essential resources for foreign language teaching methodology, translation studies, and lexicographic practice, advancing our understanding of how constructional patterns function across typologically different languages.",
-   "affiliations": null
+   "affiliations": [
+    "Slavic Institute of the Czech Academy of Sciences",
+    "National Technical University \"Kharkiv Polytechnic Institute\", Ukraine · Friedrich Schiller University Jena"
+   ]
   },
   {
-   "id": "2026-10-02-14:00-FoyerCZS3-14:00",
+   "id": "2026-10-02-14:00-FoyerCZS3-14:00-7",
    "day": "2026-10-02",
    "start": "14:00",
    "end": "15:30",
@@ -5583,7 +5582,7 @@
    ]
   },
   {
-   "id": "2026-10-02-14:00-FoyerCZS3-14:00",
+   "id": "2026-10-02-14:00-FoyerCZS3-14:00-8",
    "day": "2026-10-02",
    "start": "14:00",
    "end": "15:30",
@@ -5647,14 +5646,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|14:00|ct89",
    "speakers": [
-    "Björn Wiemer 1",
+    "Björn Wiemer",
     "Marija Svedova"
    ],
    "title": "Das ukrainische jati-Futur: Einzelheiten auf typologischem Hintergrund",
    "type": "talk",
    "abstract": "Ein zum bud -Futur alternatives ipfv. Futur ist im Ukrainischen aufgrund von jati (< * jęti ) ‘nehmen, greifen’ + Infinitiv entstanden. Die Präsensformen von jati ( jmu , jme š etc.) verhielten sich zuerst wie Wackernagel-Enklitika (Bsp. 1), agglutinierten dann aber immer mehr am Infinitiv. Dieser Prozeß soll bereits im frühen 17. Jh. fortgeschritten gewesen sein (Rusanivs’kyj 1959 u.a.). In der heutigen Standardsprache sind diese Formen zu Suffixen geworden, während sich in südwestlichen Varietäten des ruthenischen Raums frühere Stufen deutlich länger gehalten haben (Danylenko 2012).\n\nAuf dem Hintergrund dieser bekannten Tatsachen fällt freilich auf, daß im Standardukrainischen das zum Stamm gehörige sog. reflexive Postfix (- sja ) immer auf das „ jati -Suffix“ folgt, also so als würde sich letzteres zwischen Infinitivsuffix und Postfix schieben, z.B. namaga-ti-m-u-sja .inf- fut-1sg-refl , nicht * namaga-ti-sja-m-u .inf- refl-fut-1sg (‚Ich werde mich bemühen‘). Noch zu Anfang des 20. Jh. läßt sich jedoch auch diese umgekehrte Anordnung belegen sowie distante Anordnungen des Reflexiv- und des Futurmorphems (Bsp. 2-3). Diese Beobachtungen lassen auf eine lang anhaltende Variation über das ruthenische Areale schließen, bei der zwei ehemalige Enklitika offenbar veschiedene „Agglutinierungsgeschwindigkeiten“ aufwiesen.\n\nIm Vortrag versuchen wir diese Entwicklung und die Variation anhand von Korpusdaten (GRAK) und weiteren Quellen nachzuzeichnen. Zudem bewerten wir diese spezifische Entwicklung mit dem morphologisch ähnlichen Fall des want-Futurs im Serbisch-Kroatischen und mit der Tmesis im Litauischen, welche verschiedene Stufen der Agglutinierung und der Variation aufweisen.\n\n\n\n(1) Lycho = m-eš hosty-ty .\n\n(Mykhaylyk 2020: 371)\n\n(2) U L’vovi misty-ti-sja-m-e osidok najvyščoho sudu dlja Schidnoji Haličyny .\n\n(GRAK)\n\n(3) — Budemo zahybaty ? Spuskajemosja vidrazu na dno, čy = m-emo šč jakos’ rjatuva-ty-sja ?\n\n(GRAK)",
    "affiliations": [
-    "Friedrich-Schiller-Universität Jena",
+    "Johannes-Gutenberg-Universität Mainz, Deutschland",
     "Chаrkivs’kyj politechničnyj instytut"
    ]
   },
@@ -6203,14 +6202,14 @@
    "track": "LKW",
    "panel_id": "2026-10-02|14:00|ct90",
    "speakers": [
-    "Đuro Blažeka 1",
+    "Đuro Blažeka",
     "Vladimir Legac"
    ],
    "title": "On the Concept of Creating a Dictionary of the Local Speech of Štrigova",
    "type": "talk",
    "abstract": "The authors discuss creating a dictionary of Štrigova's local speech. In the introduction, they discuss the basic phonological and morphological features of this speech, which belongs to the upper subdialect of the Međimurje dialect of the Kajkavian group of dialects (one of the three groups of the Croatian language; the other two are Štokavian and Čakavian). After that, they discuss the parts of the dictionary entry (archilexemes, grammatical parts, linguostylistic determinants, processing of variants and synonyms, exemplifications and expressive sentence confirmations). The handling of definitions is particularly important. For those lexemes where the meaning is the same as in the standard, and for translation to the standard, only phonological and morphological adaptation is sufficient; such a translation to the standard equivalent will be used in the definition. For other lexemes, a lexicographic definition will be used, which will most often not be a description of their entire meaning, but rather a starting point for understanding and using all of their potential meanings.\n\nThe goal of such a concept is to make the dictionary as informative as possible for linguists and the general public, while also being interesting to other fields of science: history, ethnology, sociology, anthropology... With qualitatively selected sentence confirmations, a scientific dialectological dictionary can also be of interest to the study of literature.",
    "affiliations": [
-    null,
+    "Fakultät für Lehrerbildung der Universität Zagreb, Kroatien",
     "Fakultät für Lehrerbildung der Universität Zagreb, Kroatien"
    ]
   },
@@ -7040,7 +7039,7 @@
    "end": "17:30",
    "title": "„Die Slavistik ist tot – es lebe die Slavistik!“ Szenarien der Entwicklung slavistischer Fächer an deutschsprachigen Universitäten",
    "room": "HS 2",
-   "people": "Chair: Dr. Annelie Bachmaier Chair: Ruprecht von Waldenfels Chair: Prof. Dr. Katrin Bente Karl Chair: Christian Zehnder Chair: Jun.-Prof. Dr. Christina Clasmeier (Universität Münster) Externe Gäste: Prof. Dr. Kornelia Freitag (derz. Prorektorin für Lehre und Studium, Ruhr-Universität Bochum) Dr. Ulrich Heublein (ehem. Deutsches Zentrum für Hochschul- und Wissenschaftsforschung Leipzig) Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail8c494cd0\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
+   "people": "Chair: Dr. Annelie Bachmaier Chair: Ruprecht von Waldenfels Chair: Prof. Dr. Katrin Bente Karl Chair: Christian Zehnder Chair: Jun.-Prof. Dr. Christina Clasmeier (Universität Münster) Externe Gäste: Prof. Dr. Kornelia Freitag (derz. Prorektorin für Lehre und Studium, Ruhr-Universität Bochum) Dr. Ulrich Heublein (ehem. Deutsches Zentrum für Hochschul- und Wissenschaftsforschung Leipzig) Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail5ab6bcfc\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
   },
   {
    "day": "2026-10-03",
@@ -7064,7 +7063,7 @@
    "end": "14:00",
    "title": "Abschlussveranstaltung mit Imbiss",
    "room": "Foyer CZS 3",
-   "people": "Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail63519c4b\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
+   "people": "Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmailaf733196\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
   }
  ]
 }
