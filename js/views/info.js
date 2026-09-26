@@ -88,7 +88,8 @@ export function renderInfo(model) {
     : null;
   const methodText = `Die Themen-Ansicht gruppiert ${talks.length} Vorträge automatisch nach ` +
       `27 Themenfeldern. Die Zuordnung übernimmt ein lokales Sprachmodell (${meta?.model ?? "ufr/chat-standard"}, ` +
-      `Stand ${stand ?? "—"}), das Titel und Sprechernamen im Batch klassifiziert; ` +
+      `Stand ${stand ?? "—"}), das Titel und Abstracts im Batch klassifiziert ` +
+      `(maximal 3 Themenfelder pro Vortrag); ` +
       `${llmCount} Vorträge sind so getaggt, ${lexCount} ergänzend per Fallback aus ` +
       "einem kuratierten Keyword-Lexikon (Teilstring-Matching, vollständig im Browser). " +
       "Ein Vortrag kann in mehreren Clustern erscheinen, manche passen in keines. " +

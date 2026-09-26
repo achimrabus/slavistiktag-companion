@@ -14,6 +14,10 @@
 #   python tools/llm_tagging.py --full     # alles neu taggen
 #   python tools/llm_tagging.py --dry-run  # nur Plan ausgeben, keine API-Calls
 #
+# Methode (seit 26.09.): Titel + Sprecher + VOLLSTÄNDIGES Abstract als
+# Prompt-Quelle, hart max 3 Tags/Vortrag (in parse_reply gekappt). Stichprobe
+# 26.09.: 16/20 Zuordnungen verändert, Abstract-Fälle eindeutig besser
+# (kirchenslavisch/film/krieg aus dem Abstract erkannt).
 # API-Key aus env OPENWEBUI_API_KEY oder LLMLB_API_KEY (wird nie ausgegeben).
 # Wichtig: chat_template_kwargs {"enable_thinking": False}, sonst frisst das
 # Reasoning das Token-Budget und content bleibt leer.
@@ -78,7 +82,7 @@ def load_talks(path: Path):
 
 def build_prompt(taxonomy, batch):
     lines = [
-        "Du klassifizierst Vortragstiteln eines Slavistik-Kongresses in ein festes Themen-Schema (Multi-Label).",
+        "Du klassifizierst Vorträge eines Slavistik-Kongresses in ein festes Themen-Schema (Multi-Label).",
         "",
         "Verfügbare Themen-IDs (nur diese verwenden, exakt so geschrieben):",
     ]
@@ -91,9 +95,11 @@ def build_prompt(taxonomy, batch):
     lines += [
         "",
         "Regeln:",
-        "- Ordne jeden Vortrag allen passenden Themen zu (meist 1-3, nie mehr als 4).",
+        "- Nutze TITEL und ABSTRACT. Der Abstract ist die Hauptquelle – er beschreibt, was der Vortrag wirklich tut.",
+        "- Ordne jeden Vortrag die 1–3 stärksten passenden Themen zu (nie mehr als 3).",
         '- Passt kein Thema, gib ein leeres Array zurück ("topics": []).',
         "- Verwende ausschließlich die oben gelisteten IDs.",
+        "- Erwähnt der Abstract ein Thema nur am Rand (Kontrast, Literaturverweis), gehört es NICHT dazu.",
         "- Antworte AUSSCHLIESSLICH mit einem JSON-Array, keine Erklärung, kein Markdown.",
         "",
         "Format der Antwort:",
@@ -107,6 +113,9 @@ def build_prompt(taxonomy, batch):
         lines.append(f'  titel: {s.get("title") or ""}')
         if speakers:
             lines.append(f"  sprecher: {speakers}")
+        if s.get("abstract"):
+            ab = re.sub(r"\s+", " ", s["abstract"]).strip()
+            lines.append(f"  abstract: {ab}")
     return "\n".join(lines)
 
 
@@ -149,6 +158,8 @@ def parse_reply(text, valid_session_ids, valid_tag_ids):
         if not isinstance(topics, list):
             topics = []
         clean = [x for x in topics if isinstance(x, str) and x in valid_tag_ids]
+        # HARD CAP 3 Tags (User-Entscheidung 26.09.): stärkste 3 behalten
+        clean = clean[:3]
         # dedup, Reihenfolge stabil
         seen = set()
         dedup = []

@@ -2,781 +2,493 @@
  "meta": {
   "model": "ufr/chat-standard",
   "base_url_host": "llmlb.ael.intra.uni-freiburg.de/v1",
-  "generated": "2026-09-25T21:16:30",
-  "api_calls": 28,
+  "generated": "2026-09-26T20:35:58",
+  "api_calls": 60,
   "counts": {
-   "polnisch": 41,
-   "didaktik": 34,
-   "translation": 10,
-   "russisch": 89,
-   "utopie": 10,
-   "exil": 20,
-   "suedslavisch": 30,
-   "medien": 28,
-   "grammatik": 54,
-   "variation": 56,
-   "ukrainisch": 47,
-   "digital": 28,
-   "erinnerung": 26,
-   "krieg": 22,
+   "ukrainisch": 57,
+   "identitaet": 67,
+   "epochen": 29,
+   "didaktik": 41,
+   "polnisch": 49,
+   "erinnerung": 30,
    "popkultur": 14,
-   "identitaet": 55,
-   "sorbisch": 8,
-   "epochen": 37,
-   "sowjetismus": 24,
-   "tschechisch": 14,
-   "korpora": 13,
-   "oekologie": 12,
-   "film": 19,
-   "kirchenslavisch": 5,
-   "bulgarisch": 3,
-   "weissrussisch": 8,
-   "slowakisch": 7
+   "digital": 33,
+   "medien": 33,
+   "film": 23,
+   "russisch": 103,
+   "grammatik": 58,
+   "variation": 50,
+   "krieg": 29,
+   "exil": 29,
+   "korpora": 38,
+   "sowjetismus": 30,
+   "utopie": 9,
+   "oekologie": 14,
+   "kirchenslavisch": 12,
+   "bulgarisch": 4,
+   "suedslavisch": 38,
+   "translation": 19,
+   "tschechisch": 17,
+   "weissrussisch": 9,
+   "slowakisch": 7,
+   "sorbisch": 10
   },
   "tagged_sessions": 311,
-  "total_talks": 311
+  "total_talks": 311,
+  "max_tags": 3,
+  "abstracts": "vollständig"
  },
  "tags": {
-  "2026-10-01-09:00-SR207-10:30": [
+  "2026-10-01-09:00-HS6-09:00": [
+   "ukrainisch",
+   "identitaet",
+   "epochen"
+  ],
+  "2026-10-01-09:00-HS6-09:30": [
+   "didaktik",
+   "epochen"
+  ],
+  "2026-10-01-09:00-HS6-10:00": [
    "polnisch",
    "didaktik",
-   "translation"
+   "epochen"
+  ],
+  "2026-10-01-09:00-HS7-09:00": [
+   "polnisch",
+   "erinnerung",
+   "popkultur"
+  ],
+  "2026-10-01-09:00-HS7-10:00": [
+   "digital",
+   "medien",
+   "film"
+  ],
+  "2026-10-01-09:00-HS8-09:00": [
+   "russisch",
+   "didaktik",
+   "grammatik"
+  ],
+  "2026-10-01-09:00-HS8-09:30": [
+   "russisch",
+   "didaktik",
+   "variation"
+  ],
+  "2026-10-01-09:00-HS8-10:00": [
+   "russisch",
+   "didaktik",
+   "krieg"
+  ],
+  "2026-10-01-09:00-HS8-10:30": [
+   "russisch",
+   "didaktik"
+  ],
+  "2026-10-01-09:00-SR114-09:00": [
+   "polnisch",
+   "variation",
+   "exil"
+  ],
+  "2026-10-01-09:00-SR114-09:30": [
+   "polnisch",
+   "didaktik",
+   "exil"
+  ],
+  "2026-10-01-09:00-SR114-10:00": [
+   "russisch",
+   "identitaet",
+   "exil"
+  ],
+  "2026-10-01-09:00-SR121-09:00": [
+   "krieg",
+   "korpora",
+   "variation"
+  ],
+  "2026-10-01-09:00-SR121-09:30": [
+   "russisch",
+   "krieg",
+   "medien"
+  ],
+  "2026-10-01-09:00-SR121-10:00": [
+   "russisch",
+   "krieg",
+   "medien"
+  ],
+  "2026-10-01-09:00-SR121-10:30": [
+   "ukrainisch",
+   "russisch",
+   "krieg"
+  ],
+  "2026-10-01-09:00-SR124-09:00": [
+   "ukrainisch",
+   "russisch",
+   "identitaet"
+  ],
+  "2026-10-01-09:00-SR124-09:30": [
+   "russisch",
+   "sowjetismus",
+   "variation"
+  ],
+  "2026-10-01-09:00-SR124-10:00": [
+   "exil",
+   "krieg",
+   "popkultur"
   ],
   "2026-10-01-09:00-SR124-10:30": [
    "russisch",
    "utopie",
    "exil"
   ],
-  "2026-10-01-11:30-SR113-11:30": [
-   "suedslavisch",
-   "medien"
-  ],
-  "2026-10-01-11:30-SR114-12:30": [
-   "russisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-09:00-HS8-10:30": [
-   "didaktik"
-  ],
-  "2026-10-02-09:00-SR207-09:00": [
-   "grammatik"
-  ],
-  "2026-10-02-11:30-SR208-12:00": [
-   "ukrainisch",
-   "digital",
-   "erinnerung"
-  ],
-  "2026-10-02-14:00-SR114-14:00": [
-   "suedslavisch",
-   "variation"
-  ],
-  "2026-10-02-14:00-SR206-14:30": [
-   "russisch"
-  ],
-  "2026-10-03-09:00-SR114-09:30": [
-   "variation"
-  ],
-  "2026-10-03-09:00-HS8-10:00": [
-   "russisch",
-   "grammatik",
-   "didaktik"
-  ],
-  "2026-10-01-09:00-SR121-09:00": [
-   "krieg"
-  ],
-  "2026-10-01-09:00-HS7-10:00": [
-   "popkultur",
-   "digital"
-  ],
-  "2026-10-01-14:00-SR208-15:00": [
-   "identitaet"
-  ],
-  "2026-10-01-14:00-HS7-14:00": [
-   "polnisch",
-   "popkultur",
-   "digital"
-  ],
-  "2026-10-02-09:00-SR121-10:00": [
-   "sorbisch",
-   "identitaet"
-  ],
-  "2026-10-02-09:00-HS7-09:00": [
-   "ukrainisch",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR209-09:00": [
-   "ukrainisch",
-   "epochen",
-   "sowjetismus"
-  ],
-  "2026-10-02-09:00-SR209-10:30": [
-   "tschechisch",
-   "epochen"
-  ],
-  "2026-10-02-11:30-HS6-12:30": [
-   "krieg",
-   "erinnerung"
-  ],
-  "2026-10-03-09:00-SR206-09:00": [
-   "russisch",
-   "grammatik",
-   "identitaet"
-  ],
-  "2026-10-03-09:00-SR222-09:00": [
-   "identitaet"
-  ],
-  "2026-10-03-09:00-SR222-10:00": [
-   "polnisch",
-   "translation",
-   "exil"
-  ],
-  "2026-10-02-09:00-SR114-09:00": [
-   "suedslavisch",
-   "didaktik",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR114-09:30": [
-   "suedslavisch",
-   "korpora"
-  ],
-  "2026-10-02-11:30-SR208-11:30": [
-   "russisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-11:30-SR127-12:00": [
-   "russisch",
-   "krieg",
-   "erinnerung"
-  ],
-  "2026-10-02-14:00-SR121-14:30": [
-   "variation"
-  ],
-  "2026-10-02-14:00-SR125-14:00": [
-   "ukrainisch",
-   "didaktik"
-  ],
-  "2026-10-02-14:00-SR124-14:30": [
+  "2026-10-01-09:00-SR125-09:00": [
    "russisch",
    "epochen"
   ],
-  "2026-10-02-14:00-SR224-14:30": [
-   "suedslavisch",
-   "oekologie",
-   "film"
-  ],
-  "2026-10-03-09:00-SR207-09:30": [
-   "grammatik"
-  ],
-  "2026-10-01-09:00-SR223-09:00": [
-   "exil",
-   "identitaet"
-  ],
-  "2026-10-01-11:30-SR223-12:30": [
-   "suedslavisch",
-   "erinnerung",
-   "exil"
-  ],
-  "2026-10-01-14:00-SR206-14:30": [
-   "suedslavisch",
-   "korpora",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR124-10:30": [
-   "sowjetismus"
-  ],
-  "2026-10-02-09:00-SR222-09:00": [
+  "2026-10-01-09:00-SR125-09:30": [
    "russisch",
-   "digital",
-   "popkultur"
+   "oekologie"
   ],
-  "2026-10-02-11:30-SR125-12:00": [
-   "epochen"
-  ],
-  "2026-10-02-11:30-SR224-12:00": [
-   "film"
-  ],
-  "2026-10-02-14:00-SR206-14:00": [
-   "russisch",
-   "korpora",
-   "identitaet"
-  ],
-  "2026-10-02-14:00-SR221-15:00": [
-   "tschechisch"
-  ],
-  "2026-10-02-14:00-SR221-14:00": [
-   "russisch",
-   "sowjetismus",
-   "erinnerung"
-  ],
-  "2026-10-02-14:00-SR222-14:00": [
+  "2026-10-01-09:00-SR125-10:00": [
    "polnisch",
-   "popkultur"
-  ],
-  "2026-10-03-09:00-HS8-09:30": [
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-01-09:00-SR114-09:30": [
-   "polnisch",
-   "didaktik"
-  ],
-  "2026-10-01-09:00-SR121-09:30": [
-   "russisch",
-   "krieg"
+   "identitaet"
   ],
   "2026-10-01-09:00-SR206-09:00": [
    "kirchenslavisch",
    "grammatik"
   ],
-  "2026-10-01-11:30-SR207-11:30": [
-   "polnisch",
-   "grammatik"
-  ],
-  "2026-10-01-11:30-HS6-12:00": [
-   "polnisch",
-   "identitaet",
-   "epochen"
-  ],
-  "2026-10-01-11:30-MMZ220-12:00": [
-   "medien",
-   "film",
-   "sowjetismus"
-  ],
-  "2026-10-01-11:30-SR223-12:00": [
-   "exil",
-   "identitaet"
-  ],
-  "2026-10-01-14:00-SR207-14:00": [
-   "russisch",
-   "medien",
-   "grammatik"
-  ],
-  "2026-10-02-09:00-SR125-09:30": [
-   "ukrainisch",
-   "krieg"
-  ],
-  "2026-10-02-11:30-SR224-12:30": [
-   "suedslavisch",
-   "film",
-   "sowjetismus"
-  ],
-  "2026-10-01-09:00-HS6-09:00": [
-   "epochen"
-  ],
-  "2026-10-01-11:30-MMZ220-12:30": [
-   "polnisch",
-   "film"
-  ],
-  "2026-10-01-11:30-SR209-12:00": [
-   "polnisch",
-   "erinnerung",
-   "identitaet"
-  ],
-  "2026-10-01-14:00-HS8-14:00": [
-   "suedslavisch",
-   "grammatik"
-  ],
-  "2026-10-02-11:30-SR114-11:30": [
+  "2026-10-01-09:00-SR206-09:30": [
    "bulgarisch",
-   "identitaet",
-   "variation"
-  ],
-  "2026-10-02-11:30-SR125-12:30": [
-   "polnisch",
-   "translation"
-  ],
-  "2026-10-02-11:30-SR223-12:00": [
-   "russisch",
-   "krieg",
-   "erinnerung"
-  ],
-  "2026-10-02-14:00-SR113-15:00": [
-   "ukrainisch",
-   "variation"
-  ],
-  "2026-10-02-14:00-SR125-15:00": [
-   "ukrainisch",
-   "didaktik",
-   "identitaet"
-  ],
-  "2026-10-02-14:00-SR127-14:30": [
-   "polnisch",
-   "ukrainisch",
-   "krieg"
-  ],
-  "2026-10-02-14:00-SR223-15:00": [
-   "ukrainisch",
-   "medien",
-   "popkultur",
-   "krieg"
-  ],
-  "2026-10-03-09:00-SR206-09:30": [
-   "medien"
-  ],
-  "2026-10-01-09:00-HS8-09:30": [
-   "russisch",
-   "didaktik"
-  ],
-  "2026-10-01-09:00-SR114-10:00": [
-   "russisch",
-   "identitaet",
-   "variation"
-  ],
-  "2026-10-01-11:30-SR206-11:30": [
-   "suedslavisch",
-   "grammatik"
-  ],
-  "2026-10-01-11:30-HS6-11:30": [
-   "tschechisch",
-   "identitaet"
-  ],
-  "2026-10-01-14:00-HS8-15:00": [
-   "suedslavisch",
-   "didaktik",
-   "variation"
-  ],
-  "2026-10-02-09:00-HS6-10:00": [
-   "weissrussisch",
-   "exil",
-   "identitaet"
-  ],
-  "2026-10-02-11:30-SR113-12:00": [
-   "russisch",
-   "ukrainisch",
-   "identitaet"
-  ],
-  "2026-10-02-11:30-SR207-11:30": [
-   "russisch",
-   "grammatik"
-  ],
-  "2026-10-02-14:00-SR207-14:30": [
-   "tschechisch",
-   "grammatik"
-  ],
-  "2026-10-02-14:00-SR209-14:00": [
-   "erinnerung"
-  ],
-  "2026-10-03-09:00-SR124-09:00": [
-   "sowjetismus"
-  ],
-  "2026-10-03-09:00-SR124-09:30": [
-   "russisch",
-   "epochen"
-  ],
-  "2026-10-01-09:00-HS7-09:00": [
-   "popkultur",
-   "sowjetismus",
+   "korpora",
    "digital"
-  ],
-  "2026-10-01-09:00-SR124-10:00": [
-   "krieg",
-   "exil",
-   "variation"
-  ],
-  "2026-10-01-09:00-SR226-10:00": [
-   "tschechisch",
-   "medien"
-  ],
-  "2026-10-01-11:30-SR206-12:30": [
-   "suedslavisch",
-   "korpora",
-   "grammatik"
-  ],
-  "2026-10-01-11:30-SR224-12:30": [
-   "ukrainisch",
-   "utopie"
-  ],
-  "2026-10-01-14:00-HS6-14:00": [
-   "suedslavisch"
-  ],
-  "2026-10-02-11:30-SR113-11:30": [
-   "ukrainisch",
-   "identitaet",
-   "variation"
-  ],
-  "2026-10-02-11:30-SR124-12:30": [
-   "russisch",
-   "film"
-  ],
-  "2026-10-02-11:30-SR127-11:30": [
-   "russisch",
-   "krieg"
-  ],
-  "2026-10-02-11:30-SR209-12:00": [
-   "russisch"
-  ],
-  "2026-10-02-11:30-SR223-11:30": [
-   "erinnerung",
-   "sowjetismus"
-  ],
-  "2026-10-03-09:00-SR206-10:00": [
-   "identitaet"
-  ],
-  "2026-10-01-09:00-SR209-10:30": [
-   "ukrainisch",
-   "popkultur",
-   "erinnerung"
-  ],
-  "2026-10-01-09:00-SR209-09:30": [
-   "ukrainisch",
-   "identitaet",
-   "popkultur"
-  ],
-  "2026-10-01-11:30-SR208-12:00": [
-   "russisch",
-   "kirchenslavisch",
-   "translation"
-  ],
-  "2026-10-01-11:30-HS6-12:30": [
-   "weissrussisch",
-   "identitaet",
-   "grammatik"
-  ],
-  "2026-10-02-09:00-SR125-10:00": [
-   "russisch",
-   "krieg",
-   "oekologie"
-  ],
-  "2026-10-02-09:00-SR226-10:00": [
-   "slowakisch",
-   "film",
-   "identitaet"
-  ],
-  "2026-10-02-11:30-HS8-12:00": [
-   "russisch",
-   "didaktik",
-   "utopie"
-  ],
-  "2026-10-02-11:30-SR121-12:30": [
-   "sorbisch",
-   "variation"
-  ],
-  "2026-10-02-11:30-SR221-11:30": [
-   "polnisch",
-   "erinnerung",
-   "exil"
-  ],
-  "2026-10-02-14:00-HS7-14:30": [
-   "ukrainisch",
-   "krieg",
-   "identitaet"
-  ],
-  "2026-10-03-09:00-SR209-09:00": [
-   "ukrainisch",
-   "exil",
-   "sowjetismus"
-  ],
-  "2026-10-01-09:00-SR207-09:30": [
-   "tschechisch",
-   "russisch",
-   "translation",
-   "grammatik"
-  ],
-  "2026-10-01-09:00-SR224-09:00": [
-   "oekologie",
-   "erinnerung"
-  ],
-  "2026-10-01-09:00-SR226-10:30": [
-   "slowakisch",
-   "identitaet",
-   "epochen"
-  ],
-  "2026-10-01-11:30-HS8-12:00": [
-   "didaktik"
-  ],
-  "2026-10-01-11:30-HS8-12:30": [
-   "russisch",
-   "didaktik",
-   "grammatik"
-  ],
-  "2026-10-01-11:30-SR206-12:00": [
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-01-14:00-SR206-15:00": [
-   "suedslavisch",
-   "digital",
-   "korpora",
-   "epochen"
-  ],
-  "2026-10-01-14:00-SR224-14:30": [
-   "russisch",
-   "utopie"
-  ],
-  "2026-10-02-09:00-HS6-09:30": [
-   "ukrainisch",
-   "weissrussisch",
-   "identitaet"
-  ],
-  "2026-10-02-11:30-SR124-11:30": [
-   "film",
-   "exil",
-   "didaktik"
-  ],
-  "2026-10-02-11:30-SR127-12:30": [
-   "krieg",
-   "erinnerung"
-  ],
-  "2026-10-02-14:00-SR121-14:00": [
-   "variation",
-   "medien"
-  ],
-  "2026-10-01-09:00-HS7-09:30": [
-   "digital",
-   "medien",
-   "translation"
-  ],
-  "2026-10-01-09:00-SR224-09:30": [
-   "krieg",
-   "oekologie"
-  ],
-  "2026-10-01-11:30-HS8-11:30": [
-   "russisch",
-   "didaktik",
-   "grammatik"
-  ],
-  "2026-10-01-14:00-SR114-15:00": [
-   "russisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-01-14:00-SR207-15:00": [
-   "variation"
-  ],
-  "2026-10-01-14:00-HS6-14:30": [
-   "krieg"
-  ],
-  "2026-10-02-09:00-SR207-10:00": [
-   "polnisch",
-   "grammatik"
-  ],
-  "2026-10-02-11:30-SR206-11:30": [
-   "digital",
-   "variation"
-  ],
-  "2026-10-02-14:00-SR114-15:00": [
-   "suedslavisch",
-   "korpora",
-   "variation"
-  ],
-  "2026-10-02-14:00-SR124-14:00": [
-   "russisch",
-   "epochen",
-   "identitaet"
-  ],
-  "2026-10-02-14:00-SR127-14:00": [
-   "ukrainisch",
-   "erinnerung"
   ],
   "2026-10-01-09:00-SR206-10:00": [
    "suedslavisch",
-   "grammatik"
+   "grammatik",
+   "korpora"
   ],
   "2026-10-01-09:00-SR207-09:00": [
    "polnisch",
    "translation",
    "digital"
   ],
-  "2026-10-01-11:30-SR114-11:30": [
-   "sorbisch",
-   "polnisch",
-   "variation"
-  ],
-  "2026-10-01-11:30-SR207-12:00": [
-   "polnisch",
-   "russisch"
-  ],
-  "2026-10-01-11:30-HS7-11:30": [
-   "digital",
-   "krieg"
-  ],
-  "2026-10-02-09:00-SR114-10:00": [
-   "bulgarisch",
-   "epochen"
-  ],
-  "2026-10-02-09:00-SR121-09:30": [
-   "sorbisch",
-   "digital"
-  ],
-  "2026-10-02-09:00-SR206-10:00": [
-   "polnisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR209-10:00": [
+  "2026-10-01-09:00-SR207-09:30": [
    "tschechisch",
    "russisch",
-   "epochen"
+   "translation"
   ],
-  "2026-10-02-09:00-SR221-10:00": [
-   "suedslavisch",
-   "identitaet"
+  "2026-10-01-09:00-SR207-10:00": [
+   "translation"
   ],
-  "2026-10-02-14:00-HS8-14:00": [
-   "didaktik"
-  ],
-  "2026-10-02-14:00-SR224-14:00": [
-   "suedslavisch",
-   "erinnerung",
-   "krieg"
-  ],
-  "2026-10-01-09:00-HS8-10:00": [
-   "russisch",
-   "didaktik"
-  ],
-  "2026-10-01-09:00-SR226-09:00": [
-   "ukrainisch",
-   "epochen",
-   "identitaet"
-  ],
-  "2026-10-02-09:00-HS6-10:30": [
-   "slowakisch",
+  "2026-10-01-09:00-SR207-10:30": [
+   "polnisch",
    "didaktik",
-   "identitaet"
+   "translation"
   ],
-  "2026-10-02-09:00-HS7-10:00": [
-   "russisch",
-   "identitaet"
-  ],
-  "2026-10-02-09:00-SR125-09:00": [
-   "russisch",
-   "utopie",
-   "sowjetismus",
-   "medien"
-  ],
-  "2026-10-02-09:00-SR221-09:00": [
-   "kirchenslavisch",
-   "epochen"
-  ],
-  "2026-10-02-09:00-SR222-09:30": [
+  "2026-10-01-09:00-SR208-09:00": [
    "ukrainisch",
-   "digital",
-   "medien"
+   "kirchenslavisch",
+   "grammatik"
   ],
-  "2026-10-02-09:00-SR224-09:00": [
-   "polnisch",
-   "epochen"
-  ],
-  "2026-10-02-09:00-SR226-09:30": [
-   "polnisch",
-   "film",
-   "utopie"
-  ],
-  "2026-10-02-11:30-HS8-12:30": [
+  "2026-10-01-09:00-SR208-09:30": [
    "russisch",
-   "didaktik"
+   "grammatik",
+   "korpora"
   ],
-  "2026-10-02-11:30-SR226-11:30": [
-   "polnisch",
-   "film"
+  "2026-10-01-09:00-SR208-10:00": [
+   "grammatik",
+   "korpora"
   ],
-  "2026-10-01-09:00-SR125-09:00": [
+  "2026-10-01-09:00-SR208-10:30": [
    "russisch",
-   "epochen"
+   "ukrainisch",
+   "grammatik"
+  ],
+  "2026-10-01-09:00-SR209-09:00": [
+   "russisch",
+   "sowjetismus",
+   "popkultur"
+  ],
+  "2026-10-01-09:00-SR209-09:30": [
+   "ukrainisch",
+   "identitaet",
+   "popkultur"
+  ],
+  "2026-10-01-09:00-SR209-10:00": [
+   "weissrussisch",
+   "exil",
+   "identitaet"
+  ],
+  "2026-10-01-09:00-SR209-10:30": [
+   "ukrainisch",
+   "popkultur",
+   "identitaet"
+  ],
+  "2026-10-01-09:00-SR223-09:00": [
+   "exil",
+   "variation"
+  ],
+  "2026-10-01-09:00-SR223-09:30": [
+   "suedslavisch",
+   "exil",
+   "identitaet"
+  ],
+  "2026-10-01-09:00-SR223-10:00": [
+   "exil",
+   "identitaet",
+   "erinnerung"
+  ],
+  "2026-10-01-09:00-SR224-09:00": [
+   "oekologie",
+   "sowjetismus",
+   "erinnerung"
+  ],
+  "2026-10-01-09:00-SR224-09:30": [
+   "ukrainisch",
+   "krieg",
+   "oekologie"
   ],
   "2026-10-01-09:00-SR224-10:00": [
    "suedslavisch",
+   "oekologie",
+   "medien"
+  ],
+  "2026-10-01-09:00-SR224-10:30": [
+   "polnisch",
+   "ukrainisch",
    "oekologie"
   ],
+  "2026-10-01-09:00-SR226-09:00": [
+   "ukrainisch",
+   "identitaet",
+   "medien"
+  ],
+  "2026-10-01-09:00-SR226-09:30": [
+   "slowakisch",
+   "tschechisch",
+   "identitaet"
+  ],
+  "2026-10-01-09:00-SR226-10:00": [
+   "tschechisch",
+   "identitaet",
+   "medien"
+  ],
+  "2026-10-01-09:00-SR226-10:30": [
+   "slowakisch",
+   "identitaet",
+   "medien"
+  ],
+  "2026-10-01-11:30-HS6-11:30": [
+   "tschechisch",
+   "suedslavisch",
+   "identitaet"
+  ],
+  "2026-10-01-11:30-HS6-12:00": [
+   "weissrussisch",
+   "exil",
+   "identitaet"
+  ],
+  "2026-10-01-11:30-HS6-12:30": [
+   "krieg",
+   "russisch",
+   "ukrainisch"
+  ],
+  "2026-10-01-11:30-HS7-11:30": [
+   "digital",
+   "erinnerung",
+   "translation"
+  ],
+  "2026-10-01-11:30-HS7-12:00": [
+   "digital",
+   "sowjetismus",
+   "erinnerung"
+  ],
+  "2026-10-01-11:30-HS8-11:30": [
+   "russisch",
+   "didaktik",
+   "grammatik"
+  ],
+  "2026-10-01-11:30-HS8-12:00": [
+   "didaktik",
+   "variation"
+  ],
+  "2026-10-01-11:30-HS8-12:30": [
+   "russisch",
+   "didaktik",
+   "grammatik"
+  ],
+  "2026-10-01-11:30-MMZ220-11:30": [
+   "polnisch",
+   "film"
+  ],
+  "2026-10-01-11:30-MMZ220-12:00": [
+   "polnisch",
+   "film",
+   "medien"
+  ],
+  "2026-10-01-11:30-MMZ220-12:30": [
+   "polnisch",
+   "film",
+   "epochen"
+  ],
+  "2026-10-01-11:30-SR113-11:30": [
+   "suedslavisch",
+   "identitaet"
+  ],
+  "2026-10-01-11:30-SR113-12:00": [
+   "polnisch",
+   "digital",
+   "korpora"
+  ],
+  "2026-10-01-11:30-SR113-12:30": [
+   "russisch",
+   "medien",
+   "korpora"
+  ],
+  "2026-10-01-11:30-SR114-11:30": [
+   "sorbisch",
+   "polnisch",
+   "grammatik"
+  ],
+  "2026-10-01-11:30-SR114-12:00": [
+   "sorbisch",
+   "polnisch",
+   "grammatik"
+  ],
+  "2026-10-01-11:30-SR114-12:30": [
+   "russisch",
+   "grammatik",
+   "variation"
+  ],
   "2026-10-01-11:30-SR121-11:30": [
+   "ukrainisch",
    "krieg",
    "variation"
+  ],
+  "2026-10-01-11:30-SR206-11:30": [
+   "suedslavisch",
+   "grammatik",
+   "korpora"
+  ],
+  "2026-10-01-11:30-SR206-12:00": [
+   "grammatik",
+   "korpora"
+  ],
+  "2026-10-01-11:30-SR206-12:30": [
+   "suedslavisch",
+   "bulgarisch",
+   "grammatik"
+  ],
+  "2026-10-01-11:30-SR207-11:30": [
+   "polnisch",
+   "grammatik"
+  ],
+  "2026-10-01-11:30-SR207-12:00": [
+   "sorbisch",
+   "polnisch",
+   "russisch"
+  ],
+  "2026-10-01-11:30-SR207-12:30": [
+   "russisch",
+   "grammatik",
+   "epochen"
+  ],
+  "2026-10-01-11:30-SR208-11:30": [
+   "russisch",
+   "digital",
+   "translation"
+  ],
+  "2026-10-01-11:30-SR208-12:00": [
+   "kirchenslavisch",
+   "russisch",
+   "variation"
+  ],
+  "2026-10-01-11:30-SR208-12:30": [
+   "kirchenslavisch",
+   "digital",
+   "grammatik"
+  ],
+  "2026-10-01-11:30-SR209-12:00": [
+   "polnisch",
+   "erinnerung",
+   "popkultur"
+  ],
+  "2026-10-01-11:30-SR209-12:30": [
+   "ukrainisch",
+   "identitaet",
+   "popkultur"
   ],
   "2026-10-01-11:30-SR221-11:30": [
    "russisch",
    "erinnerung",
    "identitaet"
   ],
-  "2026-10-01-11:30-SR224-12:00": [
-   "polnisch",
-   "oekologie"
-  ],
-  "2026-10-01-14:00-HS7-14:30": [
-   "medien",
-   "digital"
-  ],
-  "2026-10-02-09:00-SR121-10:30": [
-   "sorbisch",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR124-10:00": [
-   "russisch"
-  ],
-  "2026-10-02-11:30-HS6-12:00": [
-   "tschechisch"
-  ],
-  "2026-10-02-11:30-SR222-12:00": [
-   "suedslavisch",
-   "identitaet"
-  ],
-  "2026-10-03-09:00-SR221-09:00": [
+  "2026-10-01-11:30-SR221-12:00": [
    "russisch",
-   "utopie"
+   "sowjetismus",
+   "medien"
   ],
-  "2026-10-03-09:00-SR221-10:30": [
-   "suedslavisch",
-   "identitaet"
-  ],
-  "2026-10-01-09:00-SR125-10:00": [
-   "russisch",
-   "epochen"
-  ],
-  "2026-10-01-09:00-SR223-09:30": [
+  "2026-10-01-11:30-SR223-11:30": [
    "exil",
    "identitaet"
   ],
-  "2026-10-01-11:30-SR113-12:30": [
-   "russisch",
-   "medien",
+  "2026-10-01-11:30-SR223-12:00": [
+   "exil",
    "identitaet"
   ],
-  "2026-10-02-09:00-HS8-09:00": [
-   "russisch",
-   "didaktik"
-  ],
-  "2026-10-02-09:00-SR208-09:30": [
-   "polnisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-11:30-SR125-11:30": [
-   "polnisch",
-   "epochen"
-  ],
-  "2026-10-02-11:30-SR221-12:00": [
-   "polnisch",
+  "2026-10-01-11:30-SR223-12:30": [
    "erinnerung",
-   "popkultur"
-  ],
-  "2026-10-02-14:00-SR208-14:30": [
-   "russisch",
-   "digital",
-   "medien"
-  ],
-  "2026-10-03-09:00-SR207-10:00": [
-   "grammatik"
-  ],
-  "2026-10-03-09:00-SR222-09:30": [
-   "epochen"
-  ],
-  "2026-10-01-09:00-SR124-09:30": [
-   "sowjetismus",
-   "identitaet"
-  ],
-  "2026-10-01-09:00-SR226-09:30": [
-   "slowakisch"
-  ],
-  "2026-10-01-11:30-MMZ220-11:30": [
-   "polnisch",
+   "exil",
    "film"
   ],
-  "2026-10-01-14:00-SR113-14:30": [
-   "russisch",
+  "2026-10-01-11:30-SR224-11:30": [
+   "tschechisch",
+   "oekologie",
+   "digital"
+  ],
+  "2026-10-01-11:30-SR224-12:00": [
+   "polnisch",
+   "oekologie",
+   "utopie"
+  ],
+  "2026-10-01-11:30-SR224-12:30": [
    "ukrainisch",
    "krieg",
-   "popkultur",
+   "oekologie"
+  ],
+  "2026-10-01-14:00-HS6-14:00": [
+   "polnisch",
+   "erinnerung",
+   "identitaet"
+  ],
+  "2026-10-01-14:00-HS6-14:30": [
+   "sowjetismus"
+  ],
+  "2026-10-01-14:00-HS7-14:00": [
+   "digital",
+   "popkultur"
+  ],
+  "2026-10-01-14:00-HS7-14:30": [
+   "digital",
+   "krieg",
+   "utopie"
+  ],
+  "2026-10-01-14:00-HS7-15:00": [
+   "polnisch",
+   "digital",
+   "popkultur"
+  ],
+  "2026-10-01-14:00-HS8-14:00": [
+   "didaktik"
+  ],
+  "2026-10-01-14:00-HS8-14:00-2": [
+   "suedslavisch",
+   "grammatik",
+   "didaktik"
+  ],
+  "2026-10-01-14:00-HS8-14:30": [
+   "suedslavisch",
+   "didaktik"
+  ],
+  "2026-10-01-14:00-HS8-15:00": [
+   "suedslavisch",
+   "didaktik",
    "variation"
   ],
   "2026-10-01-14:00-SR113-14:00": [
@@ -784,131 +496,788 @@
    "digital",
    "identitaet"
   ],
-  "2026-10-01-14:00-SR125-14:30": [
-   "slowakisch",
-   "epochen"
-  ],
-  "2026-10-02-09:00-SR206-09:30": [
-   "tschechisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR124-09:30": [
-   "russisch",
-   "sowjetismus",
-   "digital"
-  ],
-  "2026-10-02-09:00-SR223-09:00": [
-   "suedslavisch",
-   "exil",
-   "digital"
-  ],
-  "2026-10-02-11:30-SR114-12:00": [
-   "suedslavisch",
-   "identitaet",
-   "variation"
-  ],
-  "2026-10-03-09:00-SR221-09:30": [
-   "russisch"
-  ],
-  "2026-10-03-09:00-SR222-10:30": [
-   "suedslavisch",
-   "epochen",
-   "oekologie"
-  ],
-  "2026-10-01-09:00-SR206-09:30": [
-   "bulgarisch",
-   "korpora",
-   "digital"
-  ],
-  "2026-10-01-09:00-SR224-10:30": [
-   "ukrainisch",
-   "oekologie"
-  ],
-  "2026-10-01-11:30-SR208-11:30": [
-   "russisch",
-   "digital",
-   "korpora"
-  ],
-  "2026-10-01-11:30-HS7-12:00": [
-   "russisch",
+  "2026-10-01-14:00-SR113-14:30": [
    "popkultur",
-   "sowjetismus"
-  ],
-  "2026-10-01-11:30-SR224-11:30": [
-   "tschechisch",
-   "oekologie"
-  ],
-  "2026-10-02-09:00-SR206-10:30": [
-   "grammatik",
+   "krieg",
    "variation"
   ],
-  "2026-10-02-09:00-SR222-10:30": [
-   "medien",
-   "utopie",
-   "sowjetismus"
-  ],
-  "2026-10-02-11:30-HS7-12:00": [
-   "identitaet"
-  ],
-  "2026-10-02-11:30-HS7-11:30": [
-   "polnisch",
-   "identitaet"
-  ],
-  "2026-10-02-11:30-SR209-12:30": [
-   "ukrainisch",
+  "2026-10-01-14:00-SR114-14:00": [
+   "russisch",
+   "variation",
    "exil"
   ],
-  "2026-10-02-14:00-SR208-15:00": [
-   "russisch",
-   "identitaet",
-   "variation"
-  ],
-  "2026-10-01-09:00-HS6-10:00": [
-   "polnisch",
-   "epochen"
-  ],
   "2026-10-01-14:00-SR114-14:30": [
+   "russisch",
+   "korpora",
+   "grammatik"
+  ],
+  "2026-10-01-14:00-SR114-15:00": [
    "russisch",
    "grammatik",
    "variation"
   ],
   "2026-10-01-14:00-SR125-14:00": [
+   "polnisch",
+   "identitaet",
+   "erinnerung"
+  ],
+  "2026-10-01-14:00-SR125-14:30": [
    "ukrainisch",
+   "film",
+   "erinnerung"
+  ],
+  "2026-10-01-14:00-SR125-15:00": [
+   "slowakisch",
    "erinnerung",
+   "epochen"
+  ],
+  "2026-10-01-14:00-SR206-14:00": [
+   "suedslavisch",
+   "grammatik",
+   "variation"
+  ],
+  "2026-10-01-14:00-SR206-14:30": [
+   "suedslavisch",
+   "korpora",
+   "variation"
+  ],
+  "2026-10-01-14:00-SR206-15:00": [
+   "suedslavisch",
+   "digital",
+   "epochen"
+  ],
+  "2026-10-01-14:00-SR207-14:00": [
+   "russisch",
+   "medien",
+   "korpora"
+  ],
+  "2026-10-01-14:00-SR207-14:30": [
+   "russisch",
+   "didaktik",
+   "grammatik"
+  ],
+  "2026-10-01-14:00-SR207-15:00": [
+   "russisch",
+   "grammatik",
+   "translation"
+  ],
+  "2026-10-01-14:00-SR208-14:00": [
+   "kirchenslavisch",
+   "grammatik",
+   "translation"
+  ],
+  "2026-10-01-14:00-SR208-14:30": [
+   "korpora",
+   "translation",
+   "kirchenslavisch"
+  ],
+  "2026-10-01-14:00-SR208-15:00": [
+   "variation",
+   "identitaet",
+   "polnisch"
+  ],
+  "2026-10-01-14:00-SR224-14:00": [
+   "russisch",
+   "utopie",
+   "oekologie"
+  ],
+  "2026-10-01-14:00-SR224-14:30": [
+   "russisch",
+   "utopie",
+   "sowjetismus"
+  ],
+  "2026-10-01-14:00-SR224-15:00": [
+   "polnisch",
+   "sowjetismus",
+   "popkultur"
+  ],
+  "2026-10-02-09:00-HS6-09:00": [
+   "ukrainisch",
+   "krieg",
+   "didaktik"
+  ],
+  "2026-10-02-09:00-HS6-09:30": [
+   "ukrainisch",
+   "weissrussisch",
+   "krieg"
+  ],
+  "2026-10-02-09:00-HS6-10:00": [
+   "weissrussisch",
+   "exil",
+   "didaktik"
+  ],
+  "2026-10-02-09:00-HS6-10:30": [
+   "slowakisch",
+   "didaktik",
+   "identitaet"
+  ],
+  "2026-10-02-09:00-HS7-09:00": [
+   "ukrainisch",
+   "variation",
    "medien"
+  ],
+  "2026-10-02-09:00-HS7-09:30": [
+   "suedslavisch",
+   "erinnerung",
+   "identitaet"
+  ],
+  "2026-10-02-09:00-HS7-10:00": [
+   "russisch",
+   "identitaet"
+  ],
+  "2026-10-02-09:00-HS7-10:30": [
+   "russisch"
+  ],
+  "2026-10-02-09:00-HS8-09:00": [
+   "russisch",
+   "didaktik",
+   "grammatik"
+  ],
+  "2026-10-02-09:00-HS8-09:30": [
+   "suedslavisch",
+   "digital",
+   "didaktik"
   ],
   "2026-10-02-09:00-HS8-10:00": [
    "russisch",
    "didaktik",
    "digital"
   ],
+  "2026-10-02-09:00-HS8-10:30": [
+   "didaktik"
+  ],
+  "2026-10-02-09:00-SR113-09:00": [
+   "ukrainisch",
+   "russisch",
+   "korpora"
+  ],
+  "2026-10-02-09:00-SR113-09:30": [
+   "ukrainisch",
+   "didaktik",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR113-10:00": [
+   "russisch",
+   "ukrainisch",
+   "grammatik"
+  ],
+  "2026-10-02-09:00-SR113-10:30": [
+   "ukrainisch",
+   "grammatik",
+   "korpora"
+  ],
+  "2026-10-02-09:00-SR114-09:00": [
+   "suedslavisch",
+   "didaktik",
+   "identitaet"
+  ],
+  "2026-10-02-09:00-SR114-09:30": [
+   "suedslavisch",
+   "korpora"
+  ],
+  "2026-10-02-09:00-SR114-10:00": [
+   "bulgarisch",
+   "identitaet",
+   "epochen"
+  ],
+  "2026-10-02-09:00-SR114-10:30": [
+   "variation",
+   "suedslavisch"
+  ],
+  "2026-10-02-09:00-SR121-09:00": [
+   "sorbisch",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR121-09:30": [
+   "sorbisch",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR121-10:00": [
+   "sorbisch",
+   "medien"
+  ],
+  "2026-10-02-09:00-SR121-10:30": [
+   "sorbisch",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR124-09:00": [
+   "russisch",
+   "sowjetismus",
+   "didaktik"
+  ],
+  "2026-10-02-09:00-SR124-09:30": [
+   "russisch",
+   "sowjetismus",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR124-10:00": [
+   "russisch",
+   "sowjetismus",
+   "erinnerung"
+  ],
+  "2026-10-02-09:00-SR124-10:30": [
+   "russisch",
+   "sowjetismus"
+  ],
+  "2026-10-02-09:00-SR125-09:00": [
+   "ukrainisch",
+   "identitaet"
+  ],
+  "2026-10-02-09:00-SR125-09:30": [
+   "ukrainisch",
+   "krieg",
+   "oekologie"
+  ],
+  "2026-10-02-09:00-SR125-10:00": [
+   "russisch",
+   "utopie",
+   "medien"
+  ],
+  "2026-10-02-09:00-SR127-09:00": [],
+  "2026-10-02-09:00-SR206-09:00": [
+   "tschechisch",
+   "korpora",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR206-09:30": [
+   "tschechisch",
+   "grammatik",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR206-10:00": [
+   "polnisch",
+   "korpora",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR206-10:30": [
+   "russisch",
+   "ukrainisch",
+   "weissrussisch"
+  ],
+  "2026-10-02-09:00-SR207-09:00": [
+   "russisch",
+   "tschechisch",
+   "slowakisch"
+  ],
+  "2026-10-02-09:00-SR207-09:30": [
+   "suedslavisch",
+   "grammatik"
+  ],
+  "2026-10-02-09:00-SR207-10:00": [
+   "polnisch",
+   "korpora",
+   "grammatik"
+  ],
+  "2026-10-02-09:00-SR208-09:00": [
+   "grammatik",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR208-09:30": [
+   "polnisch",
+   "identitaet",
+   "grammatik"
+  ],
+  "2026-10-02-09:00-SR208-10:00": [
+   "tschechisch",
+   "grammatik",
+   "epochen"
+  ],
+  "2026-10-02-09:00-SR208-10:30": [
+   "russisch",
+   "grammatik",
+   "epochen"
+  ],
+  "2026-10-02-09:00-SR209-09:00": [
+   "ukrainisch",
+   "krieg",
+   "epochen"
+  ],
   "2026-10-02-09:00-SR209-09:30": [
    "ukrainisch",
+   "translation",
+   "sowjetismus"
+  ],
+  "2026-10-02-09:00-SR209-10:00": [
+   "tschechisch",
+   "identitaet",
+   "variation"
+  ],
+  "2026-10-02-09:00-SR209-10:30": [
+   "tschechisch",
    "epochen"
+  ],
+  "2026-10-02-09:00-SR221-09:00": [
+   "korpora",
+   "grammatik"
   ],
   "2026-10-02-09:00-SR221-09:30": [
    "polnisch",
+   "kirchenslavisch",
+   "translation"
+  ],
+  "2026-10-02-09:00-SR221-10:00": [
+   "suedslavisch",
+   "identitaet"
+  ],
+  "2026-10-02-09:00-SR222-09:00": [
    "russisch",
+   "digital",
+   "popkultur"
+  ],
+  "2026-10-02-09:00-SR222-09:30": [
+   "ukrainisch",
+   "digital",
+   "identitaet"
+  ],
+  "2026-10-02-09:00-SR222-10:00": [
+   "sowjetismus",
+   "film",
+   "medien"
+  ],
+  "2026-10-02-09:00-SR222-10:30": [
+   "russisch",
+   "sowjetismus",
+   "medien"
+  ],
+  "2026-10-02-09:00-SR223-09:00": [
+   "suedslavisch",
+   "exil",
+   "digital"
+  ],
+  "2026-10-02-09:00-SR223-09:30": [
+   "russisch",
+   "exil",
+   "digital"
+  ],
+  "2026-10-02-09:00-SR223-10:00": [
+   "russisch",
+   "ukrainisch",
+   "exil"
+  ],
+  "2026-10-02-09:00-SR224-09:00": [
+   "polnisch",
    "epochen"
+  ],
+  "2026-10-02-09:00-SR224-09:30": [
+   "russisch",
+   "ukrainisch",
+   "oekologie"
+  ],
+  "2026-10-02-09:00-SR224-10:00": [
+   "russisch",
+   "grammatik"
+  ],
+  "2026-10-02-09:00-SR224-10:30": [
+   "russisch",
+   "translation",
+   "grammatik"
+  ],
+  "2026-10-02-09:00-SR226-09:00": [
+   "ukrainisch",
+   "film",
+   "sowjetismus"
+  ],
+  "2026-10-02-09:00-SR226-09:30": [
+   "film",
+   "medien"
+  ],
+  "2026-10-02-09:00-SR226-10:00": [
+   "slowakisch",
+   "film",
+   "identitaet"
   ],
   "2026-10-02-09:00-SR226-10:30": [
    "suedslavisch",
    "film",
-   "medien"
+   "erinnerung"
+  ],
+  "2026-10-02-11:30-HS6-11:30": [
+   "suedslavisch",
+   "identitaet",
+   "epochen"
+  ],
+  "2026-10-02-11:30-HS6-12:00": [
+   "tschechisch",
+   "erinnerung",
+   "exil"
+  ],
+  "2026-10-02-11:30-HS6-12:30": [
+   "suedslavisch",
+   "krieg",
+   "erinnerung"
+  ],
+  "2026-10-02-11:30-HS7-11:30": [
+   "polnisch",
+   "identitaet",
+   "epochen"
+  ],
+  "2026-10-02-11:30-HS7-12:00": [
+   "ukrainisch",
+   "krieg",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-HS8-11:30": [
+   "russisch",
+   "didaktik",
+   "digital"
+  ],
+  "2026-10-02-11:30-HS8-12:00": [
+   "russisch",
+   "didaktik",
+   "utopie"
+  ],
+  "2026-10-02-11:30-HS8-12:30": [
+   "russisch",
+   "didaktik"
+  ],
+  "2026-10-02-11:30-SR113-11:30": [
+   "ukrainisch",
+   "variation",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR113-12:00": [
+   "russisch",
+   "ukrainisch",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR113-12:30": [
+   "ukrainisch",
+   "didaktik",
+   "krieg"
+  ],
+  "2026-10-02-11:30-SR114-11:30": [
+   "bulgarisch",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR114-12:00": [
+   "suedslavisch",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR121-11:30": [
+   "sorbisch",
+   "korpora",
+   "digital"
+  ],
+  "2026-10-02-11:30-SR121-12:00": [
+   "sorbisch",
+   "grammatik"
+  ],
+  "2026-10-02-11:30-SR121-12:30": [
+   "sorbisch",
+   "variation"
+  ],
+  "2026-10-02-11:30-SR124-11:30": [
+   "film",
+   "exil",
+   "didaktik"
   ],
   "2026-10-02-11:30-SR124-12:00": [
-   "russisch",
+   "film",
+   "exil",
+   "russisch"
+  ],
+  "2026-10-02-11:30-SR124-12:30": [
    "film",
    "exil"
+  ],
+  "2026-10-02-11:30-SR125-11:30": [
+   "polnisch",
+   "korpora",
+   "medien"
+  ],
+  "2026-10-02-11:30-SR125-12:00": [
+   "polnisch",
+   "medien",
+   "epochen"
+  ],
+  "2026-10-02-11:30-SR125-12:30": [
+   "polnisch",
+   "translation",
+   "digital"
+  ],
+  "2026-10-02-11:30-SR127-11:30": [
+   "russisch",
+   "krieg",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR127-12:00": [
+   "russisch",
+   "erinnerung",
+   "krieg"
+  ],
+  "2026-10-02-11:30-SR127-12:30": [
+   "ukrainisch",
+   "krieg",
+   "medien"
+  ],
+  "2026-10-02-11:30-SR206-11:30": [
+   "variation",
+   "digital"
+  ],
+  "2026-10-02-11:30-SR206-12:00": [
+   "korpora",
+   "digital",
+   "russisch"
+  ],
+  "2026-10-02-11:30-SR207-11:30": [
+   "russisch",
+   "grammatik"
+  ],
+  "2026-10-02-11:30-SR207-12:00": [
+   "russisch",
+   "grammatik",
+   "korpora"
+  ],
+  "2026-10-02-11:30-SR207-12:30": [
+   "russisch",
+   "grammatik"
+  ],
+  "2026-10-02-11:30-SR208-11:30": [
+   "kirchenslavisch",
+   "grammatik"
+  ],
+  "2026-10-02-11:30-SR208-12:00": [
+   "kirchenslavisch",
+   "digital",
+   "korpora"
+  ],
+  "2026-10-02-11:30-SR208-12:30": [
+   "russisch",
+   "grammatik",
+   "digital"
   ],
   "2026-10-02-11:30-SR209-11:30": [
    "weissrussisch",
    "variation",
    "identitaet"
   ],
+  "2026-10-02-11:30-SR209-12:00": [
+   "weissrussisch",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR209-12:30": [
+   "russisch",
+   "identitaet",
+   "erinnerung"
+  ],
+  "2026-10-02-11:30-SR221-11:30": [
+   "polnisch",
+   "erinnerung",
+   "exil"
+  ],
+  "2026-10-02-11:30-SR221-12:00": [
+   "polnisch",
+   "erinnerung",
+   "medien"
+  ],
+  "2026-10-02-11:30-SR221-12:30": [
+   "polnisch",
+   "erinnerung",
+   "epochen"
+  ],
+  "2026-10-02-11:30-SR222-11:30": [
+   "suedslavisch",
+   "medien",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR222-12:00": [
+   "suedslavisch",
+   "medien",
+   "identitaet"
+  ],
+  "2026-10-02-11:30-SR222-12:30": [
+   "suedslavisch",
+   "medien",
+   "variation"
+  ],
+  "2026-10-02-11:30-SR223-11:30": [
+   "russisch",
+   "sowjetismus",
+   "erinnerung"
+  ],
+  "2026-10-02-11:30-SR223-12:00": [
+   "ukrainisch",
+   "utopie",
+   "erinnerung"
+  ],
+  "2026-10-02-11:30-SR224-11:30": [
+   "suedslavisch",
+   "film",
+   "oekologie"
+  ],
+  "2026-10-02-11:30-SR224-12:00": [
+   "suedslavisch",
+   "film",
+   "erinnerung"
+  ],
+  "2026-10-02-11:30-SR224-12:30": [
+   "suedslavisch",
+   "film",
+   "oekologie"
+  ],
+  "2026-10-02-11:30-SR226-11:30": [
+   "polnisch",
+   "film",
+   "sowjetismus"
+  ],
+  "2026-10-02-11:30-SR226-12:00": [
+   "film",
+   "medien",
+   "translation"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00": [
+   "ukrainisch",
+   "korpora",
+   "digital"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00-2": [
+   "polnisch",
+   "russisch",
+   "didaktik"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00-3": [
+   "ukrainisch",
+   "digital",
+   "sowjetismus"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00-4": [
+   "russisch",
+   "variation",
+   "didaktik"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00-5": [
+   "polnisch",
+   "kirchenslavisch",
+   "translation"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00-6": [
+   "ukrainisch",
+   "korpora",
+   "translation"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00-7": [
+   "ukrainisch",
+   "identitaet",
+   "medien"
+  ],
+  "2026-10-02-14:00-FoyerCZS3-14:00-8": [
+   "ukrainisch",
+   "korpora",
+   "variation"
+  ],
+  "2026-10-02-14:00-HS7-14:00": [
+   "ukrainisch",
+   "russisch",
+   "identitaet"
+  ],
+  "2026-10-02-14:00-HS7-14:30": [
+   "ukrainisch",
+   "krieg",
+   "identitaet"
+  ],
+  "2026-10-02-14:00-HS8-14:00": [
+   "didaktik"
+  ],
   "2026-10-02-14:00-SR113-14:00": [
    "ukrainisch",
+   "grammatik",
+   "korpora"
+  ],
+  "2026-10-02-14:00-SR113-14:30": [
+   "ukrainisch",
+   "variation",
+   "digital"
+  ],
+  "2026-10-02-14:00-SR113-15:00": [
+   "ukrainisch",
+   "variation"
+  ],
+  "2026-10-02-14:00-SR114-14:00": [
+   "suedslavisch",
+   "variation",
+   "grammatik"
+  ],
+  "2026-10-02-14:00-SR114-14:30": [
+   "polnisch",
+   "variation"
+  ],
+  "2026-10-02-14:00-SR114-15:00": [
+   "suedslavisch",
+   "variation"
+  ],
+  "2026-10-02-14:00-SR121-14:00": [
+   "korpora",
+   "variation",
+   "krieg"
+  ],
+  "2026-10-02-14:00-SR121-14:30": [
+   "ukrainisch",
+   "russisch",
+   "variation"
+  ],
+  "2026-10-02-14:00-SR121-15:00": [
+   "polnisch",
+   "russisch",
+   "identitaet"
+  ],
+  "2026-10-02-14:00-SR124-14:00": [
+   "russisch",
+   "ukrainisch",
+   "identitaet"
+  ],
+  "2026-10-02-14:00-SR124-14:30": [
+   "russisch",
+   "epochen"
+  ],
+  "2026-10-02-14:00-SR125-14:00": [
+   "ukrainisch",
+   "didaktik"
+  ],
+  "2026-10-02-14:00-SR125-14:30": [
+   "ukrainisch",
+   "didaktik",
+   "krieg"
+  ],
+  "2026-10-02-14:00-SR125-15:00": [
+   "ukrainisch",
+   "didaktik",
+   "identitaet"
+  ],
+  "2026-10-02-14:00-SR127-14:00": [
+   "ukrainisch",
+   "krieg",
+   "medien"
+  ],
+  "2026-10-02-14:00-SR127-14:30": [
+   "polnisch",
+   "ukrainisch",
+   "krieg"
+  ],
+  "2026-10-02-14:00-SR206-14:00": [
+   "russisch",
+   "korpora",
+   "identitaet"
+  ],
+  "2026-10-02-14:00-SR206-14:30": [
+   "russisch",
+   "korpora"
+  ],
+  "2026-10-02-14:00-SR206-15:00": [
+   "polnisch",
+   "grammatik",
+   "medien"
+  ],
+  "2026-10-02-14:00-SR207-14:00": [
+   "russisch",
+   "tschechisch",
+   "grammatik"
+  ],
+  "2026-10-02-14:00-SR207-14:30": [
+   "tschechisch",
+   "grammatik",
+   "variation"
+  ],
+  "2026-10-02-14:00-SR207-15:00": [
    "grammatik"
   ],
   "2026-10-02-14:00-SR208-14:00": [
@@ -916,460 +1285,232 @@
    "kirchenslavisch",
    "korpora"
   ],
-  "2026-10-01-09:00-HS8-09:00": [
+  "2026-10-02-14:00-SR208-14:30": [
    "russisch",
-   "didaktik"
-  ],
-  "2026-10-01-09:00-SR208-09:00": [
-   "ukrainisch",
-   "grammatik"
-  ],
-  "2026-10-01-11:30-SR223-11:30": [
-   "exil"
-  ],
-  "2026-10-01-14:00-SR207-14:30": [
-   "russisch",
-   "didaktik",
-   "grammatik"
-  ],
-  "2026-10-02-09:00-SR124-09:00": [
-   "didaktik",
-   "sowjetismus"
-  ],
-  "2026-10-02-09:00-SR223-09:30": [
-   "russisch",
-   "exil",
-   "medien"
-  ],
-  "2026-10-02-11:30-SR121-12:00": [
-   "sorbisch",
-   "grammatik"
-  ],
-  "2026-10-02-11:30-SR206-12:00": [
-   "digital"
-  ],
-  "2026-10-02-14:00-SR207-15:00": [
-   "grammatik"
-  ],
-  "2026-10-02-14:00-HS7-14:00": [
-   "ukrainisch",
-   "identitaet"
-  ],
-  "2026-10-03-09:00-SR209-10:00": [
-   "weissrussisch",
-   "exil",
-   "erinnerung"
-  ],
-  "2026-10-03-09:00-SR209-09:30": [
-   "polnisch",
-   "krieg",
-   "exil",
-   "erinnerung"
-  ],
-  "2026-10-01-09:00-SR121-10:30": [
-   "ukrainisch",
-   "russisch",
-   "identitaet"
-  ],
-  "2026-10-01-14:00-SR114-14:00": [
-   "russisch",
-   "variation"
-  ],
-  "2026-10-01-14:00-SR208-14:30": [
-   "epochen"
-  ],
-  "2026-10-02-09:00-HS6-09:00": [
-   "ukrainisch",
-   "erinnerung",
-   "krieg"
-  ],
-  "2026-10-02-09:00-HS7-10:30": [
-   "medien"
-  ],
-  "2026-10-02-09:00-HS7-09:30": [
-   "suedslavisch",
-   "erinnerung"
-  ],
-  "2026-10-02-09:00-SR226-09:00": [
-   "ukrainisch",
-   "film",
-   "identitaet"
-  ],
-  "2026-10-02-11:30-SR207-12:00": [
-   "russisch",
-   "grammatik"
-  ],
-  "2026-10-02-11:30-HS6-11:30": [
-   "suedslavisch"
-  ],
-  "2026-10-02-11:30-SR222-11:30": [],
-  "2026-10-02-11:30-SR224-11:30": [
-   "film",
-   "oekologie"
-  ],
-  "2026-10-03-09:00-SR124-10:30": [
-   "film"
-  ],
-  "2026-10-01-09:00-SR121-10:00": [
-   "russisch",
-   "medien"
-  ],
-  "2026-10-01-09:00-SR208-09:30": [
-   "russisch",
-   "grammatik",
    "digital",
-   "epochen"
+   "korpora"
   ],
-  "2026-10-01-11:30-SR209-12:30": [
-   "ukrainisch",
-   "popkultur",
-   "identitaet"
-  ],
-  "2026-10-01-14:00-HS8-14:30": [
-   "didaktik",
-   "digital"
-  ],
-  "2026-10-02-09:00-SR114-10:30": [
-   "variation"
-  ],
-  "2026-10-02-11:30-SR222-12:30": [
-   "medien"
-  ],
-  "2026-10-02-14:00-SR121-15:00": [
-   "identitaet",
-   "variation"
-  ],
-  "2026-10-02-14:00-SR207-14:00": [
-   "russisch",
-   "tschechisch",
-   "grammatik"
-  ],
-  "2026-10-02-14:00-SR221-14:30": [
-   "tschechisch",
-   "slowakisch",
-   "erinnerung"
-  ],
-  "2026-10-02-14:00-SR222-14:30": [
-   "russisch",
-   "epochen"
-  ],
-  "2026-10-02-14:00-SR223-14:30": [
-   "russisch",
-   "film",
-   "medien"
-  ],
-  "2026-10-03-09:00-SR206-10:30": [
-   "polnisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-01-09:00-HS8-10:30": [
-   "russisch",
-   "didaktik"
-  ],
-  "2026-10-01-09:00-SR209-10:00": [
-   "weissrussisch",
-   "identitaet"
-  ],
-  "2026-10-01-11:30-SR114-12:00": [
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-01-11:30-SR209-11:30": [
-   "erinnerung",
-   "identitaet"
-  ],
-  "2026-10-01-14:00-SR224-15:00": [
-   "polnisch",
-   "sowjetismus"
-  ],
-  "2026-10-02-09:00-SR113-09:00": [
-   "ukrainisch",
-   "russisch",
-   "variation",
-   "sowjetismus"
-  ],
-  "2026-10-02-09:00-SR113-10:00": [
-   "russisch",
-   "ukrainisch",
-   "grammatik"
-  ],
-  "2026-10-02-09:00-SR208-10:30": [
+  "2026-10-02-14:00-SR208-15:00": [
    "russisch",
    "translation",
-   "grammatik"
+   "kirchenslavisch"
   ],
-  "2026-10-02-09:00-SR222-10:00": [
-   "film",
-   "medien",
-   "sowjetismus"
-  ],
-  "2026-10-02-09:00-SR224-09:30": [
-   "russisch",
-   "ukrainisch",
-   "oekologie",
-   "epochen"
-  ],
-  "2026-10-02-11:30-SR121-11:30": [
-   "sorbisch",
-   "variation"
-  ],
-  "2026-10-02-14:00-SR125-14:30": [
-   "ukrainisch",
-   "didaktik"
-  ],
-  "2026-10-01-09:00-HS6-09:30": [
-   "epochen"
-  ],
-  "2026-10-01-11:30-SR113-12:00": [
+  "2026-10-02-14:00-SR209-14:00": [
    "polnisch",
-   "digital",
-   "medien"
-  ],
-  "2026-10-01-14:00-SR206-14:00": [
-   "suedslavisch",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR113-09:30": [
-   "ukrainisch",
-   "didaktik"
-  ],
-  "2026-10-02-09:00-SR208-10:00": [
    "tschechisch",
-   "grammatik"
-  ],
-  "2026-10-02-11:30-HS8-11:30": [
-   "russisch",
-   "didaktik",
-   "digital"
-  ],
-  "2026-10-02-11:30-SR113-12:30": [
-   "ukrainisch",
-   "didaktik"
-  ],
-  "2026-10-02-11:30-SR226-12:00": [
-   "russisch",
-   "film",
-   "medien"
-  ],
-  "2026-10-02-14:00-SR113-14:30": [
-   "ukrainisch",
-   "variation",
-   "korpora"
+   "sowjetismus"
   ],
   "2026-10-02-14:00-SR209-14:30": [
    "russisch",
    "identitaet",
    "popkultur"
   ],
-  "2026-10-03-09:00-HS8-09:00": [
+  "2026-10-02-14:00-SR221-14:00": [
    "russisch",
-   "didaktik",
-   "medien"
-  ],
-  "2026-10-03-09:00-SR124-10:00": [
    "sowjetismus",
-   "epochen"
-  ],
-  "2026-10-01-09:00-SR208-10:00": [
-   "grammatik"
-  ],
-  "2026-10-01-11:30-SR208-12:30": [
-   "digital",
-   "korpora"
-  ],
-  "2026-10-01-14:00-SR224-14:00": [
-   "russisch",
-   "utopie",
-   "oekologie"
-  ],
-  "2026-10-02-09:00-HS8-09:30": [
-   "digital",
-   "didaktik"
-  ],
-  "2026-10-02-09:00-SR113-10:30": [
-   "ukrainisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR121-09:00": [
-   "sorbisch",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR207-09:30": [
-   "suedslavisch",
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR208-09:00": [
-   "grammatik",
-   "variation"
-  ],
-  "2026-10-02-09:00-SR223-10:00": [
-   "exil",
-   "epochen"
-  ],
-  "2026-10-02-09:00-SR224-10:30": [
-   "russisch",
-   "epochen"
-  ],
-  "2026-10-02-09:00-SR224-10:00": [
-   "epochen"
-  ],
-  "2026-10-02-14:00-SR206-15:00": [
-   "polnisch",
-   "identitaet"
-  ],
-  "2026-10-01-09:00-SR207-10:00": [
-   "translation"
-  ],
-  "2026-10-01-09:00-SR208-10:30": [
-   "grammatik"
-  ],
-  "2026-10-01-09:00-SR209-09:00": [
-   "russisch",
-   "medien",
-   "sowjetismus"
-  ],
-  "2026-10-01-11:30-SR221-12:00": [
-   "russisch",
-   "weissrussisch",
-   "ukrainisch",
-   "sowjetismus"
-  ],
-  "2026-10-01-14:00-SR208-14:00": [
-   "kirchenslavisch",
-   "grammatik"
-  ],
-  "2026-10-02-09:00-SR206-09:00": [
-   "tschechisch",
-   "variation"
-  ],
-  "2026-10-02-11:30-SR207-12:30": [
-   "grammatik"
-  ],
-  "2026-10-02-11:30-SR208-12:30": [
-   "russisch",
-   "grammatik",
-   "korpora"
-  ],
-  "2026-10-03-09:00-SR114-10:00": [
-   "polnisch",
-   "ukrainisch",
-   "identitaet"
-  ],
-  "2026-10-03-09:00-SR207-09:00": [
-   "grammatik"
-  ],
-  "2026-10-03-09:00-SR209-10:30": [
-   "russisch",
-   "krieg",
-   "epochen"
-  ],
-  "2026-10-03-09:00-SR221-10:00": [
-   "polnisch",
-   "medien",
-   "epochen"
-  ],
-  "2026-10-01-09:00-SR114-09:00": [
-   "polnisch",
-   "variation",
-   "identitaet"
-  ],
-  "2026-10-01-09:00-SR124-09:00": [
-   "russisch",
-   "identitaet",
-   "variation"
-  ],
-  "2026-10-01-09:00-SR125-09:30": [
-   "russisch",
-   "epochen"
-  ],
-  "2026-10-01-09:00-SR223-10:00": [
    "exil"
   ],
-  "2026-10-02-11:30-SR221-12:30": [
-   "polnisch",
+  "2026-10-02-14:00-SR221-14:30": [
+   "tschechisch",
+   "slowakisch",
    "erinnerung"
   ],
-  "2026-10-02-14:00-SR114-14:30": [
+  "2026-10-02-14:00-SR221-15:00": [
+   "tschechisch"
+  ],
+  "2026-10-02-14:00-SR222-14:00": [
    "polnisch",
-   "variation",
+   "identitaet",
+   "epochen"
+  ],
+  "2026-10-02-14:00-SR222-14:30": [
+   "russisch",
    "grammatik"
   ],
   "2026-10-02-14:00-SR223-14:00": [
-   "russisch"
+   "russisch",
+   "korpora",
+   "epochen"
+  ],
+  "2026-10-02-14:00-SR223-14:30": [
+   "russisch",
+   "film",
+   "sowjetismus"
+  ],
+  "2026-10-02-14:00-SR223-15:00": [
+   "ukrainisch",
+   "medien",
+   "identitaet"
+  ],
+  "2026-10-02-14:00-SR224-14:00": [
+   "suedslavisch",
+   "film"
+  ],
+  "2026-10-02-14:00-SR224-14:30": [
+   "suedslavisch",
+   "film",
+   "medien"
+  ],
+  "2026-10-03-09:00-HS8-09:00": [
+   "russisch",
+   "didaktik",
+   "variation"
+  ],
+  "2026-10-03-09:00-HS8-09:30": [
+   "suedslavisch",
+   "didaktik"
+  ],
+  "2026-10-03-09:00-HS8-10:00": [
+   "russisch",
+   "didaktik",
+   "grammatik"
   ],
   "2026-10-03-09:00-SR114-09:00": [
    "variation",
    "didaktik"
   ],
-  "2026-10-01-11:30-SR207-12:30": [
-   "russisch",
-   "grammatik",
-   "epochen"
-  ],
-  "2026-10-01-14:00-HS7-15:00": [
-   "polnisch",
-   "popkultur",
-   "medien"
-  ],
-  "2026-10-01-14:00-SR125-15:00": [
-   "slowakisch",
+  "2026-10-03-09:00-SR114-09:30": [
+   "variation",
    "identitaet"
   ],
-  "2026-10-02-09:00-SR127-09:00": [],
-  "2026-10-02-14:00-FoyerCZS3-14:00": [
+  "2026-10-03-09:00-SR114-10:00": [
    "ukrainisch",
-   "variation",
+   "polnisch",
+   "identitaet"
+  ],
+  "2026-10-03-09:00-SR124-09:00": [
+   "russisch",
    "sowjetismus"
   ],
+  "2026-10-03-09:00-SR124-09:30": [
+   "russisch",
+   "epochen",
+   "erinnerung"
+  ],
+  "2026-10-03-09:00-SR124-10:00": [
+   "russisch",
+   "sowjetismus",
+   "epochen"
+  ],
+  "2026-10-03-09:00-SR124-10:30": [
+   "film",
+   "sowjetismus",
+   "erinnerung"
+  ],
+  "2026-10-03-09:00-SR206-09:00": [
+   "russisch",
+   "grammatik",
+   "identitaet"
+  ],
+  "2026-10-03-09:00-SR206-09:30": [
+   "russisch",
+   "korpora",
+   "medien"
+  ],
+  "2026-10-03-09:00-SR206-10:00": [
+   "identitaet"
+  ],
+  "2026-10-03-09:00-SR206-10:30": [
+   "polnisch",
+   "grammatik",
+   "digital"
+  ],
+  "2026-10-03-09:00-SR207-09:00": [
+   "grammatik",
+   "korpora",
+   "variation"
+  ],
+  "2026-10-03-09:00-SR207-09:30": [
+   "grammatik",
+   "variation",
+   "korpora"
+  ],
+  "2026-10-03-09:00-SR207-10:00": [
+   "russisch",
+   "grammatik"
+  ],
+  "2026-10-03-09:00-SR209-09:00": [
+   "ukrainisch",
+   "exil",
+   "sowjetismus"
+  ],
+  "2026-10-03-09:00-SR209-09:30": [
+   "polnisch",
+   "exil",
+   "erinnerung"
+  ],
+  "2026-10-03-09:00-SR209-10:00": [
+   "weissrussisch",
+   "exil",
+   "identitaet"
+  ],
+  "2026-10-03-09:00-SR209-10:30": [
+   "russisch",
+   "exil",
+   "krieg"
+  ],
+  "2026-10-03-09:00-SR221-09:00": [
+   "russisch",
+   "utopie",
+   "popkultur"
+  ],
+  "2026-10-03-09:00-SR221-09:30": [
+   "russisch",
+   "sowjetismus",
+   "epochen"
+  ],
+  "2026-10-03-09:00-SR221-10:00": [
+   "polnisch",
+   "medien",
+   "krieg"
+  ],
+  "2026-10-03-09:00-SR221-10:30": [
+   "suedslavisch",
+   "identitaet",
+   "epochen"
+  ],
+  "2026-10-03-09:00-SR222-09:00": [
+   "identitaet",
+   "variation",
+   "epochen"
+  ],
+  "2026-10-03-09:00-SR222-09:30": [
+   "epochen",
+   "variation"
+  ],
+  "2026-10-03-09:00-SR222-10:00": [
+   "polnisch",
+   "translation",
+   "exil"
+  ],
+  "2026-10-03-09:00-SR222-10:30": [
+   "suedslavisch",
+   "epochen",
+   "oekologie"
+  ],
   "2026-10-03-09:00-SR224-09:00": [
-   "utopie"
+   "russisch",
+   "sowjetismus",
+   "epochen"
   ],
   "2026-10-03-09:00-SR224-09:30": [
    "russisch",
+   "sowjetismus",
    "identitaet"
   ],
   "2026-10-03-09:00-SR224-10:00": [
-   "erinnerung"
-  ],
-  "2026-10-01-14:00-HS8-14:00-2": [
-   "suedslavisch",
+   "russisch",
+   "sowjetismus",
    "grammatik"
   ],
-  "2026-10-02-14:00-FoyerCZS3-14:00-2": [
-   "polnisch",
-   "russisch",
-   "variation"
-  ],
-  "2026-10-02-14:00-FoyerCZS3-14:00-3": [
-   "ukrainisch",
+  "2026-10-01-09:00-HS7-09:30": [
    "digital",
-   "variation",
-   "sowjetismus"
-  ],
-  "2026-10-02-14:00-FoyerCZS3-14:00-4": [
-   "russisch",
-   "didaktik"
-  ],
-  "2026-10-02-14:00-FoyerCZS3-14:00-5": [
-   "polnisch",
+   "medien",
    "translation"
   ],
-  "2026-10-02-14:00-FoyerCZS3-14:00-6": [
-   "ukrainisch",
-   "korpora"
-  ],
-  "2026-10-02-14:00-FoyerCZS3-14:00-7": [
-   "ukrainisch",
-   "identitaet",
-   "didaktik"
-  ],
-  "2026-10-02-14:00-FoyerCZS3-14:00-8": [
-   "ukrainisch",
-   "variation",
-   "sowjetismus"
+  "2026-10-01-11:30-SR209-11:30": [
+   "erinnerung",
+   "identitaet"
   ]
  }
 }
