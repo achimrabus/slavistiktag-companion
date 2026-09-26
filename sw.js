@@ -31,7 +31,10 @@ self.addEventListener("fetch", (e) => {
   const isData = url.pathname.includes("/data/");
   if (isData) {
     e.respondWith(
-      fetch(e.request)
+      // cache: "reload" umgeht den HTTP-Cache (GitHub Pages: max-age=600) –
+      // sonst kann network-first bis zu 10 min alte Daten als „frisch" liefern
+      // (klassisches „das PWA-Update kommt nicht an").
+      fetch(e.request, { cache: "reload" })
         .then((res) => {
           if (res.ok) {
             const copy = res.clone();
