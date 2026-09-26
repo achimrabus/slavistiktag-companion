@@ -8,7 +8,12 @@ import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PORT = 8127;
-const server = spawn("python", ["-m", "http.server", String(PORT)], { cwd: ROOT, shell: true, stdio: "ignore" });
+// Windows: shell:true → server.pid ist die Shell, kill() tötet sie, aber NICHT den
+// eigentlichen Python-Child. Folge: Zombie-http.server auf PORT, beim nächsten Lauf
+// „Address already in use" → Testläufe hängen scheinbar ewig. taskkill /T beendet
+// den kompletten Prozessbaum zuverlässig. (Linux/CI: python3, kein taskkill nötig.)
+const PY = process.platform === "win32" ? "python" : "python3";
+const server = spawn(PY, ["-m", "http.server", String(PORT)], { cwd: ROOT, shell: true, stdio: "ignore" });
 await new Promise((r) => setTimeout(r, 1800));
 
 // Windows: shell:true → server.pid ist die Shell, kill() tötet sie, aber NICHT den

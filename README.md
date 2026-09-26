@@ -6,23 +6,28 @@ Eine Anwendung, zwei Ebenen:
 - **Programm** – alle Vorträge, Panels, Podien und Rahmenveranstaltungen mit
   Volltextsuche (global über alle Tage), Filtern (Tag, Raum, Zeit, Panel,
   Disziplin, Format), Favoriten (★, localStorage), ICS-Export, „Jetzt läuft“-
-  Ansicht und Detail-Drawer pro Vortrag.
+  Ansicht, Sprecher:innen-Ansichten, Sync-Diff („Was ist neu?“) und
+  Detail-Drawer pro Vortrag.
 - **Themen-Kompass** (Data Mining) – alle Vorträge automatisch nach 27
-  Themenfeldern gruppiert (kuratiertes Keyword-Lexikon über Titel und
-  Sprechernamen), mit charakteristischen Begriffen (TF-IDF) und heuristischer
-  Sprachverteilung pro Cluster. Kein ML-Backend, alles im Browser.
+  Themenfeldern gruppiert: kuratiertes Keyword-Lexikon über Titel und
+  Sprechernamen, ergänzt durch eine LLM-Zuordnung, die automatisch gegen die
+  Themenliste validiert wird; dazu charakteristische Begriffe (TF-IDF) und
+  heuristische Sprachverteilung pro Cluster. Kein ML-Backend, alles im Browser.
 
-Vanilla JS, kein Framework, kein Build-Step. Statisch auf GitHub Pages.
+Vanilla JS, kein Framework, kein Build-Step. Statisch auf GitHub Pages,
+installierbar als PWA (Offline-Nutzung über Service Worker).
 
 ## Datenfluss
 
 ```
-Uni Jena (vortraege.pdf)
-   │  GitHub Action update.yml (Cron alle 6 h): SHA-256-Vergleich,
-   │  bei Änderung: Parser → Validierungs-Gate → Commit → Pages-Neubau
+ConfTool der Tagung (slavistiktag2026)
+   │  GitHub Action update.yml (Cron alle 6 h): Fetch → Parser →
+   │  Validierungs-Gate → bei Änderung: Commit → Pages-Neubau
    ▼
-data/program.json  (generiert, committed)
-data/content.json  (kuratiert: Podien, Rahmenprogramm, Venues, Eröffnung)
+data/program.json   (generiert, committed)
+data/changes.json   (Diff des letzten Syncs, optional)
+data/llm_tags.json  (LLM-Themen-Zuordnung, validiert)
+data/content.json   (kuratiert: Podien, Rahmenprogramm, Venues, Eröffnung)
    │
    ▼
 App (buildModel beim Laden: Venues, Panels, Suche, Mining-Tags, Cluster)
@@ -35,7 +40,11 @@ scheitert sichtbar.
 
 ```
 repo/
-├── index.html                SPA, Hash-Routing (#/heute, /programm, /mein, /themen, /info)
+├── index.html                SPA, Hash-Routing (#/heute, /programm, /mein,
+│                             /themen, /sprecher, /aenderungen, /info)
+├── sw.js                     Service Worker: Shell stale-while-revalidate,
+│                             Daten network-first mit Cache-Fallback
+├── manifest.json             PWA-Manifest (installierbar)
 ├── css/style.css
 ├── js/
 │   ├── app.js                Router, State, Boot
@@ -43,27 +52,43 @@ repo/
 │   ├── lexicon.js            Kuratiertes Keyword-Lexikon (27 Themenfelder)
 │   ├── mining.js             Tagging, Sprachheuristik, TF-IDF, Clustering
 │   ├── search.js             Normalisierung, Filterung, Hervorhebung
+│   ├── rooms.js              Raum-Mapping (Gebäude, Etage, Stadtplan-Link)
 │   ├── favorites.js, ics.js, now.js, util.js
-│   └── views/                dashboard, program, mine, info, drawer, topics
-├── data/                     program.json (generiert) + content.json (kuratiert)
-├── tools/parse_program.py    PDF→JSON (pdfplumber, lokal/CI)
+│   └── views/                dashboard, program, mine, info, drawer, topics,
+│                             speakers, changes
+├── data/                     program.json, content.json (kuratiert),
+│                             changes.json, llm_tags.json (beide generiert)
+├── tools/fetch_conftool.py   ConfTool → JSON (Cron-Sync, lokal/CI)
+├── tools/parse_program.py    Legacy: PDF→JSON (pdfplumber; vor ConfTool-Umstellung)
+├── tools/llm_tagging.py      LLM-Themen-Zuordnung → data/llm_tags.json
 ├── tools/verify_lexicon.mjs  Lexikon gegen echte Titel verifizieren
-├── tests/                    mining, logic, realdata, smoke (jsdom), layout (Playwright)
-└── .github/workflows/        deploy.yml (Pages) + update.yml (Cron 6 h)
+├── tests/                    mining, logic, realdata, rooms, shell, smoke
+│                             (jsdom), layout (Playwright)
+└── .github/workflows/        deploy.yml (Pages), update.yml (Cron 6 h),
+                              test.yml (Tests bei Push/PR)
 ```
 
 ## Entwicklung / Tests
 
 ```
 npm install
-npm run test        # 5 Suiten: Mining-Logik, Filter/ICS/Now, echte Daten, jsdom-Smoke, Layout
-npm run parse       # PDF neu parsen (tools/source/*.pdf → data/program.json)
+npx playwright install chromium        # für die Layout-Suite (einmalig)
+npm run test        # 7 Suiten: Mining, Filter/ICS/Now, echte Daten, Räume,
+                    # SW-Shell, jsdom-Smoke, Layout (echtes Chromium)
 python -m http.server 8000   # lokal ansehen
 ```
 
+Die Layout-Suite startet einen eigenen Testserver auf Port 8127.
+
+Beiträge: siehe [CONTRIBUTING.md](CONTRIBUTING.md). Wichtig vorab: Die Dateien
+`data/program.json`, `data/changes.json` und `data/llm_tags.json` werden vom
+CI generiert – bitte nicht händisch im PR ändern (Änderungen würden beim
+nächsten Sync überschrieben). Kuratierte Inhalte in `data/content.json` sind
+ausdrücklich PR-würdig.
+
 Der Sprachdetektor ist eine **Heuristik** (Funktionswörter Deutsch/Englisch,
 kyrillische Spezialzeichen für Russisch/Ukrainisch, Diakritika für Polnisch/
-Tschechisch) – Zuordnungen sind Hinweise, keine Klassifikation. 76 % der
-Vorträge lassen sich zuordnen; Multi-Label ist gewollt.
+Tschechisch) – Zuordnungen sind Hinweise, keine Klassifikation. Rund 97 % der
+Vorträge lassen sich zuordnen.
 
 Lizenz: MIT (siehe LICENSE). App: Achim Rabus.
