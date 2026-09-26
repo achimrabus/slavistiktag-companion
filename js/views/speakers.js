@@ -64,8 +64,12 @@ export function buildSpeakerIndex(model) {
       if (!key) continue;
       if (!map.has(key)) map.set(key, { raw: key, ...nameParts(key), talks: [], chairOf: [] });
       const entry = map.get(key);
-      if (role === "chair") entry.chairOf.push(session);
-      else entry.talks.push(session);
+      // Chair-Rolle gilt pro PANEL (panel.chair steht an jedem Vortrag des
+      // Panels) – ohne Dedupe würde „4× Chair“ zählen, was ein einziges Panel
+      // mit 4 Vorträgen ist. Eine Repräsentant-Session je Panel reicht.
+      if (role === "chair") {
+        if (!entry.chairOf.some((x) => x.panel_id && x.panel_id === session.panel_id)) entry.chairOf.push(session);
+      } else entry.talks.push(session);
     }
   };
   for (const s of model.sessions) {
@@ -169,13 +173,25 @@ export function renderPerson(model, ctx, rawName) {
         h("span", { class: "day-name", text: dateLabel(s.day) })));
     }
     if (role === "Chair") {
+      // Chair-Eintrag: Panel-Titel + die Einzelvorträge des Panels (klickbar) –
+      // sonst sieht man nur den Panel-Titel und nicht, WAS da läuft.
+      const panelTalks = s.panel_id
+        ? model.byDay[s.day].filter((x) => x.panel_id === s.panel_id && x.type === "talk")
+        : [];
       wrap.append(h("div", { class: "slot-block" },
         h("div", { class: "slot-head" },
           h("span", { text: `${s.start}–${s.end}` }),
           h("span", { class: "pill", text: "Chair" })),
-        h("div", { class: "card session-card chair-entry", onclick: () => ctx.openSession(s.id), tabindex: "0", role: "button" },
+        h("div", { class: "card session-card chair-entry" },
           h("div", { class: "card-title", text: s.panel_title || s.title }),
-          s.room ? h("span", { class: "meta", text: s.room }) : null)));
+          h("div", { class: "card-speakers", text: `Chair: ${p.display.split(" (")[0]} · ${s.room || ""}` }),
+          panelTalks.length > 1
+            ? h("ul", { class: "mini-list chair-panel-list" },
+                panelTalks.map((x) => h("li", {},
+                  h("a", { href: "#", onclick: (e) => { e.preventDefault(); ctx.openSession(x.id); } },
+                    `${x.start} · ${stripTitles(x.speakers.join(", "))}: ${x.title}`))))
+            : null,
+          !panelTalks.length && s.room ? h("span", { class: "meta", text: s.room }) : null)));
     } else {
       wrap.append(sessionCard(model, ctx, s, {}));
     }
