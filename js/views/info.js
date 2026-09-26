@@ -5,9 +5,18 @@ export function renderInfo(model) {
   const c = model.content;
   const wrap = h("div", { class: "view view-info" });
 
+  // Stand-Badge: wann wurden die Programmdaten zuletzt vom Sync generiert?
+  const gen = model.meta?.generated_at ? new Date(model.meta.generated_at) : null;
+  const standText = gen && !isNaN(gen)
+    ? `Programmstand: ${gen.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" })}, ${gen.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr`
+    : "Programmstand: —";
+
   wrap.append(h("header", { class: "hero compact" },
     h("h1", { text: "Orientierung" }),
-    h("p", { class: "meta", text: `${c.conference.place} · ${c.conference.start.slice(8)}.${c.conference.start.slice(5, 7)}. – ${c.conference.end.slice(8)}.${c.conference.end.slice(5, 7)}.2026` })));
+    h("p", { class: "meta", text: `${c.conference.place} · ${c.conference.start.slice(8)}.${c.conference.start.slice(5, 7)}. – ${c.conference.end.slice(8)}.${c.conference.end.slice(5, 7)}.2026` }),
+    h("p", { class: "stand-badge" },
+      h("span", { class: "stand-dot", "aria-hidden": "true" }),
+      `${standText} · Quelle: ConfTool (automatisch synchronisiert)`)));
 
   // Orte
   wrap.append(h("section", { class: "card" },

@@ -17,7 +17,7 @@ export function isRunningNow(model, x, now = new Date()) {
   return tm >= m && tm < end;
 }
 
-const TRACK_LABELS = { DID: "Fachdidaktik", SW: "Sprachwissenschaft", LKW: "Literatur-/Kulturwiss." };
+const TRACK_LABELS = { DID: "Fachdidaktik", SW: "Sprachwiss.", LKW: "Lit./Kulturwiss." };
 // Sprach-Badge (Heuristik aus mining.detectLanguage, s. Info-Ansicht):
 // nur nicht-deutsche Vorträge werden markiert; „de" bleibt unbezeichnet.
 const LANG_BADGES = {
@@ -32,8 +32,8 @@ function langBadge(lang) {
   return b ? h("span", { class: "pill lang", text: b.label, title: b.title }) : null;
 }
 const FORMAT_LABELS = {
-  panel: "Eingereichte Panels", sektion: "Thematische Sektionen",
-  pause: "Pausen", podium: "Podiumsdiskussionen", special: "Sonderformate", rahmen: "Rahmenprogramm",
+  panel: "Panels", sektion: "Sektionen",
+  pause: "Pausen", podium: "Podien", special: "Sonderformate", rahmen: "Rahmenprogramm",
 };
 
 export function renderProgram(model, ctx, params) {
