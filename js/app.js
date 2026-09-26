@@ -15,6 +15,7 @@ import { renderChanges } from "./views/changes.js";
 const app = document.getElementById("app");
 const nav = document.getElementById("main-nav");
 const themeBtn = document.getElementById("theme-toggle");
+const footerStand = document.getElementById("footer-stand");
 
 function applyTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
@@ -160,6 +161,11 @@ export function boot() {
       ctx.model = model;
       ctx.byId = Object.fromEntries(model.sessions.map((s) => [s.id, s]));
       Object.assign(ctx.model, buildClusterModel(model));
+      // Datenstand im Footer (global sichtbar): „Stand: 26.9.2026, 11:00"
+      if (footerStand && model.meta?.generated_at) {
+        const d = new Date(model.meta.generated_at);
+        if (!isNaN(d)) footerStand.textContent = ` · Programmstand: ${d.toLocaleDateString("de-DE", { day: "numeric", month: "numeric", year: "numeric" })}, ${d.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr`;
+      }
       if (!localStorage.getItem("slavtag26.view")) {
         try { localStorage.setItem("slavtag26.view", ctx.viewMode); } catch { /* ignore */ }
       }
