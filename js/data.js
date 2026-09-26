@@ -68,6 +68,9 @@ export function buildModel(program, content) {
       discipline: panel?.code ? panel.code.split("_")[1] : ((s.track || "").split("+")[0] || null),
     };
     out._search = makeSearchText(out, out.panel_title);
+    // Suchtext ohne Chair-Feld: für die „Nur Vorträge"-Suche (Checkbox im Filter),
+    // damit Chair-Treffer die Personensuche nicht fluten.
+    out._searchTalks = makeSearchText({ ...out, chair: null }, out.panel_title);
     out._tags = tagsFor({ title: s.title, speakers: s.speakers });
     out._lang = detectLanguage(s.title);
     return out;

@@ -65,6 +65,8 @@ function readState(model, params) {
     panel: params.get("panel") || "",
     tracks: params.getAll("track"),
     formats: params.getAll("format"),
+    // „Nur Vorträge": Chair-Treffer bei Personensuche ausblenden (Checkbox)
+    talksOnly: params.get("talks") === "1",
   };
   st.dayExplicit = dayParam != null; // Tag vom User gewählt (Chip/URL), nicht impliziter Browse-Default
   return st;
@@ -89,6 +91,7 @@ function writeHash(model, state) {
   if (state.panel) p.set("panel", state.panel);
   for (const t of state.tracks) p.append("track", t);
   for (const f of state.formats) p.append("format", f);
+  if (state.talksOnly) p.set("talks", "1");
   const hash = `#/programm${p.toString() ? "?" + p.toString() : ""}`;
   if (location.hash !== hash) history.replaceState(null, "", hash);
 }
@@ -143,8 +146,22 @@ function filterBar(model, ctx, state) {
     .sort((a, b) => (a.day + a.block_start).localeCompare(b.day + b.block_start))
     .map((p) => ({ value: p.id, text: `${p.code ? p.code + " " : ""}${p.title || "?"}`.slice(0, 90) }));
 
+  // „Nur Vorträge": erscheint nur bei aktiver Suche (ohne Suche ohne Bedeutung);
+  // blendet Treffer aus, die NUR über das Chair-Feld passen.
+  const talksOnlyCb = h("input", {
+    type: "checkbox", class: "talks-only-cb", checked: state.talksOnly,
+    "aria-label": "Nur Vorträge (Chair-Treffer ausblenden)",
+  });
+  talksOnlyCb.addEventListener("change", () => {
+    state.talksOnly = talksOnlyCb.checked;
+    sync();
+  });
+  const talksOnlyWrap = h("label", { class: `check talks-only ${state.q ? "" : "hidden"}`, title: "Sucht nur in Titel, Personen, Raum, Panels – nicht in der Chair-Zeile" },
+    talksOnlyCb, h("span", { text: "Nur Vorträge" }));
+
   const bar = h("div", { class: "filter-bar" },
     h("div", { class: "filter-row" }, search,
+      talksOnlyWrap,
       select("Raum", roomOpts, "room"),
       select("Zeit", slotOpts, "slot"),
       select("Panel/Sektion", panelOpts, "panel")),
@@ -165,7 +182,7 @@ function filterBar(model, ctx, state) {
       h("button", {
         class: "btn ghost", text: "Filter zurücksetzen",
         onclick: () => {
-          Object.assign(state, { q: "", room: "", slot: "", panel: "", tracks: [], formats: [] });
+          Object.assign(state, { q: "", room: "", slot: "", panel: "", tracks: [], formats: [], talksOnly: false });
           writeHash(model, state);
           ctx.rerenderProgram();
         },
@@ -174,6 +191,10 @@ function filterBar(model, ctx, state) {
 }
 
 export function renderResults(model, ctx, state, results) {
+  // Checkbox-Sichtbarkeit folgt der aktuellen Suche (die Filterleiste selbst
+  // wird bei Tastendruck nicht neu gezeichnet – nur die Results).
+  const talksOnlyEl = document.querySelector(".talks-only");
+  if (talksOnlyEl) talksOnlyEl.classList.toggle("hidden", !state.q);
   results.textContent = "";
 
   const wantEvents = state.formats.length === 0 || state.formats.some((f) => ["podium", "special", "rahmen"].includes(f));

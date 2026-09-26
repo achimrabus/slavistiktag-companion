@@ -39,7 +39,9 @@ export function matchesQuery(searchText, q) {
 
 export function filterSessions(sessions, state) {
   return sessions.filter((s) => {
-    if (state.q && !matchesQuery(s._search || normalize(s.title), state.q)) return false;
+    // „Nur Vorträge“ (Checkbox): Suche nur über Titel/Sprecher:innen/Raum/Panels,
+    // nicht über das Chair-Feld – Chair-Treffer sind bei Personensuche Rauschen.
+    if (state.q && !matchesQuery(state.talksOnly && s._searchTalks ? s._searchTalks : (s._search || normalize(s.title)), state.q)) return false;
     if (state.day && s.day !== state.day) return false;
     if (state.room && s.room !== state.room) return false;
     if (state.slot && s.start !== state.slot) return false;
