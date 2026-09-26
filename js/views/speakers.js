@@ -4,13 +4,39 @@
 import { h, dateLabel } from "../util.js";
 import { sessionCard } from "./program.js";
 
+// Akademische Präfix-Titel sind im Datensatz inkonsistent vergeben (Chairs stehen
+// mit „Prof. Dr.", Sprecher:innen ohne) — dieselbe Person_landet sonst doppelt im
+// Index. Für die IDENTITÄT wird gestrippt, angezeigt wird der Name ohne Titel
+// (konsistent zu den Vortragskarten). Exportiert für tests/speakers.test.mjs.
+const TITLE_TOKEN_RE =
+  /^(?:(?:Univ\.-?|Auß\.-?|apl\.-?)?Prof\.?(?:\s*em\.)?|Dr\.(?:\s*(?:h\.c\.|rer\.\s*nat\.|phil\.|med\.|theol\.)(?:\s*mult\.)?)?|PD|habil\.|Ph\.\s?D\.|D\.phil\.)\s+/i;
+export function stripTitles(raw) {
+  let n = String(raw).trim();
+  for (let i = 0; i < 4; i++) {
+    const m = n.replace(TITLE_TOKEN_RE, "");
+    if (m === n) break;
+    n = m;
+  }
+  return n;
+}
+
+// Nachnamen-Partikel: Mehrwort-Nachnamen korrekt behandeln
+// („Evert van der Zweerde" → „van der Zweerde, Evert", nicht „Zweerde, Evert van der").
+const PARTICLES = new Set([
+  "van", "von", "der", "den", "de", "del", "della", "di", "da", "du",
+  "la", "le", "zu", "zur", "im", "aus", "ter", "ten", "te",
+]);
+
 // „Vorname Nachname" → „Nachname, Vorname"; Klammern-Zusatz (Geburtsname o.ä.)
 // bleibt erhalten: „Liudmyla Mobius (Pidkuimukha)" → „Mobius, Liudmyla (Pidkuimukha)"
 export function nameParts(raw) {
   const extra = raw.match(/\(([^)]*)\)/)?.[1];
   const name = raw.replace(/\s*\([^)]*\)\s*/, "").trim();
   const words = name.split(/\s+/);
-  const last = words.pop() || name;
+  let last = words.pop() || name;
+  while (words.length && PARTICLES.has(words[words.length - 1].toLowerCase())) {
+    last = words.pop() + " " + last;
+  }
   const base = words.length ? `${last}, ${words.join(" ")}` : last;
   return { display: extra ? `${base} (${extra})` : base, sortKey: base.toLowerCase() };
 }
@@ -32,7 +58,9 @@ export function buildSpeakerIndex(model) {
   const map = new Map();
   const add = (raw, role, session) => {
     for (const one of splitPeople(raw)) {
-      const key = one.trim();
+      // Identität = Name OHNE akademische Titel: Chairs stehen im ConfTool
+      // mit „Prof. Dr.", Sprecher:innen ohne — dieselbe Person sonst doppelt.
+      const key = stripTitles(one.trim());
       if (!key) continue;
       if (!map.has(key)) map.set(key, { raw: key, ...nameParts(key), talks: [], chairOf: [] });
       const entry = map.get(key);
@@ -118,7 +146,8 @@ export function renderPerson(model, ctx, rawName) {
 
   const affis = new Set();
   for (const s of p.talks) {
-    const i = (s.speakers || []).indexOf(p.raw);
+    // Identität = gestrippter Name (gleiche Regel wie buildSpeakerIndex)
+    const i = (s.speakers || []).findIndex((sp) => stripTitles(sp) === p.raw);
     if (i >= 0 && s.affiliations?.[i]) affis.add(s.affiliations[i]);
   }
 

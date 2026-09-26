@@ -4,7 +4,7 @@ import { favs } from "../favorites.js";
 import { icsFor, downloadIcs } from "../ics.js";
 import { minutes } from "../util.js";
 import { roomLink, roomWhere, roomFloorStrip } from "../rooms.js";
-import { splitPeople } from "./speakers.js";
+import { splitPeople, stripTitles } from "./speakers.js";
 import { highlight } from "../search.js";
 
 export function openDrawer(ctx, id) {
@@ -105,9 +105,10 @@ function speakerLineEl(s) {
   s.speakers.forEach((raw, i) => {
     if (i) p.append(", ");
     for (const one of splitPeople(raw)) {
+      const name = stripTitles(one.trim());
       p.append(h("a", {
-        href: `#/sprecher/${encodeURIComponent(one.trim())}`,
-        text: one.trim(),
+        href: `#/sprecher/${encodeURIComponent(name)}`,
+        text: name,
       }));
     }
     if (s.affiliations?.[i]) p.append(` (${s.affiliations[i]})`);
@@ -138,7 +139,7 @@ function sessionBody(ctx, s, close) {
           "Im Rahmen von: ",
           s.panel_code ? h("span", { class: "pill code", text: s.panel_code }) : null, " ",
           h("strong", { text: s.panel_title }),
-          s.chair ? h("span", { class: "meta", text: ` · Chair: ${s.chair}` }) : null)
+          s.chair ? h("span", { class: "meta", text: ` · Chair: ${stripTitles(s.chair)}` }) : null)
       : null,
     s.abstract
       ? h("section", {},

@@ -3,6 +3,7 @@ import { h, dateLabel, timeRange, debounce, minutes } from "../util.js";
 import { filterSessions, highlight, snippet } from "../search.js";
 import { favs } from "../favorites.js";
 import { roomLink } from "../rooms.js";
+import { stripTitles } from "./speakers.js";
 
 // Läuft diese Veranstaltung „jetzt“? Nur während der Konferenztage; der
 // Zeitpunkt ist per ctx.now injizierbar (Tests).
@@ -414,7 +415,7 @@ export function sessionCard(model, ctx, s, state) {
     s.panel_code ? h("span", { class: "pill code", text: s.panel_code }) : null,
     s.room ? roomLink(s.room) : null,
     // Chair sichtbar machen: bei Personensuchen ist er der (einzige) Treffergrund
-    s.chair && state.q ? h("div", { class: "card-speakers dim-chair", text: `Chair: ${s.chair}` }) : null,
+    s.chair && state.q ? h("div", { class: "card-speakers dim-chair", text: `Chair: ${stripTitles(s.chair)}` }) : null,
     s.panel_title && !s.panel_code ? h("div", { class: "card-panel", text: s.panel_title }) : null);
 }
 
