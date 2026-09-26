@@ -94,6 +94,25 @@ export function renderInfo(model) {
     h("p", { text: methodText }),
     h("p", { class: "meta", text: "App (Programm-App und Themen-Kompass): Achim Rabus · Lizenz: MIT" })));
 
+  // Installation als App (PWA): iOS-, Android- und Desktop-Anleitung
+  wrap.append(h("section", { class: "card" },
+    h("h2", { text: "Als App installieren" }),
+    h("p", { text: "Die App läuft ohne Installation im Browser – installiert startet sie im Vollbild und funktioniert offline." }),
+    h("h3", { text: "iPhone / iPad (Safari)" }),
+    h("ol", { class: "mini-list" },
+      h("li", { text: "Diese Seite in Safari öffnen (geht nur in Safari, nicht in Chrome)." }),
+      h("li", { text: "Unten auf das Teilen-Symbol tippen (Quadrat mit Pfeil nach oben)." }),
+      h("li", { text: "„Zum Home-Bildschirm“ wählen." }),
+      h("li", { text: "Mit „Hinzufügen“ bestätigen – die App erscheint auf dem Homescreen." })),
+    h("h3", { text: "Android (Chrome)" }),
+    h("ol", { class: "mini-list" },
+      h("li", { text: "Diese Seite in Chrome öffnen." }),
+      h("li", { text: "Oben rechts auf die drei Punkte tippen." }),
+      h("li", { text: "„App installieren“ wählen und bestätigen. Die Installation läuft im Hintergrund (30–60 s); erst starten, wenn die Bestätigung kommt." }),
+      h("li", { text: "Falls „App installieren“ fehlschlägt: „Zum Startbildschirm hinzufügen“ wählen – die App funktioniert genau so (Vollbild, offline), nur ohne eigenen Eintrag in der App-Liste." })),
+    h("h3", { text: "Desktop" }),
+    h("p", { text: "Einfach diese Adresse im Browser öffnen – Icons in der Adressleiste bieten die Installation an." })));
+
   // Farben & Favoriten: kurze öffentliche Erklärung
   wrap.append(h("section", { class: "card" },
     h("h2", { text: "Farben & Favoriten" }),
