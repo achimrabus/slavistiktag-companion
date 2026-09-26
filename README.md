@@ -9,9 +9,10 @@ Eine Anwendung, zwei Ebenen:
   Ansicht, Sprecher:innen-Ansichten, Sync-Diff („Was ist neu?“) und
   Detail-Drawer pro Vortrag.
 - **Themen-Kompass** (Data Mining) – alle Vorträge automatisch nach 27
-  Themenfeldern gruppiert: kuratiertes Keyword-Lexikon über Titel und
-  Sprechernamen, ergänzt durch eine LLM-Zuordnung, die automatisch gegen die
-  Themenliste validiert wird; dazu charakteristische Begriffe (TF-IDF) und
+  Themenfeldern gruppiert: LLM-Zuordnung auf Basis von Titel und vollständigem
+  Abstract (maximal 3 Themenfelder pro Vortrag, validiert gegen die
+  Themenliste), ergänzt durch ein kuratiertes Keyword-Lexikon über Titel und
+  Sprechernamen; dazu charakteristische Begriffe (TF-IDF) und
   heuristische Sprachverteilung pro Cluster. Kein ML-Backend, alles im Browser.
 
 Vanilla JS, kein Framework, kein Build-Step. Statisch auf GitHub Pages,
