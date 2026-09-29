@@ -1,58 +1,11 @@
 {
  "counts": {
   "new": 0,
-  "changed": 2,
-  "removed": 1
+  "changed": 0,
+  "removed": 0
  },
  "new": [],
- "changed": [
-  {
-   "id": "2026-10-01-09:00-SR209-09:30",
-   "title": "Nameless Stars and Star Names: A New Wave of Pseudonymity and Anonymity in Belarusian Literature after 2020",
-   "speakers": [
-    "Ulyana Veryna"
-   ],
-   "day": "2026-10-01",
-   "start": "09:30",
-   "end": "10:00",
-   "room": "SR 209",
-   "old": {
-    "day": "2026-10-01",
-    "start": "10:00",
-    "end": "10:30",
-    "room": "SR 209"
-   }
-  },
-  {
-   "id": "2026-10-01-09:00-SR209-10:00",
-   "title": "„Wie die Kosaken…“ Reaktivierung und Neuschreibung eines Mythos in der ukrainischen Populärkultur (1970er–2020er Jahre)",
-   "speakers": [
-    "Nina Weller"
-   ],
-   "day": "2026-10-01",
-   "start": "10:00",
-   "end": "10:30",
-   "room": "SR 209",
-   "old": {
-    "day": "2026-10-01",
-    "start": "10:30",
-    "end": "11:00",
-    "room": "SR 209"
-   }
-  }
- ],
- "removed": [
-  {
-   "id": "2026-10-01-09:00-SR209-09:30",
-   "title": "Staging Ukraine: Stars, Misfits, and Contested Role Models through Eurovision Costume and Performance",
-   "speakers": [
-    "Olha Korniienko"
-   ],
-   "day": "2026-10-01",
-   "start": "09:30",
-   "end": "10:00",
-   "room": "SR 209"
-  }
- ],
- "generated_at": "2026-09-28T23:17:19+00:00"
+ "changed": [],
+ "removed": [],
+ "generated_at": "2026-09-29T05:44:18+00:00"
 }
