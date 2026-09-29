@@ -2,14 +2,14 @@
  "meta": {
   "source": "conftool",
   "source_url": "https://www.conftool.com/slavistiktag2026/index.php",
-  "source_sha256": "9aa930d99b821824",
-  "generated_at": "2026-09-29T12:52:20+00:00",
+  "source_sha256": "3d6c36cbcdb18c12",
+  "generated_at": "2026-09-29T22:15:30+00:00",
   "stats": {
-   "sessions": 308,
+   "sessions": 307,
    "breaks": 7,
    "panels": 102,
    "footer_events": 8,
-   "abstracts": 306
+   "abstracts": 305
   },
   "warnings": [
    "Tag 2026-09-30: keine Sitzungen gefunden",
@@ -601,7 +601,7 @@
    "block_start": "09:00",
    "code": null,
    "title": "Die philosophische Kultur in der Sowjetzeit. Neue Forschungsansätze",
-   "chair": "Prof. Dr. Nikolaj Plotnikov, Prof. Dr. Evert van der Zweerde",
+   "chair": "Prof. Dr. Nikolaj Plotnikov",
    "room": "SR 124",
    "track": "LKW"
   },
@@ -1935,24 +1935,6 @@
    "abstract": "Der Kosakenmythos durchläuft in der ukrainischen Populärkultur von den 1970er-Jahren bis in die 2020er Jahre eine markante Transformation: Angefangen von den unterschiedlichen sowjetischen Aneignungen des Kosakenmythos, der ihre Volksnähe und den antiwestlichen Befreiungskampf, später auch die romantisch-exotisierenden Elemente betonte, über die folkloristisch überhöhte Wiederaneignung des Kosaken als Symbolfigur ukrainischer Eigenstaatlichkeit und Innbegriff nationaler Identität bis hin zur radikalisierten, identitätsstiftenden Widerstands- und Heldenfigur im Selbstverteidigungskampf gegen Tatareneinfälle, polnische Adelswillkür, osmanische Macht und russischen Imperialismus sichert er sich einen festen, politisch wandelbaren Platz im Kanon ukrainischer Nationalmythen. Visuelle Stereotype wie der freie Reiter, der listenreiche Krieger oder der Hetman selbstverwalteter Kollektive vermitteln diese wechselnden Aneignungen und Projektionen des kosakischen Freiheitskampfs. Anhand ausgewählter Fallbeispiele–der Animationsserie. Wie die Kosaken ( Як Козаки/Как казаки,1967–1987 ) sowie der Parodie dieser Serie in Selenskijs Musical-Film Wie die Kosaken... “(2009), des Superhelden-Comics Buiviter (1995), des Action-Fantasy-Films Maksym Osa. Das Gold des Werwolfs (2022) u.a. –analysiert der Vortrag, wie die Kosakenfigur als Projektionsfläche des ukrainischen Nationalmythos durch das affektive Potential visueller und medialer Darstellungen transformiert und vor dem Hintergrund desrussischen Angriffskriegs gegen die Ukraine zum hochgradig politisierten, umstrittenen Träger und Vorbild dekolonialer Selbstbehauptung avanciert.",
    "affiliations": [
     "ZfL Berlin, Deutschland"
-   ]
-  },
-  {
-   "id": "2026-10-01-09:00-SR223-10:00",
-   "day": "2026-10-01",
-   "start": "10:00",
-   "end": "10:30",
-   "room": "SR 223",
-   "track": "LKW",
-   "panel_id": "2026-10-01|09:00|ct5",
-   "speakers": [
-    "Cristina Beretta"
-   ],
-   "title": "Professor:innen als gastarbajter? (Literatur)Professor:innen im Exil",
-   "type": "talk",
-   "abstract": "Im deutschsprachigen Diskurs werden Universitätsprofessor:innen in Exil- und Migrationskontexten nicht als Gastarbeiter:innen eingeordnet. Gleichwohl lassen sich zwischen beiden Arbeits- und Lebenslagen Gemeinsamkeiten ausmachen, allen voran die anthropologische Grunderfahrung des displacement .\n\nDer Vortrag untersucht literarische Figurationen von Mobilität und Arbeit im Kontext von Exilerfahrungen aus dem postjugoslawischen bzw. postsowjetischen Raum. Fokussiert wird auf folgende Romane: Dubravka Ugrešićs Ministarstvo boli (2004; dt. Das Ministerium der Schmerzen) und Vladimir Nabokovs Pnin (1957), wobei auch Nabokovs Lolita (1955) in die Analyse einbezogen wird.\n\nGerade vor dem Hintergrund unterschiedlicher historischer und gesellschaftspolitischer Kontexte erweist sich ein typologischer Vergleich dieser Texte als besonders aufschlussreich. Dies gilt insbesondere für die literarische Verarbeitung zentraler Grunderfahrungen wie Exil, Identitätssuche, Sprachverlust und -findung, zeitlicher und räumlicher Dislozierung, Einsamkeit, Humor sowie Fragen von Gedächtnis und Heimat.\n\nDer Vortrag zeigt, dass die literarischen Figurationen exilierter Universitätsprofessor:innen gängige Grenzziehungen zwischen akademischer Mobilität und Arbeitsmigration verschieben und damit neue Perspektiven auf Exil, Arbeit und Zugehörigkeit eröffnen.",
-   "affiliations": [
-    "Universität Klagenfurt, Österreich"
    ]
   },
   {
@@ -6985,7 +6967,7 @@
    "end": "17:30",
    "title": "„Die Slavistik ist tot – es lebe die Slavistik!“ Szenarien der Entwicklung slavistischer Fächer an deutschsprachigen Universitäten",
    "room": "HS 2",
-   "people": "Chair: Dr. Annelie Bachmaier Chair: Ruprecht von Waldenfels Chair: Prof. Dr. Katrin Bente Karl Chair: Christian Zehnder Chair: Jun.-Prof. Dr. Christina Clasmeier (Universität Münster) Externe Gäste: Prof. Dr. Kornelia Freitag (derz. Prorektorin für Lehre und Studium, Ruhr-Universität Bochum) Dr. Ulrich Heublein (ehem. Deutsches Zentrum für Hochschul- und Wissenschaftsforschung Leipzig) Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail012064ab\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
+   "people": "Chair: Dr. Annelie Bachmaier Chair: Ruprecht von Waldenfels Chair: Prof. Dr. Katrin Bente Karl Chair: Christian Zehnder Chair: Jun.-Prof. Dr. Christina Clasmeier (Universität Münster) Externe Gäste: Prof. Dr. Kornelia Freitag (derz. Prorektorin für Lehre und Studium, Ruhr-Universität Bochum) Dr. Ulrich Heublein (ehem. Deutsches Zentrum für Hochschul- und Wissenschaftsforschung Leipzig) Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail9027e2b3\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
   },
   {
    "day": "2026-10-03",
@@ -7009,7 +6991,7 @@
    "end": "14:00",
    "title": "Abschlussveranstaltung mit Imbiss",
    "room": "Foyer CZS 3",
-   "people": "Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail7b76c373\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
+   "people": "Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail11c7ecf0\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
   }
  ]
 }
