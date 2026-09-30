@@ -2,14 +2,14 @@
  "meta": {
   "source": "conftool",
   "source_url": "https://www.conftool.com/slavistiktag2026/index.php",
-  "source_sha256": "802de99dc908d41e",
-  "generated_at": "2026-09-30T05:32:35+00:00",
+  "source_sha256": "935ac7ea65a93cbc",
+  "generated_at": "2026-09-30T12:34:21+00:00",
   "stats": {
-   "sessions": 307,
+   "sessions": 304,
    "breaks": 7,
    "panels": 102,
    "footer_events": 8,
-   "abstracts": 305
+   "abstracts": 302
   },
   "warnings": [
    "Tag 2026-09-30: keine Sitzungen gefunden",
@@ -601,7 +601,7 @@
    "block_start": "09:00",
    "code": null,
    "title": "Die philosophische Kultur in der Sowjetzeit. Neue Forschungsansätze",
-   "chair": "Prof. Dr. Nikolaj Plotnikov",
+   "chair": "Prof. Dr. Nikolaj Plotnikov, Prof. Dr. Holger Kuße",
    "room": "SR 124",
    "track": "LKW"
   },
@@ -1336,13 +1336,13 @@
    "track": "LKW",
    "panel_id": "2026-10-01|09:00|ct24",
    "speakers": [
-    "Anastassia Kostrioukova"
+    "Lina Steiner"
    ],
-   "title": "Modeling the Post-Reform Social and Economic Transition: Gleb Uspensky's Early Ocherks",
+   "title": "Agriculture and Social Reform: Tolstoy’s Approach to Poverty Alleviation",
    "type": "talk",
-   "abstract": "Publishing his works predominately on the pages of Otechestvennye zapiski, Gleb Uspensky was a widely popular writer in the latter half of the nineteenth century. Yet, while hailed by his contemporaries for being a master of sociological analysis, he was oftentimes critiqued for his disorderly aesthetic style. According to some, the author was unable to reach the same literary stature of Tolstoy and Turgenev due to this contradiction. My talk will address some of Uspensky’s earliest series of ocherks published at the end of the 1860s and early 1870s, which model the collective provincial experience of the post-reform transition and explore the emergence of new economic subjects. Alternating between the experiences of peasants, new kinds of merchants and provincial town residents, the narrative gaze records the post-reform social totality as a mass of people in disarray and in the grips of despotic chance. I will attempt to trace some parallels between the sporadic and fragmented nature of Uspensky’s prose and the social phenomenon he tries to capture. In my analysis, I will keep in mind the evolutionary epistemological paradigm central to the time when these ocherks have been written, which affected how reality was imagined and how narratives could be constructed.",
+   "abstract": "After establishing himself as the master of Yasnaya Polyana, Tolstoy began to engage with British, French and German agricultural and social reform theories that promised solutions to rural poverty. As can be gleaned from Anna Karenina, where Lyovin’s ideas about agriculture reflect the author’s own views, by the 1870s Tolstoy had come to reject British approaches based on mechanization and high energy expenses, which fostered industrialization, urbanization and greater socioeconomic inequality. Instead, he favored the agricultural theories of the French physiocrats (in particular, François Quesnay and Anne-Robert-Jacques Turgot), which had informed Rousseau’s critique of modern civilization. This school of thought held that agricultural development must go hand-in-hand with moral education, promoting adherence to natural law and a simple way of life. Tolstoy’s firsthand experience with Moscow’s poor during the 1882 census reinforced his distrust of industrialization and commercial enterprise, along with his animosity toward post‑Reform land speculators. By the mid‑1880s, Tolstoy had become a passionate follower of the American economist Henry George, whose single‑land‑tax idea—also inspired by the physiocrats—aligned closely with Tolstoy’s moral and socioeconomic ideals. To conclude, I will show how Tolstoy’s engagement with Georgist ideas is reflected throughout his final large‑scale narrative, Resurrection .",
    "affiliations": [
-    "Ludwig Maximilians Universität München, Deutschland"
+    "Universität Bonn, Deutschland"
    ]
   },
   {
@@ -1598,13 +1598,13 @@
    "track": "LKW",
    "panel_id": "2026-10-01|09:00|ct24",
    "speakers": [
-    "Lina Steiner"
+    "Natalia Borisova"
    ],
-   "title": "Agriculture and Social Reform: Tolstoy’s Approach to Poverty Alleviation",
+   "title": "Liberation for what? Economic Subjectivity and Female Agency in Eliza Orzeszkowa’s Fiction",
    "type": "talk",
-   "abstract": "After establishing himself as the master of Yasnaya Polyana, Tolstoy began to engage with British, French and German agricultural and social reform theories that promised solutions to rural poverty. As can be gleaned from Anna Karenina, where Lyovin’s ideas about agriculture reflect the author’s own views, by the 1870s Tolstoy had come to reject British approaches based on mechanization and high energy expenses, which fostered industrialization, urbanization and greater socioeconomic inequality. Instead, he favored the agricultural theories of the French physiocrats (in particular, François Quesnay and Anne-Robert-Jacques Turgot), which had informed Rousseau’s critique of modern civilization. This school of thought held that agricultural development must go hand-in-hand with moral education, promoting adherence to natural law and a simple way of life. Tolstoy’s firsthand experience with Moscow’s poor during the 1882 census reinforced his distrust of industrialization and commercial enterprise, along with his animosity toward post‑Reform land speculators. By the mid‑1880s, Tolstoy had become a passionate follower of the American economist Henry George, whose single‑land‑tax idea—also inspired by the physiocrats—aligned closely with Tolstoy’s moral and socioeconomic ideals. To conclude, I will show how Tolstoy’s engagement with Georgist ideas is reflected throughout his final large‑scale narrative, Resurrection .",
+   "abstract": "This paper examines narratives of women’s fate in post-reform Poland through the lens of political economy as an emerging epistemological framework of late nineteenth-century realism. Focusing on novels by Eliza Orzeszkowa it explores how realist fiction becomes a space for negotiating economic theories and social change. Orzeszkowa’s heroines—women who fall outside established class and gender norms—are compelled to pursue economic independence, reframing the “woman question” from a discourse of moral emancipation toward the logic of labor and market competition. The paper analyzes how Orzeszkowa’s position as a female author shapes her depiction of women as economic subjects and distinguishes her work from that of her male contemporaries. By foregrounding the tension between patriarchal norms and capitalist modernity, the paper situates Orzeszkowa’s novels within the broader shift toward political economy as a dominant explanatory framework of realist aesthetics.",
    "affiliations": [
-    "Universität Bonn, Deutschland"
+    "Universität Tübingen, Deutschland"
    ]
   },
   {
@@ -1845,24 +1845,6 @@
    "abstract": "In meinem Vortrag führe ich den Begriff comedy of emergency zur Beschreibung einer Form der Krisenkomik ein, die als Reaktion auf gesellschaftliche und politische Katastrophen entsteht. Stand-up als eine autobiografisch angelegte Kleinkunst, die auf negativen persönlichen und kollektiven Erinnerungen basiert, stellt eine spezifische und in der Forschung unterschätzte Form von Zeugenschaft dar, die, zwischen Performance und Literatur balancierend, Kriegs- und Exilerfahrungen zu dokumentieren vermag. Im Fokus meiner Untersuchungen, die man nicht nur den Testimony-, sondern auch den medienwissenschaftlich interessierten Diaspora Studies zurechnen kann, steht das russische, ukrainische (ukrainisch- und russischsprachige) und belarussische (belarussisch- und russischsprachige) Stand-up nach 2022. Neben den Verhandlungen des Kriegsalltags und der Exilstrapazen thematisiert die gegenwärtige osteuropäische Stand-up-Comedy nicht zuletzt die (meta)sprachlichen Revisionen und Demontagen des Russischen und Konversionen zum Ukrainischen bzw. Belarussischen, die die Identitätsmetamorphosen der letzten Jahre dominieren. Zu dieser prinzipiellen Metalingualität kommen Diskursivierungen der Begegnungen mit den sozialen, kulturellen und sprachlichen Realien der Exilorte und der neuen Zufluchtsstätten, von Almaty und Jerewan bis nach Warschau und Berlin.“",
    "affiliations": [
     "Universität Leipzig, Deutschland"
-   ]
-  },
-  {
-   "id": "2026-10-01-09:00-SR125-10:00",
-   "day": "2026-10-01",
-   "start": "10:00",
-   "end": "10:30",
-   "room": "SR 125",
-   "track": "LKW",
-   "panel_id": "2026-10-01|09:00|ct24",
-   "speakers": [
-    "Natalia Borisova"
-   ],
-   "title": "Liberation for what? Economic Subjectivity and Female Agency in Eliza Orzeszkowa’s Fiction",
-   "type": "talk",
-   "abstract": "This paper examines narratives of women’s fate in post-reform Poland through the lens of political economy as an emerging epistemological framework of late nineteenth-century realism. Focusing on novels by Eliza Orzeszkowa it explores how realist fiction becomes a space for negotiating economic theories and social change. Orzeszkowa’s heroines—women who fall outside established class and gender norms—are compelled to pursue economic independence, reframing the “woman question” from a discourse of moral emancipation toward the logic of labor and market competition. The paper analyzes how Orzeszkowa’s position as a female author shapes her depiction of women as economic subjects and distinguishes her work from that of her male contemporaries. By foregrounding the tension between patriarchal norms and capitalist modernity, the paper situates Orzeszkowa’s novels within the broader shift toward political economy as a dominant explanatory framework of realist aesthetics.",
-   "affiliations": [
-    "Universität Tübingen, Deutschland"
    ]
   },
   {
@@ -4054,13 +4036,13 @@
    "track": "LKW",
    "panel_id": "2026-10-02|09:00|ct47",
    "speakers": [
-    "Andrey Oleynikov"
+    "Nikolaj Plotnikov"
    ],
-   "title": "The Praxis-Oriented Philosophy in Mikhail Gefter",
+   "title": "Philosophische Debatten in der Sowjetunion: Argumentative Muster, ideologische Funktion, typische Merkmale",
    "type": "talk",
-   "abstract": "In my paper, I aim to emphasize the importance of studying the legacy of Mikhail Gefter, an exceptionally original late-Soviet theorist of history who headed the historical methodology sector at the USSR Academy of Sciences from 1964 to 1969. The history of this sector has already been the subject of several substantial studies, mostly conducted by Western scholars. However, to date, no systematic analysis has been undertaken in Russia or abroad of Gefter’s philosophical and historical views, which deserve close attention due to both their originality for their time and their remarkable resonance with contemporary theories of history.\n\nGleb Pavlovsky, who considered himself a friend and student of Gefter and was once an influential publicist and so called “political technologist”, contributed significantly to popularizing his teacher’s name by publishing several volumes of dialogues with him, originally recorded on tape. However, this represents a particular appropriation of the memory of Gefter rather than a scholarly analysis of his legacy. Notably, Gefter’s most original texts, written in the 1960s and 1970s and mostly unpublished during his lifetime, remain unedited and uncommented. As a result, a marked imbalance exists between, on the one hand, Gefter of the perestroika and post-perestroika period, whose public reputation was largely shaped by Pavlovsky, and, on the other hand, Gefter of the 1960s–1970s. In my paper, I will draw attention to the clear influence of Antonio Gramsci in these texts, which allows us to interpret Gefter’s theory of history as an original version of praxis-oriented philosophy.",
+   "abstract": "Der Vortrag analysiert philosophische Debatten in der Sowjetunion als eine diskursive Praxis, in der sich theoretischer Streit und der Anspruch auf Deutungshoheit in der Bestimmung von Wissenschaft und ihrer Verbindung zur politischen Praxis untrennbar verschränken. Im Zentrum steht die Frage, welche argumentativen Muster diese Debatten strukturieren, welche rhetorischen Verfahren dominieren und welche ideologischen Funktionen sie innerhalb des sowjetischen Wissenschaftssystems erfüllen.\n\nPhilosophie tritt dabei als institutionell verankerte Disziplin auf, die den Anspruch erhebt, wissenschaftliche Rationalität und politische Parteilichkeit in einer „Einheit“ zu verbinden. Debatten fungieren nicht nur als Austragungsorte theoretischer Differenzen, sondern zugleich als Mechanismen der Kanonisierung, Grenzziehung und Legitimation.\n\nAls paradigmatischer Testfall dient die Debatte zwischen den sogenannten Mechanisten und Dialektikern in den 1920er Jahren. Diese Kontroverse um das Verhältnis von Dialektik und Naturwissenschaft entwickelt sich rasch von einer methodologischen Differenz zu einem Kampf um die verbindliche Interpretation des dialektischen Materialismus. In ihr entstehen argumentative Grundfiguren, die für spätere philosophische Auseinandersetzungen modellbildend bleiben: der Rekurs auf kanonische Texte als letztinstanzliche Autorität, die moralisch-politische Qualifizierung theoretischer Positionen („Reduktionismus“, „Idealismus“, „Abweichung“), die Gleichsetzung wissenschaftlicher Irrtümer mit politischer Gefährdung sowie die rhetorische Inszenierung von Kritik und Selbstkritik.\n\nIm Fokus steht die Struktur des Streitens selbst: die spezifische Verbindung von theoretischer Argumentation, normativer Markierung und institutioneller Macht. Philosophische Debatten erscheinen so als hybride Kommunikationsform, in der epistemische Klärung, politische Legitimation und symbolische Selbstvergewisserung gleichzeitig stattfinden.",
    "affiliations": [
-    "Universität Bielefeld, Deutschland"
+    "Ruhr-Universität Bochum, Deutschland"
    ]
   },
   {
@@ -4353,24 +4335,6 @@
    "abstract": "In dem Vortrag werden Ansatz, Aufbau und Inhalte des aktuellen niedersorbischen Sprachplanungsprojektes und des Beteiligungsprozesses SROKA (Serbsku rewitalizaciju organizěrowaś, koordiněrowaś a analyzěrowaś / Sorbische Revitalisierung organisieren, koordinieren und analysieren) vorgestellt und die Herausforderungen einer community- und wissenschaftsbasierten Sprachplanung unter den Bedingungen einer fragmentierten, kaum noch auf Sprache basierenden autochthonen slawischen Gemeinschaft in Deutschland diskutiert.\n\nDie niedersorbische Sprache ist eine autochthone slawische Minderheitensprache in Deutschland und gilt als stark in ihrem Fortbestand bedroht. Von staatlicher Seite liegen neben den gesetzlichen Regelungen auch politisch-konzeptionelle Papiere mit sprachförderndem Bezug vor (z. B. 2. Landesplan zur Stärkung der niedersorbischen Sprache, Mehrsprachigkeitskonzept). Verschiedene Institutionen widmen sich der Pflege, Vermittlung und Weiterentwicklung der niedersorbischen Sprache. Was bisher jedoch fehlt, ist ein verbindliches Verständnis von Sprachplanung sowohl auf staatlicher als auch sorbischer/wendischer Seite einerseits, sowie Strukturen, Monitoring und Steuerungsprozesse andererseits. Mit einer Laufzeit von 2022 bis 2031 wurde ein Projekt zur Entwicklung einer Sprachstrategie sowie zugehöriger Strukturen und Prozesse aufgesetzt und dessen Trägerschaft für die erste Phase vom Sorbischen Institut in Cottbus/Chóśebuz übernommen. Das Projekt versucht, eine Brücke zwischen Theorie und Praxis der Sprachrevitalisierung zu schlagen. Nach einer Bestandsaufnahme wurde 2025 der öffentliche Beteiligungsprozess unter dem Label SROKA begonnen. Die erste Projektphase endet 2027 mit einem zu erarbeitenden Sprachplanungsdokument.",
    "affiliations": [
     "Serbski institut/Sorbisches Institut, Deutschland"
-   ]
-  },
-  {
-   "id": "2026-10-02-09:00-SR124-10:30",
-   "day": "2026-10-02",
-   "start": "10:30",
-   "end": "11:00",
-   "room": "SR 124",
-   "track": "LKW",
-   "panel_id": "2026-10-02|09:00|ct47",
-   "speakers": [
-    "Nikolaj Plotnikov"
-   ],
-   "title": "Philosophische Debatten in der Sowjetunion: Argumentative Muster, ideologische Funktion, typische Merkmale",
-   "type": "talk",
-   "abstract": "Der Vortrag analysiert philosophische Debatten in der Sowjetunion als eine diskursive Praxis, in der sich theoretischer Streit und der Anspruch auf Deutungshoheit in der Bestimmung von Wissenschaft und ihrer Verbindung zur politischen Praxis untrennbar verschränken. Im Zentrum steht die Frage, welche argumentativen Muster diese Debatten strukturieren, welche rhetorischen Verfahren dominieren und welche ideologischen Funktionen sie innerhalb des sowjetischen Wissenschaftssystems erfüllen.\n\nPhilosophie tritt dabei als institutionell verankerte Disziplin auf, die den Anspruch erhebt, wissenschaftliche Rationalität und politische Parteilichkeit in einer „Einheit“ zu verbinden. Debatten fungieren nicht nur als Austragungsorte theoretischer Differenzen, sondern zugleich als Mechanismen der Kanonisierung, Grenzziehung und Legitimation.\n\nAls paradigmatischer Testfall dient die Debatte zwischen den sogenannten Mechanisten und Dialektikern in den 1920er Jahren. Diese Kontroverse um das Verhältnis von Dialektik und Naturwissenschaft entwickelt sich rasch von einer methodologischen Differenz zu einem Kampf um die verbindliche Interpretation des dialektischen Materialismus. In ihr entstehen argumentative Grundfiguren, die für spätere philosophische Auseinandersetzungen modellbildend bleiben: der Rekurs auf kanonische Texte als letztinstanzliche Autorität, die moralisch-politische Qualifizierung theoretischer Positionen („Reduktionismus“, „Idealismus“, „Abweichung“), die Gleichsetzung wissenschaftlicher Irrtümer mit politischer Gefährdung sowie die rhetorische Inszenierung von Kritik und Selbstkritik.\n\nIm Fokus steht die Struktur des Streitens selbst: die spezifische Verbindung von theoretischer Argumentation, normativer Markierung und institutioneller Macht. Philosophische Debatten erscheinen so als hybride Kommunikationsform, in der epistemische Klärung, politische Legitimation und symbolische Selbstvergewisserung gleichzeitig stattfinden.",
-   "affiliations": [
-    "Ruhr-Universität Bochum, Deutschland"
    ]
   },
   {
@@ -5738,13 +5702,13 @@
    "track": "LKW",
    "panel_id": "2026-10-02|14:00|ct66",
    "speakers": [
-    "Elisa-Maria Hiemer"
+    "Daria Khrushcheva"
    ],
-   "title": "Norm, Trauma, Gegenentwurf: Elternschaft in der ostmitteleuropäischen Gegenwartsliteratur",
+   "title": "\"LGBTQ-Propaganda\" unter Jugendlichen? Queere Young-Adult-Romane in Russland",
    "type": "talk",
-   "abstract": "Obwohl Elternschaft eine der zentralen Erfahrungen aller Gesellschaften gilt, gibt es eher wenig vergleichende Forschung und dass obwohl Familien auch politisch ein zentrales Thema darstellen. Gerade der Fall die Kommunismus brachte grundlegende Änderungen in der Organisation des Familienalltags, in den politischen Programmen und den Geschlechterverhältnissen im privaten wie öffentlichen Raum mit sich. Retraditionalisierungsmuster lassen sich in allen Ländern Ostmitteleuropas feststellen - mit gleichwohl starken Gegenstimmen und einer jungen Schriftsteller*innengeneration, die sich pronatalistisch-konservativen Erwartungshaltungen und traditionallen Familienstrukturen entgegenstellt. Gleichzeitig spiegelt diese Literatur auch generationelle Traumata wider, wie etwa das Phänomen des abwesenden Vaters (Sammelband: Ojciec, 2017). Dieser Vortrag untersucht am Beispiel der polnischen (Natalia Fiedorczuk-Cieślak), tschechischen (Soukupová) und ungarischen (Szabó, Tóth) Literatur, wie Elternschaft im Spannungsfeld von postsozialistischen Transformationsprozessen, Retraditionalisierungstendenzen und individuellen Erfahrungen literarisch verhandelt wird. Dabei stehen insbesondere Kritik an normativen Familienmodellen sowie alternative Entwürfe von Geschlechter- und Fürsorgeverhältnissen im Mittelpunkt.",
+   "abstract": "Im Zuge der soziokulturellen Liberalisierung der späten 1980er Jahre sowie der Entkriminalisierung homosexueller Beziehungen im Jahr 1993 rückte das Thema Queerness in Russland zunehmend in den gesellschaftlichen Fokus, was sich auch in kulturellen Ausdrucksformen und in der literarischen Auseinandersetzung mit queerer Identität widerspiegelte. Die jüngsten politischen Entwicklungen – insbesondere das sogenannte Verbot „homosexueller Propaganda“ von 2013 und dessen Verschärfung im Jahr 2022 – verdeutlichen jedoch eine gegenläufige Tendenz, in deren Folge die Beschäftigung mit queeren Themen in unterschiedlichen gesellschaftlichen Bereichen zunehmend erschwert oder vollständig unterbunden wird.\n\nTrotz der zunehmenden politischen Restriktionen entstanden zeitweise neue kulturelle Nischen, in denen alternative Themen und Erzählformen weiterhin verhandelt wurden. In diesem Zusammenhang nahm Mitte bis Ende der 2010er-Jahre bei vielen russischen Verlagen das Interesse am Genre Young Adult zu. Die neu entstandene Nachfrage nach spezifischer Literatur für Jugendliche und junge Erwachsene wurde teilweise durch soziale Netzwerke und die populäre Kultur der Fanfiction begünstigt. Einige Verlage wie beispielsweise Popcorn Books machten diese Altersgruppe zu ihrem zentralen Zielpublikum. Nicht nur heteronormative Liebesgeschichten oder Fantasyromane wurden zu Gegenständen neuer Publikationen, sondern auch queere Themen, die auf einen erkennbaren politischen und historischen Kontext ausgerichtet sind.\n\nWorin besteht die Besonderheit queerer Young-Adult -Romane in Bezug auf das russischsprachige Publikum? Worin liegen ihre Popularität und ihre Nachfrage? Welche genre- und stilistischen Besonderheiten sind bei der Analyse dieser Werke zu berücksichtigen? Der Vortrag versucht, diese Fragen am Beispiel zweier Romane zu beantworten: Drugoe detstvo von Sergej Chazov-Kassija (2017) und Leto v pionerskom galstuke von Elena Malisova und Katerina Sil’vanova (2021).",
    "affiliations": [
-    "Freie Universität Berlin, Deutschland"
+    "Ruhr-Universität Bochum, Deutschland"
    ]
   },
   {
@@ -6011,24 +5975,6 @@
    "affiliations": [
     "Universität Regensburg, Deutschland",
     "Universität Regensburg, Deutschland"
-   ]
-  },
-  {
-   "id": "2026-10-02-14:00-SR209-14:30",
-   "day": "2026-10-02",
-   "start": "14:30",
-   "end": "15:00",
-   "room": "SR 209",
-   "track": "LKW",
-   "panel_id": "2026-10-02|14:00|ct66",
-   "speakers": [
-    "Daria Khrushcheva"
-   ],
-   "title": "\"LGBTQ-Propaganda\" unter Jugendlichen? Queere Young-Adult-Romane in Russland",
-   "type": "talk",
-   "abstract": "Im Zuge der soziokulturellen Liberalisierung der späten 1980er Jahre sowie der Entkriminalisierung homosexueller Beziehungen im Jahr 1993 rückte das Thema Queerness in Russland zunehmend in den gesellschaftlichen Fokus, was sich auch in kulturellen Ausdrucksformen und in der literarischen Auseinandersetzung mit queerer Identität widerspiegelte. Die jüngsten politischen Entwicklungen – insbesondere das sogenannte Verbot „homosexueller Propaganda“ von 2013 und dessen Verschärfung im Jahr 2022 – verdeutlichen jedoch eine gegenläufige Tendenz, in deren Folge die Beschäftigung mit queeren Themen in unterschiedlichen gesellschaftlichen Bereichen zunehmend erschwert oder vollständig unterbunden wird.\n\nTrotz der zunehmenden politischen Restriktionen entstanden zeitweise neue kulturelle Nischen, in denen alternative Themen und Erzählformen weiterhin verhandelt wurden. In diesem Zusammenhang nahm Mitte bis Ende der 2010er-Jahre bei vielen russischen Verlagen das Interesse am Genre Young Adult zu. Die neu entstandene Nachfrage nach spezifischer Literatur für Jugendliche und junge Erwachsene wurde teilweise durch soziale Netzwerke und die populäre Kultur der Fanfiction begünstigt. Einige Verlage wie beispielsweise Popcorn Books machten diese Altersgruppe zu ihrem zentralen Zielpublikum. Nicht nur heteronormative Liebesgeschichten oder Fantasyromane wurden zu Gegenständen neuer Publikationen, sondern auch queere Themen, die auf einen erkennbaren politischen und historischen Kontext ausgerichtet sind.\n\nWorin besteht die Besonderheit queerer Young-Adult -Romane in Bezug auf das russischsprachige Publikum? Worin liegen ihre Popularität und ihre Nachfrage? Welche genre- und stilistischen Besonderheiten sind bei der Analyse dieser Werke zu berücksichtigen? Der Vortrag versucht, diese Fragen am Beispiel zweier Romane zu beantworten: Drugoe detstvo von Sergej Chazov-Kassija (2017) und Leto v pionerskom galstuke von Elena Malisova und Katerina Sil’vanova (2021).",
-   "affiliations": [
-    "Ruhr-Universität Bochum, Deutschland"
    ]
   },
   {
@@ -6967,7 +6913,7 @@
    "end": "17:30",
    "title": "„Die Slavistik ist tot – es lebe die Slavistik!“ Szenarien der Entwicklung slavistischer Fächer an deutschsprachigen Universitäten",
    "room": "HS 2",
-   "people": "Chair: Dr. Annelie Bachmaier Chair: Ruprecht von Waldenfels Chair: Prof. Dr. Katrin Bente Karl Chair: Christian Zehnder Chair: Jun.-Prof. Dr. Christina Clasmeier (Universität Münster) Externe Gäste: Prof. Dr. Kornelia Freitag (derz. Prorektorin für Lehre und Studium, Ruhr-Universität Bochum) Dr. Ulrich Heublein (ehem. Deutsches Zentrum für Hochschul- und Wissenschaftsforschung Leipzig) Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail2479a16a\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
+   "people": "Chair: Dr. Annelie Bachmaier Chair: Ruprecht von Waldenfels Chair: Prof. Dr. Katrin Bente Karl Chair: Christian Zehnder Chair: Jun.-Prof. Dr. Christina Clasmeier (Universität Münster) Externe Gäste: Prof. Dr. Kornelia Freitag (derz. Prorektorin für Lehre und Studium, Ruhr-Universität Bochum) Dr. Ulrich Heublein (ehem. Deutsches Zentrum für Hochschul- und Wissenschaftsforschung Leipzig) Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmailf729eb8c\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
   },
   {
    "day": "2026-10-03",
@@ -6991,7 +6937,7 @@
    "end": "14:00",
    "title": "Abschlussveranstaltung mit Imbiss",
    "room": "Foyer CZS 3",
-   "people": "Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmail1c7af4eb\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
+   "people": "Mobile Ansicht Mobile Ansicht Impressum · Kontaktadresse: Slavistiktag2026 {at} uni-jena de (function () { var el = document.getElementById(\"ctmailbf2ace48\"); if (!el) return; var addr = atob(el.getAttribute('data-m')); var a = document.createElement('a'); a.href = 'mailto:' + addr; var name = el.getAttribute('data-n'); if (name) a.innerHTML = name; else a.textContent = addr; el.replaceWith(a); })(); Datenschutzerklärung · Veranstaltung: Slavistiktag 2026 Conference Software: ConfTool Pro 2.8.114+TC © 2001–2026 by Dr. H. Weinreich, Hamburg, Germany"
   }
  ]
 }
