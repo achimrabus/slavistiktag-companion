@@ -1,11 +1,41 @@
 {
  "counts": {
   "new": 0,
-  "changed": 0,
-  "removed": 0
+  "changed": 1,
+  "removed": 1
  },
  "new": [],
- "changed": [],
- "removed": [],
- "generated_at": "2026-10-02T05:37:00+00:00"
+ "changed": [
+  {
+   "id": "2026-10-02-09:00-SR113-10:00",
+   "title": "The second accusative in Ukrainian: a micro-diachronic view on its frequency and productivity in cross-Slavic comparison",
+   "speakers": [
+    "Tatiana Perevozchikova"
+   ],
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 113",
+   "old": {
+    "day": "2026-10-02",
+    "start": "10:30",
+    "end": "11:00",
+    "room": "SR 113"
+   }
+  }
+ ],
+ "removed": [
+  {
+   "id": "2026-10-02-09:00-SR113-10:00",
+   "title": "Typological Divergence in Case and Negation: A Distributional Comparison of Russian and Ukrainian",
+   "speakers": [
+    "Inna Stupak"
+   ],
+   "day": "2026-10-02",
+   "start": "10:00",
+   "end": "10:30",
+   "room": "SR 113"
+  }
+ ],
+ "generated_at": "2026-10-02T12:34:12+00:00"
 }
